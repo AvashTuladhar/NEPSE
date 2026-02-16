@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enhanced NpStocks Analysis Report</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Söhne:wght@400;500;600&display=swap');
+
+    :root {
+        --primary-color: #D4916C;
+        --secondary-color: #B8856A;
+        --background-color: #0F0D0B;
+        --surface-color: #1A1816;
+        --surface-secondary: #232120;
+        --border-color: #2D2B28;
+        --text-primary: #E8E3DB;
+        --text-secondary: #B8AFA3;
+        --text-muted: #8A8074;
+        --success-color: #7BAA7A;
+        --danger-color: #D87C7C;
+        --hover-color: #252320;
+        --link-color: #D4916C;
+        --accent-warm: #CC785C;
+        --card-radius: 12px;
+        --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body { 
+        font-family: var(--font-sans);
+        background: var(--background-color);
+        color: var(--text-primary);
+        line-height: 1.7;
+        padding: 20px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: var(--surface-color);
+        padding: 48px;
+        border-radius: var(--card-radius);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.3);
+        border: 1px solid var(--border-color);
+    }
+    
+    h1 {
+        font-family: var(--font-sans);
+        color: var(--text-primary);
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 16px;
+        letter-spacing: -0.5px;
+    }
+    
+    .meta {
+        text-align: center;
+        color: var(--text-secondary);
+        font-size: 0.875rem;
+        margin-bottom: 48px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    .meta strong {
+        color: var(--primary-color);
+        font-weight: 600;
+    }
+    
+    .toc {
+        background: var(--surface-secondary);
+        border: 1px solid var(--border-color);
+        padding: 28px;
+        border-radius: var(--card-radius);
+        margin-bottom: 48px;
+    }
+    
+    .toc h3 {
+        font-family: var(--font-sans);
+        color: var(--text-primary);
+        font-size: 1.125rem;
+        font-weight: 600;
+        margin: 0 0 20px 0;
+        letter-spacing: -0.3px;
+    }
+    
+    .toc-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 10px;
+    }
+    
+    .toc a {
+        color: var(--text-secondary);
+        text-decoration: none;
+        padding: 12px 16px;
+        border-radius: 8px;
+        font-size: 0.9375rem;
+        background: var(--surface-color);
+        border: 1px solid var(--border-color);
+        transition: all 0.2s ease;
+        display: block;
+        font-weight: 500;
+    }
+    
+    .toc a:hover {
+        background: var(--hover-color);
+        color: var(--primary-color);
+        border-color: var(--accent-warm);
+        transform: translateY(-1px);
+        box-shadow: 0 2px 6px rgba(204, 120, 92, 0.15);
+    }
+    
+    h2 {
+        font-family: var(--font-sans);
+        color: var(--text-primary);
+        font-size: 1.75rem;
+        font-weight: 600;
+        margin: 64px 0 24px 0;
+        padding-bottom: 16px;
+        border-bottom: 2px solid var(--border-color);
+        letter-spacing: -0.4px;
+        position: relative;
+    }
+    
+    h2::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 60px;
+        height: 2px;
+        background: linear-gradient(90deg, var(--primary-color), var(--accent-warm));
+        border-radius: 2px;
+    }
+    
+    h3 {
+         font-family: var(--font-sans);
+         font-size: 1.25rem;
+         color: var(--text-primary);
+         font-weight: 600;
+         margin-top: 32px;
+         margin-bottom: 16px;
+         letter-spacing: -0.3px;
+    }
+
+    .strategy-box {
+        background: linear-gradient(135deg, rgba(204, 120, 92, 0.08) 0%, rgba(212, 145, 108, 0.06) 100%);
+        padding: 18px 22px;
+        border-radius: 10px;
+        margin-bottom: 24px;
+        color: var(--text-secondary);
+        font-size: 0.9375rem;
+        border-left: 3px solid var(--primary-color);
+        line-height: 1.6;
+    }
+    
+    .strategy-box strong {
+        color: var(--primary-color);
+        font-weight: 600;
+        margin-right: 8px;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        margin-bottom: 32px;
+        font-size: 0.9375rem;
+        background: var(--surface-color);
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    th {
+        background: #0F0D0B;
+        color: var(--primary-color);
+        font-weight: 600;
+        text-align: left;
+        padding: 16px 18px;
+        border-bottom: 2px solid var(--primary-color);
+        font-size: 0.8125rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    
+    td {
+        padding: 16px 18px;
+        border-bottom: 1px solid var(--border-color);
+        color: var(--text-primary);
+        vertical-align: middle;
+    }
+    
+    tr:last-child td {
+        border-bottom: none;
+    }
+    
+    tr:hover td {
+        background-color: var(--hover-color);
+    }
+    
+    tr:nth-child(even) {
+        background-color: rgba(35, 33, 32, 0.3);
+    }
+    
+    /* Links in tables */
+    td a {
+        color: var(--link-color);
+        text-decoration: none;
+        font-weight: 500;
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.2s;
+    }
+    
+    td a:hover {
+        border-bottom-color: var(--link-color);
+    }
+    
+    .footer {
+        margin-top: 80px;
+        padding-top: 32px;
+        border-top: 1px solid var(--border-color);
+        text-align: center;
+        color: var(--text-muted);
+        font-size: 0.8125rem;
+    }
+    
+    .footer p {
+        margin: 8px 0;
+    }
+    
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+        width: 12px;
+        height: 12px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: var(--background-color);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: var(--border-color);
+        border-radius: 6px;
+        border: 3px solid var(--background-color);
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: #3D3A36;
+    }
+    
+    /* Selection */
+    ::selection {
+        background: rgba(212, 145, 108, 0.3);
+        color: var(--text-primary);
+    }
+    
+    /* Print styles */
+    @media print {
+        body {
+            background: white;
+            color: black;
+            padding: 0;
+        }
+        .container {
+            box-shadow: none;
+            padding: 0;
+            border: none;
+            background: white;
+        }
+        .toc, .footer {
+            display: none;
+        }
+        th, td {
+            border-color: #ddd;
+            color: black;
+            background: white !important;
+        }
+        h1, h2, h3 {
+            color: black;
+        }
+        h2 {
+            border-bottom-color: #ddd;
+        }
+        h2::after {
+            display: none;
+        }
+        .strategy-box {
+            background: #f9f9f9;
+            border-left-color: #888;
+            color: black;
+        }
+        .meta {
+            color: #666;
+        }
+    }
+    
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+        .container {
+            padding: 24px 16px;
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+        .toc-grid {
+           grid-template-columns: 1fr; 
+        }
+        table {
+            display: block;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+    }
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Enhanced NpStocks Analysis Report</h1>
+        <div class="meta">
+            <strong>Date:</strong> 2026-02-16 &nbsp;|&nbsp;
+            <strong>Total Stocks Analyzed:</strong> 207 &nbsp;|&nbsp;
+            <strong>Investment Strategies:</strong> 10
+        </div>
+        
+        <div class="toc">
+            <h3>📑 Quick Navigation</h3>
+            <div class="toc-grid">
+                <a href="#strategy1">1. 💎 High Quality Stocks</a>
+                <a href="#strategy2">2. 💰 High Profitability Leaders</a>
+                <a href="#strategy3">3. 💵 Undervalued High Earners</a>
+                <a href="#strategy4">4. 💪 Value + Momentum Combo</a>
+                <a href="#strategy5">5. 🚀 Top Weekly Momentum</a>
+                <a href="#strategy6">6. 📈 Best 12-Week Performers</a>
+                <a href="#strategy7">7. 🛡️ Defensive Low-Risk</a>
+                <a href="#strategy8">8. 🔄 Turnaround Opportunities</a>
+                <a href="#strategy9">9. 💪 Strong Balance Sheet</a>
+                <a href="#strategy10">10. 📊 Best Risk-Adjusted Returns</a>
+            </div>
+        </div>
+
+        <div id="strategy1">
+            <h2>💎 High Quality Stocks</h2>
+            <div class="strategy-box">
+                <strong>Screening Criteria:</strong> ROE > 15%, Low Debt, PE < 40
+            </div>
+<table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Company</th>
+      <th>Latest Close</th>
+      <th>ROE (TTM) %</th>
+      <th>PE (TTM)</th>
+      <th>Debt to Asset</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CEDB Holdings Limited</td>
+      <td>2430.0</td>
+      <td>33.78</td>
+      <td>36.98</td>
+      <td>2.64</td>
+    </tr>
+    <tr>
+      <td>Radhi Bidhyut Company</td>
+      <td>845.0</td>
+      <td>24.03</td>
+      <td>25.27</td>
+      <td>16.85</td>
+    </tr>
+    <tr>
+      <td>Mountain Energy Nepal Limited</td>
+      <td>579.0</td>
+      <td>16.12</td>
+      <td>27.46</td>
+      <td>42.99</td>
+    </tr>
+  </tbody>
+</table>        </div>
+
+        <div id="strategy2">
+            <h2>💰 High Profitability Leaders</h2>
+            <div class="strategy-box">
+                <strong>Screening Criteria:</strong> Net Profit Margin > 25%, ROE > 10%
+            </div>
+<table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Company</th>
+      <th>Latest Close</th>
+      <th>Net Profit Margin TTM %</th>
+      <th>ROE (TTM) %</th>
+      <th>PE (TTM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Radhi Bidhyut Company</td>
+      <td>845.0</td>
+      <td>470.39</td>
+      <td>24.03</td>
+      <td>25.27</td>
+    </tr>
+    <tr>
+      <td>Upper Syange Hydropower Limited</td>
+      <td>800.0</td>
+      <td>145.13</td>
+      <td>57.18</td>
+      <td>18.23</td>
+    </tr>
+    <tr>
+      <td>CEDB Holdings Limited</td>
+      <td>2430.0</td>
+      <td>96.52</td>
+      <td>33.78</td>
+      <td>36.98</td>
+    </tr>
+    <tr>
+      <td>Mid Solu Hydropower Limited</td>
+      <td>820.0</td>
+      <td>50.17</td>
+      <td>14.90</td>
+      <td>45.67</td>
+    </tr>
+    <tr>
+      <td>Mountain Energy Nepal Limited</td>
+      <td>579.0</td>
+      <td>46.25</td>
+      <td>16.12</td>
+      <td>27.46</td>
+    </tr>
+    <tr>
+      <td>Bhagawati Hydropower Development Company Limited</td>
+      <td>761.1</td>
+      <td>44.80</td>
+      <td>11.66</td>
+      <td>62.00</td>
+    </tr>
+    <tr>
+      <td>NESDO Sambridha Laghubitta Bittiye Sanstha Limited</td>
+      <td>1528.0</td>
+      <td>40.58</td>
+      <td>29.92</td>
+      <td>20.39</td>
+    </tr>
+    <tr>
+      <td>Sahas Urja Limited</td>
+      <td>557.0</td>
+      <td>40.10</td>
+      <td>15.31</td>
+      <td>23.20</td>
+    </tr>
+    <tr>
+      <td>Panchthar Power Company Ltd.</td>
+      <td>382.7</td>
+      <td>37.13</td>
+      <td>13.61</td>
+      <td>30.19</td>
+    </tr>
+    <tr>
+      <td>Samriddhi Finance Company Limited</td>
+      <td>387.0</td>
+      <td>36.59</td>
+      <td>20.52</td>
+      <td>33.03</td>
+    </tr>
+  </tbody>
+</table>        </div>
+
+        <div id="strategy3">
+            <h2>💵 Undervalued High Earners</h2>
+            <div class="strategy-box">
+                <strong>Screening Criteria:</strong> EPS > 15, PE < 20, PBV < 3
+            </div>
+<table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Company</th>
+      <th>Latest Close</th>
+      <th>EPS (TTM)</th>
+      <th>PE (TTM)</th>
+      <th>PBV</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nepal Lube Oil</td>
+      <td>269.4</td>
+      <td>36.07</td>
+      <td>7.46</td>
+      <td>0.53</td>
+    </tr>
+    <tr>
+      <td>Nepal Bank</td>
+      <td>243.5</td>
+      <td>31.41</td>
+      <td>7.74</td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <td>Siddhartha Bank</td>
+      <td>372.0</td>
+      <td>28.33</td>
+      <td>13.12</td>
+      <td>1.76</td>
+    </tr>
+    <tr>
+      <td>Agriculture Development Bank</td>
+      <td>297.0</td>
+      <td>25.01</td>
+      <td>11.87</td>
+      <td>1.32</td>
+    </tr>
+    <tr>
+      <td>Garima Bikas Bank</td>
+      <td>398.9</td>
+      <td>23.18</td>
+      <td>17.20</td>
+      <td>2.49</td>
+    </tr>
+    <tr>
+      <td>Prabhu Bank</td>
+      <td>183.2</td>
+      <td>21.75</td>
+      <td>8.42</td>
+      <td>1.25</td>
+    </tr>
+    <tr>
+      <td>Muktinath Bikas Bank</td>
+      <td>363.0</td>
+      <td>21.32</td>
+      <td>17.01</td>
+      <td>2.39</td>
+    </tr>
+    <tr>
+      <td>Sanima Bank</td>
+      <td>335.0</td>
+      <td>20.39</td>
+      <td>16.42</td>
+      <td>1.94</td>
+    </tr>
+    <tr>
+      <td>Machhapuchhre Bank</td>
+      <td>228.0</td>
+      <td>18.32</td>
+      <td>12.43</td>
+      <td>1.41</td>
+    </tr>
+    <tr>
+      <td>Nepal Investment Bank</td>
+      <td>189.9</td>
+      <td>16.22</td>
+      <td>11.70</td>
+      <td>0.97</td>
+    </tr>
+  </tbody>
+</table>        </div>
+
+        <div id="strategy4">
+            <h2>💪 Value + Momentum Combo</h2>
+            <div class="strategy-box">
+                <strong>Screening Criteria:</strong> PBV < 2.5, PE < 25, 12-Week Change > 8%
+            </div>
+<table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Company</th>
+      <th>Latest Close</th>
+      <th>PBV</th>
+      <th>PE (TTM)</th>
+      <th>12 Wk Price Chg %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nepal Lube Oil</td>
+      <td>269.4</td>
+      <td>0.53</td>
+      <td>7.46</td>
+      <td>10.66</td>
+    </tr>
+    <tr>
+      <td>Siddhartha Bank</td>
+      <td>372.0</td>
+      <td>1.76</td>
+      <td>13.12</td>
+      <td>9.54</td>
+    </tr>
+    <tr>
+      <td>Sanima Bank</td>
+      <td>335.0</td>
+      <td>1.94</td>
+      <td>16.42</td>
+      <td>8.59</td>
+    </tr>
+  </tbody>
+</table>        </div>
+
+        <div id="strategy5">
+            <h2>🚀 Top Weekly Momentum</h2>
+            <div class="strategy-box">
+                <strong>Screening Criteria:</strong> Highest 1-week price gainers
+            </div>
+<table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Company</th>
+      <th>Latest Close</th>
+      <th>1 Wk Price Chg %</th>
+      <th>4 Wk Price Chg %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Madhya Bhotekoshi Jalavidyut Company Limited</td>
+      <td>307.2</td>
+      <td>6.30</td>
+      <td>6.30</td>
+    </tr>
+    <tr>
+      <td>Upper Syange Hydropower Limited</td>
+      <td>800.0</td>
+      <td>5.28</td>
+      <td>-2.53</td>
+    </tr>
+    <tr>
+      <td>Sanjen Jalavidhyut Company Limited</td>
+      <td>309.7</td>
+      <td>4.31</td>
+      <td>8.67</td>
+    </tr>
+    <tr>
+      <td>Aatmanirbhar Laghubitta Bittiya Sanstha Limited</td>
+      <td>6296.9</td>
+      <td>4.15</td>
+      <td>3.23</td>
+    </tr>
+    <tr>
+      <td>Nyadi Hydropower Limited</td>
+      <td>415.0</td>
+      <td>4.01</td>
+      <td>4.01</td>
+    </tr>
+    <tr>
+      <td>Terhathum Power Company Limited</td>
+      <td>409.0</td>
+      <td>3.54</td>
+      <td>10.54</td>
+    </tr>
+    <tr>
+      <td>Ngadi Group Power Ltd.</td>
+      <td>437.0</td>
+      <td>3.31</td>
+      <td>8.33</td>
+    </tr>
+    <tr>
+      <td>Singati Hydro Energy Limited</td>
+      <td>306.1</td>
+      <td>3.24</td>
+      <td>8.20</td>
+    </tr>
+    <tr>
+      <td>Sanima Mai Hydropower</td>
+      <td>545.0</td>
+      <td>2.83</td>
+      <td>-1.80</td>
+    </tr>
+    <tr>
+      <td>Sanima Bank</td>
+      <td>335.0</td>
+      <td>2.76</td>
+      <td>-0.59</td>
+    </tr>
+  </tbody>
+</table>        </div>
+
+        <div id="strategy6">
+            <h2>📈 Best 12-Week Performers</h2>
+            <div class="strategy-box">
+                <strong>Screening Criteria:</strong> Sustained momentum, ROE > 5%
+            </div>
+<table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Company</th>
+      <th>Latest Close</th>
+      <th>12 Wk Price Chg %</th>
+      <th>ROE (TTM) %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Manjushree Financial Institution</td>
+      <td>777.0</td>
+      <td>29.07</td>
+      <td>14.30</td>
+    </tr>
+    <tr>
+      <td>Terhathum Power Company Limited</td>
+      <td>409.0</td>
+      <td>19.59</td>
+      <td>10.55</td>
+    </tr>
+    <tr>
+      <td>Upper Syange Hydropower Limited</td>
+      <td>800.0</td>
+      <td>15.42</td>
+      <td>57.18</td>
+    </tr>
+    <tr>
+      <td>Central Finance</td>
+      <td>554.0</td>
+      <td>14.20</td>
+      <td>11.32</td>
+    </tr>
+    <tr>
+      <td>Panchthar Power Company Ltd.</td>
+      <td>382.7</td>
+      <td>12.56</td>
+      <td>13.61</td>
+    </tr>
+    <tr>
+      <td>Asha Laghubitta Bittiya Sanstha Ltd</td>
+      <td>1113.8</td>
+      <td>12.05</td>
+      <td>25.79</td>
+    </tr>
+    <tr>
+      <td>Nepal Lube Oil</td>
+      <td>269.4</td>
+      <td>10.66</td>
+      <td>7.37</td>
+    </tr>
+    <tr>
+      <td>Radhi Bidhyut Company</td>
+      <td>845.0</td>
+      <td>9.88</td>
+      <td>24.03</td>
+    </tr>
+    <tr>
+      <td>Api Power</td>
+      <td>299.5</td>
+      <td>9.86</td>
+      <td>7.93</td>
+    </tr>
+    <tr>
+      <td>Siddhartha Bank</td>
+      <td>372.0</td>
+      <td>9.54</td>
+      <td>13.96</td>
+    </tr>
+  </tbody>
+</table>        </div>
+
+        <div id="strategy7">
+            <h2>🛡️ Defensive Low-Risk</h2>
+            <div class="strategy-box">
+                <strong>Screening Criteria:</strong> Beta < 1.0, YTD > -5%, ROE > 8%
+            </div>
+<table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Company</th>
+      <th>Latest Close</th>
+      <th>Beta Weekly</th>
+      <th>YTD Price Chg %</th>
+      <th>ROE (TTM) %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Aatmanirbhar Laghubitta Bittiya Sanstha Limited</td>
+      <td>6296.9</td>
+      <td>0.29</td>
+      <td>3.57</td>
+      <td>22.27</td>
+    </tr>
+    <tr>
+      <td>Nepal Investment Bank</td>
+      <td>189.9</td>
+      <td>0.57</td>
+      <td>-0.84</td>
+      <td>8.42</td>
+    </tr>
+    <tr>
+      <td>Bhagawati Hydropower Development Company Limited</td>
+      <td>761.1</td>
+      <td>0.63</td>
+      <td>-0.51</td>
+      <td>11.66</td>
+    </tr>
+    <tr>
+      <td>Standard Chartered Bank</td>
+      <td>640.0</td>
+      <td>0.65</td>
+      <td>1.27</td>
+      <td>12.95</td>
+    </tr>
+    <tr>
+      <td>Mahila Lagubitta Bittiya Sanstha Limited</td>
+      <td>1875.0</td>
+      <td>0.72</td>
+      <td>-4.09</td>
+      <td>8.73</td>
+    </tr>
+    <tr>
+      <td>Rawa Energy Development Limited</td>
+      <td>725.0</td>
+      <td>0.76</td>
+      <td>2.26</td>
+      <td>12.60</td>
+    </tr>
+    <tr>
+      <td>Agriculture Development Bank</td>
+      <td>297.0</td>
+      <td>0.78</td>
+      <td>0.68</td>
+      <td>11.14</td>
+    </tr>
+    <tr>
+      <td>Nepal Sbi Bank</td>
+      <td>403.0</td>
+      <td>0.81</td>
+      <td>-0.49</td>
+      <td>9.46</td>
+    </tr>
+    <tr>
+      <td>Unique Nepal Laghubitta Bittiya Sanstha Limited</td>
+      <td>1847.0</td>
+      <td>0.82</td>
+      <td>-2.22</td>
+      <td>15.23</td>
+    </tr>
+    <tr>
+      <td>NESDO Sambridha Laghubitta Bittiye Sanstha Limited</td>
+      <td>1528.0</td>
+      <td>0.82</td>
+      <td>2.48</td>
+      <td>29.92</td>
+    </tr>
+  </tbody>
+</table>        </div>
+
+        <div id="strategy8">
+            <h2>🔄 Turnaround Opportunities</h2>
+            <div class="strategy-box">
+                <strong>Screening Criteria:</strong> 1-Year < -15%, 12-Week > 8%, ROE > 0%
+            </div>
+<table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Company</th>
+      <th>Latest Close</th>
+      <th>1 Year Price Chg %</th>
+      <th>12 Wk Price Chg %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>River Falls Power Limited</td>
+      <td>413.5</td>
+      <td>-16.04</td>
+      <td>14.86</td>
+    </tr>
+    <tr>
+      <td>Central Finance</td>
+      <td>554.0</td>
+      <td>-15.68</td>
+      <td>14.20</td>
+    </tr>
+    <tr>
+      <td>Balephi Hydropower Limited</td>
+      <td>207.0</td>
+      <td>-44.35</td>
+      <td>13.74</td>
+    </tr>
+    <tr>
+      <td>Multipurpose Finance</td>
+      <td>618.0</td>
+      <td>-17.16</td>
+      <td>12.30</td>
+    </tr>
+    <tr>
+      <td>Chirkhwa Hydropower Limited</td>
+      <td>699.0</td>
+      <td>-15.78</td>
+      <td>10.08</td>
+    </tr>
+    <tr>
+      <td>Goodwill Finance</td>
+      <td>650.0</td>
+      <td>-18.14</td>
+      <td>8.51</td>
+    </tr>
+  </tbody>
+</table>        </div>
+
+        <div id="strategy9">
+            <h2>💪 Strong Balance Sheet</h2>
+            <div class="strategy-box">
+                <strong>Screening Criteria:</strong> Current Ratio > 150%, Debt < 50%, ROE > 10%
+            </div>
+<table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Company</th>
+      <th>Latest Close</th>
+      <th>Current Ratio</th>
+      <th>Debt to Asset</th>
+      <th>ROE (TTM) %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Radhi Bidhyut Company</td>
+      <td>845.0</td>
+      <td>1818.12</td>
+      <td>16.85</td>
+      <td>24.03</td>
+    </tr>
+    <tr>
+      <td>Bhagawati Hydropower Development Company Limited</td>
+      <td>761.1</td>
+      <td>1313.38</td>
+      <td>24.13</td>
+      <td>11.66</td>
+    </tr>
+    <tr>
+      <td>CEDB Holdings Limited</td>
+      <td>2430.0</td>
+      <td>1011.61</td>
+      <td>2.64</td>
+      <td>33.78</td>
+    </tr>
+    <tr>
+      <td>Himalayan Distillery</td>
+      <td>1137.7</td>
+      <td>621.16</td>
+      <td>13.74</td>
+      <td>24.34</td>
+    </tr>
+    <tr>
+      <td>Mountain Energy Nepal Limited</td>
+      <td>579.0</td>
+      <td>364.26</td>
+      <td>42.99</td>
+      <td>16.12</td>
+    </tr>
+    <tr>
+      <td>Terhathum Power Company Limited</td>
+      <td>409.0</td>
+      <td>269.63</td>
+      <td>34.42</td>
+      <td>10.55</td>
+    </tr>
+    <tr>
+      <td>Muktinath Krishi Company Limited</td>
+      <td>1384.0</td>
+      <td>185.88</td>
+      <td>0.00</td>
+      <td>13.79</td>
+    </tr>
+    <tr>
+      <td>Shivam Cements Ltd</td>
+      <td>611.0</td>
+      <td>152.12</td>
+      <td>23.27</td>
+      <td>10.01</td>
+    </tr>
+  </tbody>
+</table>        </div>
+
+        <div id="strategy10">
+            <h2>📊 Best Risk-Adjusted Returns</h2>
+            <div class="strategy-box">
+                <strong>Screening Criteria:</strong> Mean Returns > 0.2%, Std Dev < 10%
+            </div>
+<table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Company</th>
+      <th>Latest Close</th>
+      <th>Mean Returns [Wk, 1Y]%</th>
+      <th>S.D of Returns [Wk, 1Y]%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mabilung Energy Limited</td>
+      <td>777.0</td>
+      <td>2.99</td>
+      <td>8.10</td>
+    </tr>
+    <tr>
+      <td>Daramkhola Hydro Energy Limited</td>
+      <td>729.0</td>
+      <td>2.21</td>
+      <td>7.15</td>
+    </tr>
+    <tr>
+      <td>Radhi Bidhyut Company</td>
+      <td>845.0</td>
+      <td>1.41</td>
+      <td>5.50</td>
+    </tr>
+    <tr>
+      <td>Butwal Power</td>
+      <td>706.2</td>
+      <td>1.07</td>
+      <td>6.87</td>
+    </tr>
+    <tr>
+      <td>Ngadi Group Power Ltd.</td>
+      <td>437.0</td>
+      <td>0.94</td>
+      <td>4.53</td>
+    </tr>
+    <tr>
+      <td>United Modi Hydropower</td>
+      <td>612.0</td>
+      <td>0.92</td>
+      <td>3.43</td>
+    </tr>
+    <tr>
+      <td>Union Hydropower Limited</td>
+      <td>495.0</td>
+      <td>0.65</td>
+      <td>5.65</td>
+    </tr>
+    <tr>
+      <td>Siddhartha Bank</td>
+      <td>372.0</td>
+      <td>0.62</td>
+      <td>3.57</td>
+    </tr>
+    <tr>
+      <td>Universal Power Company Ltd</td>
+      <td>377.4</td>
+      <td>0.61</td>
+      <td>4.53</td>
+    </tr>
+    <tr>
+      <td>Sahas Urja Limited</td>
+      <td>557.0</td>
+      <td>0.56</td>
+      <td>3.48</td>
+    </tr>
+  </tbody>
+</table>        </div>
+
+        <h2>🏢 Sector-Specific Analysis</h2>
+
+        <h3>Banking</h3>
+<table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Company</th>
+      <th>Latest Close</th>
+      <th>ROE (TTM) %</th>
+      <th>PE (TTM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mithila Laghubitta Bikas Bank</td>
+      <td>1323.0</td>
+      <td>22.85</td>
+      <td>29.76</td>
+    </tr>
+    <tr>
+      <td>Swarojgar Laghu Bitta Bikas Bank</td>
+      <td>823.0</td>
+      <td>22.50</td>
+      <td>23.10</td>
+    </tr>
+    <tr>
+      <td>Saptakoshi Development Bank Ltd</td>
+      <td>817.0</td>
+      <td>21.77</td>
+      <td>51.11</td>
+    </tr>
+    <tr>
+      <td>Chhimek Laghubitta Bikas Bank</td>
+      <td>924.0</td>
+      <td>15.62</td>
+      <td>26.17</td>
+    </tr>
+    <tr>
+      <td>Garima Bikas Bank</td>
+      <td>398.9</td>
+      <td>15.30</td>
+      <td>17.20</td>
+    </tr>
+  </tbody>
+</table>
+        <h3>Hydropower</h3>
+<table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Company</th>
+      <th>Latest Close</th>
+      <th>ROE (TTM) %</th>
+      <th>PE (TTM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Upper Syange Hydropower Limited</td>
+      <td>800.0</td>
+      <td>57.18</td>
+      <td>18.23</td>
+    </tr>
+    <tr>
+      <td>Mountain Energy Nepal Limited</td>
+      <td>579.0</td>
+      <td>16.12</td>
+      <td>27.46</td>
+    </tr>
+    <tr>
+      <td>Sahas Urja Limited</td>
+      <td>557.0</td>
+      <td>15.31</td>
+      <td>23.20</td>
+    </tr>
+    <tr>
+      <td>Mid Solu Hydropower Limited</td>
+      <td>820.0</td>
+      <td>14.90</td>
+      <td>45.67</td>
+    </tr>
+    <tr>
+      <td>Upper Hewakhola Hydropower Company Limited</td>
+      <td>561.0</td>
+      <td>14.07</td>
+      <td>33.36</td>
+    </tr>
+  </tbody>
+</table>
+        <h3>Insurance</h3>
+<table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Company</th>
+      <th>Latest Close</th>
+      <th>ROE (TTM) %</th>
+      <th>PE (TTM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Himalayan Everest Insurance Limited</td>
+      <td>506.4</td>
+      <td>13.88</td>
+      <td>32.61</td>
+    </tr>
+    <tr>
+      <td>Neco Insurance</td>
+      <td>604.9</td>
+      <td>13.46</td>
+      <td>40.14</td>
+    </tr>
+    <tr>
+      <td>Sagarmatha Lumbini Insurance Co. Limited</td>
+      <td>597.0</td>
+      <td>12.47</td>
+      <td>41.78</td>
+    </tr>
+    <tr>
+      <td>Prabhu Insurance</td>
+      <td>719.0</td>
+      <td>11.63</td>
+      <td>57.05</td>
+    </tr>
+    <tr>
+      <td>Nepal Insurance</td>
+      <td>499.0</td>
+      <td>10.56</td>
+      <td>54.02</td>
+    </tr>
+  </tbody>
+</table>
+        <h3>Finance</h3>
+<table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Company</th>
+      <th>Latest Close</th>
+      <th>ROE (TTM) %</th>
+      <th>PE (TTM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Support Microfinance Bittiya Sanstha Ltd.</td>
+      <td>1865.1</td>
+      <td>32.66</td>
+      <td>33.85</td>
+    </tr>
+    <tr>
+      <td>Samriddhi Finance Company Limited</td>
+      <td>387.0</td>
+      <td>20.52</td>
+      <td>33.03</td>
+    </tr>
+    <tr>
+      <td>National Microfinance Bittiya Sanstha Ltd.</td>
+      <td>1125.0</td>
+      <td>19.07</td>
+      <td>27.36</td>
+    </tr>
+    <tr>
+      <td>Reliance Finance</td>
+      <td>458.6</td>
+      <td>14.37</td>
+      <td>31.32</td>
+    </tr>
+    <tr>
+      <td>Manjushree Financial Institution</td>
+      <td>777.0</td>
+      <td>14.30</td>
+      <td>31.56</td>
+    </tr>
+  </tbody>
+</table>
+        <h2>⭐ Top Picks - Composite Scoring</h2>
+        <div class="strategy-box">
+            <strong>Method:</strong> Stocks appearing in 2 or more strategies above, ranked by frequency.
+        </div>
+<table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Company</th>
+      <th>Strategy Count</th>
+      <th>Strategies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Radhi Bidhyut Company</td>
+      <td>5</td>
+      <td>High, High, Best, Strong, Best</td>
+    </tr>
+    <tr>
+      <td>Siddhartha Bank</td>
+      <td>4</td>
+      <td>Undervalued, Value, Best, Best</td>
+    </tr>
+    <tr>
+      <td>CEDB Holdings Limited</td>
+      <td>3</td>
+      <td>High, High, Strong</td>
+    </tr>
+    <tr>
+      <td>Mountain Energy Nepal Limited</td>
+      <td>3</td>
+      <td>High, High, Strong</td>
+    </tr>
+    <tr>
+      <td>Upper Syange Hydropower Limited</td>
+      <td>3</td>
+      <td>High, Top, Best</td>
+    </tr>
+    <tr>
+      <td>Bhagawati Hydropower Development Company Limited</td>
+      <td>3</td>
+      <td>High, Defensive, Strong</td>
+    </tr>
+    <tr>
+      <td>Nepal Lube Oil</td>
+      <td>3</td>
+      <td>Undervalued, Value, Best</td>
+    </tr>
+    <tr>
+      <td>Sanima Bank</td>
+      <td>3</td>
+      <td>Undervalued, Value, Top</td>
+    </tr>
+    <tr>
+      <td>Terhathum Power Company Limited</td>
+      <td>3</td>
+      <td>Top, Best, Strong</td>
+    </tr>
+    <tr>
+      <td>NESDO Sambridha Laghubitta Bittiye Sanstha Limited</td>
+      <td>2</td>
+      <td>High, Defensive</td>
+    </tr>
+    <tr>
+      <td>Sahas Urja Limited</td>
+      <td>2</td>
+      <td>High, Best</td>
+    </tr>
+    <tr>
+      <td>Panchthar Power Company Ltd.</td>
+      <td>2</td>
+      <td>High, Best</td>
+    </tr>
+    <tr>
+      <td>Agriculture Development Bank</td>
+      <td>2</td>
+      <td>Undervalued, Defensive</td>
+    </tr>
+    <tr>
+      <td>Nepal Investment Bank</td>
+      <td>2</td>
+      <td>Undervalued, Defensive</td>
+    </tr>
+    <tr>
+      <td>Aatmanirbhar Laghubitta Bittiya Sanstha Limited</td>
+      <td>2</td>
+      <td>Top, Defensive</td>
+    </tr>
+  </tbody>
+</table>
+        <div class="footer">
+            <p>This report is for informational purposes only.</p>
+            <p>Always conduct your own research before making investment decisions.</p>
+        </div>
+    </div>
+</body>
+</html>
