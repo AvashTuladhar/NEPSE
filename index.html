@@ -7,7 +7,6 @@
     
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Söhne:wght@400;500;600&display=swap');
 
     :root {
         --primary-color: #D4916C;
@@ -76,6 +75,55 @@
     .meta strong {
         color: var(--primary-color);
         font-weight: 600;
+    }
+    
+    /* Summary Statistics */
+    .summary-stats {
+        margin: 32px 0;
+        padding: 24px;
+        background: var(--surface-secondary);
+        border-radius: var(--card-radius);
+        border: 1px solid var(--border-color);
+    }
+    
+    .summary-stats h3 {
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+    
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 16px;
+        margin-top: 16px;
+    }
+    
+    .stat-card {
+        background: var(--surface-color);
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        border: 1px solid var(--border-color);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    .stat-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(212, 145, 108, 0.15);
+    }
+    
+    .stat-label {
+        color: var(--text-secondary);
+        font-size: 0.875rem;
+        margin-bottom: 8px;
+        font-weight: 500;
+    }
+    
+    .stat-value {
+        color: var(--primary-color);
+        font-size: 1.75rem;
+        font-weight: 600;
+        letter-spacing: -0.5px;
     }
     
     .toc {
@@ -215,6 +263,32 @@
         background-color: rgba(35, 33, 32, 0.3);
     }
     
+    /* Value color coding */
+    .positive {
+        color: var(--success-color);
+        font-weight: 500;
+    }
+    
+    .positive.strong {
+        color: #8FC78E;
+        font-weight: 600;
+    }
+    
+    .negative {
+        color: var(--danger-color);
+        font-weight: 500;
+    }
+    
+    .neutral {
+        color: var(--text-secondary);
+    }
+    
+    /* Risk flags styling */
+    .risk-flags {
+        font-size: 0.8125rem;
+        white-space: nowrap;
+    }
+    
     /* Links in tables */
     td a {
         color: var(--link-color);
@@ -280,7 +354,7 @@
             border: none;
             background: white;
         }
-        .toc, .footer {
+        .toc, .footer, .summary-stats {
             display: none;
         }
         th, td {
@@ -305,6 +379,10 @@
         .meta {
             color: #666;
         }
+        .positive, .negative, .neutral {
+            color: black !important;
+            font-weight: normal;
+        }
     }
     
     /* Mobile responsive */
@@ -322,10 +400,22 @@
         .toc-grid {
            grid-template-columns: 1fr; 
         }
+        .stats-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
         table {
             display: block;
             overflow-x: auto;
             white-space: nowrap;
+        }
+        .stat-value {
+            font-size: 1.5rem;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .stats-grid {
+            grid-template-columns: 1fr;
         }
     }
 </style>
