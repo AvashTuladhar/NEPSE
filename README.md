@@ -161,19 +161,19 @@ FINANCE:
 ====================================================================================================
 ⭐ TOP PICKS - COMPOSITE SCORING (Stocks in Multiple Strategies)
 ====================================================================================================
- 1. Radhi Bidhyut Company                         | Appeared in 5 strategies | High, High, Best, Strong, Best
- 2. Siddhartha Bank                               | Appeared in 4 strategies | Undervalued, Value, Best, Best
- 3. CEDB Holdings Limited                         | Appeared in 3 strategies | High, High, Strong
- 4. Mountain Energy Nepal Limited                 | Appeared in 3 strategies | High, High, Strong
- 5. Upper Syange Hydropower Limited               | Appeared in 3 strategies | High, Top, Best
- 6. Bhagawati Hydropower Development Company Limi | Appeared in 3 strategies | High, Defensive, Strong
- 7. Nepal Lube Oil                                | Appeared in 3 strategies | Undervalued, Value, Best
- 8. Sanima Bank                                   | Appeared in 3 strategies | Undervalued, Value, Top
- 9. Terhathum Power Company Limited               | Appeared in 3 strategies | Top, Best, Strong
-10. NESDO Sambridha Laghubitta Bittiye Sanstha Li | Appeared in 2 strategies | High, Defensive
-11. Sahas Urja Limited                            | Appeared in 2 strategies | High, Best
-12. Panchthar Power Company Ltd.                  | Appeared in 2 strategies | High, Best
-13. Agriculture Development Bank                  | Appeared in 2 strategies | Undervalued, Defensive
-14. Nepal Investment Bank                         | Appeared in 2 strategies | Undervalued, Defensive
-15. Aatmanirbhar Laghubitta Bittiya Sanstha Limit | Appeared in 2 strategies | Top, Defensive
+ 1. Nepal Lube Oil                                | Score: 1121.87 | Matches: 3 | Undervalued, Value, Best
+ 2. Union Hydropower Limited                      | Score: 395.89 | Matches: 1 | Best
+ 3. Radhi Bidhyut Company                         | Score: 359.35 | Matches: 5 | High, High, Best, Strong, Best
+ 4. United Modi Hydropower                        | Score: 341.78 | Matches: 1 | Best
+ 5. CEDB Holdings Limited                         | Score: 233.36 | Matches: 3 | High, High, Strong
+ 6. Bhagawati Hydropower Development Company Limi | Score: 226.82 | Matches: 3 | High, Defensive, Strong
+ 7. Mabilung Energy Limited                       | Score: 223.45 | Matches: 1 | Best
+ 8. Upper Syange Hydropower Limited               | Score: 203.03 | Matches: 3 | High, Top, Best
+ 9. Universal Power Company Ltd                   | Score: 171.89 | Matches: 1 | Best
+10. Sahas Urja Limited                            | Score: 158.15 | Matches: 2 | High, Best
+11. Mountain Energy Nepal Limited                 | Score: 146.77 | Matches: 3 | High, High, Strong
+12. Ngadi Group Power Ltd.                        | Score: 144.83 | Matches: 2 | Top, Best
+13. Siddhartha Bank                               | Score: 140.23 | Matches: 4 | Undervalued, Value, Best, Best
+14. Terhathum Power Company Limited               | Score: 137.35 | Matches: 3 | Top, Best, Strong
+15. Himalayan Distillery                          | Score: 127.98 | Matches: 1 | Strong
 ====================================================================================================
