@@ -1,7 +1,7 @@
 ====================================================================================================
 🎯 ENHANCED NPSTOCKS ANALYSIS REPORT
 ====================================================================================================
-Date: 2026-02-18
+Date: 2026-02-19
 Total Stocks: 203
 ====================================================================================================
 
@@ -104,15 +104,15 @@ Total Stocks: 203
 10. 📊 BEST RISK-ADJUSTED RETURNS
 ----------------------------------------------------------------------------------------------------
  1. Daramkhola Hydro Energy Limited                    | Rs   720.00 | Return:   1.64% | SD:   9.02%
- 2. Radhi Bidhyut Company                              | Rs   831.70 | Return:   1.39% | SD:   5.17%
- 3. Butwal Power                                       | Rs   711.00 | Return:   1.02% | SD:   5.93%
- 4. United Modi Hydropower                             | Rs   613.00 | Return:   0.93% | SD:   3.18%
- 5. Ngadi Group Power Ltd.                             | Rs   425.10 | Return:   0.86% | SD:   4.09%
- 6. Union Hydropower Limited                           | Rs   482.90 | Return:   0.64% | SD:   5.78%
- 7. Siddhartha Bank                                    | Rs   373.00 | Return:   0.63% | SD:   3.48%
- 8. Universal Power Company Ltd                        | Rs   373.00 | Return:   0.60% | SD:   4.82%
- 9. Sahas Urja Limited                                 | Rs   556.00 | Return:   0.56% | SD:   3.16%
-10. Asha Laghubitta Bittiya Sanstha Ltd                | Rs  1114.00 | Return:   0.53% | SD:   3.55%
+ 2. Radhi Bidhyut Company                              | Rs   831.70 | Return:   1.47% | SD:   5.19%
+ 3. Butwal Power                                       | Rs   711.00 | Return:   1.11% | SD:   5.96%
+ 4. Ngadi Group Power Ltd.                             | Rs   425.10 | Return:   0.92% | SD:   4.10%
+ 5. United Modi Hydropower                             | Rs   613.00 | Return:   0.84% | SD:   3.15%
+ 6. Union Hydropower Limited                           | Rs   482.90 | Return:   0.68% | SD:   5.83%
+ 7. Siddhartha Bank                                    | Rs   373.00 | Return:   0.63% | SD:   3.51%
+ 8. Universal Power Company Ltd                        | Rs   373.00 | Return:   0.63% | SD:   4.86%
+ 9. Sahas Urja Limited                                 | Rs   556.00 | Return:   0.59% | SD:   3.18%
+10. Asha Laghubitta Bittiya Sanstha Ltd                | Rs  1114.00 | Return:   0.58% | SD:   3.57%
 
 
 ====================================================================================================
