@@ -10,20 +10,20 @@
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
     :root {
-        --primary-color: #3B82F6;
-        --secondary-color: #60A5FA;
-        --background-color: #0B1120;
-        --surface-color: #111827;
-        --surface-secondary: #1E293B;
-        --border-color: #334155;
-        --text-primary: #F8FAFC;
-        --text-secondary: #94A3B8;
-        --text-muted: #64748B;
-        --success-color: #10B981;
-        --danger-color: #EF4444;
-        --hover-color: #1E293B;
-        --link-color: #38BDF8;
-        --accent-warm: #F59E0B;
+        --primary-color: #889063; /* Moss Green */
+        --secondary-color: #CFBB99; /* Tan */
+        --background-color: #18191A; /* Soothing Dark Grey */
+        --surface-color: #212223;
+        --surface-secondary: #2A2B2C;
+        --border-color: #354024; /* Kombu Green for elegant borders */
+        --text-primary: #E5D7C4; /* Bone */
+        --text-secondary: #CFBB99; /* Tan */
+        --text-muted: #8F887C;
+        --success-color: #889063; /* Moss Green */
+        --danger-color: #CD7B72; /* Soft Earthy Red */
+        --hover-color: rgba(53, 64, 36, 0.4); /* Kombu Green translucent */
+        --link-color: #889063;
+        --accent-warm: #4C3D19; /* Cafe Noir */
         --card-radius: 12px;
         --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     }
@@ -110,7 +110,7 @@
     
     .stat-card:hover {
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+        box-shadow: 0 4px 12px rgba(136, 144, 99, 0.15); /* Moss Green shadow */
     }
     
     .stat-label {
@@ -166,9 +166,9 @@
     .toc a:hover {
         background: var(--hover-color);
         color: var(--primary-color);
-        border-color: var(--accent-warm);
+        border-color: var(--primary-color);
         transform: translateY(-1px);
-        box-shadow: 0 2px 6px rgba(59, 130, 246, 0.15);
+        box-shadow: 0 2px 6px rgba(136, 144, 99, 0.15); /* Moss Green shadow */
     }
     
     h2 {
@@ -190,7 +190,7 @@
         left: 0;
         width: 60px;
         height: 2px;
-        background: linear-gradient(90deg, var(--primary-color), var(--accent-warm));
+        background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
         border-radius: 2px;
     }
     
@@ -205,7 +205,7 @@
     }
 
     .strategy-box {
-        background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(56, 189, 248, 0.06) 100%);
+        background: linear-gradient(135deg, rgba(136, 144, 99, 0.1) 0%, rgba(207, 187, 153, 0.05) 100%);
         padding: 18px 22px;
         border-radius: 10px;
         margin-bottom: 24px;
@@ -239,7 +239,7 @@
         font-weight: 600;
         text-align: left;
         padding: 16px 18px;
-        border-bottom: 2px solid var(--primary-color);
+        border-bottom: 2px solid var(--border-color);
         font-size: 0.8125rem;
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -261,7 +261,7 @@
     }
     
     tr:nth-child(even) {
-        background-color: rgba(30, 41, 59, 0.4);
+        background-color: rgba(255, 255, 255, 0.02);
     }
     
     /* Value color coding */
@@ -271,7 +271,7 @@
     }
     
     .positive.strong {
-        color: #34D399;
+        color: #A6AF80; /* Lighter Moss Green */
         font-weight: 600;
     }
     
@@ -333,12 +333,12 @@
     }
     
     ::-webkit-scrollbar-thumb:hover {
-        background: #475569;
+        background: var(--primary-color);
     }
     
     /* Selection */
     ::selection {
-        background: rgba(59, 130, 246, 0.3);
+        background: rgba(136, 144, 99, 0.3); /* Moss Green */
         color: var(--text-primary);
     }
     
