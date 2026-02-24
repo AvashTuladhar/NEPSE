@@ -10,20 +10,20 @@
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
     :root {
-        --primary-color: #D4916C;
-        --secondary-color: #B8856A;
-        --background-color: #0F0D0B;
-        --surface-color: #1A1816;
-        --surface-secondary: #232120;
-        --border-color: #2D2B28;
-        --text-primary: #E8E3DB;
-        --text-secondary: #B8AFA3;
-        --text-muted: #8A8074;
-        --success-color: #7BAA7A;
-        --danger-color: #D87C7C;
-        --hover-color: #252320;
-        --link-color: #D4916C;
-        --accent-warm: #CC785C;
+        --primary-color: #3B82F6;
+        --secondary-color: #60A5FA;
+        --background-color: #0B1120;
+        --surface-color: #111827;
+        --surface-secondary: #1E293B;
+        --border-color: #334155;
+        --text-primary: #F8FAFC;
+        --text-secondary: #94A3B8;
+        --text-muted: #64748B;
+        --success-color: #10B981;
+        --danger-color: #EF4444;
+        --hover-color: #1E293B;
+        --link-color: #38BDF8;
+        --accent-warm: #F59E0B;
         --card-radius: 12px;
         --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     }
@@ -110,7 +110,7 @@
     
     .stat-card:hover {
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(212, 145, 108, 0.15);
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
     }
     
     .stat-label {
@@ -168,7 +168,7 @@
         color: var(--primary-color);
         border-color: var(--accent-warm);
         transform: translateY(-1px);
-        box-shadow: 0 2px 6px rgba(204, 120, 92, 0.15);
+        box-shadow: 0 2px 6px rgba(59, 130, 246, 0.15);
     }
     
     h2 {
@@ -205,7 +205,7 @@
     }
 
     .strategy-box {
-        background: linear-gradient(135deg, rgba(204, 120, 92, 0.08) 0%, rgba(212, 145, 108, 0.06) 100%);
+        background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(56, 189, 248, 0.06) 100%);
         padding: 18px 22px;
         border-radius: 10px;
         margin-bottom: 24px;
@@ -234,7 +234,7 @@
     }
     
     th {
-        background: #0F0D0B;
+        background: var(--background-color);
         color: var(--primary-color);
         font-weight: 600;
         text-align: left;
@@ -261,7 +261,7 @@
     }
     
     tr:nth-child(even) {
-        background-color: rgba(35, 33, 32, 0.3);
+        background-color: rgba(30, 41, 59, 0.4);
     }
     
     /* Value color coding */
@@ -271,7 +271,7 @@
     }
     
     .positive.strong {
-        color: #8FC78E;
+        color: #34D399;
         font-weight: 600;
     }
     
@@ -333,12 +333,12 @@
     }
     
     ::-webkit-scrollbar-thumb:hover {
-        background: #3D3A36;
+        background: #475569;
     }
     
     /* Selection */
     ::selection {
-        background: rgba(212, 145, 108, 0.3);
+        background: rgba(59, 130, 246, 0.3);
         color: var(--text-primary);
     }
     
