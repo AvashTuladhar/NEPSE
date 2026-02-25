@@ -10,22 +10,23 @@
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
     :root {
-        --primary-color: #889063; /* Moss Green */
-        --secondary-color: #CFBB99; /* Tan */
-        --background-color: #18191A; /* Soothing Dark Grey */
-        --surface-color: #212223;
-        --surface-secondary: #2A2B2C;
-        --border-color: #354024; /* Kombu Green for elegant borders */
-        --text-primary: #E5D7C4; /* Bone */
-        --text-secondary: #CFBB99; /* Tan */
-        --text-muted: #8F887C;
-        --success-color: #889063; /* Moss Green */
-        --danger-color: #CD7B72; /* Soft Earthy Red */
-        --hover-color: rgba(53, 64, 36, 0.4); /* Kombu Green translucent */
-        --link-color: #889063;
-        --accent-warm: #4C3D19; /* Cafe Noir */
-        --card-radius: 12px;
-        --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        /* Apple-inspired Light Theme */
+        --primary-color: #0071e3; /* Apple System Blue */
+        --secondary-color: #86868b; /* Sleek Gray */
+        --background-color: #f5f5f7; /* Apple Standard Gray */
+        --surface-color: #ffffff; /* White Cards */
+        --surface-secondary: #f5f5f7;
+        --border-color: #d2d2d7; /* Soft Border */
+        --text-primary: #1d1d1f; /* Apple Dark Text */
+        --text-secondary: #86868b; /* Apple Secondary Text */
+        --text-muted: #86868b;
+        --success-color: #34c759; /* Apple Green */
+        --danger-color: #ff3b30; /* Apple Red */
+        --hover-color: rgba(0, 0, 0, 0.04); /* Subtle Hover */
+        --link-color: #0071e3;
+        --accent-warm: #ff9500; /* Apple Orange */
+        --card-radius: 16px;
+        --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
 
     * {
@@ -50,7 +51,7 @@
         background: var(--surface-color);
         padding: 48px;
         border-radius: var(--card-radius);
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
         border: 1px solid var(--border-color);
     }
     
@@ -110,7 +111,7 @@
     
     .stat-card:hover {
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(136, 144, 99, 0.15); /* Moss Green shadow */
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
     }
     
     .stat-label {
@@ -168,7 +169,7 @@
         color: var(--primary-color);
         border-color: var(--primary-color);
         transform: translateY(-1px);
-        box-shadow: 0 2px 6px rgba(136, 144, 99, 0.15); /* Moss Green shadow */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     }
     
     h2 {
@@ -190,7 +191,7 @@
         left: 0;
         width: 60px;
         height: 2px;
-        background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+        background: var(--primary-color);
         border-radius: 2px;
     }
     
@@ -205,7 +206,7 @@
     }
 
     .strategy-box {
-        background: linear-gradient(135deg, rgba(136, 144, 99, 0.1) 0%, rgba(207, 187, 153, 0.05) 100%);
+        background: rgba(0, 113, 227, 0.08); /* Light blue tint */
         padding: 18px 22px;
         border-radius: 10px;
         margin-bottom: 24px;
@@ -261,7 +262,7 @@
     }
     
     tr:nth-child(even) {
-        background-color: rgba(255, 255, 255, 0.02);
+        background-color: rgba(0, 0, 0, 0.02);
     }
     
     /* Value color coding */
@@ -271,7 +272,7 @@
     }
     
     .positive.strong {
-        color: #A6AF80; /* Lighter Moss Green */
+        color: #248a3d; /* Darker Apple green for emphasis */
         font-weight: 600;
     }
     
@@ -338,7 +339,7 @@
     
     /* Selection */
     ::selection {
-        background: rgba(136, 144, 99, 0.3); /* Moss Green */
+        background: rgba(0, 113, 227, 0.2); /* Apple Blue transparent */
         color: var(--text-primary);
     }
     
@@ -426,7 +427,7 @@
     <div class="container">
         <h1>📊 Enhanced NpStocks Analysis Report</h1>
         <div class="meta">
-            <strong>Date:</strong> 2026-02-24 &nbsp;|&nbsp;
+            <strong>Date:</strong> 2026-02-25 &nbsp;|&nbsp;
             <strong>Total Stocks Analyzed:</strong> 211 &nbsp;|&nbsp;
             <strong>Investment Strategies:</strong> 10
         </div>
