@@ -1,8 +1,8 @@
 ====================================================================================================
 🎯 ENHANCED NPSTOCKS ANALYSIS REPORT
 ====================================================================================================
-Date: 2026-03-27
-Total Stocks: 207
+Date: 2026-03-29
+Total Stocks: 208
 ====================================================================================================
 
 
@@ -79,14 +79,14 @@ Total Stocks: 207
 ----------------------------------------------------------------------------------------------------
  1. Samaj Laghubittya Bittiya Sanstha Limited          | Rs  1875.80 | Beta:  -1.00 | YTD:   0.00%
  2. Aatmanirbhar Laghubitta Bittiya Sanstha Limited    | Rs  6647.00 | Beta:   0.29 | YTD:   9.33%
- 3. Nepal Investment Bank                              | Rs   224.50 | Beta:   0.58 | YTD:  17.23%
- 4. Bhagawati Hydropower Development Company Limited   | Rs   785.00 | Beta:   0.62 | YTD:   2.61%
- 5. Standard Chartered Bank                            | Rs   677.00 | Beta:   0.66 | YTD:   7.12%
- 6. Mahila Lagubitta Bittiya Sanstha Limited           | Rs  1979.00 | Beta:   0.71 | YTD:   1.23%
- 7. Rawa Energy Development Limited                    | Rs   715.00 | Beta:   0.75 | YTD:   0.85%
- 8. Agriculture Development Bank                       | Rs   333.10 | Beta:   0.79 | YTD:  12.92%
- 9. Unique Nepal Laghubitta Bittiya Sanstha Limited    | Rs  1930.00 | Beta:   0.79 | YTD:   2.17%
-10. NESDO Sambridha Laghubitta Bittiye Sanstha Limited | Rs  1605.00 | Beta:   0.81 | YTD:   7.65%
+ 3. CYC Nepal Laghubitta Bittiya Sanstha Limited       | Rs  1634.00 | Beta:   0.53 | YTD:  -0.31%
+ 4. Nepal Investment Bank                              | Rs   224.50 | Beta:   0.58 | YTD:  17.23%
+ 5. Bhagawati Hydropower Development Company Limited   | Rs   785.00 | Beta:   0.62 | YTD:   2.61%
+ 6. Standard Chartered Bank                            | Rs   677.00 | Beta:   0.66 | YTD:   7.12%
+ 7. Mahila Lagubitta Bittiya Sanstha Limited           | Rs  1979.00 | Beta:   0.71 | YTD:   1.23%
+ 8. Rawa Energy Development Limited                    | Rs   715.00 | Beta:   0.75 | YTD:   0.85%
+ 9. Agriculture Development Bank                       | Rs   333.10 | Beta:   0.79 | YTD:  12.92%
+10. Unique Nepal Laghubitta Bittiya Sanstha Limited    | Rs  1930.00 | Beta:   0.79 | YTD:   2.17%
 
 8. 🔄 TURNAROUND OPPORTUNITIES
 ----------------------------------------------------------------------------------------------------
@@ -116,13 +116,13 @@ Total Stocks: 207
  1. Mabilung Energy Limited                            | Rs   773.00 | Return:   3.02% | SD:   9.73%
  2. Daramkhola Hydro Energy Limited                    | Rs   732.90 | Return:   2.52% | SD:   7.76%
  3. Bungal Hydro Limited                               | Rs   678.00 | Return:   2.25% | SD:   8.87%
- 4. Butwal Power                                       | Rs   750.00 | Return:   1.24% | SD:   7.03%
- 5. Ngadi Group Power Ltd.                             | Rs   486.10 | Return:   1.22% | SD:   4.39%
- 6. Union Hydropower Limited                           | Rs   560.00 | Return:   1.17% | SD:   5.68%
- 7. Asha Laghubitta Bittiya Sanstha Ltd                | Rs  1293.90 | Return:   1.00% | SD:   3.90%
- 8. Universal Power Company Ltd                        | Rs   417.00 | Return:   0.90% | SD:   4.76%
- 9. Synergy Power Development Ltd.                     | Rs   455.10 | Return:   0.87% | SD:   5.04%
-10. Sahas Urja Limited                                 | Rs   636.00 | Return:   0.83% | SD:   3.48%
+ 4. Ngadi Group Power Ltd.                             | Rs   486.10 | Return:   1.28% | SD:   4.42%
+ 5. Butwal Power                                       | Rs   750.00 | Return:   1.26% | SD:   7.10%
+ 6. Union Hydropower Limited                           | Rs   560.00 | Return:   1.13% | SD:   5.73%
+ 7. Asha Laghubitta Bittiya Sanstha Ltd                | Rs  1293.90 | Return:   1.07% | SD:   3.91%
+ 8. Synergy Power Development Ltd.                     | Rs   455.10 | Return:   0.85% | SD:   5.09%
+ 9. Universal Power Company Ltd                        | Rs   417.00 | Return:   0.85% | SD:   4.80%
+10. Sahas Urja Limited                                 | Rs   636.00 | Return:   0.83% | SD:   3.51%
 
 
 ====================================================================================================
@@ -177,11 +177,11 @@ FINANCE:
  6. Prabhu Bank                                   | Appeared in 3 strategies | Undervalued, Value, Best
  7. Nepal Investment Bank                         | Appeared in 3 strategies | Undervalued, Value, Defensive
  8. Nepal Hydro Developers Ltd.                   | Appeared in 2 strategies | High, Strong
- 9. NESDO Sambridha Laghubitta Bittiye Sanstha Li | Appeared in 2 strategies | High, Defensive
-10. Sahas Urja Limited                            | Appeared in 2 strategies | High, Best
-11. Panchthar Power Company Ltd.                  | Appeared in 2 strategies | High, Best
-12. Samriddhi Finance Company Limited             | Appeared in 2 strategies | High, Turnaround
-13. Siddhartha Bank                               | Appeared in 2 strategies | Undervalued, Value
-14. Sanima Bank                                   | Appeared in 2 strategies | Undervalued, Value
-15. Machhapuchhre Bank                            | Appeared in 2 strategies | Undervalued, Value
+ 9. Sahas Urja Limited                            | Appeared in 2 strategies | High, Best
+10. Panchthar Power Company Ltd.                  | Appeared in 2 strategies | High, Best
+11. Samriddhi Finance Company Limited             | Appeared in 2 strategies | High, Turnaround
+12. Siddhartha Bank                               | Appeared in 2 strategies | Undervalued, Value
+13. Sanima Bank                                   | Appeared in 2 strategies | Undervalued, Value
+14. Machhapuchhre Bank                            | Appeared in 2 strategies | Undervalued, Value
+15. Asha Laghubitta Bittiya Sanstha Ltd           | Appeared in 2 strategies | Top, Best
 ====================================================================================================
