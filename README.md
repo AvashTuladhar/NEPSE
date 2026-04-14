@@ -158,19 +158,19 @@ FINANCE:
 ====================================================================================================
 ⭐ TOP PICKS - COMPOSITE SCORING (Stocks in Multiple Strategies)
 ====================================================================================================
- 1. Radhi Bidhyut Company                         | Appeared in 4 strategies | High, High, Strong, Best
- 2. CEDB Holdings Limited                         | Appeared in 3 strategies | High, High, Strong
- 3. Mountain Energy Nepal Limited                 | Appeared in 3 strategies | High, High, Strong
- 4. Bhagawati Hydropower Development Company Limi | Appeared in 3 strategies | High, Defensive, Strong
- 5. Sahas Urja Limited                            | Appeared in 3 strategies | High, Best, Best
- 6. Nepal Bank                                    | Appeared in 3 strategies | Undervalued, Value, Best
- 7. Prabhu Bank                                   | Appeared in 3 strategies | Undervalued, Value, Best
- 8. Nepal Investment Bank                         | Appeared in 3 strategies | Undervalued, Value, Defensive
- 9. Himalayan Hydropower Limited                  | Appeared in 3 strategies | Top, Best, Turnaround
-10. Aatmanirbhar Laghubitta Bittiya Sanstha Limit | Appeared in 3 strategies | Top, Best, Defensive
-11. NESDO Sambridha Laghubitta Bittiye Sanstha Li | Appeared in 2 strategies | High, Defensive
-12. Panchthar Power Company Ltd.                  | Appeared in 2 strategies | High, Best
-13. Siddhartha Bank                               | Appeared in 2 strategies | Undervalued, Best
-14. Agriculture Development Bank                  | Appeared in 2 strategies | Undervalued, Defensive
-15. Machhapuchhre Bank                            | Appeared in 2 strategies | Undervalued, Value
+ 1. Radhi Bidhyut Company                         | Appeared in 4 strategies | High Quality Stocks, High Profitability Leaders, Strong Balance Sheet, Best Risk-Adjusted Returns
+ 2. CEDB Holdings Limited                         | Appeared in 3 strategies | High Quality Stocks, High Profitability Leaders, Strong Balance Sheet
+ 3. Mountain Energy Nepal Limited                 | Appeared in 3 strategies | High Quality Stocks, High Profitability Leaders, Strong Balance Sheet
+ 4. Bhagawati Hydropower Development Company Limi | Appeared in 3 strategies | High Profitability Leaders, Defensive Low-Risk, Strong Balance Sheet
+ 5. Sahas Urja Limited                            | Appeared in 3 strategies | High Profitability Leaders, Best 12-Week Performers, Best Risk-Adjusted Returns
+ 6. Nepal Bank                                    | Appeared in 3 strategies | Undervalued High Earners, Value + Momentum Combo, Best 12-Week Performers
+ 7. Prabhu Bank                                   | Appeared in 3 strategies | Undervalued High Earners, Value + Momentum Combo, Best 12-Week Performers
+ 8. Nepal Investment Bank                         | Appeared in 3 strategies | Undervalued High Earners, Value + Momentum Combo, Defensive Low-Risk
+ 9. Himalayan Hydropower Limited                  | Appeared in 3 strategies | Top Weekly Momentum, Best 12-Week Performers, Turnaround Opportunities
+10. Aatmanirbhar Laghubitta Bittiya Sanstha Limit | Appeared in 3 strategies | Top Weekly Momentum, Best 12-Week Performers, Defensive Low-Risk
+11. NESDO Sambridha Laghubitta Bittiye Sanstha Li | Appeared in 2 strategies | High Profitability Leaders, Defensive Low-Risk
+12. Panchthar Power Company Ltd.                  | Appeared in 2 strategies | High Profitability Leaders, Best 12-Week Performers
+13. Siddhartha Bank                               | Appeared in 2 strategies | Undervalued High Earners, Best Risk-Adjusted Returns
+14. Agriculture Development Bank                  | Appeared in 2 strategies | Undervalued High Earners, Defensive Low-Risk
+15. Machhapuchhre Bank                            | Appeared in 2 strategies | Undervalued High Earners, Value + Momentum Combo
 ====================================================================================================
