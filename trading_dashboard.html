@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Trading Simulator Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --panel-bg: rgba(30, 41, 59, 0.7);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #3b82f6;
+            --profit: #10b981;
+            --loss: #ef4444;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #020617 0%, #0f172a 100%);
+            color: var(--text-main);
+            margin: 0;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+        .dashboard-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+        h1 { margin: 0; font-size: 2rem; font-weight: 700; background: linear-gradient(to right, #60a5fa, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        h2 { font-size: 1.25rem; margin-bottom: 1rem; font-weight: 600; }
+        .glass-panel {
+            background: var(--panel-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .glass-panel:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .stat-card {
+            text-align: center;
+        }
+        .stat-label { color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .stat-value { font-size: 2rem; font-weight: 700; }
+        .stat-value.profit { color: var(--profit); }
+        .chart-container { height: 350px; width: 100%; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--text-muted); font-weight: 500; font-size: 0.875rem; }
+        tr:hover td { background: rgba(255, 255, 255, 0.03); }
+        .profit { color: var(--profit); font-weight: 600; }
+        .loss { color: var(--loss); font-weight: 600; }
+        .badge { padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; }
+        .badge.profit { background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+        .badge.loss { background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="header">
+            <h1>Aurora Trading Simulator</h1>
+            <div style="color: var(--text-muted);">Last Updated: 2026-08-08 19:37:51</div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="glass-panel stat-card">
+                <div class="stat-label">Available Capital</div>
+                <div class="stat-value">रू 176,493.10</div>
+            </div>
+            <div class="glass-panel stat-card">
+                <div class="stat-label">Active Positions</div>
+                <div class="stat-value">10 / 10</div>
+            </div>
+            <div class="glass-panel stat-card">
+                <div class="stat-label">Total Realized P&L</div>
+                <div class="stat-value profit">
+                    रू 0.00
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-panel">
+            <h2>Capital History (Equity Curve)</h2>
+            <div class="chart-container">
+                <canvas id="equityChart"></canvas>
+            </div>
+        </div>
+
+        <div class="stats-grid" style="grid-template-columns: 1fr;">
+            <div class="glass-panel">
+                <h2>Active Portfolio</h2>
+                <div style="overflow-x: auto;">
+                    <table>
+                        <tr><th>Company</th><th>Qty</th><th>Entry Price</th><th>Entry Date</th></tr>
+                        <tr><td>NESDO Sambridha Laghubitta Bittiye Sanstha Limited</td><td>34</td><td>रू 1,458.00</td><td>2026-08-08 19:21:21</td></tr><tr><td>CEDB Holdings Limited</td><td>20</td><td>रू 2,200.00</td><td>2026-08-08 19:21:21</td></tr><tr><td>Asha Laghubitta Bittiya Sanstha Ltd</td><td>37</td><td>रू 1,091.00</td><td>2026-08-08 19:21:21</td></tr><tr><td>Aviyan Laghubitta Bittiya Sanstha Limited</td><td>34</td><td>रू 1,053.00</td><td>2026-08-08 19:21:21</td></tr><tr><td>Mahuli Samudayik Laghubitta Sanstha Ltd.</td><td>26</td><td>रू 1,258.00</td><td>2026-08-08 19:21:21</td></tr><tr><td>Nepal Lube Oil</td><td>110</td><td>रू 269.40</td><td>2026-08-08 19:21:21</td></tr><tr><td>Machhapuchhre Bank</td><td>105</td><td>रू 255.00</td><td>2026-08-08 19:21:21</td></tr><tr><td>Daramkhola Hydro Energy Limited</td><td>41</td><td>रू 584.90</td><td>2026-08-08 19:21:21</td></tr><tr><td>Bikash Hydropower Company Limited</td><td>44</td><td>रू 489.00</td><td>2026-08-08 19:21:21</td></tr><tr><td>Mandu Hydropower Limited</td><td>24</td><td>रू 798.00</td><td>2026-08-08 19:21:21</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="glass-panel">
+            <h2>Closed Trades History</h2>
+            <div style="overflow-x: auto;">
+                <table>
+                    <tr><th>Company</th><th>Qty</th><th>Entry Price</th><th>Exit Price</th><th>P&L</th><th>Reason</th></tr>
+                    <tr><td colspan='6' style='text-align: center; color: #a0aec0;'>No closed trades yet</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('equityChart').getContext('2d');
+        const gradient = ctx.createLinearGradient(0, 0, 0, 350);
+        gradient.addColorStop(0, 'rgba(59, 130, 246, 0.5)');
+        gradient.addColorStop(1, 'rgba(59, 130, 246, 0.0)');
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["2026-08-08 19:21:21", "2026-08-08 19:21:28", "2026-08-08 19:21:49", "2026-08-08 19:30:31", "2026-08-08 19:33:20", "2026-08-08 19:36:47", "2026-08-08 19:37:51"],
+                datasets: [{
+                    label: 'Available Capital (NRS)',
+                    data: [176493.1, 176493.1, 176493.1, 176493.1, 176493.1, 176493.1, 176493.1],
+                    borderColor: '#3b82f6',
+                    backgroundColor: gradient,
+                    borderWidth: 2,
+                    pointBackgroundColor: '#60a5fa',
+                    pointBorderColor: '#0f172a',
+                    pointBorderWidth: 2,
+                    pointRadius: 4,
+                    pointHoverRadius: 6,
+                    fill: true,
+                    tension: 0.3
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        backgroundColor: 'rgba(15, 23, 42, 0.9)',
+                        titleColor: '#f8fafc',
+                        bodyColor: '#cbd5e1',
+                        borderColor: 'rgba(255,255,255,0.1)',
+                        borderWidth: 1,
+                        padding: 12,
+                        displayColors: false,
+                        callbacks: {
+                            label: function(context) {
+                                return 'रू ' + context.parsed.y.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        grid: { color: 'rgba(255, 255, 255, 0.05)', drawBorder: false },
+                        ticks: { color: '#94a3b8' }
+                    },
+                    y: {
+                        grid: { color: 'rgba(255, 255, 255, 0.05)', drawBorder: false },
+                        ticks: {
+                            color: '#94a3b8',
+                            callback: function(value) { return 'रू ' + value.toLocaleString(); }
+                        }
+                    }
+                },
+                interaction: { intersect: false, mode: 'index' }
+            }
+        });
+    </script>
+</body>
+</html>
+        
