@@ -83,13 +83,17 @@
     <div class="dashboard-container">
         <div class="header">
             <h1>Aurora Trading Simulator</h1>
-            <div style="color: var(--text-muted);">Last Updated: 2026-08-08 20:05:31</div>
+            <div style="color: var(--text-muted);">Last Updated: 2026-08-08 20:10:08</div>
         </div>
 
-        <div class="stats-grid">
+        <div class="stats-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
             <div class="glass-panel stat-card">
-                <div class="stat-label">Available Capital</div>
+                <div class="stat-label">Total Equity</div>
                 <div class="stat-value">रू 500,000.00</div>
+            </div>
+            <div class="glass-panel stat-card">
+                <div class="stat-label">Available Liquid Cash</div>
+                <div class="stat-value">रू 209,696.00</div>
             </div>
             <div class="glass-panel stat-card">
                 <div class="stat-label">Active Positions</div>
@@ -142,10 +146,10 @@
         new Chart(ctx, {
             type: 'line',
             data: {
-                labels: ["2026-08-08 20:05:31"],
+                labels: ["2026-08-08 19:50:33", "2026-08-08 19:53:15", "2026-08-08 19:58:05", "2026-08-08 20:09:30", "2026-08-08 20:10:08"],
                 datasets: [{
                     label: 'Available Capital (NRS)',
-                    data: [500000.0],
+                    data: [500000.0, 500000.0, 500000.0, 500000.0, 500000.0],
                     borderColor: '#3b82f6',
                     backgroundColor: gradient,
                     borderWidth: 2,
