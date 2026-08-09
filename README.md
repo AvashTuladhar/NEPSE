@@ -1,8 +1,8 @@
 ====================================================================================================
 🎯 ENHANCED NPSTOCKS ANALYSIS REPORT
 ====================================================================================================
-Date: 2026-08-08
-Total Stocks: 139
+Date: 2026-08-09
+Total Stocks: 137
 ====================================================================================================
 
 
@@ -107,10 +107,11 @@ Total Stocks: 139
  2. Daramkhola Hydro Energy Limited               | Rs   584.90 | Return:   0.72% | SD:   6.75%
  3. Bikash Hydropower Company Limited             | Rs   489.00 | Return:   0.65% | SD:   8.85%
  4. Yambaling Hydropower Limited                  | Rs   621.80 | Return:   0.51% | SD:   7.06%
- 5. Asha Laghubitta Bittiya Sanstha Ltd           | Rs  1091.00 | Return:   0.31% | SD:   3.76%
- 6. Api Power                                     | Rs   330.00 | Return:   0.27% | SD:   3.27%
- 7. Upper Hewakhola Hydropower Company Limited    | Rs   582.00 | Return:   0.25% | SD:   3.87%
- 8. Mountain Energy Nepal Limited                 | Rs   595.10 | Return:   0.22% | SD:   2.58%
+ 5. Asha Laghubitta Bittiya Sanstha Ltd           | Rs  1091.00 | Return:   0.36% | SD:   3.78%
+ 6. Manjushree Financial Institution              | Rs   775.00 | Return:   0.31% | SD:   3.80%
+ 7. Api Power                                     | Rs   330.00 | Return:   0.29% | SD:   3.30%
+ 8. Upper Hewakhola Hydropower Company Limited    | Rs   582.00 | Return:   0.29% | SD:   3.90%
+ 9. Mountain Energy Nepal Limited                 | Rs   595.10 | Return:   0.27% | SD:   2.57%
 
 
 ====================================================================================================
