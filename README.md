@@ -5,6 +5,26 @@ Date: 2026-08-12
 Total Stocks: 137
 ====================================================================================================
 
+====================================================================================================
+⭐ TOP PICKS - COMPOSITE SCORING (Stocks in Multiple Strategies)
+====================================================================================================
+ 1. NESDO Sambridha Laghubitta Bittiye Sanst | Appeared in 4 strategies | High Quality Stocks, High Profitability Leaders, Defensive Low-Risk, Strong Balance Sheet
+ 2. Mountain Energy Nepal Limited            | Appeared in 4 strategies | High Profitability Leaders, Top Weekly Momentum, Defensive Low-Risk, Best Risk-Adjusted Returns
+ 3. Upper Hewakhola Hydropower Company Limit | Appeared in 4 strategies | High Profitability Leaders, Top Weekly Momentum, Best 12-Week Performers, Best Risk-Adjusted Returns
+ 4. Aviyan Laghubitta Bittiya Sanstha Limite | Appeared in 3 strategies | High Quality Stocks, Top Weekly Momentum, Strong Balance Sheet
+ 5. CEDB Holdings Limited                    | Appeared in 3 strategies | High Quality Stocks, High Profitability Leaders, Strong Balance Sheet
+ 6. Jeevan Bikas Laghubitta Bittya Sanstha L | Appeared in 3 strategies | High Quality Stocks, Defensive Low-Risk, Strong Balance Sheet
+ 7. Deprosc Laghubitta                       | Appeared in 3 strategies | High Quality Stocks, Top Weekly Momentum, Strong Balance Sheet
+ 8. Mahuli Samudayik Laghubitta Sanstha Ltd. | Appeared in 2 strategies | High Quality Stocks, Strong Balance Sheet
+ 9. Infinity Laghubitta Bittiya Sanstha Limi | Appeared in 2 strategies | High Quality Stocks, Strong Balance Sheet
+10. Global IME Laghubitta Bittiya Sanstha    | Appeared in 2 strategies | High Quality Stocks, Strong Balance Sheet
+11. Radhi Bidhyut Company                    | Appeared in 2 strategies | High Quality Stocks, High Profitability Leaders
+12. Api Power                                | Appeared in 2 strategies | High Profitability Leaders, Best Risk-Adjusted Returns
+13. Mandu Hydropower Limited                 | Appeared in 2 strategies | High Profitability Leaders, Defensive Low-Risk
+14. Nepal Lube Oil                           | Appeared in 2 strategies | Undervalued High Earners, Defensive Low-Risk
+15. Machhapuchhre Bank                       | Appeared in 2 strategies | Undervalued High Earners, Defensive Low-Risk
+====================================================================================================
+
 
 1. 💎 HIGH QUALITY STOCKS
 ----------------------------------------------------------------------------------------------------
@@ -111,6 +131,19 @@ Total Stocks: 137
  6. Manjushree Financial Institution              | Rs   783.00 | Return:   0.30% | SD:   3.70%
  7. Api Power                                     | Rs   331.00 | Return:   0.30% | SD:   2.56%
 
+11. 🚨 STOCKS TO AVOID (RED FLAGS)
+----------------------------------------------------------------------------------------------------
+ 1. NIC ASIA Laghubitta Bittiya Sanstha Limited   | Rs   548.50 | ROE: -15.41% | Margin: -15.55% | PE: -27.81
+ 2. Bottlers Nepal (Terai)                        | Rs 11600.00 | ROE: -10.81% | Margin:  -4.91% | PE: -34.12
+ 3. Shiva Shree Hydropower Ltd                    | Rs   200.00 | ROE: -10.64% | Margin: -31.75% | PE: -49.58
+ 4. Karnali Development Bank                      | Rs   810.00 | ROE:  -9.61% | Margin: -11.10% | PE: -82.83
+ 5. Trishuli Jal Vidhyut Company Limited          | Rs   474.00 | ROE:  -7.32% | Margin:   0.00% | PE: -79.42
+ 6. Barahi Hydropower Public Limited              | Rs   485.00 | ROE:  -6.68% | Margin: -29.16% | PE: -138.63
+ 7. Nepal Finance                                 | Rs   565.00 | ROE:  -6.00% | Margin: -16.32% | PE: -74.81
+ 8. Himal Dolakha Hydropower Company Limited      | Rs   207.00 | ROE:  -4.02% | Margin: -70.16% | PE: -67.88
+ 9. Bottlers Nepal (Balaju)                       | Rs 14500.00 | ROE:  -3.07% | Margin:  -1.69% | PE: -143.71
+10. Peoples Power Limited                         | Rs   324.00 | ROE:  -2.67% | Margin: -28.05% | PE: -136.51
+
 
 ====================================================================================================
 🏢 SECTOR-SPECIFIC ANALYSIS
@@ -166,25 +199,4 @@ MICROFINANCE:
 
 ====================================================================================================
 ✅ Analysis Complete!
-====================================================================================================
-
-
-====================================================================================================
-⭐ TOP PICKS - COMPOSITE SCORING (Stocks in Multiple Strategies)
-====================================================================================================
- 1. NESDO Sambridha Laghubitta Bittiye Sanst | Appeared in 4 strategies | High Quality Stocks, High Profitability Leaders, Defensive Low-Risk, Strong Balance Sheet
- 2. Mountain Energy Nepal Limited            | Appeared in 4 strategies | High Profitability Leaders, Top Weekly Momentum, Defensive Low-Risk, Best Risk-Adjusted Returns
- 3. Upper Hewakhola Hydropower Company Limit | Appeared in 4 strategies | High Profitability Leaders, Top Weekly Momentum, Best 12-Week Performers, Best Risk-Adjusted Returns
- 4. Aviyan Laghubitta Bittiya Sanstha Limite | Appeared in 3 strategies | High Quality Stocks, Top Weekly Momentum, Strong Balance Sheet
- 5. CEDB Holdings Limited                    | Appeared in 3 strategies | High Quality Stocks, High Profitability Leaders, Strong Balance Sheet
- 6. Jeevan Bikas Laghubitta Bittya Sanstha L | Appeared in 3 strategies | High Quality Stocks, Defensive Low-Risk, Strong Balance Sheet
- 7. Deprosc Laghubitta                       | Appeared in 3 strategies | High Quality Stocks, Top Weekly Momentum, Strong Balance Sheet
- 8. Mahuli Samudayik Laghubitta Sanstha Ltd. | Appeared in 2 strategies | High Quality Stocks, Strong Balance Sheet
- 9. Infinity Laghubitta Bittiya Sanstha Limi | Appeared in 2 strategies | High Quality Stocks, Strong Balance Sheet
-10. Global IME Laghubitta Bittiya Sanstha    | Appeared in 2 strategies | High Quality Stocks, Strong Balance Sheet
-11. Radhi Bidhyut Company                    | Appeared in 2 strategies | High Quality Stocks, High Profitability Leaders
-12. Api Power                                | Appeared in 2 strategies | High Profitability Leaders, Best Risk-Adjusted Returns
-13. Mandu Hydropower Limited                 | Appeared in 2 strategies | High Profitability Leaders, Defensive Low-Risk
-14. Nepal Lube Oil                           | Appeared in 2 strategies | Undervalued High Earners, Defensive Low-Risk
-15. Machhapuchhre Bank                       | Appeared in 2 strategies | Undervalued High Earners, Defensive Low-Risk
 ====================================================================================================
