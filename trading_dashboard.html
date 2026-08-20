@@ -16,6 +16,7 @@
             --accent: #3b82f6;
             --profit: #10b981;
             --loss: #ef4444;
+            --warning: #f59e0b;
             --border: rgba(255, 255, 255, 0.1);
         }
         body {
@@ -65,36 +66,55 @@
         }
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.25rem;
             margin-bottom: 2rem;
         }
         .stat-card {
             text-align: center;
         }
-        .stat-label { color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
-        .stat-value { font-size: 2rem; font-weight: 700; }
+        .stat-label { color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        .stat-value { font-size: 1.75rem; font-weight: 700; }
         .stat-value.profit { color: var(--profit); }
+        .stat-value.loss { color: var(--loss); }
+        .stat-value.warning { color: var(--warning); }
         .chart-container { height: 350px; width: 100%; }
         table { width: 100%; border-collapse: collapse; }
-        th, td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); }
-        th { color: var(--text-muted); font-weight: 500; font-size: 0.875rem; }
+        th, td { padding: 0.85rem 1rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { color: var(--text-muted); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
         tr:hover td { background: rgba(255, 255, 255, 0.03); }
         .profit { color: var(--profit); font-weight: 600; }
         .loss { color: var(--loss); font-weight: 600; }
         .badge { padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; }
         .badge.profit { background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
         .badge.loss { background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); }
+        .tag-nepse {
+            display: inline-block;
+            background: rgba(59, 130, 246, 0.15);
+            color: #60a5fa;
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 6px;
+            padding: 2px 8px;
+            font-size: 0.75rem;
+            margin-left: 0.5rem;
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body>
     <div class="dashboard-container">
         <div class="header">
-            <h1>Aurora Trading Simulator</h1>
-            <div style="color: var(--text-muted);">Last Updated: 2026-08-20 21:10:03</div>
+            <div>
+                <h1>Aurora Trading Simulator <span class="tag-nepse">NEPSE Fee & CGT Enabled</span></h1>
+                <div style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.25rem;">Includes SEBON Fee (0.015%), Tiered Broker Commission, DP Fee (Rs. 25), and 7.5% Short-Term CGT</div>
+            </div>
+            <div style="color: var(--text-muted); text-align: right;">
+                <div>Last Updated: 2026-08-20 23:23:08</div>
+                <div style="font-size: 0.8rem; margin-top: 0.25rem;"><a href="portfolio_trade_history.csv" style="color: var(--accent); text-decoration: none;" download>📥 Download Trade History CSV</a></div>
+            </div>
         </div>
 
-        <div class="stats-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+        <div class="stats-grid">
             <div class="glass-panel stat-card">
                 <div class="stat-label">Total Equity</div>
                 <div class="stat-value">रू 505,441.00</div>
@@ -108,22 +128,28 @@
                 <div class="stat-value">15</div>
             </div>
             <div class="glass-panel stat-card">
-                <div class="stat-label">Total Realized P&L</div>
+                <div class="stat-label">Realized Gross P&L</div>
                 <div class="stat-value profit">
-                    रू 0.00
+                    रू +0.00
                 </div>
             </div>
             <div class="glass-panel stat-card">
-                <div class="stat-label">Unrealized P&L</div>
-                <div class="stat-value profit">
-                    रू +5,441.00
+                <div class="stat-label">Taxes & Fees Paid</div>
+                <div class="stat-value warning">
+                    रू 0.00
                     <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem; font-weight: normal;">
-                        (<span class="profit">+8,493.00</span> / <span class="loss">-3,052.00</span>)
+                        Fees: रू 0.00 | CGT: रू 0.00
                     </div>
                 </div>
             </div>
             <div class="glass-panel stat-card">
-                <div class="stat-label">Win Rate</div>
+                <div class="stat-label">Realized Net P&L</div>
+                <div class="stat-value profit">
+                    रू +0.00
+                </div>
+            </div>
+            <div class="glass-panel stat-card">
+                <div class="stat-label">Win Rate (Net)</div>
                 <div class="stat-value loss">
                     0.0%
                     <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem; font-weight: normal;">
@@ -145,19 +171,19 @@
                 <h2>Active Portfolio</h2>
                 <div style="overflow-x: auto;">
                     <table>
-                        <tr><th>Company</th><th>Qty</th><th>Entry Price</th><th>LTP</th><th>Invested Value</th><th>Unrealized P&L</th><th>Return %</th><th>Allocation</th><th>Entry Date</th></tr>
-                        <tr><td>Global IME Laghubitta Bittiya Sanstha</td><td>40</td><td>रू 1,078.00</td><td>रू 1,078.00</td><td>रू 43,120.00</td><td class='profit'>रू +0.00</td><td class='profit'>+0.00%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>8.5%</span></td><td>2026-08-12</td></tr><tr><td>Api Power</td><td>150</td><td>रू 331.00</td><td>रू 335.40</td><td>रू 49,650.00</td><td class='profit'>रू +660.00</td><td class='profit'>+1.33%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>9.8%</span></td><td>2026-08-12</td></tr><tr><td>Mandu Hydropower Limited</td><td>60</td><td>रू 802.00</td><td>रू 840.00</td><td>रू 48,120.00</td><td class='profit'>रू +2,280.00</td><td class='profit'>+4.74%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>9.5%</span></td><td>2026-08-12</td></tr><tr><td>Nepal Lube Oil</td><td>180</td><td>रू 269.40</td><td>रू 277.40</td><td>रू 48,492.00</td><td class='profit'>रू +1,440.00</td><td class='profit'>+2.97%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>9.6%</span></td><td>2026-08-12</td></tr><tr><td>Machhapuchhre Bank</td><td>70</td><td>रू 254.00</td><td>रू 254.00</td><td>रू 17,780.00</td><td class='profit'>रू +0.00</td><td class='profit'>+0.00%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>3.5%</span></td><td>2026-08-12</td></tr><tr><td>NESDO Sambridha Laghubitta Bittiye Sanstha Limited</td><td>30</td><td>रू 1,458.00</td><td>रू 1,395.00</td><td>रू 43,740.00</td><td class='loss'>रू -1,890.00</td><td class='loss'>-4.32%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>8.7%</span></td><td>2026-08-08</td></tr><tr><td>Aviyan Laghubitta Bittiya Sanstha Limited</td><td>40</td><td>रू 1,053.00</td><td>रू 1,034.00</td><td>रू 42,120.00</td><td class='loss'>रू -760.00</td><td class='loss'>-1.80%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>8.3%</span></td><td>2026-08-08</td></tr><tr><td>CEDB Holdings Limited</td><td>10</td><td>रू 2,200.00</td><td>रू 2,205.90</td><td>रू 22,000.00</td><td class='profit'>रू +59.00</td><td class='profit'>+0.27%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>4.4%</span></td><td>2026-08-08</td></tr><tr><td>Jeevan Bikas Laghubitta Bittya Sanstha Ltd</td><td>30</td><td>रू 1,260.80</td><td>रू 1,260.80</td><td>रू 37,824.00</td><td class='profit'>रू +0.00</td><td class='profit'>+0.00%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>7.5%</span></td><td>2026-08-08</td></tr><tr><td>Mahuli Samudayik Laghubitta Sanstha Ltd.</td><td>20</td><td>रू 1,258.00</td><td>रू 1,237.90</td><td>रू 25,160.00</td><td class='loss'>रू -402.00</td><td class='loss'>-1.60%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>5.0%</span></td><td>2026-08-08</td></tr><tr><td>Upper Hewakhola Hydropower Company Limited</td><td>50</td><td>रू 582.00</td><td>रू 620.00</td><td>रू 29,100.00</td><td class='profit'>रू +1,900.00</td><td class='profit'>+6.53%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>5.8%</span></td><td>2026-08-08</td></tr><tr><td>Deprosc Laghubitta</td><td>30</td><td>रू 829.00</td><td>रू 849.90</td><td>रू 24,870.00</td><td class='profit'>रू +627.00</td><td class='profit'>+2.52%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>4.9%</span></td><td>2026-08-08</td></tr><tr><td>Infinity Laghubitta Bittiya Sanstha Limited</td><td>30</td><td>रू 876.90</td><td>रू 876.90</td><td>रू 26,307.00</td><td class='profit'>रू +0.00</td><td class='profit'>+0.00%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>5.2%</span></td><td>2026-08-08</td></tr><tr><td>Radhi Bidhyut Company</td><td>30</td><td>रू 711.00</td><td>रू 718.00</td><td>रू 21,330.00</td><td class='profit'>रू +210.00</td><td class='profit'>+0.98%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>4.2%</span></td><td>2026-08-08</td></tr><tr><td>Mountain Energy Nepal Limited</td><td>30</td><td>रू 595.10</td><td>रू 639.00</td><td>रू 17,853.00</td><td class='profit'>रू +1,317.00</td><td class='profit'>+7.38%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>3.5%</span></td><td>2026-08-08</td></tr>
+                        <tr><th>Company</th><th>Qty</th><th>Entry Price</th><th>Eff. Entry Price</th><th>LTP</th><th>Invested Value</th><th>Unrealized P&L</th><th>Return %</th><th>Allocation</th><th>Entry Date</th></tr>
+                        <tr><td><strong>Global IME Laghubitta Bittiya Sanstha</strong></td><td>40</td><td>रू 1,078.00</td><td style='color: var(--text-muted);'>रू 1,078.00</td><td>रू 1,078.00</td><td>रू 43,120.00</td><td class='profit'>रू +0.00</td><td class='profit'>+0.00%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>8.5%</span></td><td>2026-08-12</td></tr><tr><td><strong>Api Power</strong></td><td>150</td><td>रू 331.00</td><td style='color: var(--text-muted);'>रू 331.00</td><td>रू 335.40</td><td>रू 49,650.00</td><td class='profit'>रू +660.00</td><td class='profit'>+1.33%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>9.8%</span></td><td>2026-08-12</td></tr><tr><td><strong>Mandu Hydropower Limited</strong></td><td>60</td><td>रू 802.00</td><td style='color: var(--text-muted);'>रू 802.00</td><td>रू 840.00</td><td>रू 48,120.00</td><td class='profit'>रू +2,280.00</td><td class='profit'>+4.74%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>9.5%</span></td><td>2026-08-12</td></tr><tr><td><strong>Nepal Lube Oil</strong></td><td>180</td><td>रू 269.40</td><td style='color: var(--text-muted);'>रू 269.40</td><td>रू 277.40</td><td>रू 48,492.00</td><td class='profit'>रू +1,440.00</td><td class='profit'>+2.97%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>9.6%</span></td><td>2026-08-12</td></tr><tr><td><strong>Machhapuchhre Bank</strong></td><td>70</td><td>रू 254.00</td><td style='color: var(--text-muted);'>रू 254.00</td><td>रू 254.00</td><td>रू 17,780.00</td><td class='profit'>रू +0.00</td><td class='profit'>+0.00%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>3.5%</span></td><td>2026-08-12</td></tr><tr><td><strong>NESDO Sambridha Laghubitta Bittiye Sanstha Limited</strong></td><td>30</td><td>रू 1,458.00</td><td style='color: var(--text-muted);'>रू 1,458.00</td><td>रू 1,395.00</td><td>रू 43,740.00</td><td class='loss'>रू -1,890.00</td><td class='loss'>-4.32%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>8.7%</span></td><td>2026-08-08</td></tr><tr><td><strong>Aviyan Laghubitta Bittiya Sanstha Limited</strong></td><td>40</td><td>रू 1,053.00</td><td style='color: var(--text-muted);'>रू 1,053.00</td><td>रू 1,034.00</td><td>रू 42,120.00</td><td class='loss'>रू -760.00</td><td class='loss'>-1.80%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>8.3%</span></td><td>2026-08-08</td></tr><tr><td><strong>CEDB Holdings Limited</strong></td><td>10</td><td>रू 2,200.00</td><td style='color: var(--text-muted);'>रू 2,200.00</td><td>रू 2,205.90</td><td>रू 22,000.00</td><td class='profit'>रू +59.00</td><td class='profit'>+0.27%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>4.4%</span></td><td>2026-08-08</td></tr><tr><td><strong>Jeevan Bikas Laghubitta Bittya Sanstha Ltd</strong></td><td>30</td><td>रू 1,260.80</td><td style='color: var(--text-muted);'>रू 1,260.80</td><td>रू 1,260.80</td><td>रू 37,824.00</td><td class='profit'>रू +0.00</td><td class='profit'>+0.00%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>7.5%</span></td><td>2026-08-08</td></tr><tr><td><strong>Mahuli Samudayik Laghubitta Sanstha Ltd.</strong></td><td>20</td><td>रू 1,258.00</td><td style='color: var(--text-muted);'>रू 1,258.00</td><td>रू 1,237.90</td><td>रू 25,160.00</td><td class='loss'>रू -402.00</td><td class='loss'>-1.60%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>5.0%</span></td><td>2026-08-08</td></tr><tr><td><strong>Upper Hewakhola Hydropower Company Limited</strong></td><td>50</td><td>रू 582.00</td><td style='color: var(--text-muted);'>रू 582.00</td><td>रू 620.00</td><td>रू 29,100.00</td><td class='profit'>रू +1,900.00</td><td class='profit'>+6.53%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>5.8%</span></td><td>2026-08-08</td></tr><tr><td><strong>Deprosc Laghubitta</strong></td><td>30</td><td>रू 829.00</td><td style='color: var(--text-muted);'>रू 829.00</td><td>रू 849.90</td><td>रू 24,870.00</td><td class='profit'>रू +627.00</td><td class='profit'>+2.52%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>4.9%</span></td><td>2026-08-08</td></tr><tr><td><strong>Infinity Laghubitta Bittiya Sanstha Limited</strong></td><td>30</td><td>रू 876.90</td><td style='color: var(--text-muted);'>रू 876.90</td><td>रू 876.90</td><td>रू 26,307.00</td><td class='profit'>रू +0.00</td><td class='profit'>+0.00%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>5.2%</span></td><td>2026-08-08</td></tr><tr><td><strong>Radhi Bidhyut Company</strong></td><td>30</td><td>रू 711.00</td><td style='color: var(--text-muted);'>रू 711.00</td><td>रू 718.00</td><td>रू 21,330.00</td><td class='profit'>रू +210.00</td><td class='profit'>+0.98%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>4.2%</span></td><td>2026-08-08</td></tr><tr><td><strong>Mountain Energy Nepal Limited</strong></td><td>30</td><td>रू 595.10</td><td style='color: var(--text-muted);'>रू 595.10</td><td>रू 639.00</td><td>रू 17,853.00</td><td class='profit'>रू +1,317.00</td><td class='profit'>+7.38%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>3.5%</span></td><td>2026-08-08</td></tr>
                     </table>
                 </div>
             </div>
         </div>
         
         <div class="glass-panel">
-            <h2>Closed Trades History</h2>
+            <h2>Closed Trades History (Audit Trail)</h2>
             <div style="overflow-x: auto;">
                 <table>
-                    <tr><th>Company</th><th>Qty</th><th>Entry Price</th><th>Exit Price</th><th>P&L</th><th>Reason</th></tr>
-                    <tr><td colspan='6' style='text-align: center; color: #a0aec0;'>No closed trades yet</td></tr>
+                    <tr><th>Company</th><th>Qty</th><th>Entry Price</th><th>Exit Price</th><th>Gross P&L</th><th>Total Fees</th><th>CGT (7.5%)</th><th>Net P&L</th><th>Reason</th><th>Exit Date</th></tr>
+                    <tr><td colspan='10' style='text-align: center; color: #a0aec0;'>No closed trades yet</td></tr>
                 </table>
             </div>
         </div>
