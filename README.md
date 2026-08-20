@@ -1,64 +1,50 @@
 ====================================================================================================
 🎯 ENHANCED NPSTOCKS ANALYSIS REPORT
 ====================================================================================================
-Date: 2026-08-20
+Date: 2026-08-21
 Total Stocks: 118
 ====================================================================================================
 
 ====================================================================================================
 ⭐ TOP PICKS - COMPOSITE SCORING (Stocks in Multiple Strategies)
 ====================================================================================================
- 1. Mountain Energy Nepal Limited            | Appeared in 5 strategies | High Profitability Leaders, Top Weekly Momentum, Best 12-Week Performers, Defensive Low-Risk, Best Risk-Adjusted Returns
- 2. Samaj Laghubittya Bittiya Sanstha Limite | Appeared in 4 strategies | High Quality Stocks, Best 12-Week Performers, Defensive Low-Risk, Strong Balance Sheet
- 3. Mandu Hydropower Limited                 | Appeared in 4 strategies | High Profitability Leaders, Top Weekly Momentum, Best 12-Week Performers, Defensive Low-Risk
- 4. Nepal Lube Oil                           | Appeared in 4 strategies | Undervalued High Earners, Top Weekly Momentum, Best 12-Week Performers, Defensive Low-Risk
- 5. Pokhara Finance                          | Appeared in 3 strategies | High Quality Stocks, High Profitability Leaders, Strong Balance Sheet
- 6. Himalayan Distillery                     | Appeared in 3 strategies | High Quality Stocks, Best 12-Week Performers, Strong Balance Sheet
- 7. CEDB Holdings Limited                    | Appeared in 3 strategies | High Quality Stocks, High Profitability Leaders, Strong Balance Sheet
- 8. Upper Hewakhola Hydropower Company Limit | Appeared in 3 strategies | High Profitability Leaders, Best 12-Week Performers, Best Risk-Adjusted Returns
- 9. Aviyan Laghubitta Bittiya Sanstha Limite | Appeared in 2 strategies | High Quality Stocks, Strong Balance Sheet
-10. National Microfinance Bittiya Sanstha Lt | Appeared in 2 strategies | High Quality Stocks, Strong Balance Sheet
-11. Mahuli Samudayik Laghubitta Sanstha Ltd. | Appeared in 2 strategies | High Quality Stocks, Strong Balance Sheet
-12. Deprosc Laghubitta                       | Appeared in 2 strategies | High Quality Stocks, Strong Balance Sheet
-13. Swarojgar Laghu Bitta Bikas Bank         | Appeared in 2 strategies | High Quality Stocks, Strong Balance Sheet
-14. Asha Laghubitta Bittiya Sanstha Ltd      | Appeared in 2 strategies | High Quality Stocks, Best Risk-Adjusted Returns
-15. Api Power                                | Appeared in 2 strategies | High Profitability Leaders, Best Risk-Adjusted Returns
+ 1. Mountain Energy Nepal Limited       | Score:  7.0 (7 strats) | High Quality Stocks, High Profitability Leaders, Top Weekly Momentum, Best 12-Week Performers, Defensive Low-Risk
+ 2. Himalayan Distillery                | Score:  4.0 (4 strats) | High Quality Stocks, High Profitability Leaders, Best 12-Week Performers, Strong Balance Sheet
+ 3. Chhimek Laghubitta Bikas Bank       | Score:  4.0 (4 strats) | High Quality Stocks, Best 12-Week Performers, Defensive Low-Risk, Strong Balance Sheet
+ 4. Nepal Lube Oil                      | Score:  4.0 (4 strats) | Undervalued High Earners, Top Weekly Momentum, Best 12-Week Performers, Defensive Low-Risk
+ 5. Deprosc Laghubitta                  | Score:  3.0 (3 strats) | High Quality Stocks, High Profitability Leaders, Strong Balance Sheet
+ 6. Upper Hewakhola Hydropower Company  | Score:  3.0 (3 strats) | High Profitability Leaders, Best 12-Week Performers, Best Risk-Adjusted Returns
+ 7. Super Madi Hydropower Limited       | Score:  3.0 (3 strats) | High Profitability Leaders, Top Weekly Momentum, Best 12-Week Performers
+ 8. Sanima Middle Tamor Hydropower Limi | Score:  3.0 (3 strats) | High Profitability Leaders, Top Weekly Momentum, Defensive Low-Risk
+ 9. Mandu Hydropower Limited            | Score:  3.0 (3 strats) | Top Weekly Momentum, Best 12-Week Performers, Defensive Low-Risk
+10. Bottlers Nepal (Terai)              | Score:  2.0 (2 strats) | High Quality Stocks, Defensive Low-Risk
+11. Excel Development Bank              | Score:  2.0 (2 strats) | High Profitability Leaders, Best 12-Week Performers
+12. Bikash Hydropower Company Limited   | Score:  2.0 (2 strats) | Top Weekly Momentum, Best Risk-Adjusted Returns
+13. Samaj Laghubittya Bittiya Sanstha L | Score:  2.0 (2 strats) | Best 12-Week Performers, Defensive Low-Risk
 ====================================================================================================
 
 
 1. 💎 HIGH QUALITY STOCKS
 ----------------------------------------------------------------------------------------------------
- 1. Aviyan Laghubitta Bittiya Sanstha Limited     | Rs  1034.00 | ROE:  39.66% | PE:  18.12
- 2. Pokhara Finance                               | Rs   364.00 | ROE:  32.06% | PE:  27.21
- 3. Samaj Laghubittya Bittiya Sanstha Limited     | Rs  1875.80 | ROE:  26.69% | PE:  30.20
- 4. Himalayan Distillery                          | Rs  1177.00 | ROE:  26.27% | PE:  35.98
- 5. CEDB Holdings Limited                         | Rs  2205.90 | ROE:  26.15% | PE:  36.09
- 6. National Microfinance Bittiya Sanstha Ltd.    | Rs  1118.00 | ROE:  23.96% | PE:  19.08
- 7. Mahuli Samudayik Laghubitta Sanstha Ltd.      | Rs  1237.90 | ROE:  23.68% | PE:  24.81
- 8. Deprosc Laghubitta                            | Rs   849.90 | ROE:  23.35% | PE:  17.65
- 9. Swarojgar Laghu Bitta Bikas Bank              | Rs   800.00 | ROE:  22.64% | PE:  22.98
-10. Asha Laghubitta Bittiya Sanstha Ltd           | Rs  1105.00 | ROE:  20.01% | PE:  33.86
+ 1. Himalayan Distillery                          | Rs  1177.00 | ROE:  26.27% | PE:  35.98
+ 2. Deprosc Laghubitta                            | Rs   849.90 | ROE:  23.35% | PE:  17.65
+ 3. Mountain Energy Nepal Limited                 | Rs   639.00 | ROE:  18.17% | PE:  25.03
+ 4. Bottlers Nepal (Terai)                        | Rs 11750.00 | ROE:  17.36% | PE:  21.56
+ 5. Chhimek Laghubitta Bikas Bank                 | Rs   939.00 | ROE:  15.06% | PE:  26.14
 
 2. 💰 HIGH PROFITABILITY LEADERS
 ----------------------------------------------------------------------------------------------------
- 1. Radhi Bidhyut Company                         | Rs   718.00 | Margin: 263.96% | ROE:  12.24%
- 2. CEDB Holdings Limited                         | Rs  2205.90 | Margin:  97.15% | ROE:  26.15%
- 3. Api Power                                     | Rs   335.40 | Margin:  54.38% | ROE:  13.40%
- 4. Mountain Energy Nepal Limited                 | Rs   639.00 | Margin:  51.97% | ROE:  18.17%
- 5. Terhathum Power Company Limited               | Rs   359.00 | Margin:  48.92% | ROE:  12.83%
- 6. Pokhara Finance                               | Rs   364.00 | Margin:  46.28% | ROE:  32.06%
- 7. Upper Hewakhola Hydropower Company Limited    | Rs   620.00 | Margin:  41.54% | ROE:  16.90%
- 8. Sikles Hydropower Limited                     | Rs   567.00 | Margin:  40.59% | ROE:  13.16%
- 9. Mandu Hydropower Limited                      | Rs   840.00 | Margin:  40.07% | ROE:  15.42%
-10. Mountain Hydro Nepal Limited                  | Rs   244.60 | Margin:  35.14% | ROE:  33.21%
+ 1. Mountain Energy Nepal Limited                 | Rs   639.00 | Margin:  51.97% | ROE:  18.17%
+ 2. Upper Hewakhola Hydropower Company Limited    | Rs   620.00 | Margin:  41.54% | ROE:  16.90%
+ 3. Super Madi Hydropower Limited                 | Rs   522.90 | Margin:  32.02% | ROE:  16.72%
+ 4. Sanima Middle Tamor Hydropower Limited        | Rs   481.80 | Margin:  30.83% | ROE:  15.92%
+ 5. Himalayan Distillery                          | Rs  1177.00 | Margin:  27.23% | ROE:  26.27%
+ 6. Deprosc Laghubitta                            | Rs   849.90 | Margin:  26.83% | ROE:  23.35%
+ 7. Excel Development Bank                        | Rs   583.80 | Margin:  25.49% | ROE:  14.35%
 
 3. 💵 UNDERVALUED HIGH EARNERS
 ----------------------------------------------------------------------------------------------------
  1. Nepal Lube Oil                                | Rs   277.40 | EPS:  58.64 | PE:   4.73
- 2. Swabalamban Bikas Bank                        | Rs   672.40 | EPS:  35.41 | PE:  18.98
- 3. Shangrila Development Bank                    | Rs   405.00 | EPS:  23.83 | PE:  16.99
- 4. Shine Resunga Development Bank                | Rs   411.60 | EPS:  23.52 | PE:  17.49
- 5. Muktinath Bikas Bank                          | Rs   360.00 | EPS:  18.97 | PE:  18.96
 
 4. 💪 VALUE + MOMENTUM COMBO
 ----------------------------------------------------------------------------------------------------
@@ -109,16 +95,10 @@ Total Stocks: 118
 
 9. 💪 STRONG BALANCE SHEET
 ----------------------------------------------------------------------------------------------------
- 1. Aviyan Laghubitta Bittiya Sanstha Limited     | Rs  1034.00 | CR:  -3.93 | Debt:  89.30%
- 2. Pokhara Finance                               | Rs   364.00 | CR:   0.00 | Debt:  88.98%
- 3. Samaj Laghubittya Bittiya Sanstha Limited     | Rs  1875.80 | CR:  22.75 | Debt:  89.08%
- 4. Himalayan Distillery                          | Rs  1177.00 | CR: 937.92 | Debt:   9.65%
- 5. CEDB Holdings Limited                         | Rs  2205.90 | CR: 1721.79 | Debt:   2.04%
- 6. Soaltee Hotel                                 | Rs   498.00 | CR: 180.01 | Debt:  16.03%
- 7. National Microfinance Bittiya Sanstha Ltd.    | Rs  1118.00 | CR:  12.83 | Debt:  87.77%
- 8. Mahuli Samudayik Laghubitta Sanstha Ltd.      | Rs  1237.90 | CR:  -4.42 | Debt:  86.74%
- 9. Deprosc Laghubitta                            | Rs   849.90 | CR:  -2.78 | Debt:  84.32%
-10. Swarojgar Laghu Bitta Bikas Bank              | Rs   800.00 | CR:  -0.42 | Debt:  87.07%
+ 1. Himalayan Distillery                          | Rs  1177.00 | CR: 937.92 | Debt:   9.65%
+ 2. Deprosc Laghubitta                            | Rs   849.90 | CR:  -2.78 | Debt:  84.32%
+ 3. Mountain Energy Nepal Limited                 | Rs   639.00 | CR: 371.34 | Debt:  41.18%
+ 4. Chhimek Laghubitta Bikas Bank                 | Rs   939.00 | CR:  -3.83 | Debt:  84.25%
 
 10. 📊 BEST RISK-ADJUSTED RETURNS
 ----------------------------------------------------------------------------------------------------
