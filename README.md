@@ -8,10 +8,10 @@ Total Stocks: 114
 ====================================================================================================
 ⭐ TOP PICKS - COMPOSITE SCORING (Stocks in Multiple Strategies)
 ====================================================================================================
- 1. Mountain Energy Nepal Limited       | Score:  3.3 (6 strats) | High Quality Stocks, High Profitability Leaders, Healthy Weekly Momentum, Defensive Low-Risk, Strong Balance Sheet
- 2. Chhimek Laghubitta Bikas Bank       | Score:  3.3 (4 strats) | High Quality Stocks, Healthy Weekly Momentum, Defensive Low-Risk, Strong Balance Sheet
- 3. Bottlers Nepal (Terai)              | Score:  3.3 (3 strats) | High Quality Stocks, Healthy Weekly Momentum, Defensive Low-Risk
- 4. Upper Hewakhola Hydropower Company  | Score:  3.3 (3 strats) | High Profitability Leaders, Healthy Weekly Momentum, Best Risk-Adjusted Returns
+ 1. Bottlers Nepal (Terai)              | Score:  3.3 (3 strats) | High Quality Stocks, Healthy Weekly Momentum, Defensive Low-Risk
+ 2. Upper Hewakhola Hydropower Company  | Score:  3.3 (3 strats) | High Profitability Leaders, Healthy Weekly Momentum, Best Risk-Adjusted Returns
+ 3. Mountain Energy Nepal Limited       | Score:  2.5 (5 strats) | High Quality Stocks, High Profitability Leaders, Defensive Low-Risk, Strong Balance Sheet, Best Risk-Adjusted Returns
+ 4. Chhimek Laghubitta Bikas Bank       | Score:  2.5 (3 strats) | High Quality Stocks, Defensive Low-Risk, Strong Balance Sheet
  5. Himalayan Distillery                | Score:  2.3 (4 strats) | High Quality Stocks, High Profitability Leaders, Healthy Weekly Momentum, Strong Balance Sheet
 ====================================================================================================
 
@@ -41,15 +41,11 @@ Total Stocks: 114
 
 5. 🚀 HEALTHY WEEKLY MOMENTUM
 ----------------------------------------------------------------------------------------------------
- 1. Sanima Mai Hydropower                         | Rs   527.20 | 1W:   6.48% | 4W:   1.66%
- 2. Sanima Middle Tamor Hydropower Limited        | Rs   484.70 | 1W:   6.06% | 4W:   7.09%
- 3. Super Madi Hydropower Limited                 | Rs   517.00 | 1W:   4.23% | 4W:   5.51%
- 4. Mountain Energy Nepal Limited                 | Rs   626.30 | 1W:   1.84% | 4W:   4.91%
- 5. Bottlers Nepal (Terai)                        | Rs 11750.00 | 1W:   1.08% | 4W:   1.89%
- 6. Upper Solu Hydro Electric Company Limited     | Rs   505.00 | 1W:   0.76% | 4W:   1.92%
- 7. Chhimek Laghubitta Bikas Bank                 | Rs   939.50 | 1W:   0.64% | 4W:   0.16%
- 8. Himalayan Distillery                          | Rs  1172.50 | 1W:  -0.21% | 4W:   0.56%
- 9. Upper Hewakhola Hydropower Company Limited    | Rs   607.30 | 1W:  -3.43% | 4W:   2.58%
+ 1. Super Madi Hydropower Limited                 | Rs   517.00 | 1W:   4.23% | 4W:   5.51%
+ 2. Bottlers Nepal (Terai)                        | Rs 11750.00 | 1W:   1.08% | 4W:   1.89%
+ 3. Upper Solu Hydro Electric Company Limited     | Rs   505.00 | 1W:   0.76% | 4W:   1.92%
+ 4. Himalayan Distillery                          | Rs  1172.50 | 1W:  -0.21% | 4W:   0.56%
+ 5. Upper Hewakhola Hydropower Company Limited    | Rs   607.30 | 1W:  -3.43% | 4W:   2.58%
 
 6. 📈 SUSTAINED TRENDS ON PULLBACK
 ----------------------------------------------------------------------------------------------------
