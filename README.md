@@ -8,19 +8,19 @@ Total Stocks: 118
 ====================================================================================================
 ⭐ TOP PICKS - COMPOSITE SCORING (Stocks in Multiple Strategies)
 ====================================================================================================
- 1. Mountain Energy Nepal Limited       | Score:  7.0 (7 strats) | High Quality Stocks, High Profitability Leaders, Top Weekly Momentum, Best 12-Week Performers, Defensive Low-Risk
- 2. Himalayan Distillery                | Score:  4.0 (4 strats) | High Quality Stocks, High Profitability Leaders, Best 12-Week Performers, Strong Balance Sheet
- 3. Chhimek Laghubitta Bikas Bank       | Score:  4.0 (4 strats) | High Quality Stocks, Best 12-Week Performers, Defensive Low-Risk, Strong Balance Sheet
- 4. Nepal Lube Oil                      | Score:  4.0 (4 strats) | Undervalued High Earners, Top Weekly Momentum, Best 12-Week Performers, Defensive Low-Risk
- 5. Deprosc Laghubitta                  | Score:  3.0 (3 strats) | High Quality Stocks, High Profitability Leaders, Strong Balance Sheet
- 6. Upper Hewakhola Hydropower Company  | Score:  3.0 (3 strats) | High Profitability Leaders, Best 12-Week Performers, Best Risk-Adjusted Returns
- 7. Super Madi Hydropower Limited       | Score:  3.0 (3 strats) | High Profitability Leaders, Top Weekly Momentum, Best 12-Week Performers
- 8. Sanima Middle Tamor Hydropower Limi | Score:  3.0 (3 strats) | High Profitability Leaders, Top Weekly Momentum, Defensive Low-Risk
- 9. Mandu Hydropower Limited            | Score:  3.0 (3 strats) | Top Weekly Momentum, Best 12-Week Performers, Defensive Low-Risk
-10. Bottlers Nepal (Terai)              | Score:  2.0 (2 strats) | High Quality Stocks, Defensive Low-Risk
-11. Excel Development Bank              | Score:  2.0 (2 strats) | High Profitability Leaders, Best 12-Week Performers
-12. Bikash Hydropower Company Limited   | Score:  2.0 (2 strats) | Top Weekly Momentum, Best Risk-Adjusted Returns
-13. Samaj Laghubittya Bittiya Sanstha L | Score:  2.0 (2 strats) | Best 12-Week Performers, Defensive Low-Risk
+ 1. Mountain Energy Nepal Limited       | Score:  8.1 (7 strats) | High Quality Stocks, High Profitability Leaders, Top Weekly Momentum, Best 12-Week Performers, Defensive Low-Risk
+ 2. Himalayan Distillery                | Score:  6.1 (5 strats) | High Quality Stocks, High Profitability Leaders, Top Weekly Momentum, Best 12-Week Performers, Strong Balance Sheet
+ 3. Chhimek Laghubitta Bikas Bank       | Score:  4.8 (4 strats) | High Quality Stocks, Best 12-Week Performers, Defensive Low-Risk, Strong Balance Sheet
+ 4. Deprosc Laghubitta                  | Score:  4.5 (3 strats) | High Quality Stocks, High Profitability Leaders, Strong Balance Sheet
+ 5. Nepal Lube Oil                      | Score:  3.9 (4 strats) | Undervalued High Earners, Top Weekly Momentum, Best 12-Week Performers, Defensive Low-Risk
+ 6. Upper Hewakhola Hydropower Company  | Score:  3.3 (3 strats) | High Profitability Leaders, Best 12-Week Performers, Best Risk-Adjusted Returns
+ 7. Sanima Middle Tamor Hydropower Limi | Score:  3.3 (3 strats) | High Profitability Leaders, Top Weekly Momentum, Defensive Low-Risk
+ 8. Super Madi Hydropower Limited       | Score:  3.1 (3 strats) | High Profitability Leaders, Top Weekly Momentum, Best 12-Week Performers
+ 9. Mandu Hydropower Limited            | Score:  2.6 (3 strats) | Top Weekly Momentum, Best 12-Week Performers, Defensive Low-Risk
+10. Bottlers Nepal (Terai)              | Score:  2.5 (2 strats) | High Quality Stocks, Defensive Low-Risk
+11. Excel Development Bank              | Score:  2.3 (2 strats) | High Profitability Leaders, Best 12-Week Performers
+12. Api Power                           | Score:  1.8 (2 strats) | Top Weekly Momentum, Best Risk-Adjusted Returns
+13. Samaj Laghubittya Bittiya Sanstha L | Score:  1.8 (2 strats) | Best 12-Week Performers, Defensive Low-Risk
 ====================================================================================================
 
 
@@ -52,16 +52,16 @@ Total Stocks: 118
 
 5. 🚀 TOP WEEKLY MOMENTUM
 ----------------------------------------------------------------------------------------------------
- 1. Bikash Hydropower Company Limited             | Rs   559.90 | 1W:  14.59% | 4W:   8.72%
- 2. Ridge Line Energy Limited                     | Rs   925.00 | 1W:   8.19% | 4W:  -1.60%
- 3. Sanima Middle Tamor Hydropower Limited        | Rs   481.80 | 1W:   6.36% | 4W:   6.71%
- 4. Super Madi Hydropower Limited                 | Rs   522.90 | 1W:   5.42% | 4W:   7.15%
- 5. Mountain Energy Nepal Limited                 | Rs   639.00 | 1W:   3.92% | 4W:   7.43%
- 6. Sanima Mai Hydropower                         | Rs   514.00 | 1W:   3.63% | 4W:  -0.37%
- 7. Mandu Hydropower Limited                      | Rs   840.00 | 1W:   3.46% | 4W:   0.12%
- 8. Nepal Lube Oil                                | Rs   277.40 | 1W:   2.97% | 4W:   2.97%
- 9. Upper Solu Hydro Electric Company Limited     | Rs   511.00 | 1W:   2.20% | 4W:   3.55%
-10. Sikles Hydropower Limited                     | Rs   567.00 | 1W:   1.25% | 4W:   0.00%
+ 1. Sanima Middle Tamor Hydropower Limited        | Rs   481.80 | 1W:   6.36% | 4W:   6.71%
+ 2. Super Madi Hydropower Limited                 | Rs   522.90 | 1W:   5.42% | 4W:   7.15%
+ 3. Mountain Energy Nepal Limited                 | Rs   639.00 | 1W:   3.92% | 4W:   7.43%
+ 4. Sanima Mai Hydropower                         | Rs   514.00 | 1W:   3.63% | 4W:  -0.37%
+ 5. Mandu Hydropower Limited                      | Rs   840.00 | 1W:   3.46% | 4W:   0.12%
+ 6. Nepal Lube Oil                                | Rs   277.40 | 1W:   2.97% | 4W:   2.97%
+ 7. Upper Solu Hydro Electric Company Limited     | Rs   511.00 | 1W:   2.20% | 4W:   3.55%
+ 8. Sikles Hydropower Limited                     | Rs   567.00 | 1W:   1.25% | 4W:   0.00%
+ 9. Api Power                                     | Rs   335.40 | 1W:   1.15% | 4W:  -2.07%
+10. Himalayan Distillery                          | Rs  1177.00 | 1W:   0.94% | 4W:  -0.17%
 
 6. 📈 BEST 12-WEEK PERFORMERS
 ----------------------------------------------------------------------------------------------------
@@ -102,11 +102,11 @@ Total Stocks: 118
 
 10. 📊 BEST RISK-ADJUSTED RETURNS
 ----------------------------------------------------------------------------------------------------
- 1. Bikash Hydropower Company Limited             | Rs   559.90 | Return:   0.88% | SD:   9.12%
- 2. Daramkhola Hydro Energy Limited               | Rs   585.00 | Return:   0.68% | SD:   6.48%
- 3. Asha Laghubitta Bittiya Sanstha Ltd           | Rs  1105.00 | Return:   0.41% | SD:   3.73%
- 4. Mountain Energy Nepal Limited                 | Rs   639.00 | Return:   0.37% | SD:   2.57%
- 5. Api Power                                     | Rs   335.40 | Return:   0.36% | SD:   3.34%
+ 1. Mountain Energy Nepal Limited                 | Rs   639.00 | Return:   0.37% | SD:   2.57%
+ 2. Asha Laghubitta Bittiya Sanstha Ltd           | Rs  1105.00 | Return:   0.41% | SD:   3.73%
+ 3. Api Power                                     | Rs   335.40 | Return:   0.36% | SD:   3.34%
+ 4. Daramkhola Hydro Energy Limited               | Rs   585.00 | Return:   0.68% | SD:   6.48%
+ 5. Bikash Hydropower Company Limited             | Rs   559.90 | Return:   0.88% | SD:   9.12%
  6. Upper Hewakhola Hydropower Company Limited    | Rs   620.00 | Return:   0.35% | SD:   4.25%
  7. Manjushree Financial Institution              | Rs   748.80 | Return:   0.25% | SD:   3.72%
 
