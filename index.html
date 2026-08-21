@@ -373,6 +373,114 @@
         color: #ffffff;
     }
     
+    /* Smooth scrolling & anchor offsets */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    [id] {
+        scroll-margin-top: 24px;
+    }
+
+    /* Sticky Sidebar Navigation */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100vh;
+        overflow-y: auto;
+        background: rgba(2, 6, 23, 0.88);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border-right: 1px solid var(--border);
+        padding: 1.25rem 0.85rem;
+        z-index: 100;
+    }
+
+    .sidebar .sb-title {
+        color: #60a5fa;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        padding: 0 0.5rem 0.75rem 0.5rem;
+    }
+
+    .sidebar a {
+        display: block;
+        color: var(--text-muted);
+        text-decoration: none;
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 0.45rem 0.65rem;
+        border-radius: 8px;
+        border: 1px solid transparent;
+        transition: all 0.15s ease;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .sidebar a:hover {
+        background: rgba(59, 130, 246, 0.12);
+        color: #60a5fa;
+        border-color: rgba(59, 130, 246, 0.3);
+    }
+
+    .sidebar a.sb-active {
+        background: rgba(59, 130, 246, 0.18);
+        color: #93c5fd;
+        border-color: rgba(59, 130, 246, 0.4);
+        font-weight: 600;
+    }
+
+    .sidebar .sb-sep {
+        border: none;
+        border-top: 1px solid var(--border);
+        margin: 0.6rem 0.35rem;
+    }
+
+    /* Shift content clear of the sidebar on wide screens */
+    @media (min-width: 1101px) {
+        body.with-sidebar {
+            padding-left: calc(250px + 2rem);
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .sidebar {
+            display: none;
+        }
+    }
+
+    /* Back-to-top button */
+    .back-top {
+        position: fixed;
+        bottom: 28px;
+        right: 28px;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background: rgba(59, 130, 246, 0.18);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(59, 130, 246, 0.4);
+        color: #60a5fa;
+        font-size: 1.25rem;
+        line-height: 44px;
+        text-align: center;
+        text-decoration: none;
+        z-index: 101;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+        transition: all 0.2s ease;
+    }
+
+    .back-top:hover {
+        background: rgba(59, 130, 246, 0.32);
+        transform: translateY(-3px);
+    }
+
     /* Mobile responsive */
     @media (max-width: 768px) {
         body {
@@ -405,46 +513,36 @@
 </style>
 
 </head>
-<body>
-    <div class="container">
+<body class="with-sidebar">
+    <nav class="sidebar" id="sidebar">
+        <div class="sb-title">📌 Navigate</div>
+        <a href="#composite-scoring">⭐ Top Picks</a>
+        <hr class="sb-sep">
+        <a href="#strategy1">💎 High Quality Stocks</a>
+        <a href="#strategy2">💰 High Profitability Leaders</a>
+        <a href="#strategy3">💵 Undervalued High Earners</a>
+        <a href="#strategy4">💪 Value + Momentum Combo</a>
+        <a href="#strategy5">🚀 Healthy Weekly Momentum</a>
+        <a href="#strategy6">📈 Sustained Trends on Pullback</a>
+        <a href="#strategy7">🛡️ Defensive Low-Risk</a>
+        <a href="#strategy8">🔄 Turnaround Opportunities</a>
+        <a href="#strategy9">💪 Strong Balance Sheet</a>
+        <a href="#strategy10">📊 Best Risk-Adjusted Returns</a>
+        <a href="#strategy11">🚨 Stocks to Avoid (Red Flags)</a>
+
+        <hr class="sb-sep">
+        <a href="#sector-analysis">🏢 Sector Analysis</a>
+    </nav>
+    <a href="#top" class="back-top" title="Back to top">↑</a>
+    <div class="container" id="top">
         <h1>📊 Enhanced NpStocks Analysis Report</h1>
         <div class="meta">
-            <strong>Date:</strong> 2026-08-21 &nbsp;|&nbsp;
-            <strong>Total Stocks Analyzed:</strong> 114 &nbsp;|&nbsp;
-            <strong>Investment Strategies:</strong> 11
+            <strong>Date:</strong> {datetime.now().strftime('%Y-%m-%d')} &nbsp;|&nbsp;
+            <strong>Total Stocks Analyzed:</strong> {len(df)} &nbsp;|&nbsp;
+            <strong>Investment Strategies:</strong> {len(strategies.ALL_STRATEGIES)}
         </div>
         
-        
-        <div class="summary-stats">
-            <h3>📊 Market Overview</h3>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-label">Median P/E Ratio</div>
-                    <div class="stat-value">45.71</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-label">Median ROE</div>
-                    <div class="stat-value">8.04%</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-label">Stocks Up YTD</div>
-                    <div class="stat-value">52/114</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-label">Median Debt Ratio</div>
-                    <div class="stat-value">66.9%</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-label">Median Profit Margin</div>
-                    <div class="stat-value">17.0%</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-label">Median Beta</div>
-                    <div class="stat-value">1.15</div>
-                </div>
-            </div>
-        </div>
-    
+        {generate_summary_stats(df)}
         
         <div class="toc">
             <h3>🔍 Quick Navigation</h3>
@@ -466,9 +564,9 @@
 
         <div id="composite-scoring">
             <h2>⭐ Top Picks - Composite Scoring</h2>
-            <p class="section-description">Stocks that meet criteria across multiple distinct investment strategies, indicating broad fundamental and technical conviction.</p>
+            <p class="section-description">Top picks confirmed by several DIFFERENT types of signals at once (quality + value + stability + momentum) — the more distinct signal types, the higher the score.</p>
             <div class="strategy-box">
-                <strong>Method:</strong> Multi-factor quantitative scoring (Quality, Value, Momentum, Stability) across strategies. Blacklisted avoid stocks strictly excluded.
+                <strong>How scoring works:</strong> A stock earns points once per signal TYPE it confirms (Quality 1.5, Value 1.3, Stability 1.0, Momentum 0.8). Repeating the same type of signal does not add more points. Stocks on the Avoid list are excluded.
             </div>
 <table class="table">
 <thead>
@@ -477,6 +575,7 @@
 <th>Sector</th>
 <th>Latest Close</th>
 <th>Composite Score</th>
+<th>Factor Count</th>
 <th>Strategy Count</th>
 <th>Strategies</th>
 </tr>
@@ -487,6 +586,7 @@
 <td>Hydropower</td>
 <td>Rs 626.30</td>
 <td><span class="positive strong">3.3</span></td>
+<td>3.00</td>
 <td>6</td>
 <td>High Quality Stocks, High Profitability Leaders, Healthy Weekly Momentum, Defensive Low-Risk, Strong Balance Sheet</td>
 </tr>
@@ -495,6 +595,7 @@
 <td>Microfinance</td>
 <td>Rs 939.50</td>
 <td><span class="positive strong">3.3</span></td>
+<td>3.00</td>
 <td>4</td>
 <td>High Quality Stocks, Healthy Weekly Momentum, Defensive Low-Risk, Strong Balance Sheet</td>
 </tr>
@@ -503,6 +604,7 @@
 <td>Manufacturing &amp; Corporate</td>
 <td>Rs 11,750.00</td>
 <td><span class="positive strong">3.3</span></td>
+<td>3.00</td>
 <td>3</td>
 <td>High Quality Stocks, Healthy Weekly Momentum, Defensive Low-Risk</td>
 </tr>
@@ -511,32 +613,18 @@
 <td>Hydropower</td>
 <td>Rs 607.30</td>
 <td><span class="positive strong">3.3</span></td>
+<td>3.00</td>
 <td>3</td>
 <td>High Profitability Leaders, Healthy Weekly Momentum, Best Risk-Adjusted Returns</td>
-</tr>
-<tr>
-<td>Sanima Middle Tamor Hydropower Limited</td>
-<td>Hydropower</td>
-<td>Rs 484.70</td>
-<td><span class="positive strong">3.3</span></td>
-<td>3</td>
-<td>High Profitability Leaders, Healthy Weekly Momentum, Defensive Low-Risk</td>
 </tr>
 <tr>
 <td>Himalayan Distillery</td>
 <td>Manufacturing &amp; Corporate</td>
 <td>Rs 1,172.50</td>
 <td><span class="positive strong">2.3</span></td>
+<td>2.00</td>
 <td>4</td>
 <td>High Quality Stocks, High Profitability Leaders, Healthy Weekly Momentum, Strong Balance Sheet</td>
-</tr>
-<tr>
-<td>Super Madi Hydropower Limited</td>
-<td>Hydropower</td>
-<td>Rs 517.00</td>
-<td><span class="positive strong">2.3</span></td>
-<td>2</td>
-<td>High Profitability Leaders, Healthy Weekly Momentum</td>
 </tr>
 </tbody>
 </table>
@@ -544,9 +632,9 @@
 
         <div id="strategy1">
             <h2>💎 High Quality Stocks</h2>
-            <p class="section-description">Companies with strong return on equity, manageable debt (for corporate/hydro), and reasonable valuation.</p>
+            <p class="section-description">Strong profit-makers (ROE &gt; 15%) at a fair price (PE &lt; 40), not drowning in debt (Debt &lt; 50% for non-financials).</p>
             <div class="strategy-box">
-                <strong>Screening Criteria:</strong> Strong profit-makers (ROE &gt; 15%) at a fair price (PE &lt; 40) that aren&#x27;t drowning in debt
+                <strong>Screening Criteria:</strong> Strong profit-makers (ROE &gt; 15%) at a fair price (PE &lt; 40), not drowning in debt (Debt &lt; 50% for non-financials)
             </div>
 <table class="table">
 <thead>
@@ -603,9 +691,9 @@
 
         <div id="strategy2">
             <h2>💰 High Profitability Leaders</h2>
-            <p class="section-description">Stocks leading on net profit margin and efficient capital use, signaling operational efficiency.</p>
+            <p class="section-description">Keeps over 25% of every sale as profit (Net Margin &gt; 25%) and earns &gt; 10% on shareholder money (ROE &gt; 10%).</p>
             <div class="strategy-box">
-                <strong>Screening Criteria:</strong> Keeps over 25% of every sale as profit and earns &gt; 10% on shareholder money
+                <strong>Screening Criteria:</strong> Keeps over 25% of every sale as profit (Net Margin &gt; 25%) and earns &gt; 10% on shareholder money (ROE &gt; 10%)
             </div>
 <table class="table">
 <thead>
@@ -671,25 +759,25 @@
 
         <div id="strategy3">
             <h2>💵 Undervalued High Earners</h2>
-            <p class="section-description">Businesses generating strong earnings per share while trading at attractive valuation multiples.</p>
+            <p class="section-description">Big earnings per share (EPS &gt; 15), trading cheap (PE &lt; 20, under 3x book value).</p>
             <div class="strategy-box">
-                <strong>Screening Criteria:</strong> Big earnings per share, trading cheap (PE &lt; 20, under 3x book value)
+                <strong>Screening Criteria:</strong> Big earnings per share (EPS &gt; 15), trading cheap (PE &lt; 20, under 3x book value)
             </div>
 <p style="text-align:center; color:var(--text-secondary);">No stocks found matching criteria</p>        </div>
 
         <div id="strategy4">
             <h2>💪 Value + Momentum Combo</h2>
-            <p class="section-description">Stocks combining value characteristics with positive medium-term price trends.</p>
+            <p class="section-description">Cheap stock (PBV &lt; 2.5, PE &lt; 25) that is starting to move up (12W &gt; +8%).</p>
             <div class="strategy-box">
-                <strong>Screening Criteria:</strong> Cheap stock (under 2.5x book) that is starting to move up (+8% in 12 weeks)
+                <strong>Screening Criteria:</strong> Cheap stock (PBV &lt; 2.5, PE &lt; 25) that is starting to move up (12W &gt; +8%)
             </div>
 <p style="text-align:center; color:var(--text-secondary);">No stocks found matching criteria</p>        </div>
 
         <div id="strategy5">
             <h2>🚀 Healthy Weekly Momentum</h2>
-            <p class="section-description">Screened stocks based on the strategy criteria shown below.</p>
+            <p class="section-description">Rising stock (uptrend vs 180D avg) that gained this week but hasn&#x27;t overheated (1W &lt; 8%, RSI &lt; 70, within 15% of its 180D avg) — a safe entry zone, not the peak.</p>
             <div class="strategy-box">
-                <strong>Screening Criteria:</strong> Rising stock that gained this week but hasn&#x27;t overheated yet — a safe entry zone, not the peak
+                <strong>Screening Criteria:</strong> Rising stock (uptrend vs 180D avg) that gained this week but hasn&#x27;t overheated (1W &lt; 8%, RSI &lt; 70, within 15% of its 180D avg)
             </div>
 <table class="table">
 <thead>
@@ -781,17 +869,17 @@
 
         <div id="strategy6">
             <h2>📈 Sustained Trends on Pullback</h2>
-            <p class="section-description">Screened stocks based on the strategy criteria shown below.</p>
+            <p class="section-description">Strong 3-month riser (12W &gt; 8%) taking a breather (last week ≤ 2%), with ROE &gt; 5% — buy the pause, not the peak.</p>
             <div class="strategy-box">
-                <strong>Screening Criteria:</strong> Strong 3-month riser taking a breather — buy the pause, not the peak
+                <strong>Screening Criteria:</strong> Strong 3-month riser (12W &gt; 8%) taking a breather (last week ≤ 2%), with ROE &gt; 5% — buy the pause, not the peak
             </div>
 <p style="text-align:center; color:var(--text-secondary);">No stocks found matching criteria</p>        </div>
 
         <div id="strategy7">
             <h2>🛡️ Defensive Low-Risk</h2>
-            <p class="section-description">Lower-volatility candidates with stable price behavior and resilient fundamentals.</p>
+            <p class="section-description">Calm, steady stock (Beta &lt; 1.0, YTD &gt; -5%) that still earns well (ROE &gt; 8%).</p>
             <div class="strategy-box">
-                <strong>Screening Criteria:</strong> Calm, steady stock (moves less than the market) that still earns well
+                <strong>Screening Criteria:</strong> Calm, steady stock (Beta &lt; 1.0, YTD &gt; -5%) that still earns well (ROE &gt; 8%)
             </div>
 <table class="table">
 <thead>
@@ -896,23 +984,32 @@
 <td><span class="positive">12.83%</span></td>
 <td class="risk-flags">✅ OK</td>
 </tr>
+<tr>
+<td>Aarambha Chautari Laghubitta Bittiya Sanstha Limited</td>
+<td>Microfinance</td>
+<td>Rs 911.00</td>
+<td><span class="neutral">0.99</span></td>
+<td><span class="negative">-1.51%</span></td>
+<td><span class="positive">16.47%</span></td>
+<td class="risk-flags">✅ OK</td>
+</tr>
 </tbody>
 </table>
         </div>
 
         <div id="strategy8">
             <h2>🔄 Turnaround Opportunities</h2>
-            <p class="section-description">Stocks recovering from annual pullbacks with fresh 12-week momentum.</p>
+            <p class="section-description">Fell hard over the past year (1Y &lt; -15%) but is recovering strongly (12W &gt; +8%) — and back in profit (ROE &gt; 0).</p>
             <div class="strategy-box">
-                <strong>Screening Criteria:</strong> Fell hard over the past year but is recovering strongly now — and back in profit
+                <strong>Screening Criteria:</strong> Fell hard over the past year (1Y &lt; -15%) but is recovering strongly (12W &gt; +8%) — and back in profit (ROE &gt; 0)
             </div>
 <p style="text-align:center; color:var(--text-secondary);">No stocks found matching criteria</p>        </div>
 
         <div id="strategy9">
             <h2>💪 Strong Balance Sheet</h2>
-            <p class="section-description">Companies with healthy liquidity, strong capital adequacy, and manageable leverage.</p>
+            <p class="section-description">Financially solid: plenty of cash (Current Ratio &gt; 150%), low debt (&lt; 50%), earns &gt; 10% on equity. For banks: ROE &gt; 15% with positive PE.</p>
             <div class="strategy-box">
-                <strong>Screening Criteria:</strong> Financially solid: plenty of cash, low debt, earns &gt; 10% on equity
+                <strong>Screening Criteria:</strong> Financially solid: plenty of cash (Current Ratio &gt; 150%), low debt (&lt; 50%), earns &gt; 10% on equity. For banks: ROE &gt; 15% with positive PE
             </div>
 <table class="table">
 <thead>
@@ -960,9 +1057,9 @@
 
         <div id="strategy10">
             <h2>📊 Best Risk-Adjusted Returns</h2>
-            <p class="section-description">Stocks offering optimal risk-return trade-offs relative to price volatility.</p>
+            <p class="section-description">Best return for the risk taken (weekly return &gt; 0.2%, volatility &lt; 10%) — smooth gainers, not rollercoasters.</p>
             <div class="strategy-box">
-                <strong>Screening Criteria:</strong> Best return for the risk taken — smooth gainers, not rollercoasters
+                <strong>Screening Criteria:</strong> Best return for the risk taken (weekly return &gt; 0.2%, volatility &lt; 10%) — smooth gainers, not rollercoasters
             </div>
 <table class="table">
 <thead>
@@ -1046,9 +1143,9 @@
 
         <div id="strategy11">
             <h2>🚨 Stocks to Avoid (Red Flags)</h2>
-            <p class="section-description">Companies exhibiting severe fundamental weakness, excessive leverage, or extreme overvaluation without supporting profitability.</p>
+            <p class="section-description">Money-losers (ROE &amp; margin &lt; 0), over-leveraged (Debt &gt; 70% for non-financials), or absurdly expensive (PE &gt; 100 with ROE &lt; 5%) — stay away.</p>
             <div class="strategy-box">
-                <strong>Screening Criteria:</strong> Money-losers, dangerously over-leveraged, or absurdly expensive — stay away
+                <strong>Screening Criteria:</strong> Money-losers (ROE &amp; margin &lt; 0), over-leveraged (Debt &gt; 70% for non-financials), or absurdly expensive (PE &gt; 100 with ROE &lt; 5%) — stay away
             </div>
 <table class="table">
 <thead>
@@ -1164,12 +1261,232 @@
 <td><span class="neutral">38.46%</span></td>
 <td class="risk-flags">⚠️ High PE | ⚠️ High Volatility</td>
 </tr>
+<tr>
+<td>Sayapatri Hydropower Limited</td>
+<td>Hydropower</td>
+<td>Rs 527.90</td>
+<td><span class="neutral">1.06%</span></td>
+<td><span class="neutral">5.98%</span></td>
+<td><span class="negative">500.00</span></td>
+<td><span class="negative">51.18%</span></td>
+<td class="risk-flags">⚠️ High PE</td>
+</tr>
+<tr>
+<td>Dordi Khola Jal Bidyut Company Limited</td>
+<td>Hydropower</td>
+<td>Rs 246.70</td>
+<td><span class="neutral">1.35%</span></td>
+<td><span class="positive">10.92%</span></td>
+<td><span class="negative">173.54</span></td>
+<td><span class="negative">53.76%</span></td>
+<td class="risk-flags">⚠️ High PE</td>
+</tr>
+<tr>
+<td>Liberty Energy Company Limited</td>
+<td>Hydropower</td>
+<td>Rs 217.30</td>
+<td><span class="neutral">1.60%</span></td>
+<td><span class="positive">14.46%</span></td>
+<td><span class="negative">193.70</span></td>
+<td><span class="negative">73.56%</span></td>
+<td class="risk-flags">⚠️ High Debt | ⚠️ High PE</td>
+</tr>
+<tr>
+<td>Arun Kabeli Power Ltd.</td>
+<td>Hydropower</td>
+<td>Rs 249.00</td>
+<td><span class="neutral">2.01%</span></td>
+<td><span class="positive">12.99%</span></td>
+<td><span class="negative">121.74</span></td>
+<td><span class="neutral">49.70%</span></td>
+<td class="risk-flags">⚠️ High PE</td>
+</tr>
+<tr>
+<td>GreenLife Hydropower Limited</td>
+<td>Insurance</td>
+<td>Rs 252.30</td>
+<td><span class="neutral">2.10%</span></td>
+<td><span class="negative">0.00%</span></td>
+<td><span class="negative">108.37</span></td>
+<td><span class="negative">95.41%</span></td>
+<td class="risk-flags">⚠️ High PE</td>
+</tr>
+<tr>
+<td>Barun Hydropower</td>
+<td>Hydropower</td>
+<td>Rs 320.10</td>
+<td><span class="neutral">2.16%</span></td>
+<td><span class="positive strong">21.39%</span></td>
+<td><span class="negative">153.77</span></td>
+<td><span class="positive">19.15%</span></td>
+<td class="risk-flags">⚠️ High PE</td>
+</tr>
+<tr>
+<td>Peoples Hydropower Company Limited</td>
+<td>Hydropower</td>
+<td>Rs 306.90</td>
+<td><span class="neutral">2.29%</span></td>
+<td><span class="neutral">6.18%</span></td>
+<td><span class="negative">137.51</span></td>
+<td><span class="negative">72.05%</span></td>
+<td class="risk-flags">⚠️ High Debt | ⚠️ High PE</td>
+</tr>
+<tr>
+<td>Chhyangdi Hydropower Ltd.</td>
+<td>Hydropower</td>
+<td>Rs 266.00</td>
+<td><span class="neutral">2.35%</span></td>
+<td><span class="neutral">7.57%</span></td>
+<td><span class="negative">154.58</span></td>
+<td><span class="negative">52.46%</span></td>
+<td class="risk-flags">⚠️ High PE</td>
+</tr>
+<tr>
+<td>United Ajod Insurance Limited</td>
+<td>Insurance</td>
+<td>Rs 425.00</td>
+<td><span class="neutral">2.68%</span></td>
+<td><span class="neutral">3.50%</span></td>
+<td><span class="negative">155.58</span></td>
+<td><span class="negative">52.03%</span></td>
+<td class="risk-flags">⚠️ High PE</td>
+</tr>
+<tr>
+<td>Buddha Bhumi Nepal Hydropower Company Limited</td>
+<td>Hydropower</td>
+<td>Rs 278.60</td>
+<td><span class="neutral">2.84%</span></td>
+<td><span class="neutral">6.46%</span></td>
+<td><span class="negative">186.84</span></td>
+<td><span class="negative">50.74%</span></td>
+<td class="risk-flags">⚠️ High PE</td>
+</tr>
+<tr>
+<td>River Falls Power Limited</td>
+<td>Hydropower</td>
+<td>Rs 337.00</td>
+<td><span class="neutral">2.94%</span></td>
+<td><span class="positive">14.36%</span></td>
+<td><span class="negative">124.33</span></td>
+<td><span class="neutral">41.73%</span></td>
+<td class="risk-flags">⚠️ High PE</td>
+</tr>
+<tr>
+<td>Madhya Bhotekoshi Jalavidyut Company Limited</td>
+<td>Hydropower</td>
+<td>Rs 267.40</td>
+<td><span class="neutral">2.99%</span></td>
+<td><span class="neutral">7.91%</span></td>
+<td><span class="negative">94.60</span></td>
+<td><span class="negative">80.21%</span></td>
+<td class="risk-flags">⚠️ High Debt | ⚠️ High PE</td>
+</tr>
+<tr>
+<td>Shree Investment Finance</td>
+<td>Finance</td>
+<td>Rs 497.00</td>
+<td><span class="neutral">3.31%</span></td>
+<td><span class="neutral">6.55%</span></td>
+<td><span class="negative">107.53</span></td>
+<td><span class="negative">86.62%</span></td>
+<td class="risk-flags">⚠️ High PE | ⚠️ High Volatility</td>
+</tr>
+<tr>
+<td>Shikhar Insurance</td>
+<td>Insurance</td>
+<td>Rs 607.10</td>
+<td><span class="neutral">4.18%</span></td>
+<td><span class="neutral">4.40%</span></td>
+<td><span class="negative">144.74</span></td>
+<td><span class="negative">60.98%</span></td>
+<td class="risk-flags">⚠️ High PE</td>
+</tr>
+<tr>
+<td>Citizen Investment Trust</td>
+<td>Manufacturing &amp; Corporate</td>
+<td>Rs 1,695.00</td>
+<td><span class="neutral">6.06%</span></td>
+<td><span class="positive strong">60.01%</span></td>
+<td><span class="negative">85.43</span></td>
+<td><span class="negative">94.73%</span></td>
+<td class="risk-flags">⚠️ High Debt | ⚠️ High PE</td>
+</tr>
+<tr>
+<td>Panchakanya Mai Hydropower</td>
+<td>Hydropower</td>
+<td>Rs 345.90</td>
+<td><span class="neutral">7.39%</span></td>
+<td><span class="positive">19.24%</span></td>
+<td><span class="negative">56.96</span></td>
+<td><span class="negative">72.48%</span></td>
+<td class="risk-flags">⚠️ High Debt | ⚠️ High PE | ⚠️ High Volatility</td>
+</tr>
+<tr>
+<td>Panchthar Power Company Ltd.</td>
+<td>Hydropower</td>
+<td>Rs 329.10</td>
+<td><span class="neutral">9.19%</span></td>
+<td><span class="positive strong">22.54%</span></td>
+<td><span class="negative">37.19</span></td>
+<td><span class="negative">72.60%</span></td>
+<td class="risk-flags">⚠️ High Debt</td>
+</tr>
+<tr>
+<td>Upper Solu Hydro Electric Company Limited</td>
+<td>Hydropower</td>
+<td>Rs 505.00</td>
+<td><span class="positive">13.53%</span></td>
+<td><span class="positive strong">28.28%</span></td>
+<td><span class="negative">32.65</span></td>
+<td><span class="negative">70.40%</span></td>
+<td class="risk-flags">⚠️ High Debt</td>
+</tr>
+<tr>
+<td>Chirkhwa Hydropower Limited</td>
+<td>Hydropower</td>
+<td>Rs 595.30</td>
+<td><span class="positive">14.14%</span></td>
+<td><span class="positive strong">40.33%</span></td>
+<td><span class="negative">44.92</span></td>
+<td><span class="negative">72.09%</span></td>
+<td class="risk-flags">⚠️ High Debt</td>
+</tr>
+<tr>
+<td>Sanima Middle Tamor Hydropower Limited</td>
+<td>Hydropower</td>
+<td>Rs 484.70</td>
+<td><span class="positive">15.92%</span></td>
+<td><span class="positive strong">30.83%</span></td>
+<td><span class="negative">25.87</span></td>
+<td><span class="negative">76.59%</span></td>
+<td class="risk-flags">⚠️ High Debt</td>
+</tr>
+<tr>
+<td>Super Madi Hydropower Limited</td>
+<td>Hydropower</td>
+<td>Rs 517.00</td>
+<td><span class="positive">16.72%</span></td>
+<td><span class="positive strong">32.02%</span></td>
+<td><span class="negative">28.09</span></td>
+<td><span class="negative">72.93%</span></td>
+<td class="risk-flags">⚠️ High Debt</td>
+</tr>
+<tr>
+<td>Mountain Hydro Nepal Limited</td>
+<td>Hydropower</td>
+<td>Rs 244.00</td>
+<td><span class="positive strong">33.21%</span></td>
+<td><span class="positive strong">35.14%</span></td>
+<td><span class="neutral">19.09</span></td>
+<td><span class="negative">91.64%</span></td>
+<td class="risk-flags">⚠️ High Debt | ⚠️ High Volatility</td>
+</tr>
 </tbody>
 </table>
         </div>
 
-        <h2>🏢 Sector-Specific Analysis</h2>
-        <p class="section-description">Top sector-wise picks ranked using sector-appropriate financial filters (distinguishing banking/financial balance sheets from industrial/hydro assets).</p>
+        <h2 id="sector-analysis">🏢 Sector-Specific Analysis</h2>
+        <p class="section-description">Best stocks in each sector, compared fairly within their own group (banks are judged like banks, hydropower like hydropower).</p>
 <h3>Insurance</h3>
 <table class="table">
 <thead>
@@ -1216,6 +1533,55 @@
 <td>Rs 678.00</td>
 <td><span class="neutral">9.78%</span></td>
 <td><span class="negative">58.21</span></td>
+</tr>
+<tr>
+<td>Neco Insurance</td>
+<td>Insurance</td>
+<td>Rs 592.50</td>
+<td><span class="neutral">9.01%</span></td>
+<td><span class="negative">56.97</span></td>
+</tr>
+<tr>
+<td>Asian Life Insurance</td>
+<td>Insurance</td>
+<td>Rs 415.20</td>
+<td><span class="neutral">7.56%</span></td>
+<td><span class="negative">52.63</span></td>
+</tr>
+<tr>
+<td>Sanima Reliance Life Insurance Limited</td>
+<td>Insurance</td>
+<td>Rs 368.50</td>
+<td><span class="neutral">7.17%</span></td>
+<td><span class="negative">48.14</span></td>
+</tr>
+<tr>
+<td>SuryaJyoti Life Insurance Company Limited</td>
+<td>Insurance</td>
+<td>Rs 407.00</td>
+<td><span class="neutral">6.75%</span></td>
+<td><span class="negative">53.64</span></td>
+</tr>
+<tr>
+<td>Prabhu Mahalaxmi Life Insurance Limited</td>
+<td>Insurance</td>
+<td>Rs 422.70</td>
+<td><span class="neutral">6.66%</span></td>
+<td><span class="negative">59.73</span></td>
+</tr>
+<tr>
+<td>Sanima GIC Insurance Limited</td>
+<td>Insurance</td>
+<td>Rs 449.90</td>
+<td><span class="neutral">5.70%</span></td>
+<td><span class="negative">78.10</span></td>
+</tr>
+<tr>
+<td>Nepal Insurance</td>
+<td>Insurance</td>
+<td>Rs 488.00</td>
+<td><span class="neutral">5.13%</span></td>
+<td><span class="negative">97.50</span></td>
 </tr>
 </tbody>
 </table>
@@ -1266,6 +1632,139 @@
 <td><span class="positive">15.92%</span></td>
 <td><span class="negative">25.87</span></td>
 </tr>
+<tr>
+<td>Mandu Hydropower Limited</td>
+<td>Hydropower</td>
+<td>Rs 763.90</td>
+<td><span class="positive">15.42%</span></td>
+<td><span class="negative">32.70</span></td>
+</tr>
+<tr>
+<td>Chirkhwa Hydropower Limited</td>
+<td>Hydropower</td>
+<td>Rs 595.30</td>
+<td><span class="positive">14.14%</span></td>
+<td><span class="negative">44.92</span></td>
+</tr>
+<tr>
+<td>Himalayan Power Partner Ltd.</td>
+<td>Hydropower</td>
+<td>Rs 380.00</td>
+<td><span class="positive">13.70%</span></td>
+<td><span class="negative">30.23</span></td>
+</tr>
+<tr>
+<td>Upper Solu Hydro Electric Company Limited</td>
+<td>Hydropower</td>
+<td>Rs 505.00</td>
+<td><span class="positive">13.53%</span></td>
+<td><span class="negative">32.65</span></td>
+</tr>
+<tr>
+<td>Api Power</td>
+<td>Hydropower</td>
+<td>Rs 335.00</td>
+<td><span class="positive">13.40%</span></td>
+<td><span class="neutral">22.24</span></td>
+</tr>
+<tr>
+<td>Sikles Hydropower Limited</td>
+<td>Hydropower</td>
+<td>Rs 568.00</td>
+<td><span class="positive">13.16%</span></td>
+<td><span class="negative">40.36</span></td>
+</tr>
+<tr>
+<td>Terhathum Power Company Limited</td>
+<td>Hydropower</td>
+<td>Rs 356.30</td>
+<td><span class="positive">12.83%</span></td>
+<td><span class="negative">31.90</span></td>
+</tr>
+<tr>
+<td>United IDI Mardi RB Hydropower Limited</td>
+<td>Hydropower</td>
+<td>Rs 527.00</td>
+<td><span class="positive">10.58%</span></td>
+<td><span class="negative">45.71</span></td>
+</tr>
+<tr>
+<td>Bindhyabasini Hydropower Development Company Limited</td>
+<td>Hydropower</td>
+<td>Rs 425.00</td>
+<td><span class="positive">10.37%</span></td>
+<td><span class="negative">36.05</span></td>
+</tr>
+<tr>
+<td>Balephi Hydropower Limited</td>
+<td>Hydropower</td>
+<td>Rs 207.00</td>
+<td><span class="positive">10.02%</span></td>
+<td><span class="negative">26.17</span></td>
+</tr>
+<tr>
+<td>Panchthar Power Company Ltd.</td>
+<td>Hydropower</td>
+<td>Rs 329.10</td>
+<td><span class="neutral">9.19%</span></td>
+<td><span class="negative">37.19</span></td>
+</tr>
+<tr>
+<td>Himalayan Hydropower Limited</td>
+<td>Hydropower</td>
+<td>Rs 334.80</td>
+<td><span class="neutral">8.87%</span></td>
+<td><span class="negative">45.72</span></td>
+</tr>
+<tr>
+<td>Ru Ru Jalbidhyut Pariyojana Limited</td>
+<td>Hydropower</td>
+<td>Rs 600.00</td>
+<td><span class="neutral">8.07%</span></td>
+<td><span class="negative">57.68</span></td>
+</tr>
+<tr>
+<td>Himalaya Urja Bikas Company Limited</td>
+<td>Hydropower</td>
+<td>Rs 234.10</td>
+<td><span class="neutral">8.01%</span></td>
+<td><span class="negative">30.91</span></td>
+</tr>
+<tr>
+<td>Mandakini Hydropower Limited</td>
+<td>Hydropower</td>
+<td>Rs 459.00</td>
+<td><span class="neutral">7.81%</span></td>
+<td><span class="negative">52.39</span></td>
+</tr>
+<tr>
+<td>Panchakanya Mai Hydropower</td>
+<td>Hydropower</td>
+<td>Rs 345.90</td>
+<td><span class="neutral">7.39%</span></td>
+<td><span class="negative">56.96</span></td>
+</tr>
+<tr>
+<td>Singati Hydro Energy Limited</td>
+<td>Hydropower</td>
+<td>Rs 300.00</td>
+<td><span class="neutral">6.27%</span></td>
+<td><span class="negative">44.24</span></td>
+</tr>
+<tr>
+<td>Synergy Power Development Ltd.</td>
+<td>Hydropower</td>
+<td>Rs 361.00</td>
+<td><span class="neutral">5.64%</span></td>
+<td><span class="negative">59.68</span></td>
+</tr>
+<tr>
+<td>Sanima Mai Hydropower</td>
+<td>Hydropower</td>
+<td>Rs 527.20</td>
+<td><span class="neutral">5.01%</span></td>
+<td><span class="negative">67.15</span></td>
+</tr>
 </tbody>
 </table>
 <h3>Finance</h3>
@@ -1314,6 +1813,20 @@
 <td>Rs 610.80</td>
 <td><span class="neutral">7.36%</span></td>
 <td><span class="negative">68.57</span></td>
+</tr>
+<tr>
+<td>Goodwill Finance</td>
+<td>Finance</td>
+<td>Rs 590.00</td>
+<td><span class="neutral">6.98%</span></td>
+<td><span class="negative">39.44</span></td>
+</tr>
+<tr>
+<td>Best Finance</td>
+<td>Finance</td>
+<td>Rs 474.00</td>
+<td><span class="neutral">6.79%</span></td>
+<td><span class="negative">60.48</span></td>
 </tr>
 </tbody>
 </table>
@@ -1364,6 +1877,41 @@
 <td><span class="positive">14.19%</span></td>
 <td><span class="neutral">20.47</span></td>
 </tr>
+<tr>
+<td>Muktinath Bikas Bank</td>
+<td>Banking</td>
+<td>Rs 361.00</td>
+<td><span class="positive">12.36%</span></td>
+<td><span class="neutral">19.02</span></td>
+</tr>
+<tr>
+<td>Lumbini Bikas Bank Ltd.</td>
+<td>Banking</td>
+<td>Rs 475.10</td>
+<td><span class="positive">11.80%</span></td>
+<td><span class="neutral">20.23</span></td>
+</tr>
+<tr>
+<td>Mahalaxmi Bikas Bank Limited</td>
+<td>Banking</td>
+<td>Rs 350.00</td>
+<td><span class="neutral">8.72%</span></td>
+<td><span class="negative">25.06</span></td>
+</tr>
+<tr>
+<td>Miteri Development Bank</td>
+<td>Banking</td>
+<td>Rs 567.00</td>
+<td><span class="neutral">8.25%</span></td>
+<td><span class="negative">48.86</span></td>
+</tr>
+<tr>
+<td>Sana Kisan Bikas Bank</td>
+<td>Banking</td>
+<td>Rs 751.50</td>
+<td><span class="neutral">6.14%</span></td>
+<td><span class="negative">56.69</span></td>
+</tr>
 </tbody>
 </table>
 <h3>Manufacturing &amp; Corporate</h3>
@@ -1412,6 +1960,48 @@
 <td>Rs 715.40</td>
 <td><span class="positive">12.24%</span></td>
 <td><span class="negative">36.21</span></td>
+</tr>
+<tr>
+<td>Sarbottam Cement Limited</td>
+<td>Manufacturing &amp; Corporate</td>
+<td>Rs 779.00</td>
+<td><span class="positive">10.87%</span></td>
+<td><span class="negative">36.74</span></td>
+</tr>
+<tr>
+<td>Green Ventures Limited</td>
+<td>Manufacturing &amp; Corporate</td>
+<td>Rs 483.00</td>
+<td><span class="positive">10.75%</span></td>
+<td><span class="negative">36.95</span></td>
+</tr>
+<tr>
+<td>Kalinchowk Darshan Limited</td>
+<td>Manufacturing &amp; Corporate</td>
+<td>Rs 763.30</td>
+<td><span class="neutral">8.81%</span></td>
+<td><span class="negative">83.36</span></td>
+</tr>
+<tr>
+<td>Shivam Cements Ltd</td>
+<td>Manufacturing &amp; Corporate</td>
+<td>Rs 633.00</td>
+<td><span class="neutral">7.57%</span></td>
+<td><span class="negative">45.13</span></td>
+</tr>
+<tr>
+<td>Citizen Investment Trust</td>
+<td>Manufacturing &amp; Corporate</td>
+<td>Rs 1,695.00</td>
+<td><span class="neutral">6.06%</span></td>
+<td><span class="negative">85.43</span></td>
+</tr>
+<tr>
+<td>Sonapur Minerals And Oil Limited</td>
+<td>Manufacturing &amp; Corporate</td>
+<td>Rs 398.00</td>
+<td><span class="neutral">5.64%</span></td>
+<td><span class="negative">36.30</span></td>
 </tr>
 </tbody>
 </table>
@@ -1462,6 +2052,76 @@
 <td><span class="positive strong">22.64%</span></td>
 <td><span class="neutral">22.92</span></td>
 </tr>
+<tr>
+<td>Asha Laghubitta Bittiya Sanstha Ltd</td>
+<td>Microfinance</td>
+<td>Rs 1,079.00</td>
+<td><span class="positive strong">20.01%</span></td>
+<td><span class="negative">33.06</span></td>
+</tr>
+<tr>
+<td>Himalayan Laghubitta Bittiya Sanstha Limited</td>
+<td>Microfinance</td>
+<td>Rs 870.00</td>
+<td><span class="positive">18.35%</span></td>
+<td><span class="negative">27.83</span></td>
+</tr>
+<tr>
+<td>NESDO Sambridha Laghubitta Bittiye Sanstha Limited</td>
+<td>Microfinance</td>
+<td>Rs 1,395.00</td>
+<td><span class="positive">17.06%</span></td>
+<td><span class="negative">29.66</span></td>
+</tr>
+<tr>
+<td>Aarambha Chautari Laghubitta Bittiya Sanstha Limited</td>
+<td>Microfinance</td>
+<td>Rs 911.00</td>
+<td><span class="positive">16.47%</span></td>
+<td><span class="negative">32.78</span></td>
+</tr>
+<tr>
+<td>Chhimek Laghubitta Bikas Bank</td>
+<td>Microfinance</td>
+<td>Rs 939.50</td>
+<td><span class="positive">15.06%</span></td>
+<td><span class="negative">26.16</span></td>
+</tr>
+<tr>
+<td>Suryodaya Womi Laghubitta Bittiya Sanstha Limited</td>
+<td>Microfinance</td>
+<td>Rs 604.00</td>
+<td><span class="positive">13.12%</span></td>
+<td><span class="negative">30.67</span></td>
+</tr>
+<tr>
+<td>Samata Gharelu Laghubitta Bittiya Sanstha Limited</td>
+<td>Microfinance</td>
+<td>Rs 705.00</td>
+<td><span class="positive">13.08%</span></td>
+<td><span class="negative">39.07</span></td>
+</tr>
+<tr>
+<td>Laxmi Laghubitta Bittiya Sanstha</td>
+<td>Microfinance</td>
+<td>Rs 877.00</td>
+<td><span class="positive">13.07%</span></td>
+<td><span class="negative">36.23</span></td>
+</tr>
+<tr>
+<td>NIC ASIA Laghubitta Bittiya Sanstha Limited</td>
+<td>Microfinance</td>
+<td>Rs 542.90</td>
+<td><span class="neutral">5.84%</span></td>
+<td><span class="negative">77.39</span></td>
+</tr>
+<tr>
+<td>Mero Microfinance Bittiya Sanstha Ltd.</td>
+<td>Microfinance</td>
+<td>Rs 636.00</td>
+<td><span class="neutral">5.63%</span></td>
+<td><span class="negative">75.10</span></td>
+</tr>
 </tbody>
 </table>
 
@@ -1470,5 +2130,27 @@
             <p>Always conduct your own research and consult with a qualified financial advisor before making investment decisions.</p>
         </div>
     </div>
+    <script>
+        // Highlight the sidebar link for the section currently in view
+        (function() {
+            var links = document.querySelectorAll('.sidebar a[href^="#"]');
+            var sections = [];
+            links.forEach(function(link) {
+                var target = document.querySelector(link.getAttribute('href'));
+                if (target) sections.push({ link: link, el: target });
+            });
+            if (!sections.length || !('IntersectionObserver' in window)) return;
+            var observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        links.forEach(function(l) { l.classList.remove('sb-active'); });
+                        var match = sections.find(function(s) { return s.el === entry.target; });
+                        if (match) match.link.classList.add('sb-active');
+                    }
+                });
+            }, { rootMargin: '-20% 0px -70% 0px' });
+            sections.forEach(function(s) { observer.observe(s.el); });
+        })();
+    </script>
 </body>
 </html>
