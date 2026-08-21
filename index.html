@@ -448,9 +448,44 @@
         }
     }
 
+    /* Mobile hamburger toggle (hidden on wide screens where sidebar is always visible) */
+    .sb-toggle {
+        display: none;
+        position: fixed;
+        top: 14px;
+        left: 14px;
+        z-index: 200;
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        background: rgba(2, 6, 23, 0.88);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid var(--border);
+        color: #60a5fa;
+        font-size: 1.25rem;
+        line-height: 1;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sb-toggle:hover {
+        background: rgba(59, 130, 246, 0.18);
+        border-color: rgba(59, 130, 246, 0.4);
+    }
+
     @media (max-width: 1100px) {
+        .sb-toggle {
+            display: flex;
+        }
         .sidebar {
-            display: none;
+            transform: translateX(-105%);
+            transition: transform 0.25s ease;
+        }
+        .sidebar.sb-open {
+            transform: translateX(0);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.55);
         }
     }
 
@@ -514,6 +549,7 @@
 
 </head>
 <body class="with-sidebar">
+    <button class="sb-toggle" id="sbToggle" aria-label="Toggle navigation">☰</button>
     <nav class="sidebar" id="sidebar">
         <div class="sb-title">📌 Navigate</div>
         <a href="#composite-scoring">⭐ Top Picks</a>
@@ -537,13 +573,43 @@
     <div class="container" id="top">
         <h1>📊 Enhanced NpStocks Analysis Report</h1>
         <div class="meta">
-            <strong>Date:</strong> {datetime.now().strftime('%Y-%m-%d')} &nbsp;|&nbsp;
-            <strong>Total Stocks Analyzed:</strong> {len(df)} &nbsp;|&nbsp;
-            <strong>Investment Strategies:</strong> {len(strategies.ALL_STRATEGIES)}
+            <strong>Date:</strong> 2026-08-21 &nbsp;|&nbsp;
+            <strong>Total Stocks Analyzed:</strong> 114 &nbsp;|&nbsp;
+            <strong>Investment Strategies:</strong> 11
         </div>
+
         
-        {generate_summary_stats(df)}
-        
+        <div class="summary-stats">
+            <h3>📊 Market Overview</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Median P/E Ratio</div>
+                    <div class="stat-value">45.71</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Median ROE</div>
+                    <div class="stat-value">8.04%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Stocks Up YTD</div>
+                    <div class="stat-value">52/114</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Median Debt Ratio</div>
+                    <div class="stat-value">66.9%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Median Profit Margin</div>
+                    <div class="stat-value">17.0%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Median Beta</div>
+                    <div class="stat-value">1.15</div>
+                </div>
+            </div>
+        </div>
+    
+
         <div class="toc">
             <h3>🔍 Quick Navigation</h3>
             <div class="toc-grid">
@@ -2131,6 +2197,25 @@
         </div>
     </div>
     <script>
+        // Mobile sidebar toggle (hamburger)
+        (function() {
+            var btn = document.getElementById('sbToggle');
+            var sb = document.getElementById('sidebar');
+            if (!btn || !sb) return;
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                sb.classList.toggle('sb-open');
+            });
+            sb.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') sb.classList.remove('sb-open');
+            });
+            document.addEventListener('click', function(e) {
+                if (sb.classList.contains('sb-open') && !sb.contains(e.target) && e.target !== btn) {
+                    sb.classList.remove('sb-open');
+                }
+            });
+        })();
+
         // Highlight the sidebar link for the section currently in view
         (function() {
             var links = document.querySelectorAll('.sidebar a[href^="#"]');
