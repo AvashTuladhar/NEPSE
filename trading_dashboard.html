@@ -11,17 +11,22 @@
         :root {
             --bg-dark: #0f172a;
             --panel-bg: rgba(30, 41, 59, 0.7);
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
+            --text-main: #f1f5f9;
+            --text-muted: #9fb0c3;
             --accent: #3b82f6;
-            --profit: #10b981;
-            --loss: #ef4444;
-            --warning: #f59e0b;
-            --border: rgba(255, 255, 255, 0.1);
+            --accent-soft: #60a5fa;
+            --profit: #34d399;
+            --loss: #fb7185;
+            --warning: #fbbf24;
+            --border: rgba(148, 163, 184, 0.14);
         }
         body {
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #020617 0%, #0f172a 100%);
+            background:
+                radial-gradient(ellipse 80% 50% at 20% -10%, rgba(59, 130, 246, 0.10), transparent 60%),
+                radial-gradient(ellipse 60% 40% at 90% 0%, rgba(99, 102, 241, 0.08), transparent 55%),
+                linear-gradient(135deg, #020617 0%, #0f172a 100%);
+            background-attachment: fixed;
             color: var(--text-main);
             margin: 0;
             padding: 2rem;
@@ -47,7 +52,7 @@
             h1 { font-size: 1.5rem; }
             .stats-grid { grid-template-columns: 1fr; }
         }
-        h1 { margin: 0; font-size: 2rem; font-weight: 700; background: linear-gradient(to right, #60a5fa, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        h1 { margin: 0; font-size: 2rem; font-weight: 700; background: linear-gradient(100deg, #7dd3fc 0%, #60a5fa 40%, #818cf8 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
         h2 { font-size: 1.25rem; margin-bottom: 1rem; font-weight: 600; }
         .glass-panel {
             background: var(--panel-bg);
@@ -80,14 +85,15 @@
         .stat-value.warning { color: var(--warning); }
         .chart-container { height: 350px; width: 100%; }
         table { width: 100%; border-collapse: collapse; }
-        th, td { padding: 0.85rem 1rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th, td { padding: 0.85rem 1rem; text-align: left; border-bottom: 1px solid var(--border); font-variant-numeric: tabular-nums; font-feature-settings: "tnum"; }
         th { color: var(--text-muted); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
-        tr:hover td { background: rgba(255, 255, 255, 0.03); }
+        tbody tr:nth-child(even) td { background: rgba(148, 163, 184, 0.04); }
+        tr:hover td { background: rgba(59, 130, 246, 0.07); }
         .profit { color: var(--profit); font-weight: 600; }
         .loss { color: var(--loss); font-weight: 600; }
         .badge { padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; }
-        .badge.profit { background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
-        .badge.loss { background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); }
+        .badge.profit { background: rgba(52, 211, 153, 0.14); color: #6ee7b7; border: 1px solid rgba(52, 211, 153, 0.3); }
+        .badge.loss { background: rgba(251, 113, 133, 0.14); color: #fda4af; border: 1px solid rgba(251, 113, 133, 0.3); }
         .tag-nepse {
             display: inline-block;
             background: rgba(59, 130, 246, 0.15);
@@ -110,7 +116,7 @@
                 <div style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.25rem;">Includes SEBON Fee (0.015%), Tiered Broker Commission (Jestha 2081 Revision), DP Fee (Rs. 25 on Sell), and 7.5% Short-Term CGT · Regime: Full risk (need 20 index sessions)</div>
             </div>
             <div style="color: var(--text-muted); text-align: right;">
-                <div>Last Updated: 2026-08-22 01:39:45</div>
+                <div>Last Updated: 2026-08-22 02:23:39</div>
             </div>
         </div>
 

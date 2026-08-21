@@ -12,13 +12,14 @@
     :root {
         --bg-dark: #0f172a;
         --panel-bg: rgba(30, 41, 59, 0.7);
-        --text-main: #f8fafc;
-        --text-muted: #94a3b8;
+        --text-main: #f1f5f9;
+        --text-muted: #9fb0c3;
         --accent: #3b82f6;
-        --profit: #10b981;
-        --loss: #ef4444;
-        --warning: #f59e0b;
-        --border: rgba(255, 255, 255, 0.1);
+        --accent-soft: #60a5fa;
+        --profit: #34d399;
+        --loss: #fb7185;
+        --warning: #fbbf24;
+        --border: rgba(148, 163, 184, 0.14);
         --card-radius: 16px;
     }
 
@@ -30,7 +31,11 @@
     
     body { 
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        background: linear-gradient(135deg, #020617 0%, #0f172a 100%);
+        background:
+            radial-gradient(ellipse 80% 50% at 20% -10%, rgba(59, 130, 246, 0.10), transparent 60%),
+            radial-gradient(ellipse 60% 40% at 90% 0%, rgba(99, 102, 241, 0.08), transparent 55%),
+            linear-gradient(135deg, #020617 0%, #0f172a 100%);
+        background-attachment: fixed;
         color: var(--text-main);
         line-height: 1.6;
         padding: 2rem;
@@ -49,8 +54,9 @@
         margin: 0 0 0.5rem 0;
         font-size: 2rem;
         font-weight: 700;
-        background: linear-gradient(to right, #60a5fa, #3b82f6);
+        background: linear-gradient(100deg, #7dd3fc 0%, #60a5fa 40%, #818cf8 100%);
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
         letter-spacing: -0.5px;
     }
@@ -260,6 +266,12 @@
         border-bottom: 1px solid var(--border);
         color: var(--text-main);
         vertical-align: middle;
+        font-variant-numeric: tabular-nums;
+        font-feature-settings: "tnum";
+    }
+    
+    tbody tr:nth-child(even) td {
+        background-color: rgba(148, 163, 184, 0.04);
     }
     
     tr:last-child td {
@@ -267,7 +279,7 @@
     }
     
     tr:hover td {
-        background-color: rgba(255, 255, 255, 0.03);
+        background-color: rgba(59, 130, 246, 0.07);
     }
     
     /* Value color coding */
@@ -277,7 +289,7 @@
     }
     
     .positive.strong {
-        color: #34d399;
+        color: #6ee7b7;
         font-weight: 700;
     }
     
@@ -287,7 +299,7 @@
     }
     
     .negative.strong {
-        color: #f87171;
+        color: #fda4af;
         font-weight: 700;
     }
     
@@ -311,15 +323,15 @@
     }
     
     .badge.profit {
-        background: rgba(16, 185, 129, 0.2);
-        color: #34d399;
-        border: 1px solid rgba(16, 185, 129, 0.3);
+        background: rgba(52, 211, 153, 0.14);
+        color: #6ee7b7;
+        border: 1px solid rgba(52, 211, 153, 0.3);
     }
     
     .badge.loss {
-        background: rgba(239, 68, 68, 0.2);
-        color: #f87171;
-        border: 1px solid rgba(239, 68, 68, 0.3);
+        background: rgba(251, 113, 133, 0.14);
+        color: #fda4af;
+        border: 1px solid rgba(251, 113, 133, 0.3);
     }
     
     .tag-nepse {
@@ -396,6 +408,12 @@
         border-right: 1px solid var(--border);
         padding: 1.25rem 0.85rem;
         z-index: 100;
+        /* Compact top-aligned menu: links stack from the top, never spread */
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 2px;
     }
 
     .sidebar .sb-title {
@@ -438,7 +456,13 @@
     .sidebar .sb-sep {
         border: none;
         border-top: 1px solid var(--border);
-        margin: 0.6rem 0.35rem;
+        margin: 0.35rem 0.35rem;
+        flex-shrink: 0;
+    }
+
+    /* Keep every sidebar child compact at the top (no vertical spreading) */
+    .sidebar > * {
+        flex-shrink: 0;
     }
 
     /* Shift content clear of the sidebar on wide screens */
@@ -567,6 +591,9 @@
         <a href="#strategy11">🚨 Stocks to Avoid (Red Flags)</a>
 
         <hr class="sb-sep">
+        <a href="#strategy-evidence">🧪 Strategy Evidence</a>
+        <a href="#events-radar">📅 Corporate Actions</a>
+        <hr class="sb-sep">
         <a href="#sector-analysis">🏢 Sector Analysis</a>
     </nav>
     <a href="#top" class="back-top" title="Back to top">↑</a>
@@ -577,6 +604,8 @@
             <strong>Total Stocks Analyzed:</strong> 120 &nbsp;|&nbsp;
             <strong>Investment Strategies:</strong> 11
         </div>
+
+        <div class="strategy-box" style="margin-top:0.75rem;"><strong>💧 Liquidity filter:</strong> 143 of 263 stocks excluded (traded on fewer than 2 of the last 10 sessions — you could not realistically exit these positions). 120 stocks remain under analysis.</div>
 
         
         <div class="summary-stats">
@@ -1559,7 +1588,7 @@
 </tbody>
 </table>
         </div>
-
+<h2 id="events-radar">📅 Upcoming Corporate Actions (10 days)</h2><p class="section-description">Dividends, AGMs/SGMs and book-closure dates on the horizon. Prices around ex-dates can distort momentum signals — verify before acting.</p><div style="overflow-x:auto;"><table><thead><tr><th>Date</th><th>Symbol</th><th>Company</th><th>Type</th><th>Agenda</th></tr></thead><tbody><tr><td style="white-space:nowrap;">2026-08-24</td><td>NMBHF2</td><td><strong>NMB Hybrid Fund L- II</strong></td><td>Dividend</td><td>4.5% Cash Dividend (including tax) to be distributed to its unitholders for FY 2025/26</td></tr><tr><td style="white-space:nowrap;">2026-08-24</td><td>NSIF2</td><td><strong>NMB Sulav Investment Fund - 2</strong></td><td>Dividend</td><td>10% Cash Dividend (including tax) to be distributed to its unitholders for FY 2025/26</td></tr><tr><td style="white-space:nowrap;">2026-08-24</td><td>NMB50</td><td><strong>NMB 50</strong></td><td>Dividend</td><td>3.15% Cash Dividend (including tax) to be distributed to its unitholders for FY 2025/26</td></tr><tr><td style="white-space:nowrap;">2026-08-24</td><td>UNLB</td><td><strong>Unique Nepal Laghubitta Bittiya Sanstha Limited</strong></td><td>SGM</td><td>Approval of the merger of Jeevan Bikas Laghubitta Bittiya Sanstha Limited, Unique Nepal Laghubitta B</td></tr><tr><td style="white-space:nowrap;">2026-08-25</td><td>EDBL</td><td><strong>Excel Development Bank</strong></td><td>AGM</td><td>Financial Highlights FY 2024/25 ##Appointment of Board Members ##Authorization to the Board to under</td></tr><tr><td style="white-space:nowrap;">2026-08-27</td><td>SWASTIK</td><td><strong>Swastik Laghubitta Bittiya Sanstha Limited</strong></td><td>AGM</td><td>Financial Highlights FY 2024/25 ##Appointment of Board Members ##Proposal for Issuance of 1:2 Right </td></tr></tbody></table></div><h2 id="strategy-evidence">🧪 Strategy Evidence (graded forward returns)</h2><p class="section-description">What actually happened AFTER each historical pick: win-rate and average return over the next 1 and 5 sessions, net of estimated fees. Verdicts strengthen as history accumulates (~60 sessions needed); treat small samples as directional.</p><div style="overflow-x:auto;"><table><thead><tr><th>Strategy</th><th>N(1d)</th><th>Win%(1d)</th><th>Avg%(1d)</th><th>N(5d)</th><th>Win%(5d)</th><th>Avg%(5d)</th></tr></thead><tbody><tr><td><strong>📊 Best Risk-Adjusted Returns</strong></td><td>72.0</td><td>+47.20</td><td>+0.22</td><td>47.0</td><td>+59.60</td><td>+0.75</td></tr><tr><td><strong>🛡️ Defensive Low-Risk</strong></td><td>113.0</td><td>+50.40</td><td>+0.01</td><td>72.0</td><td>+56.90</td><td>+0.15</td></tr><tr><td><strong>💪 Strong Balance Sheet</strong></td><td>46.0</td><td>+45.70</td><td>-0.17</td><td>32.0</td><td>+53.10</td><td>-0.10</td></tr><tr><td><strong>💰 High Profitability Leaders</strong></td><td>53.0</td><td>+47.20</td><td>-0.15</td><td>34.0</td><td>+41.20</td><td>-0.09</td></tr><tr><td><strong>🚨 Stocks to Avoid (Red Flags)</strong></td><td>315.0</td><td>+40.60</td><td>-0.03</td><td>207.0</td><td>+42.00</td><td>-0.10</td></tr><tr><td><strong>🚀 Healthy Weekly Momentum</strong></td><td>105.0</td><td>+45.70</td><td>-0.20</td><td>70.0</td><td>+44.30</td><td>-0.42</td></tr></tbody></table></div>
         <h2 id="sector-analysis">🏢 Sector-Specific Analysis</h2>
         <p class="section-description">Best stocks in each sector, compared fairly within their own group (banks are judged like banks, hydropower like hydropower).</p>
 <h3>Insurance</h3>
