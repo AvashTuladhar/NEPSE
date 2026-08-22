@@ -71,15 +71,23 @@
         }
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 1.25rem;
-            margin-bottom: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 0.85rem;
+            margin-bottom: 1.5rem;
         }
         .stat-card {
             text-align: center;
+            padding: 0.85rem 0.75rem;
+            border-radius: 12px;
+            margin-bottom: 0;
+            transition: none;
         }
-        .stat-label { color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
-        .stat-value { font-size: 1.75rem; font-weight: 700; }
+        .stat-card:hover {
+            transform: none;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .stat-label { color: var(--text-muted); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.3rem; }
+        .stat-value { font-size: 1.15rem; font-weight: 700; }
         .stat-value.profit { color: var(--profit); }
         .stat-value.loss { color: var(--loss); }
         .stat-value.warning { color: var(--warning); }
@@ -116,7 +124,7 @@
                 <div style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.25rem;">Includes SEBON Fee (0.015%), Tiered Broker Commission (Jestha 2081 Revision), DP Fee (Rs. 25 on Sell), and 7.5% Short-Term CGT · Regime: Full risk (need 20 index sessions)</div>
             </div>
             <div style="color: var(--text-muted); text-align: right;">
-                <div>Last Updated: 2026-08-22 13:23:10</div>
+                <div>Last Updated: 2026-08-22 13:33:31</div>
             </div>
         </div>
 
