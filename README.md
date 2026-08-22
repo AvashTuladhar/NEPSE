@@ -11,7 +11,7 @@ Total Stocks: 120
  1. Bottlers Nepal (Terai)              | Score:  3.3 (3 strats) | High Quality Stocks, Healthy Weekly Momentum, Defensive Low-Risk
  2. Upper Hewakhola Hydropower Company  | Score:  3.3 (3 strats) | High Profitability Leaders, Healthy Weekly Momentum, Best Risk-Adjusted Returns
  3. Mountain Energy Nepal Limited       | Score:  2.5 (5 strats) | High Quality Stocks, High Profitability Leaders, Defensive Low-Risk, Strong Balance Sheet, Best Risk-Adjusted Returns
- 4. Chhimek Laghubitta Bikas Bank       | Score:  2.5 (3 strats) | High Quality Stocks, Defensive Low-Risk, Strong Balance Sheet
+ 4. Chhimek Laghubitta Bikas Bank       | Score:  2.5 (2 strats) | High Quality Stocks, Defensive Low-Risk
  5. Himalayan Distillery                | Score:  2.3 (4 strats) | High Quality Stocks, High Profitability Leaders, Healthy Weekly Momentum, Strong Balance Sheet
 ====================================================================================================
 
@@ -42,8 +42,8 @@ Total Stocks: 120
 5. 🚀 HEALTHY WEEKLY MOMENTUM
 ----------------------------------------------------------------------------------------------------
  1. Super Madi Hydropower Limited                 | Rs   517.00 | 1W:   4.23% | 4W:   5.51%
- 2. Bottlers Nepal (Terai)                        | Rs 11750.00 | 1W:   1.08% | 4W:   1.89%
- 3. Upper Solu Hydro Electric Company Limited     | Rs   505.00 | 1W:   0.76% | 4W:   1.92%
+ 2. Upper Solu Hydro Electric Company Limited     | Rs   505.00 | 1W:   0.76% | 4W:   1.92%
+ 3. Bottlers Nepal (Terai)                        | Rs 11750.00 | 1W:   1.08% | 4W:   1.89%
  4. Himalayan Distillery                          | Rs  1172.50 | 1W:  -0.21% | 4W:   0.56%
  5. Upper Hewakhola Hydropower Company Limited    | Rs   607.30 | 1W:  -3.43% | 4W:   2.58%
 
@@ -74,7 +74,6 @@ Total Stocks: 120
 ----------------------------------------------------------------------------------------------------
  1. Himalayan Distillery                          | Rs  1172.50 | CR: 937.92 | Debt:   9.65%
  2. Mountain Energy Nepal Limited                 | Rs   626.30 | CR: 371.34 | Debt:  41.18%
- 3. Chhimek Laghubitta Bikas Bank                 | Rs   939.50 | CR:  -3.83 | Debt:  84.25%
 
 10. 📊 BEST RISK-ADJUSTED RETURNS
 ----------------------------------------------------------------------------------------------------
