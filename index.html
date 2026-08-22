@@ -81,100 +81,52 @@
         -webkit-backdrop-filter: blur(12px);
         border: 1px solid var(--border);
         border-radius: var(--card-radius);
-        padding: 1.5rem;
-        margin-bottom: 2rem;
+        padding: 1rem;
+        margin-bottom: 1.25rem;
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     }
     
     .summary-stats h3 {
         margin-top: 0;
-        margin-bottom: 1rem;
-        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+        font-size: 1.05rem;
         font-weight: 600;
         color: var(--text-main);
     }
     
     .stats-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 1.25rem;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 0.75rem;
     }
     
     .stat-card {
         background: rgba(15, 23, 42, 0.6);
-        padding: 1.25rem;
-        border-radius: 12px;
+        padding: 0.7rem 0.6rem;
+        border-radius: 10px;
         text-align: center;
         border: 1px solid var(--border);
-        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+        transition: border-color 0.2s ease;
     }
     
     .stat-card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
         border-color: rgba(59, 130, 246, 0.4);
     }
     
     .stat-label {
         color: var(--text-muted);
-        font-size: 0.8rem;
+        font-size: 0.65rem;
         text-transform: uppercase;
-        letter-spacing: 0.05em;
-        margin-bottom: 0.5rem;
+        letter-spacing: 0.04em;
+        margin-bottom: 0.25rem;
         font-weight: 500;
     }
     
     .stat-value {
         color: #60a5fa;
-        font-size: 1.75rem;
+        font-size: 1.15rem;
         font-weight: 700;
         letter-spacing: -0.5px;
-    }
-    
-    /* Quick Navigation (TOC) */
-    .toc {
-        background: var(--panel-bg);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        border: 1px solid var(--border);
-        border-radius: var(--card-radius);
-        padding: 1.5rem;
-        margin-bottom: 2rem;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    }
-    
-    .toc h3 {
-        color: var(--text-main);
-        font-size: 1.15rem;
-        font-weight: 600;
-        margin: 0 0 1.25rem 0;
-    }
-    
-    .toc-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-        gap: 0.75rem;
-    }
-    
-    .toc a {
-        color: var(--text-muted);
-        text-decoration: none;
-        padding: 0.75rem 1rem;
-        border-radius: 10px;
-        font-size: 0.875rem;
-        background: rgba(15, 23, 42, 0.6);
-        border: 1px solid var(--border);
-        transition: all 0.2s ease;
-        display: block;
-        font-weight: 500;
-    }
-    
-    .toc a:hover {
-        background: rgba(59, 130, 246, 0.15);
-        color: #60a5fa;
-        border-color: rgba(59, 130, 246, 0.4);
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
     
     /* Strategy Sections & Headers */
@@ -566,7 +518,7 @@
             white-space: nowrap;
         }
         .stat-value {
-            font-size: 1.4rem;
+            font-size: 1.05rem;
         }
     }
 </style>
@@ -639,23 +591,6 @@
         </div>
     
 
-        <div class="toc">
-            <h3>🔍 Quick Navigation</h3>
-            <div class="toc-grid">
-                <a href="#composite-scoring" style="font-weight:bold; color:var(--accent);">⭐ Top Picks - Composite</a>
-                <a href="#strategy1">1. 💎 High Quality Stocks</a>
-                <a href="#strategy2">2. 💰 High Profitability Leaders</a>
-                <a href="#strategy3">3. 💵 Undervalued High Earners</a>
-                <a href="#strategy4">4. 💪 Value + Momentum Combo</a>
-                <a href="#strategy5">5. 🚀 Healthy Weekly Momentum</a>
-                <a href="#strategy6">6. 📈 Sustained Trends on Pullback</a>
-                <a href="#strategy7">7. 🛡️ Defensive Low-Risk</a>
-                <a href="#strategy8">8. 🔄 Turnaround Opportunities</a>
-                <a href="#strategy9">9. 💪 Strong Balance Sheet</a>
-                <a href="#strategy10">10. 📊 Best Risk-Adjusted Returns</a>
-                <a href="#strategy11">11. 🚨 Stocks to Avoid (Red Flags)</a>
-            </div>
-        </div>
 
         <div id="composite-scoring">
             <h2>⭐ Top Picks - Composite Scoring</h2>
