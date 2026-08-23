@@ -11,8 +11,7 @@ Total Stocks: 114
  1. Mountain Energy Nepal Limited       | Score:  3.3 (6 strats) | High Quality Stocks, High Profitability Leaders, Healthy Weekly Momentum, Defensive Low-Risk, Strong Balance Sheet
  2. Bottlers Nepal (Terai)              | Score:  3.3 (3 strats) | High Quality Stocks, Healthy Weekly Momentum, Defensive Low-Risk
  3. Chhimek Laghubitta Bikas Bank       | Score:  3.3 (4 strats) | High Quality Stocks, High Profitability Leaders, Healthy Weekly Momentum, Defensive Low-Risk
- 4. Upper Hewakhola Hydropower Company  | Score:  3.3 (3 strats) | High Profitability Leaders, Healthy Weekly Momentum, Best Risk-Adjusted Returns
- 5. Himalayan Distillery                | Score:  2.3 (4 strats) | High Quality Stocks, High Profitability Leaders, Healthy Weekly Momentum, Strong Balance Sheet
+ 4. Upper Hewakhola Hydropower Company  | Score:  2.5 (2 strats) | High Profitability Leaders, Best Risk-Adjusted Returns
 ====================================================================================================
 
 
@@ -49,8 +48,6 @@ Total Stocks: 114
  5. Upper Solu Hydro Electric Company Limited     | Rs   505.00 | 1W:   0.76% | 4W:   1.92%
  6. Chhimek Laghubitta Bikas Bank                 | Rs   939.50 | 1W:   0.64% | 4W:   0.16%
  7. Bottlers Nepal (Terai)                        | Rs 11750.00 | 1W:   1.08% | 4W:   1.89%
- 8. Himalayan Distillery                          | Rs  1172.50 | 1W:  -0.21% | 4W:   0.56%
- 9. Upper Hewakhola Hydropower Company Limited    | Rs   607.30 | 1W:  -3.43% | 4W:   2.58%
 
 6. 📈 SUSTAINED TRENDS ON PULLBACK
 ----------------------------------------------------------------------------------------------------
