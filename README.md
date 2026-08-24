@@ -8,12 +8,12 @@ Total Stocks: 135
 ====================================================================================================
 ⭐ TOP PICKS - COMPOSITE SCORING (Stocks in Multiple Strategies)
 ====================================================================================================
- 1. Mountain Energy Nepal Limited       | Score:  3.7 (6 strats) | High Quality Stocks, High Profitability Leaders, Healthy Weekly Momentum, Defensive Low-Risk, Strong Balance Sheet
- 2. Bottlers Nepal (Terai)              | Score:  3.7 (3 strats) | High Quality Stocks, Healthy Weekly Momentum, Defensive Low-Risk
- 3. Chhimek Laghubitta Bikas Bank       | Score:  3.7 (4 strats) | High Quality Stocks, High Profitability Leaders, Healthy Weekly Momentum, Defensive Low-Risk
- 4. Soaltee Hotel                       | Score:  3.7 (4 strats) | High Profitability Leaders, Healthy Weekly Momentum, Defensive Low-Risk, Strong Balance Sheet
- 5. Nepal Sbi Bank                      | Score:  3.2 (3 strats) | Undervalued High Earners, Healthy Weekly Momentum, Defensive Low-Risk
- 6. Upper Hewakhola Hydropower Company  | Score:  2.3 (2 strats) | High Profitability Leaders, Best Risk-Adjusted Returns
+ 1. Mountain Energy Nepal Limited       | Score:  3.1 (6 strats) | High Quality Stocks, High Profitability Leaders, Healthy Weekly Momentum, Defensive Low-Risk, Strong Balance Sheet
+ 2. Bottlers Nepal (Terai)              | Score:  3.1 (3 strats) | High Quality Stocks, Healthy Weekly Momentum, Defensive Low-Risk
+ 3. Chhimek Laghubitta Bikas Bank       | Score:  3.1 (4 strats) | High Quality Stocks, High Profitability Leaders, Healthy Weekly Momentum, Defensive Low-Risk
+ 4. Soaltee Hotel                       | Score:  3.1 (4 strats) | High Profitability Leaders, Healthy Weekly Momentum, Defensive Low-Risk, Strong Balance Sheet
+ 5. Nepal Sbi Bank                      | Score:  2.6 (3 strats) | Undervalued High Earners, Healthy Weekly Momentum, Defensive Low-Risk
+ 6. Upper Hewakhola Hydropower Company  | Score:  2.6 (2 strats) | High Profitability Leaders, Best Risk-Adjusted Returns
 ====================================================================================================
 
 
