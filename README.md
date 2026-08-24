@@ -8,177 +8,41 @@ Total Stocks: 263
 ====================================================================================================
 ⭐ TOP PICKS - COMPOSITE SCORING (Stocks in Multiple Strategies)
 ====================================================================================================
- 1. Forward Community Microfinance Bitt | Score: 0.78 | quality 86% · value 87% · low_risk 83% | legacy screens: 0 | 
- 2. Garima Bikas Bank                   | Score: 0.77 | quality 85% · value 94% · low_risk 94% | legacy screens: 4 | ['High Quality Stocks', 'High Profitability Leaders', 'Undervalued High Earners', 'Strong Balance Sheet']
- 3. Everest Bank                        | Score: 0.76 | quality 83% · value 88% · low_risk 97% | legacy screens: 5 | ['High Quality Stocks', 'High Profitability Leaders', 'Undervalued High Earners', 'Defensive Low-Risk', 'Strong Balance Sheet']
- 4. Sanima Bank                         | Score: 0.76 | value 95% · quality 79% · low_risk 90% | legacy screens: 2 | ['Undervalued High Earners', 'Defensive Low-Risk']
- 5. Mountain Energy Nepal Limited       | Score: 0.76 | quality 98% · value 70% · low_risk 84% | legacy screens: 6 | ['High Quality Stocks', 'High Profitability Leaders', 'Healthy Weekly Momentum', 'Defensive Low-Risk', 'Strong Balance Sheet', 'Best Risk-Adjusted Returns']
- 6. Swabalamban Bikas Bank              | Score: 0.76 | value 90% · quality 72% · low_risk 81% | legacy screens: 0 | 
- 7. Api Power                           | Score: 0.75 | quality 94% · value 88% · liquidity 96% | legacy screens: 1 | ['Best Risk-Adjusted Returns']
- 8. Sahas Urja Limited                  | Score: 0.75 | quality 98% · value 79% · low_risk 73% | legacy screens: 1 | ['Best Risk-Adjusted Returns']
- 9. NMB Bank                            | Score: 0.74 | value 98% · low_risk 98% · quality 65% | legacy screens: 1 | ['Defensive Low-Risk']
-10. CYC Nepal Laghubitta Bittiya Sansth | Score: 0.74 | quality 99% · value 80% · low_risk 73% | legacy screens: 3 | ['High Quality Stocks', 'High Profitability Leaders', 'Defensive Low-Risk']
-11. Sampada Laghubitta Bittiya Sanstha  | Score: 0.74 | quality 81% · low_risk 92% · value 73% | legacy screens: 0 | 
-12. Deprosc Laghubitta                  | Score: 0.73 | quality 95% · value 84% · low_risk 86% | legacy screens: 0 | 
-13. NESDO Sambridha Laghubitta Bittiye  | Score: 0.73 | quality 88% · low_risk 97% · value 60% | legacy screens: 0 | 
-14. Kumari Bank                         | Score: 0.73 | quality 90% · value 99% · low_risk 49% | legacy screens: 1 | ['Defensive Low-Risk']
-15. Nabil Bank                          | Score: 0.73 | value 94% · quality 68% · low_risk 99% | legacy screens: 2 | ['Undervalued High Earners', 'Defensive Low-Risk']
-16. Global IME Laghubitta Bittiya Sanst | Score: 0.72 | quality 95% · value 75% · low_risk 89% | legacy screens: 0 | 
-17. Standard Chartered Bank             | Score: 0.72 | quality 86% · value 86% · low_risk 98% | legacy screens: 1 | ['Defensive Low-Risk']
-18. Jeevan Bikas Laghubitta Bittya Sans | Score: 0.72 | quality 94% · value 71% · low_risk 85% | legacy screens: 1 | ['Defensive Low-Risk']
-19. Nepal Bank                          | Score: 0.72 | value 100% · quality 65% · low_risk 89% | legacy screens: 2 | ['Undervalued High Earners', 'Defensive Low-Risk']
-20. Rawa Energy Development Limited     | Score: 0.72 | quality 85% · low_risk 74% · reversal 97% | legacy screens: 0 | 
-21. Muktinath Bikas Bank                | Score: 0.71 | value 92% · low_risk 94% · quality 62% | legacy screens: 0 | 
-22. Prime Commercial Bank               | Score: 0.71 | value 98% · quality 63% · low_risk 88% | legacy screens: 1 | ['Defensive Low-Risk']
-23. National Microfinance Bittiya Sanst | Score: 0.71 | quality 91% · value 77% · low_risk 82% | legacy screens: 1 | ['Defensive Low-Risk']
-24. Aviyan Laghubitta Bittiya Sanstha L | Score: 0.71 | quality 98% · value 60% · low_risk 70% | legacy screens: 0 | 
-25. Jyoti Bikas Bank                    | Score: 0.71 | value 97% · quality 75% · low_risk 61% | legacy screens: 0 | 
-26. Shine Resunga Development Bank      | Score: 0.69 | quality 79% · value 92% · low_risk 68% | legacy screens: 0 | 
-27. Swarojgar Laghu Bitta Bikas Bank    | Score: 0.69 | quality 87% · value 68% · low_risk 84% | legacy screens: 0 | 
-28. Kamana Sewa Bikas Bank Limited      | Score: 0.68 | value 89% · quality 69% · low_risk 69% | legacy screens: 0 | 
-29. Siddhartha Bank                     | Score: 0.68 | value 95% · quality 58% · low_risk 86% | legacy screens: 4 | ['Undervalued High Earners', 'Healthy Weekly Momentum', 'Defensive Low-Risk', 'Best Risk-Adjusted Returns']
-30. Balephi Hydropower Limited          | Score: 0.68 | value 87% · quality 67% · low_risk 52% | legacy screens: 0 | 
-31. Global Ime Bank                     | Score: 0.68 | value 97% · low_risk 93% · quality 52% | legacy screens: 2 | ['Undervalued High Earners', 'Defensive Low-Risk']
-32. Chhimek Laghubitta Bikas Bank       | Score: 0.68 | quality 75% · value 76% · low_risk 95% | legacy screens: 4 | ['High Quality Stocks', 'High Profitability Leaders', 'Healthy Weekly Momentum', 'Defensive Low-Risk']
-33. Kalika Laghubitta Bittiya Sanstha   | Score: 0.68 | quality 72% · low_risk 88% · value 65% | legacy screens: 0 | 
-34. Bindhyabasini Hydropower Developmen | Score: 0.67 | quality 75% · value 69% · low_risk 78% | legacy screens: 0 | 
-35. Infinity Laghubitta Bittiya Sanstha | Score: 0.66 | quality 89% · low_risk 81% · value 61% | legacy screens: 0 | 
-36. Agriculture Development Bank        | Score: 0.66 | value 96% · low_risk 91% · quality 43% | legacy screens: 0 | 
-37. Gurkhas Finance Ltd.                | Score: 0.66 | quality 93% · value 85% · liquidity 78% | legacy screens: 0 | 
-38. Upper Hewakhola Hydropower Company  | Score: 0.66 | quality 97% · low_risk 67% · value 51% | legacy screens: 2 | ['High Profitability Leaders', 'Best Risk-Adjusted Returns']
-39. Terhathum Power Company Limited     | Score: 0.65 | quality 90% · value 77% · low_risk 59% | legacy screens: 1 | ['Defensive Low-Risk']
-40. Mandu Hydropower Limited            | Score: 0.65 | quality 94% · low_risk 95% · value 58% | legacy screens: 1 | ['Defensive Low-Risk']
-41. Sarbottam Cement Limited            | Score: 0.65 | low_risk 98% · value 61% · quality 47% | legacy screens: 0 | 
-42. Nadep Laghubitta Bittiya Sanstha Lt | Score: 0.64 | quality 80% · value 81% · low_risk 63% | legacy screens: 0 | 
-43. Samaj Laghubittya Bittiya Sanstha L | Score: 0.64 | quality 93% · low_risk 97% · value 39% | legacy screens: 1 | ['Defensive Low-Risk']
-44. Citizen Bank International          | Score: 0.64 | value 99% · low_risk 75% · quality 47% | legacy screens: 1 | ['Defensive Low-Risk']
-45. Grameen Bikas Laghubitta            | Score: 0.64 | value 89% · low_risk 71% · quality 46% | legacy screens: 0 | 
-46. Samudayik Laghubitta Bittiya Sansth | Score: 0.64 | quality 80% · low_risk 78% · reversal 97% | legacy screens: 0 | 
-47. Machhapuchhre Bank                  | Score: 0.64 | value 96% · quality 54% · low_risk 77% | legacy screens: 1 | ['Defensive Low-Risk']
-48. Shangrila Development Bank          | Score: 0.64 | value 93% · quality 72% · low_risk 61% | legacy screens: 0 | 
-49. Suryodaya Womi Laghubitta Bittiya S | Score: 0.63 | value 69% · low_risk 83% · quality 54% | legacy screens: 0 | 
-50. Excel Development Bank              | Score: 0.63 | quality 82% · value 82% · liquidity 97% | legacy screens: 0 | 
-51. Radhi Bidhyut Company               | Score: 0.63 | quality 93% · value 60% · liquidity 92% | legacy screens: 0 | 
-52. Makar Jitumaya Suri Hydropower Limi | Score: 0.63 | quality 57% · value 64% · reversal 84% | legacy screens: 0 | 
-53. Himalayan Distillery                | Score: 0.63 | quality 97% · low_risk 84% · liquidity 84% | legacy screens: 3 | ['High Quality Stocks', 'High Profitability Leaders', 'Strong Balance Sheet']
-54. Vijaya Laghubitta Bittiya Sanstha   | Score: 0.63 | quality 68% · value 77% · low_risk 80% | legacy screens: 0 | 
-55. Matribhumi Lagubitta Bittiya Sansth | Score: 0.63 | quality 86% · value 68% · reversal 76% | legacy screens: 0 | 
-56. Nerude Mirmire Laghubitta Bittiya S | Score: 0.63 | value 84% · low_risk 63% · reversal 83% | legacy screens: 0 | 
-57. Laxmi Sunrise Bank Limited          | Score: 0.62 | value 97% · low_risk 79% · quality 39% | legacy screens: 0 | 
-58. Nepal Sbi Bank                      | Score: 0.62 | value 91% · low_risk 87% · quality 50% | legacy screens: 3 | ['Undervalued High Earners', 'Healthy Weekly Momentum', 'Defensive Low-Risk']
-59. Pokhara Finance                     | Score: 0.62 | quality 100% · value 55% · low_risk 68% | legacy screens: 0 | 
-60. Nepal Doorsanchar Company           | Score: 0.62 | value 91% · low_risk 96% · quality 45% | legacy screens: 1 | ['Undervalued High Earners']
-61. Mid Solu Hydropower Limited         | Score: 0.62 | quality 88% · reversal 86% · low_risk 55% | legacy screens: 0 | 
-62. Mahalaxmi Bikas Bank Limited        | Score: 0.61 | value 90% · low_risk 74% · quality 49% | legacy screens: 0 | 
-63. Neco Insurance                      | Score: 0.61 | value 74% · low_risk 76% · quality 44% | legacy screens: 1 | ['Defensive Low-Risk']
-64. Nepal Infrastructure Bank Limited   | Score: 0.61 | value 75% · quality 56% · low_risk 46% | legacy screens: 0 | 
-65. Sikles Hydropower Limited           | Score: 0.61 | quality 89% · low_risk 63% · value 42% | legacy screens: 0 | 
-66. Sana Kisan Bikas Bank               | Score: 0.60 | low_risk 95% · quality 60% · value 56% | legacy screens: 0 | 
-67. Himalaya Urja Bikas Company Limited | Score: 0.60 | value 84% · quality 68% · reversal 56% | legacy screens: 0 | 
-68. Bhagawati Hydropower Development Co | Score: 0.60 | quality 71% · low_risk 76% · reversal 95% | legacy screens: 0 | 
-69. Himalayan Power Partner Ltd.        | Score: 0.60 | quality 82% · value 81% · liquidity 91% | legacy screens: 0 | 
-70. Manjushree Financial Institution    | Score: 0.60 | quality 73% · value 73% · liquidity 82% | legacy screens: 1 | ['Best Risk-Adjusted Returns']
-71. NMB Microfinance                    | Score: 0.60 | quality 64% · value 67% · low_risk 75% | legacy screens: 0 | 
-72. Nepal Investment Bank               | Score: 0.60 | value 94% · low_risk 64% · quality 32% | legacy screens: 0 | 
-73. Himalayan Laghubitta Bittiya Sansth | Score: 0.60 | quality 76% · low_risk 92% · value 61% | legacy screens: 0 | 
-74. Green Ventures Limited              | Score: 0.60 | quality 77% · value 63% · low_risk 57% | legacy screens: 0 | 
-75. Ru Ru Jalbidhyut Pariyojana Limited | Score: 0.59 | quality 77% · low_risk 81% · reversal 63% | legacy screens: 0 | 
-76. Sagarmatha Lumbini Insurance Co. Li | Score: 0.59 | value 79% · low_risk 89% · quality 46% | legacy screens: 1 | ['Defensive Low-Risk']
-77. Nirdhan Utthan Bank                 | Score: 0.59 | value 72% · low_risk 87% · quality 37% | legacy screens: 0 | 
-78. Prabhu Insurance                    | Score: 0.59 | quality 74% · value 74% · low_risk 40% | legacy screens: 0 | 
-79. Lumbini Bikas Bank Ltd.             | Score: 0.59 | value 92% · quality 63% · liquidity 75% | legacy screens: 0 | 
-80. Chilime Hydropower                  | Score: 0.58 | quality 71% · low_risk 83% · value 40% | legacy screens: 0 | 
-81. Molung Hydropower Company Limited   | Score: 0.58 | quality 69% · value 67% · reversal 82% | legacy screens: 0 | 
-82. Rastriya Beema                      | Score: 0.58 | quality 85% · low_risk 90% · reversal 61% | legacy screens: 0 | 
-83. Super Mai Hydropower Limited        | Score: 0.58 | quality 71% · value 52% · reversal 79% | legacy screens: 0 | 
-84. Sonapur Minerals And Oil Limited    | Score: 0.58 | value 85% · reversal 75% · quality 35% | legacy screens: 0 | 
-85. Soaltee Hotel                       | Score: 0.58 | quality 97% · low_risk 76% · liquidity 84% | legacy screens: 5 | ['High Quality Stocks', 'High Profitability Leaders', 'Healthy Weekly Momentum', 'Defensive Low-Risk', 'Strong Balance Sheet']
-86. Bottlers Nepal (Terai)              | Score: 0.57 | value 83% · low_risk 92% · quality 55% | legacy screens: 3 | ['High Quality Stocks', 'Healthy Weekly Momentum', 'Defensive Low-Risk']
-87. Nepal Lube Oil                      | Score: 0.57 | value 100% · low_risk 100% · quality 40% | legacy screens: 3 | ['Undervalued High Earners', 'Healthy Weekly Momentum', 'Defensive Low-Risk']
-88. IME Life Insurance Company Limited  | Score: 0.57 | value 72% · low_risk 88% · quality 40% | legacy screens: 0 | 
-89. Unilever Nepal                      | Score: 0.57 | quality 87% · low_risk 100% · value 38% | legacy screens: 4 | ['High Quality Stocks', 'High Profitability Leaders', 'Defensive Low-Risk', 'Strong Balance Sheet']
-90. Saptakoshi Development Bank Ltd     | Score: 0.57 | quality 96% · reversal 72% · liquidity 78% | legacy screens: 0 | 
-91. Mahuli Samudayik Laghubitta Sanstha | Score: 0.57 | quality 89% · value 59% · low_risk 63% | legacy screens: 0 | 
-92. Manushi Laghubitta Bittiya Sanstha  | Score: 0.56 | quality 69% · low_risk 85% · reversal 84% | legacy screens: 0 | 
-93. Upakar Laghubitta Bittiya Sanstha L | Score: 0.56 | quality 77% · low_risk 64% · reversal 82% | legacy screens: 0 | 
-94. Himalayan Bank                      | Score: 0.55 | value 90% · low_risk 67% · quality 26% | legacy screens: 0 | 
-95. Mithila Laghubitta Bikas Bank       | Score: 0.55 | quality 49% · reversal 94% · low_risk 66% | legacy screens: 0 | 
-96. Arun Valley Hydropower Development  | Score: 0.55 | quality 56% · value 65% · liquidity 79% | legacy screens: 0 | 
-97. Aatmanirbhar Laghubitta Bittiya San | Score: 0.55 | quality 92% · reversal 79% · low_risk 44% | legacy screens: 1 | ['Defensive Low-Risk']
-98. Kalika Power Company                | Score: 0.55 | quality 83% · value 62% · low_risk 31% | legacy screens: 0 | 
-99. Himalayan Everest Insurance Limited | Score: 0.55 | value 83% · quality 51% · low_risk 54% | legacy screens: 0 | 
-100. Bishal Bazar                        | Score: 0.54 | quality 79% · low_risk 96% · reversal 63% | legacy screens: 0 | 
-101. Singati Hydro Energy Limited        | Score: 0.54 | value 76% · quality 56% · liquidity 87% | legacy screens: 0 | 
-102. Synergy Power Development Ltd.      | Score: 0.54 | quality 60% · value 55% · reversal 68% | legacy screens: 0 | 
-103. Mahila Lagubitta Bittiya Sanstha Li | Score: 0.54 | quality 58% · reversal 98% · low_risk 57% | legacy screens: 0 | 
-104. Kalinchowk Darshan Limited          | Score: 0.54 | quality 78% · low_risk 82% · reversal 55% | legacy screens: 0 | 
-105. Vision Lumbini Urja Company Limited | Score: 0.54 | value 56% · reversal 91% · quality 38% | legacy screens: 0 | 
-106. Ganapati Microfinance Bittiya Sanst | Score: 0.54 | quality 66% · low_risk 86% · reversal 65% | legacy screens: 0 | 
-107. ICFC Finance                        | Score: 0.54 | value 82% · quality 58% · low_risk 38% | legacy screens: 0 | 
-108. Support Microfinance Bittiya Sansth | Score: 0.54 | quality 94% · low_risk 79% · value 32% | legacy screens: 1 | ['Defensive Low-Risk']
-109. Unique Nepal Laghubitta Bittiya San | Score: 0.53 | low_risk 80% · quality 53% · value 45% | legacy screens: 0 | 
-110. Himalayan Hydropower Limited        | Score: 0.53 | quality 62% · value 49% · reversal 59% | legacy screens: 0 | 
-111. Reliable Nepal Life Insurance Limit | Score: 0.53 | value 66% · quality 41% · low_risk 54% | legacy screens: 0 | 
-112. Hydroelectricity Investment and Dev | Score: 0.53 | quality 56% · value 64% · liquidity 81% | legacy screens: 0 | 
-113. CEDB Holdings Limited               | Score: 0.53 | quality 100% · liquidity 90% · value 29% | legacy screens: 0 | 
-114. Butwal Power                        | Score: 0.52 | quality 61% · value 56% · liquidity 93% | legacy screens: 0 | 
-115. Aarambha Chautari Laghubitta Bittiy | Score: 0.52 | quality 63% · low_risk 79% · value 50% | legacy screens: 1 | ['Defensive Low-Risk']
-116. Nepal Hydro Developers Ltd.         | Score: 0.52 | quality 87% · low_risk 53% · value 36% | legacy screens: 0 | 
-117. Sanima Reliance Life Insurance Limi | Score: 0.51 | value 63% · low_risk 70% · quality 33% | legacy screens: 0 | 
-118. Swabhimaan Laghubitta Bittiya Sanst | Score: 0.51 | quality 64% · low_risk 71% · reversal 62% | legacy screens: 0 | 
-119. Siddhartha Premier Insurance Limite | Score: 0.51 | value 76% · quality 45% · reversal 51% | legacy screens: 0 | 
-120. Laxmi Laghubitta Bittiya Sanstha    | Score: 0.51 | quality 53% · value 54% · low_risk 65% | legacy screens: 0 | 
-121. Bottlers Nepal (Balaju)             | Score: 0.51 | low_risk 99% · value 63% · quality 48% | legacy screens: 0 | 
-122. Miteri Development Bank             | Score: 0.51 | quality 55% · low_risk 59% · value 47% | legacy screens: 0 | 
-123. Union Hydropower Limited            | Score: 0.51 | quality 56% · reversal 85% · value 45% | legacy screens: 0 | 
-124. Unnati Sahakarya Laghubitta Bittiya | Score: 0.50 | quality 67% · reversal 83% · value 35% | legacy screens: 0 | 
-125. Asha Laghubitta Bittiya Sanstha Ltd | Score: 0.50 | quality 81% · low_risk 61% · value 40% | legacy screens: 1 | ['Best Risk-Adjusted Returns']
-126. Shivam Cements Ltd                  | Score: 0.50 | value 66% · quality 41% · liquidity 92% | legacy screens: 0 | 
-127. RSDC Laghubitta Bittiya Sanstha Ltd | Score: 0.50 | quality 79% · value 38% · low_risk 44% | legacy screens: 0 | 
-128. Samata Gharelu Laghubitta Bittiya S | Score: 0.49 | quality 61% · value 45% · low_risk 47% | legacy screens: 0 | 
-129. United IDI Mardi RB Hydropower Limi | Score: 0.49 | quality 78% · low_risk 55% · value 39% | legacy screens: 0 | 
-130. Sun Nepal Life Insurance Company Li | Score: 0.49 | value 50% · low_risk 58% · reversal 75% | legacy screens: 0 | 
-131. Mandakini Hydropower Limited        | Score: 0.49 | quality 75% · value 43% · reversal 46% | legacy screens: 0 | 
-132. Shuvam Power Limited                | Score: 0.49 | quality 66% · low_risk 73% · reversal 65% | legacy screens: 0 | 
-133. Goodwill Finance                    | Score: 0.48 | value 78% · quality 44% · reversal 41% | legacy screens: 0 | 
-134. Sanima Mai Hydropower               | Score: 0.48 | quality 67% · value 44% · liquidity 99% | legacy screens: 0 | 
-135. Himalayan Life Insurance Limited    | Score: 0.47 | value 54% · low_risk 56% · reversal 59% | legacy screens: 0 | 
-136. Corporate Development Bank          | Score: 0.47 | quality 54% · reversal 100% · liquidity 88% | legacy screens: 0 | 
-137. Kutheli Bukhari Small Hydropower Li | Score: 0.47 | quality 60% · reversal 100% · liquidity 70% | legacy screens: 0 | 
-138. Eastern Hydropower Limited          | Score: 0.47 | reversal 87% · low_risk 61% · quality 38% | legacy screens: 0 | 
-139. Citizen Life Insurance Company Limi | Score: 0.46 | low_risk 78% · value 44% · quality 30% | legacy screens: 0 | 
-140. Janautthan Samudayic Laghubitta Bik | Score: 0.46 | low_risk 93% · reversal 72% · quality 34% | legacy screens: 0 | 
-141. Sanima GIC Insurance Limited        | Score: 0.45 | value 70% · quality 35% · reversal 52% | legacy screens: 0 | 
-142. Prabhu Mahalaxmi Life Insurance Lim | Score: 0.45 | low_risk 62% · value 42% · reversal 68% | legacy screens: 0 | 
-143. First Micro Finance Development Ban | Score: 0.45 | quality 84% · liquidity 76% · value 25% | legacy screens: 0 | 
-144. Gurans Laghubitta Bittiya Sanstha   | Score: 0.45 | quality 70% · low_risk 77% · value 17% | legacy screens: 0 | 
-145. Bikash Hydropower Company Limited   | Score: 0.45 | quality 49% · reversal 76% · liquidity 93% | legacy screens: 1 | ['Best Risk-Adjusted Returns']
-146. Nepal Insurance                     | Score: 0.44 | value 57% · quality 33% · reversal 49% | legacy screens: 0 | 
-147. Asian Life Insurance                | Score: 0.43 | value 48% · quality 34% · reversal 62% | legacy screens: 0 | 
-148. SuryaJyoti Life Insurance Company L | Score: 0.42 | value 53% · low_risk 50% · quality 28% | legacy screens: 0 | 
-149. Wean Nepal Laghubitta Bittiya Sanst | Score: 0.42 | reversal 90% · quality 37% · low_risk 56% | legacy screens: 0 | 
-150. Samriddhi Finance Company Limited   | Score: 0.41 | quality 82% · value 29% · low_risk 24% | legacy screens: 0 | 
-151. Central Finance                     | Score: 0.40 | quality 65% · value 37% · liquidity 89% | legacy screens: 2 | ['Sustained Trends on Pullback', 'Best Risk-Adjusted Returns']
-152. Green Development Bank Ltd.         | Score: 0.38 | quality 51% · reversal 54% · liquidity 60% | legacy screens: 0 | 
-153. Muktinath Krishi Company Limited    | Score: 0.37 | reversal 97% · quality 38% · liquidity 49% | legacy screens: 0 | 
-154. United Modi Hydropower              | Score: 0.37 | quality 52% · liquidity 83% · low_risk 30% | legacy screens: 0 | 
-155. Shrijanshil Laghubitta Bittiya Sans | Score: 0.37 | quality 47% · value 41% · low_risk 33% | legacy screens: 0 | 
-156. Mero Microfinance Bittiya Sanstha L | Score: 0.36 | reversal 73% · quality 29% · value 31% | legacy screens: 0 | 
-157. National Life Insurance             | Score: 0.36 | low_risk 67% · quality 25% · value 23% | legacy screens: 0 | 
-158. Swastik Laghubitta Bittiya Sanstha  | Score: 0.35 | quality 61% · reversal 87% · value 10% | legacy screens: 0 | 
-159. Chandragiri Hills Limited           | Score: 0.35 | quality 43% · low_risk 44% · liquidity 73% | legacy screens: 0 | 
-160. Guheshowori Merchant Bank & Finance | Score: 0.35 | value 53% · quality 25% · reversal 44% | legacy screens: 0 | 
-161. Best Finance                        | Score: 0.35 | quality 45% · value 37% · liquidity 63% | legacy screens: 0 | 
-162. Nepal Micro Insurance Company Limit | Score: 0.35 | quality 48% · reversal 88% · value 12% | legacy screens: 0 | 
-163. Salt Trading Corporation            | Score: 0.34 | low_risk 66% · quality 32% · reversal 35% | legacy screens: 0 | 
-164. NIC ASIA Laghubitta Bittiya Sanstha | Score: 0.33 | low_risk 49% · quality 29% · reversal 40% | legacy screens: 0 | 
-165. Progressive Finance                 | Score: 0.33 | quality 39% · reversal 66% · value 28% | legacy screens: 0 | 
-166. SY Panel Nepal Limited              | Score: 0.33 | reversal 80% · quality 36% · liquidity 90% | legacy screens: 0 | 
-167. Dhaulagiri Laghubitta Bittiya Sanst | Score: 0.33 | quality 40% · reversal 65% · value 18% | legacy screens: 0 | 
-168. Multipurpose Finance                | Score: 0.31 | quality 52% · value 24% · low_risk 19% | legacy screens: 0 | 
-169. Reliance Finance                    | Score: 0.28 | value 37% · quality 26% · liquidity 76% | legacy screens: 0 | 
-170. Bandipur Cablecar and Tourism Limit | Score: 0.27 | reversal 91% · liquidity 72% · quality 10% | legacy screens: 0 | 
-171. Daramkhola Hydro Energy Limited     | Score: 0.24 | reversal 55% · liquidity 66% · value 25% | legacy screens: 0 | 
+ 1. Forward Community Microfinance Bitt | Score: 0.77 | quality 84% · value 87% · low_risk 79% | legacy screens: 0 | 
+ 2. Garima Bikas Bank                   | Score: 0.76 | quality 82% · value 94% · low_risk 93% | legacy screens: 4 | High Quality Stocks, High Profitability Leaders, Undervalued High Earners, Strong Balance Sheet
+ 3. Mountain Energy Nepal Limited       | Score: 0.75 | quality 98% · value 70% · low_risk 82% | legacy screens: 6 | High Quality Stocks, High Profitability Leaders, Healthy Weekly Momentum, Defensive Low-Risk, Strong Balance Sheet, Best Risk-Adjusted Returns
+ 4. Everest Bank                        | Score: 0.75 | quality 80% · value 88% · low_risk 96% | legacy screens: 5 | High Quality Stocks, High Profitability Leaders, Undervalued High Earners, Defensive Low-Risk, Strong Balance Sheet
+ 5. Sanima Bank                         | Score: 0.74 | value 95% · quality 75% · low_risk 89% | legacy screens: 2 | Undervalued High Earners, Defensive Low-Risk
+ 6. Api Power                           | Score: 0.74 | quality 93% · value 87% · liquidity 96% | legacy screens: 1 | Best Risk-Adjusted Returns
+ 7. Swabalamban Bikas Bank              | Score: 0.74 | value 89% · quality 68% · low_risk 78% | legacy screens: 0 | 
+ 8. Sahas Urja Limited                  | Score: 0.74 | quality 98% · value 79% · low_risk 69% | legacy screens: 1 | Best Risk-Adjusted Returns
+ 9. Deprosc Laghubitta                  | Score: 0.73 | quality 94% · value 85% · low_risk 84% | legacy screens: 0 | 
+10. NESDO Sambridha Laghubitta Bittiye  | Score: 0.73 | quality 86% · low_risk 95% · value 57% | legacy screens: 0 | 
+11. Sampada Laghubitta Bittiya Sanstha  | Score: 0.73 | quality 77% · low_risk 89% · value 71% | legacy screens: 0 | 
+12. CYC Nepal Laghubitta Bittiya Sansth | Score: 0.72 | quality 99% · value 79% · low_risk 67% | legacy screens: 3 | High Quality Stocks, High Profitability Leaders, Defensive Low-Risk
+13. NMB Bank                            | Score: 0.72 | value 98% · low_risk 97% · quality 58% | legacy screens: 1 | Defensive Low-Risk
+14. Global IME Laghubitta Bittiya Sanst | Score: 0.72 | quality 95% · value 74% · low_risk 87% | legacy screens: 0 | 
+15. Standard Chartered Bank             | Score: 0.72 | quality 84% · value 86% · low_risk 98% | legacy screens: 1 | Defensive Low-Risk
+16. Kumari Bank                         | Score: 0.72 | quality 88% · value 99% · liquidity 90% | legacy screens: 1 | Defensive Low-Risk
+17. Nabil Bank                          | Score: 0.71 | value 93% · low_risk 99% · quality 63% | legacy screens: 2 | Undervalued High Earners, Defensive Low-Risk
+18. Jeevan Bikas Laghubitta Bittya Sans | Score: 0.71 | quality 93% · value 70% · low_risk 81% | legacy screens: 1 | Defensive Low-Risk
+19. Aviyan Laghubitta Bittiya Sanstha L | Score: 0.70 | quality 97% · value 61% · low_risk 64% | legacy screens: 0 | 
+20. National Microfinance Bittiya Sanst | Score: 0.70 | quality 90% · value 77% · low_risk 79% | legacy screens: 1 | Defensive Low-Risk
+21. Muktinath Bikas Bank                | Score: 0.70 | value 92% · low_risk 93% · quality 55% | legacy screens: 0 | 
+22. Nepal Bank                          | Score: 0.70 | value 100% · quality 59% · low_risk 87% | legacy screens: 2 | Undervalued High Earners, Defensive Low-Risk
+23. Rawa Energy Development Limited     | Score: 0.69 | quality 82% · reversal 98% · low_risk 68% | legacy screens: 0 | 
+24. Jyoti Bikas Bank                    | Score: 0.69 | value 97% · quality 70% · low_risk 56% | legacy screens: 0 | 
+25. Prime Commercial Bank               | Score: 0.68 | value 98% · low_risk 86% · quality 56% | legacy screens: 1 | Defensive Low-Risk
+26. Swarojgar Laghu Bitta Bikas Bank    | Score: 0.68 | quality 85% · value 68% · low_risk 80% | legacy screens: 0 | 
+27. Shine Resunga Development Bank      | Score: 0.68 | value 92% · quality 75% · low_risk 65% | legacy screens: 0 | 
+28. Chhimek Laghubitta Bikas Bank       | Score: 0.67 | quality 70% · value 76% · low_risk 94% | legacy screens: 4 | High Quality Stocks, High Profitability Leaders, Healthy Weekly Momentum, Defensive Low-Risk
+29. Kalika Laghubitta Bittiya Sanstha   | Score: 0.66 | quality 67% · low_risk 85% · value 64% | legacy screens: 0 | 
+30. Kamana Sewa Bikas Bank Limited      | Score: 0.66 | value 89% · quality 64% · low_risk 64% | legacy screens: 0 | 
+31. Bindhyabasini Hydropower Developmen | Score: 0.66 | quality 70% · value 69% · low_risk 74% | legacy screens: 0 | 
+32. Balephi Hydropower Limited          | Score: 0.66 | value 86% · quality 61% · low_risk 44% | legacy screens: 0 | 
+33. Global Ime Bank                     | Score: 0.65 | value 97% · low_risk 92% · quality 43% | legacy screens: 2 | Undervalued High Earners, Defensive Low-Risk
+34. Infinity Laghubitta Bittiya Sanstha | Score: 0.65 | quality 87% · low_risk 76% · value 59% | legacy screens: 0 | 
+35. Siddhartha Bank                     | Score: 0.65 | value 95% · low_risk 83% · quality 49% | legacy screens: 4 | Undervalued High Earners, Healthy Weekly Momentum, Defensive Low-Risk, Best Risk-Adjusted Returns
 ====================================================================================================
 
 
