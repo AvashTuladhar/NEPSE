@@ -18,14 +18,14 @@ Total Stocks: 263
  8. Kumari Bank                         | Score: 0.74 | quality 96% · value 99% · liquidity 90% | legacy screens: 1 | Defensive Low-Risk
  9. Sampada Laghubitta Bittiya Sanstha  | Score: 0.74 | quality 81% · low_risk 89% · value 71% | legacy screens: 0 | 
 10. Nepal Bank                          | Score: 0.73 | value 100% · quality 72% · low_risk 87% | legacy screens: 2 | Undervalued High Earners, Defensive Low-Risk
-11. Mountain Energy Nepal Limited       | Score: 0.73 | quality 92% · value 70% · low_risk 82% | legacy screens: 6 | High Quality Stocks, High Profitability Leaders, Healthy Weekly Momentum, Defensive Low-Risk, Strong Balance Sheet, Best Risk-Adjusted Returns
+11. Mountain Energy Nepal Limited       | Score: 0.73 | quality 92% · value 70% · low_risk 82% | legacy screens: 5 | High Quality Stocks, High Profitability Leaders, Defensive Low-Risk, Strong Balance Sheet, Best Risk-Adjusted Returns
 12. Kalika Laghubitta Bittiya Sanstha   | Score: 0.73 | quality 91% · low_risk 85% · value 64% | legacy screens: 0 | 
 13. Api Power                           | Score: 0.73 | quality 89% · value 87% · liquidity 96% | legacy screens: 1 | Best Risk-Adjusted Returns
 14. Global IME Laghubitta Bittiya Sanst | Score: 0.73 | quality 97% · value 74% · low_risk 87% | legacy screens: 0 | 
 15. CYC Nepal Laghubitta Bittiya Sansth | Score: 0.73 | quality 100% · value 79% · low_risk 67% | legacy screens: 3 | High Quality Stocks, High Profitability Leaders, Defensive Low-Risk
 16. Jeevan Bikas Laghubitta Bittya Sans | Score: 0.72 | quality 94% · value 70% · low_risk 81% | legacy screens: 1 | Defensive Low-Risk
 17. Deprosc Laghubitta                  | Score: 0.71 | quality 87% · value 85% · low_risk 84% | legacy screens: 0 | 
-18. Siddhartha Bank                     | Score: 0.71 | value 95% · quality 68% · low_risk 83% | legacy screens: 4 | Undervalued High Earners, Healthy Weekly Momentum, Defensive Low-Risk, Best Risk-Adjusted Returns
+18. Siddhartha Bank                     | Score: 0.71 | value 95% · quality 68% · low_risk 83% | legacy screens: 3 | Undervalued High Earners, Defensive Low-Risk, Best Risk-Adjusted Returns
 19. Jyoti Bikas Bank                    | Score: 0.70 | value 97% · quality 74% · low_risk 56% | legacy screens: 0 | 
 20. Standard Chartered Bank             | Score: 0.70 | quality 77% · value 86% · low_risk 98% | legacy screens: 1 | Defensive Low-Risk
 21. Sahas Urja Limited                  | Score: 0.70 | quality 84% · value 79% · low_risk 69% | legacy screens: 1 | Best Risk-Adjusted Returns
@@ -42,7 +42,7 @@ Total Stocks: 263
 32. Nadep Laghubitta Bittiya Sanstha Lt | Score: 0.67 | quality 89% · value 81% · low_risk 57% | legacy screens: 0 | 
 33. Nabil Bank                          | Score: 0.66 | value 93% · low_risk 99% · quality 46% | legacy screens: 2 | Undervalued High Earners, Defensive Low-Risk
 34. Matribhumi Lagubitta Bittiya Sansth | Score: 0.66 | quality 95% · value 67% · reversal 81% | legacy screens: 0 | 
-35. Chhimek Laghubitta Bikas Bank       | Score: 0.66 | quality 68% · value 76% · low_risk 94% | legacy screens: 4 | High Quality Stocks, High Profitability Leaders, Healthy Weekly Momentum, Defensive Low-Risk
+35. Chhimek Laghubitta Bikas Bank       | Score: 0.66 | quality 68% · value 76% · low_risk 94% | legacy screens: 3 | High Quality Stocks, High Profitability Leaders, Defensive Low-Risk
 36. Samaj Laghubittya Bittiya Sanstha L | Score: 0.66 | quality 98% · low_risk 97% · value 36% | legacy screens: 1 | Defensive Low-Risk
 37. Global Ime Bank                     | Score: 0.65 | value 97% · low_risk 92% · quality 43% | legacy screens: 2 | Undervalued High Earners, Defensive Low-Risk
 38. Gurkhas Finance Ltd.                | Score: 0.65 | quality 93% · value 86% · liquidity 78% | legacy screens: 0 | 
@@ -93,24 +93,7 @@ Total Stocks: 263
 ----------------------------------------------------------------------------------------------------
    No stocks found matching criteria
 
-5. 🚀 HEALTHY WEEKLY MOMENTUM
-----------------------------------------------------------------------------------------------------
- 1. Sayapatri Hydropower Limited                  | Rs   561.00 | 1W:   6.55% | 4W:   4.86%
- 2. Super Madi Hydropower Limited                 | Rs   513.00 | 1W:   2.85% | 4W:   5.45%
- 3. Sanima Middle Tamor Hydropower Limited        | Rs   478.00 | 1W:   1.92% | 4W:   5.99%
- 4. Nepal Sbi Bank                                | Rs   405.00 | 1W:   1.50% | 4W:  -2.41%
- 5. Soaltee Hotel                                 | Rs   509.90 | 1W:   0.97% | 4W:   1.57%
- 6. Siddhartha Bank                               | Rs   412.80 | 1W:   0.88% | 4W:   0.93%
- 7. Bottlers Nepal (Terai)                        | Rs 11900.00 | 1W:   3.01% | 4W:   2.13%
- 8. Mountain Energy Nepal Limited                 | Rs   619.10 | 1W:   0.60% | 4W:   3.63%
- 9. Nepal Lube Oil                                | Rs   277.40 | 1W:   2.97% | 4W:   2.97%
-10. Chhimek Laghubitta Bikas Bank                 | Rs   935.10 | 1W:   0.01% | 4W:  -0.20%
-
-6. 📈 SUSTAINED TRENDS ON PULLBACK
-----------------------------------------------------------------------------------------------------
- 1. Central Finance                               | Rs   599.60 | 12W:  12.28% | 1W:  -1.70%
-
-7. 🛡️ DEFENSIVE LOW-RISK
+5. 🛡️ DEFENSIVE LOW-RISK
 ----------------------------------------------------------------------------------------------------
  1. Samaj Laghubittya Bittiya Sanstha Limited     | Rs  1875.80 | Beta:  -1.10 | YTD:   0.00%
  2. Nepal Lube Oil                                | Rs   277.40 | Beta:  -0.02 | YTD:   9.17%
@@ -144,11 +127,11 @@ Total Stocks: 263
 30. Soaltee Hotel                                 | Rs   509.90 | Beta:   0.99 | YTD:   4.51%
 31. Aarambha Chautari Laghubitta Bittiya Sanstha  | Rs   909.00 | Beta:   1.00 | YTD:  -1.73%
 
-8. 🔄 TURNAROUND OPPORTUNITIES
+6. 🔄 TURNAROUND OPPORTUNITIES
 ----------------------------------------------------------------------------------------------------
    No stocks found matching criteria
 
-9. 💪 STRONG BALANCE SHEET
+7. 💪 STRONG BALANCE SHEET
 ----------------------------------------------------------------------------------------------------
  1. Unilever Nepal                                | Rs 47200.00 | CR: 236.83 | Debt:  34.02%
  2. Himalayan Distillery                          | Rs  1170.90 | CR: 937.92 | Debt:   9.65%
@@ -157,7 +140,7 @@ Total Stocks: 263
  5. Garima Bikas Bank                             | Rs   420.10 | CR:   0.00 | Debt:  90.56%
  6. Everest Bank                                  | Rs   726.10 | CR:   0.00 | Debt:  90.83%
 
-10. 📊 BEST RISK-ADJUSTED RETURNS
+8. 📊 BEST RISK-ADJUSTED RETURNS
 ----------------------------------------------------------------------------------------------------
  1. Sahas Urja Limited                            | Rs   684.00 | Return:   0.51% | SD:   2.67%
  2. Ankhu Khola Jalvidhyut Company Ltd.           | Rs   346.00 | Return:   1.04% | SD:   7.01%
@@ -173,7 +156,7 @@ Total Stocks: 263
 12. Mabilung Energy Limited                       | Rs   599.00 | Return:   0.39% | SD:   6.79%
 13. Manjushree Financial Institution              | Rs   740.00 | Return:   0.23% | SD:   4.04%
 
-11. 🚨 STOCKS TO AVOID (RED FLAGS)
+9. 🚨 STOCKS TO AVOID (RED FLAGS)
 ----------------------------------------------------------------------------------------------------
  1. Janaki Finance                                | Rs   378.00 | ROE: -57.31% | Margin:   2.63% | PE: 279.32
  2. Narayani Development Bank                     | Rs   766.70 | ROE: -45.49% | Margin: -235.15% | PE: -74.82
