@@ -1,13 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <title>Aurora Trading Simulator Dashboard</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
         :root {
             --bg-dark: #0f172a;
             --panel-bg: rgba(30, 41, 59, 0.7);
@@ -19,161 +20,504 @@
             --loss: #fb7185;
             --warning: #fbbf24;
             --border: rgba(148, 163, 184, 0.14);
+            --card-radius: 16px;
         }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            background-color: #020617;
+            -webkit-text-size-adjust: 100%;
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             background:
                 radial-gradient(ellipse 80% 50% at 20% -10%, rgba(59, 130, 246, 0.10), transparent 60%),
                 radial-gradient(ellipse 60% 40% at 90% 0%, rgba(99, 102, 241, 0.08), transparent 55%),
                 linear-gradient(135deg, #020617 0%, #0f172a 100%);
             background-attachment: fixed;
             color: var(--text-main);
-            margin: 0;
+            line-height: 1.6;
             padding: 2rem;
             min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
         }
-        .dashboard-container {
+
+        .container {
             width: 90%;
             max-width: 1800px;
             margin: 0 auto;
         }
-        .header {
+
+        .top-nav {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            margin-bottom: 2rem;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.45rem 0.95rem;
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid var(--border);
+            border-radius: 9999px;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.82rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .nav-btn:hover, .nav-btn.active {
+            background: rgba(59, 130, 246, 0.2);
+            color: #60a5fa;
+            border-color: rgba(59, 130, 246, 0.4);
+        }
+
+        h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(100deg, #7dd3fc 0%, #60a5fa 40%, #818cf8 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+            display: inline-block;
+        }
+
+        .header-title-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.35rem;
+        }
+
+        .meta {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-bottom: 1.75rem;
             padding-bottom: 1rem;
             border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 0.75rem;
         }
-        @media (max-width: 768px) {
-            body { padding: 1rem; }
-            .dashboard-container { width: 100%; }
-            .header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
-            h1 { font-size: 1.5rem; }
-            .stats-grid { grid-template-columns: 1fr; }
+
+        .meta strong {
+            color: #60a5fa;
+            font-weight: 600;
         }
-        h1 { margin: 0; font-size: 2rem; font-weight: 700; background: linear-gradient(100deg, #7dd3fc 0%, #60a5fa 40%, #818cf8 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
-        h2 { font-size: 1.25rem; margin-bottom: 1rem; font-weight: 600; }
-        .glass-panel {
-            background: var(--panel-bg);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        .glass-panel:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
-        }
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-            gap: 0.85rem;
-            margin-bottom: 1.5rem;
-        }
-        .stat-card {
-            text-align: center;
-            padding: 0.85rem 0.75rem;
-            border-radius: 12px;
-            margin-bottom: 0;
-            transition: none;
-        }
-        .stat-card:hover {
-            transform: none;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-        }
-        .stat-label { color: var(--text-muted); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.3rem; }
-        .stat-value { font-size: 1.15rem; font-weight: 700; }
-        .stat-value.profit { color: var(--profit); }
-        .stat-value.loss { color: var(--loss); }
-        .stat-value.warning { color: var(--warning); }
-        .chart-container { height: 350px; width: 100%; }
-        table { width: 100%; border-collapse: collapse; }
-        th, td { padding: 0.85rem 1rem; text-align: left; border-bottom: 1px solid var(--border); font-variant-numeric: tabular-nums; font-feature-settings: "tnum"; }
-        th { color: var(--text-muted); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
-        tbody tr:nth-child(even) td { background: rgba(148, 163, 184, 0.04); }
-        tr:hover td { background: rgba(59, 130, 246, 0.07); }
-        .profit { color: var(--profit); font-weight: 600; }
-        .loss { color: var(--loss); font-weight: 600; }
-        .badge { padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; }
-        .badge.profit { background: rgba(52, 211, 153, 0.14); color: #6ee7b7; border: 1px solid rgba(52, 211, 153, 0.3); }
-        .badge.loss { background: rgba(251, 113, 133, 0.14); color: #fda4af; border: 1px solid rgba(251, 113, 133, 0.3); }
+
         .tag-nepse {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
             background: rgba(59, 130, 246, 0.15);
             color: #60a5fa;
             border: 1px solid rgba(59, 130, 246, 0.3);
             border-radius: 6px;
             padding: 2px 8px;
             font-size: 0.75rem;
-            margin-left: 0.5rem;
+            font-weight: 600;
             vertical-align: middle;
+            white-space: nowrap;
+        }
+
+        /* Summary Statistics */
+        .summary-stats {
+            background: var(--panel-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            border-radius: var(--card-radius);
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+            gap: 0.75rem;
+        }
+
+        .stat-card {
+            background: rgba(15, 23, 42, 0.6);
+            padding: 0.75rem 0.65rem;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: border-color 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .stat-card:hover {
+            border-color: rgba(59, 130, 246, 0.4);
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-bottom: 0.25rem;
+            font-weight: 500;
+        }
+
+        .stat-value {
+            color: #60a5fa;
+            font-size: 1.15rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            line-height: 1.25;
+        }
+
+        .stat-value.profit { color: var(--profit); }
+        .stat-value.loss { color: var(--loss); }
+        .stat-value.warning { color: var(--warning); }
+
+        .stat-subtext {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+            font-weight: normal;
+            line-height: 1.3;
+        }
+
+        /* Section Headers */
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-main);
+            margin: 2rem 0 1rem 0;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border);
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        /* Glass Panels */
+        .glass-panel {
+            background: var(--panel-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            border-radius: var(--card-radius);
+            padding: 1.25rem;
+            margin-bottom: 1.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .glass-panel:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+        }
+
+        .chart-container {
+            position: relative;
+            height: 350px;
+            width: 100%;
+        }
+
+        /* Tables matching index.html */
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+        }
+
+        .scroll-hint {
+            display: none;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+            font-style: italic;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.875rem;
+            background: rgba(15, 23, 42, 0.5);
+            white-space: nowrap;
+        }
+
+        th {
+            background: rgba(15, 23, 42, 0.85);
+            color: var(--text-muted);
+            font-weight: 600;
+            text-align: left;
+            padding: 0.85rem 1rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        td {
+            padding: 0.85rem 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-main);
+            vertical-align: middle;
+            font-variant-numeric: tabular-nums;
+            font-feature-settings: "tnum";
+        }
+
+        tbody tr:nth-child(even) td {
+            background-color: rgba(148, 163, 184, 0.03);
+        }
+
+        tr:hover td {
+            background-color: rgba(59, 130, 246, 0.07);
+        }
+
+        .profit, .positive { color: var(--profit); font-weight: 600; }
+        .loss, .negative { color: var(--loss); font-weight: 600; }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .badge.profit {
+            background: rgba(52, 211, 153, 0.14);
+            color: #6ee7b7;
+            border: 1px solid rgba(52, 211, 153, 0.3);
+        }
+
+        .badge.loss {
+            background: rgba(251, 113, 133, 0.14);
+            color: #fda4af;
+            border: 1px solid rgba(251, 113, 133, 0.3);
+        }
+
+        /* Corporate Actions list */
+        .event-row {
+            display: flex;
+            align-items: baseline;
+            gap: 0.85rem;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.88rem;
+        }
+
+        .event-meta-col {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-shrink: 0;
+        }
+
+        .event-date {
+            color: var(--text-muted);
+            font-size: 0.82rem;
+            min-width: 85px;
+        }
+
+        .event-badge {
+            background: rgba(59, 130, 246, 0.15);
+            color: #60a5fa;
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            min-width: 75px;
+            text-align: center;
+        }
+
+        .event-content-col {
+            flex: 1;
+            line-height: 1.5;
+        }
+
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent);
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem 0.75rem;
+            }
+            .container {
+                width: 100%;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 1.15rem;
+                margin: 1.5rem 0 0.75rem 0;
+            }
+            .meta {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+                margin-bottom: 1.25rem;
+            }
+            .glass-panel {
+                padding: 1rem 0.75rem;
+                border-radius: 12px;
+                margin-bottom: 1.25rem;
+            }
+            .summary-stats {
+                padding: 0.75rem;
+                border-radius: 12px;
+                margin-bottom: 1.25rem;
+            }
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.5rem;
+            }
+            .stat-card.full-width-mobile {
+                grid-column: 1 / -1;
+            }
+            .stat-card {
+                padding: 0.65rem 0.5rem;
+            }
+            .stat-value {
+                font-size: 1.05rem;
+            }
+            .chart-container {
+                height: 250px;
+            }
+            .scroll-hint {
+                display: block;
+            }
+            th, td {
+                padding: 0.65rem 0.75rem;
+                font-size: 0.8rem;
+            }
+            .event-row {
+                flex-direction: column;
+                gap: 0.35rem;
+                padding: 0.65rem 0;
+            }
+            .event-meta-col {
+                width: 100%;
+                justify-content: flex-start;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="dashboard-container">
-        <div class="header">
-            <div>
-                <h1>Aurora Trading Simulator <span class="tag-nepse">NEPSE Fee & CGT Enabled</span>
-                    <span class="tag-nepse" style="color: var(--loss); border-color: var(--loss);">🐻 BEAR</span></h1>
-                <div style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.25rem;">Includes SEBON Fee (0.015%), Tiered Broker Commission (Jestha 2081 Revision), DP Fee (Rs. 25 on Sell), and 7.5% Short-Term CGT · Regime: Risk 50% · max 3 pos · 50% cash floor</div>
-            </div>
-            <div style="color: var(--text-muted); text-align: right;">
-                <div>Last Updated: 2026-08-25 21:47:44</div>
-            </div>
+    <div class="container">
+        <nav class="top-nav">
+            <a href="index.html" class="nav-btn">📊 Stock Analyzer Report</a>
+            <a href="TD.html" class="nav-btn active">📈 Paper Trading Simulator</a>
+        </nav>
+
+        <div class="header-title-row">
+            <h1>Aurora Trading Simulator</h1>
+            <span class="tag-nepse">NEPSE Fee & CGT Enabled</span>
+            <span class="tag-nepse" style="color: var(--loss); border-color: var(--loss);">🐻 BEAR</span>
+        </div>
+        <div class="meta">
+            <div>Includes SEBON Fee (0.015%), Tiered Broker Commission (Jestha 2081 Revision), DP Fee (Rs. 25 on Sell), and 7.5% Short-Term CGT · <strong>Regime: Risk 50% · max 3 pos · 50% cash floor</strong></div>
+            <div>Last Updated: <strong>2026-08-25 21:56:00</strong></div>
         </div>
 
-        <div class="stats-grid">
-            <div class="glass-panel stat-card">
-                <div class="stat-label">Total Equity</div>
-                <div class="stat-value">रू 499,717.78</div>
-            </div>
-            <div class="glass-panel stat-card">
-                <div class="stat-label">Liquid Cash</div>
-                <div class="stat-value">रू 381,257.78</div>
-            </div>
-            <div class="glass-panel stat-card">
-                <div class="stat-label">Active Positions</div>
-                <div class="stat-value">3</div>
-            </div>
-            <div class="glass-panel stat-card">
-                <div class="stat-label">Unrealized Net P&L</div>
-                <div class="stat-value loss">
-                    रू -1,666.13
-                    <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem; font-weight: normal;">
-                        (<span class="profit">+0.00</span> / <span class="loss">-1,666.13</span>)
+        <div class="summary-stats">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Total Equity</div>
+                    <div class="stat-value">रू 499,717.78</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Liquid Cash</div>
+                    <div class="stat-value">रू 381,257.78</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Active Positions</div>
+                    <div class="stat-value">3</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Unrealized Net P&L</div>
+                    <div class="stat-value loss">
+                        रू -1,666.13
+                        <div class="stat-subtext">
+                            (<span class="profit">+0.00</span> / <span class="loss">-1,666.13</span>)
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="glass-panel stat-card">
-                <div class="stat-label">Commissions & Taxes Incurred</div>
-                <div class="stat-value warning">
-                    रू 1,083.63
-                    <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem; font-weight: normal;">
-                        Active Buy Fees: रू 431.13 | Closed Fees: रू 540.29 | CGT: रू 112.21
+                <div class="stat-card full-width-mobile">
+                    <div class="stat-label">Commissions & Taxes Incurred</div>
+                    <div class="stat-value warning">
+                        रू 1,083.63
+                        <div class="stat-subtext">
+                            Active Buy Fees: रू 431.13 | Closed Fees: रू 540.29 | CGT: रू 112.21
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="glass-panel stat-card">
-                <div class="stat-label">Realized Net P&L</div>
-                <div class="stat-value profit">
-                    रू +1,383.90
-                    <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem; font-weight: normal;">
-                        Gross: रू +2,036.40
+                <div class="stat-card">
+                    <div class="stat-label">Realized Net P&L</div>
+                    <div class="stat-value profit">
+                        रू +1,383.90
+                        <div class="stat-subtext">
+                            Gross: रू +2,036.40
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="glass-panel stat-card">
-                <div class="stat-label">Win Rate (Net)</div>
-                <div class="stat-value profit">
-                    100.0%
-                    <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem; font-weight: normal;">
-                        (1W / 0L)
+                <div class="stat-card">
+                    <div class="stat-label">Win Rate (Net)</div>
+                    <div class="stat-value profit">
+                        100.0%
+                        <div class="stat-subtext">
+                            (1W / 0L)
+                        </div>
                     </div>
                 </div>
             </div>
@@ -186,18 +530,18 @@
             </div>
         </div>
 
-        <div class="stats-grid" style="grid-template-columns: 1fr;">
-            <div class="glass-panel">
-                <h2>Active Portfolio (Cost Basis & Fees Breakdown)</h2>
-                <div style="overflow-x: auto;">
-                    <table>
-                        <thead>
-                            <tr><th>Company</th><th>Qty</th><th>Market Entry</th><th>Effective Entry (Cost Basis)</th><th>Buy Fees (Comm + SEBON)</th><th>LTP</th><th>Typical ₹ (HLC3)</th><th>LTP vs Typical</th><th>Invested Cost</th><th>Current Value</th><th>Unrealized Net P&L</th><th>Return %</th><th>Allocation</th><th>Entry Date</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td><strong>Api Power</strong></td><td>100</td><td>रू 336.67</td><td style='color: #60a5fa;'><strong>रू 337.93</strong></td><td style='color: #f59e0b;'>रू 126.25</td><td>रू 329.80</td><td>रू 329.93</td><td class=''>-0.04%</td><td>रू 33,793.25</td><td>रू 32,980.00</td><td class='loss'><strong>रू -813.25</strong></td><td class='loss'>-2.41%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>6.8%</span></td><td>2026-08-21</td></tr><tr><td><strong>Deprosc Laghubitta</strong></td><td>70</td><td>रू 844.20</td><td style='color: #60a5fa;'><strong>रू 847.11</strong></td><td style='color: #f59e0b;'>रू 203.87</td><td>रू 838.00</td><td>रू 834.00</td><td class=''>+0.48%</td><td>रू 59,297.87</td><td>रू 58,660.00</td><td class='loss'><strong>रू -637.87</strong></td><td class='loss'>-1.08%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>11.9%</span></td><td>2026-08-10</td></tr><tr><td><strong>Swabalamban Bikas Bank</strong></td><td>40</td><td>रू 673.35</td><td style='color: #60a5fa;'><strong>रू 675.88</strong></td><td style='color: #f59e0b;'>रू 101.00</td><td>रू 670.50</td><td>रू 668.67</td><td class=''>+0.27%</td><td>रू 27,035.00</td><td>रू 26,820.00</td><td class='loss'><strong>रू -215.00</strong></td><td class='loss'>-0.80%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>5.4%</span></td><td>2026-08-10</td></tr>
-                        </tbody>
-                        
+        <div class="glass-panel">
+            <h2>Active Portfolio (Cost Basis & Fees Breakdown)</h2>
+            <div class="scroll-hint">👉 Swipe horizontally to view full ledger details</div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr><th>Company</th><th>Qty</th><th>Market Entry</th><th>Effective Entry (Cost Basis)</th><th>Buy Fees (Comm + SEBON)</th><th>LTP</th><th>Typical ₹ (HLC3)</th><th>LTP vs Typical</th><th>Invested Cost</th><th>Current Value</th><th>Unrealized Net P&L</th><th>Return %</th><th>Allocation</th><th>Entry Date</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>Api Power</strong></td><td>100</td><td>रू 336.67</td><td style='color: #60a5fa;'><strong>रू 337.93</strong></td><td style='color: #f59e0b;'>रू 126.25</td><td>रू 329.80</td><td>रू 329.93</td><td class=''>-0.04%</td><td>रू 33,793.25</td><td>रू 32,980.00</td><td class='loss'><strong>रू -813.25</strong></td><td class='loss'>-2.41%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>6.8%</span></td><td>2026-08-21</td></tr><tr><td><strong>Deprosc Laghubitta</strong></td><td>70</td><td>रू 844.20</td><td style='color: #60a5fa;'><strong>रू 847.11</strong></td><td style='color: #f59e0b;'>रू 203.87</td><td>रू 838.00</td><td>रू 834.00</td><td class=''>+0.48%</td><td>रू 59,297.87</td><td>रू 58,660.00</td><td class='loss'><strong>रू -637.87</strong></td><td class='loss'>-1.08%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>11.9%</span></td><td>2026-08-10</td></tr><tr><td><strong>Swabalamban Bikas Bank</strong></td><td>40</td><td>रू 673.35</td><td style='color: #60a5fa;'><strong>रू 675.88</strong></td><td style='color: #f59e0b;'>रू 101.00</td><td>रू 670.50</td><td>रू 668.67</td><td class=''>+0.27%</td><td>रू 27,035.00</td><td>रू 26,820.00</td><td class='loss'><strong>रू -215.00</strong></td><td class='loss'>-0.80%</td><td><span class='badge profit' style='background: rgba(59, 130, 246, 0.2); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3);'>5.4%</span></td><td>2026-08-10</td></tr>
+                    </tbody>
+                    
                 <tfoot>
                     <tr style="font-weight: 700; background: rgba(255, 255, 255, 0.05); border-top: 2px solid var(--border);">
                         <td colspan="4">PORTFOLIO TOTALS (3 STOCKS)</td>
@@ -214,15 +558,16 @@
                     </tr>
                 </tfoot>
             
-                    </table>
-                </div>
+                </table>
             </div>
         </div>
         
         
         <div class="glass-panel">
             <h2>📅 Upcoming Corporate Actions</h2>
-            <div style='display:flex; gap:0.75rem; padding:0.5rem 0; border-bottom:1px solid var(--border); font-size:0.9rem;'><span style='color:var(--text-muted); min-width:90px;'>2026-08-25</span><span class='badge' style='background:rgba(59,130,246,0.15); color:#60a5fa; border:1px solid rgba(59,130,246,0.3); min-width:80px; text-align:center;'>Dividend</span><span><strong>Kamana Sewa Bikas Bank Limited</strong> <span style='color:var(--text-muted);'>(KSBBL)</span> — Proposal for 15% Cash Dividend subject to approval from Regulatory body and its upcoming AGM</span></div><div style='display:flex; gap:0.75rem; padding:0.5rem 0; border-bottom:1px solid var(--border); font-size:0.9rem;'><span style='color:var(--text-muted); min-width:90px;'>2026-08-25</span><span class='badge' style='background:rgba(59,130,246,0.15); color:#60a5fa; border:1px solid rgba(59,130,246,0.3); min-width:80px; text-align:center;'>Dividend</span><span><strong>Super Madi Hydropower Limited</strong> <span style='color:var(--text-muted);'>(SMHL)</span> — Proposal for 15% Stock and 0.78947% Cash Dividend subject to approval from Regulatory body and its upcoming AG</span></div><div style='display:flex; gap:0.75rem; padding:0.5rem 0; border-bottom:1px solid var(--border); font-size:0.9rem;'><span style='color:var(--text-muted); min-width:90px;'>2026-08-25</span><span class='badge' style='background:rgba(59,130,246,0.15); color:#60a5fa; border:1px solid rgba(59,130,246,0.3); min-width:80px; text-align:center;'>AGM</span><span><strong>Excel Development Bank</strong> <span style='color:var(--text-muted);'>(EDBL)</span> — Financial Highlights FY 2024/25 ##Appointment of Board Members ##Authorization to the Board to undertake the n</span></div><div style='display:flex; gap:0.75rem; padding:0.5rem 0; border-bottom:1px solid var(--border); font-size:0.9rem;'><span style='color:var(--text-muted); min-width:90px;'>2026-08-27</span><span class='badge' style='background:rgba(59,130,246,0.15); color:#60a5fa; border:1px solid rgba(59,130,246,0.3); min-width:80px; text-align:center;'>AGM</span><span><strong>Swastik Laghubitta Bittiya Sanstha Limited</strong> <span style='color:var(--text-muted);'>(SWASTIK)</span> — Financial Highlights FY 2024/25 ##Appointment of Board Members ##Proposal for Issuance of 1:2 Right Share</span></div><div style='display:flex; gap:0.75rem; padding:0.5rem 0; border-bottom:1px solid var(--border); font-size:0.9rem;'><span style='color:var(--text-muted); min-width:90px;'>2026-08-30</span><span class='badge' style='background:rgba(59,130,246,0.15); color:#60a5fa; border:1px solid rgba(59,130,246,0.3); min-width:80px; text-align:center;'>SGM</span><span><strong>Jeevan Bikas Laghubitta Bittya Sanstha Ltd</strong> <span style='color:var(--text-muted);'>(JBLB)</span> — Approval of the merger of Jeevan Bikas Laghubitta Bittiya Sanstha Limited, Unique Nepal Laghubitta Bittiya San</span></div><div style='display:flex; gap:0.75rem; padding:0.5rem 0; border-bottom:1px solid var(--border); font-size:0.9rem;'><span style='color:var(--text-muted); min-width:90px;'>2026-08-30</span><span class='badge' style='background:rgba(59,130,246,0.15); color:#60a5fa; border:1px solid rgba(59,130,246,0.3); min-width:80px; text-align:center;'>SGM</span><span><strong>Manushi Laghubitta Bittiya Sanstha Limited</strong> <span style='color:var(--text-muted);'>(MLBS)</span> — Approval of the merger of Jeevan Bikas Laghubitta Bittiya Sanstha Limited, Unique Nepal Laghubitta Bittiya San</span></div><div style='display:flex; gap:0.75rem; padding:0.5rem 0; border-bottom:1px solid var(--border); font-size:0.9rem;'><span style='color:var(--text-muted); min-width:90px;'>2026-08-30</span><span class='badge' style='background:rgba(59,130,246,0.15); color:#60a5fa; border:1px solid rgba(59,130,246,0.3); min-width:80px; text-align:center;'>SGM</span><span><strong>Unique Nepal Laghubitta Bittiya Sanstha Limited</strong> <span style='color:var(--text-muted);'>(UNLB)</span> — Approval of the merger of Jeevan Bikas Laghubitta Bittiya Sanstha Limited, Unique Nepal Laghubitta Bittiya San</span></div><div style='display:flex; gap:0.75rem; padding:0.5rem 0; border-bottom:1px solid var(--border); font-size:0.9rem;'><span style='color:var(--text-muted); min-width:90px;'>2026-08-30</span><span class='badge' style='background:rgba(59,130,246,0.15); color:#60a5fa; border:1px solid rgba(59,130,246,0.3); min-width:80px; text-align:center;'>AGM</span><span><strong>Daramkhola Hydro Energy Limited</strong> <span style='color:var(--text-muted);'>(DHEL)</span> — Financial Highlights FY 2024/25 ##Election of Board Members</span></div><div style='display:flex; gap:0.75rem; padding:0.5rem 0; border-bottom:1px solid var(--border); font-size:0.9rem;'><span style='color:var(--text-muted); min-width:90px;'>2026-08-31</span><span class='badge' style='background:rgba(59,130,246,0.15); color:#60a5fa; border:1px solid rgba(59,130,246,0.3); min-width:80px; text-align:center;'>Dividend</span><span><strong>Siddhartha Investment Growth Scheme 3</strong> <span style='color:var(--text-muted);'>(SIGS3)</span> — 10% Cash Dividend (including tax) to be distributed to its unitholders for FY 2025/26</span></div><div style='display:flex; gap:0.75rem; padding:0.5rem 0; border-bottom:1px solid var(--border); font-size:0.9rem;'><span style='color:var(--text-muted); min-width:90px;'>2026-08-31</span><span class='badge' style='background:rgba(59,130,246,0.15); color:#60a5fa; border:1px solid rgba(59,130,246,0.3); min-width:80px; text-align:center;'>Dividend</span><span><strong>Siddhartha Investment Growth Scheme 2</strong> <span style='color:var(--text-muted);'>(SIGS2)</span> — 8% Cash Dividend (including tax) to be distributed to its unitholders for FY 2025/26</span></div><div style='display:flex; gap:0.75rem; padding:0.5rem 0; border-bottom:1px solid var(--border); font-size:0.9rem;'><span style='color:var(--text-muted); min-width:90px;'>2026-09-01</span><span class='badge' style='background:rgba(59,130,246,0.15); color:#60a5fa; border:1px solid rgba(59,130,246,0.3); min-width:80px; text-align:center;'>AGM</span><span><strong>Multipurpose Finance</strong> <span style='color:var(--text-muted);'>(MPFL)</span> — Financial Highlights FY 2024/25</span></div>
+            <div class="events-list">
+                <div class='event-row'><div class='event-meta-col'><span class='event-date'>2026-08-25</span><span class='badge event-badge'>Dividend</span></div><div class='event-content-col'><strong>Kamana Sewa Bikas Bank Limited</strong> <span style='color:var(--text-muted);'>(KSBBL)</span><span class='event-agenda'> — Proposal for 15% Cash Dividend subject to approval from Regulatory body and its upcoming AGM</span></div></div><div class='event-row'><div class='event-meta-col'><span class='event-date'>2026-08-25</span><span class='badge event-badge'>Dividend</span></div><div class='event-content-col'><strong>Super Madi Hydropower Limited</strong> <span style='color:var(--text-muted);'>(SMHL)</span><span class='event-agenda'> — Proposal for 15% Stock and 0.78947% Cash Dividend subject to approval from Regulatory body and its upcoming AGM</span></div></div><div class='event-row'><div class='event-meta-col'><span class='event-date'>2026-08-25</span><span class='badge event-badge'>AGM</span></div><div class='event-content-col'><strong>Excel Development Bank</strong> <span style='color:var(--text-muted);'>(EDBL)</span><span class='event-agenda'> — Financial Highlights FY 2024/25 ##Appointment of Board Members ##Authorization to the Board to undertake the necessary process for Merger/Ac</span></div></div><div class='event-row'><div class='event-meta-col'><span class='event-date'>2026-08-27</span><span class='badge event-badge'>AGM</span></div><div class='event-content-col'><strong>Swastik Laghubitta Bittiya Sanstha Limited</strong> <span style='color:var(--text-muted);'>(SWASTIK)</span><span class='event-agenda'> — Financial Highlights FY 2024/25 ##Appointment of Board Members ##Proposal for Issuance of 1:2 Right Share</span></div></div><div class='event-row'><div class='event-meta-col'><span class='event-date'>2026-08-30</span><span class='badge event-badge'>SGM</span></div><div class='event-content-col'><strong>Jeevan Bikas Laghubitta Bittya Sanstha Ltd</strong> <span style='color:var(--text-muted);'>(JBLB)</span><span class='event-agenda'> — Approval of the merger of Jeevan Bikas Laghubitta Bittiya Sanstha Limited, Unique Nepal Laghubitta Bittiya Sanstha Limited, and Manushi Lagh</span></div></div><div class='event-row'><div class='event-meta-col'><span class='event-date'>2026-08-30</span><span class='badge event-badge'>SGM</span></div><div class='event-content-col'><strong>Manushi Laghubitta Bittiya Sanstha Limited</strong> <span style='color:var(--text-muted);'>(MLBS)</span><span class='event-agenda'> — Approval of the merger of Jeevan Bikas Laghubitta Bittiya Sanstha Limited, Unique Nepal Laghubitta Bittiya Sanstha Limited, and Manushi Lagh</span></div></div><div class='event-row'><div class='event-meta-col'><span class='event-date'>2026-08-30</span><span class='badge event-badge'>SGM</span></div><div class='event-content-col'><strong>Unique Nepal Laghubitta Bittiya Sanstha Limited</strong> <span style='color:var(--text-muted);'>(UNLB)</span><span class='event-agenda'> — Approval of the merger of Jeevan Bikas Laghubitta Bittiya Sanstha Limited, Unique Nepal Laghubitta Bittiya Sanstha Limited, and Manushi Lagh</span></div></div><div class='event-row'><div class='event-meta-col'><span class='event-date'>2026-08-30</span><span class='badge event-badge'>AGM</span></div><div class='event-content-col'><strong>Daramkhola Hydro Energy Limited</strong> <span style='color:var(--text-muted);'>(DHEL)</span><span class='event-agenda'> — Financial Highlights FY 2024/25 ##Election of Board Members</span></div></div><div class='event-row'><div class='event-meta-col'><span class='event-date'>2026-08-31</span><span class='badge event-badge'>Dividend</span></div><div class='event-content-col'><strong>Siddhartha Investment Growth Scheme 3</strong> <span style='color:var(--text-muted);'>(SIGS3)</span><span class='event-agenda'> — 10% Cash Dividend (including tax) to be distributed to its unitholders for FY 2025/26</span></div></div><div class='event-row'><div class='event-meta-col'><span class='event-date'>2026-08-31</span><span class='badge event-badge'>Dividend</span></div><div class='event-content-col'><strong>Siddhartha Investment Growth Scheme 2</strong> <span style='color:var(--text-muted);'>(SIGS2)</span><span class='event-agenda'> — 8% Cash Dividend (including tax) to be distributed to its unitholders for FY 2025/26</span></div></div><div class='event-row'><div class='event-meta-col'><span class='event-date'>2026-09-01</span><span class='badge event-badge'>AGM</span></div><div class='event-content-col'><strong>Multipurpose Finance</strong> <span style='color:var(--text-muted);'>(MPFL)</span><span class='event-agenda'> — Financial Highlights FY 2024/25</span></div></div>
+            </div>
             <div style="color: var(--text-muted); font-size: 0.8rem; margin-top: 0.75rem;">
                 ⚠️ Prices around ex-dividend / book-closure dates may distort momentum signals — verify before acting.
             </div>
@@ -230,7 +575,8 @@
             
         <div class="glass-panel">
             <h2>Closed Trades History (Audit Trail)</h2>
-            <div style="overflow-x: auto;">
+            <div class="scroll-hint">👉 Swipe horizontally to view full closed trades history</div>
+            <div class="table-wrapper">
                 <table>
                     <thead>
                         <tr><th>Company</th><th>Qty</th><th>Entry Price</th><th>Exit Price</th><th>Gross P&L</th><th>Buy Fees</th><th>Sell Fees</th><th>Total Fees</th><th>CGT (7.5%)</th><th>Net P&L</th><th>R Multiple</th><th>Reason</th><th>Exit Date</th></tr>
