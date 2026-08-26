@@ -1,33 +1,35 @@
 ====================================================================================================
 🎯 ENHANCED NPSTOCKS ANALYSIS REPORT
 ====================================================================================================
-Date: 2026-08-26
+Date: 2026-08-27
 Total Stocks: 263
 ====================================================================================================
 
 ====================================================================================================
 ⭐ TOP PICKS — GEN-3 RANKED-FACTOR SCORING (Why column = the explanation)
 ====================================================================================================
- 1. Forward Community Microfinance Bitt | Score: 0.76 | Quality 94% · Value 85% · Reversal 91% | legacy screens: 0 | 
- 2. Garima Bikas Bank                   | Score: 0.73 | Quality 80% · Value 90% · Low Risk 89% | legacy screens: 4 | High Quality Stocks, High Profitability Leaders, Undervalued High Earners, Strong Balance Sheet
- 3. Kumari Bank                         | Score: 0.71 | Quality 94% · Value 99% · Liquidity 89% | legacy screens: 1 | Defensive Low-Risk
- 4. Jyoti Bikas Bank                    | Score: 0.71 | Value 95% · Quality 64% · Low Risk 58% | legacy screens: 0 | 
- 5. Swabalamban Bikas Bank              | Score: 0.71 | Quality 72% · Value 83% · Low Risk 74% | legacy screens: 0 | 
- 6. Sanima Bank                         | Score: 0.70 | Value 92% · Quality 67% · Low Risk 79% | legacy screens: 2 | Undervalued High Earners, Defensive Low-Risk
- 7. Everest Bank                        | Score: 0.70 | Quality 74% · Value 81% · Low Risk 95% | legacy screens: 5 | High Quality Stocks, High Profitability Leaders, Undervalued High Earners, Defensive Low-Risk, Strong Balance Sheet
- 8. Nepal Bank                          | Score: 0.70 | Value 99% · Low Risk 91% · Quality 56% | legacy screens: 2 | Undervalued High Earners, Defensive Low-Risk
- 9. Vijaya Laghubitta Bittiya Sanstha   | Score: 0.69 | Quality 75% · Value 68% · Low Risk 73% | legacy screens: 0 | 
-10. Jeevan Bikas Laghubitta Bittya Sans | Score: 0.69 | Quality 91% · Low Risk 84% · Value 61% | legacy screens: 1 | Defensive Low-Risk
-11. Global IME Laghubitta Bittiya Sanst | Score: 0.69 | Quality 95% · Value 66% · Low Risk 74% | legacy screens: 0 | 
-12. NMB Bank                            | Score: 0.69 | Value 97% · Low Risk 90% · Quality 52% | legacy screens: 1 | Defensive Low-Risk
-13. Deprosc Laghubitta                  | Score: 0.68 | Quality 81% · Value 76% · Low Risk 84% | legacy screens: 0 | 
-14. Mountain Energy Nepal Limited       | Score: 0.68 | Quality 88% · Low Risk 77% · Value 59% | legacy screens: 6 | High Quality Stocks, High Profitability Leaders, Undervalued High Earners, Defensive Low-Risk, Strong Balance Sheet, Best Risk-Adjusted Returns
-15. Muktinath Bikas Bank                | Score: 0.67 | Value 87% · Low Risk 86% · Quality 54% | legacy screens: 0 | 
-16. Api Power                           | Score: 0.67 | Quality 81% · Value 80% · Liquidity 94% | legacy screens: 1 | Best Risk-Adjusted Returns
-17. Gurkhas Finance Ltd.                | Score: 0.66 | Quality 89% · Value 79% · Reversal 69% | legacy screens: 0 | 
-18. Excel Development Bank              | Score: 0.66 | Quality 83% · Value 74% · Low Risk 44% | legacy screens: 0 | 
-19. Siddhartha Bank                     | Score: 0.66 | Value 93% · Low Risk 87% · Quality 50% | legacy screens: 3 | Undervalued High Earners, Defensive Low-Risk, Best Risk-Adjusted Returns
-20. Standard Chartered Bank             | Score: 0.65 | Quality 66% · Low Risk 99% · Value 77% | legacy screens: 1 | Defensive Low-Risk
+ 1. Forward Community Microfinance Bitt | Score: 0.83 | Quality 94% · Value 100% · Reversal 91% | legacy screens: 0 | 
+ 2. Himalayan Everest Insurance Limited | Score: 0.80 | Quality 74% · Value 95% · Low Risk 77% | legacy screens: 0 | 
+ 3. Jeevan Bikas Laghubitta Bittya Sans | Score: 0.79 | Quality 94% · Low Risk 94% · Value 89% | legacy screens: 1 | Defensive Low-Risk
+ 4. Api Power                           | Score: 0.77 | Quality 89% · Value 99% · Low Risk 67% | legacy screens: 1 | Best Risk-Adjusted Returns
+ 5. Deprosc Laghubitta                  | Score: 0.77 | Quality 89% · Value 98% · Low Risk 98% | legacy screens: 0 | 
+ 6. Sagarmatha Lumbini Insurance Co. Li | Score: 0.74 | Low Risk 96% · Value 85% · Quality 55% | legacy screens: 0 | 
+ 7. Mountain Energy Nepal Limited       | Score: 0.74 | Quality 95% · Value 86% · Low Risk 79% | legacy screens: 6 | High Quality Stocks, High Profitability Leaders, Undervalued High Earners, Defensive Low-Risk, Strong Balance Sheet, Best Risk-Adjusted Returns
+ 8. Kalika Laghubitta Bittiya Sanstha   | Score: 0.73 | Quality 88% · Value 71% · Low Risk 63% | legacy screens: 0 | 
+ 9. Global IME Laghubitta Bittiya Sanst | Score: 0.73 | Quality 98% · Value 94% · Low Risk 50% | legacy screens: 0 | 
+10. Chilime Hydropower                  | Score: 0.71 | Quality 66% · Low Risk 97% · Reversal 84% | legacy screens: 0 | 
+11. Prabhu Insurance                    | Score: 0.71 | Quality 68% · Value 84% · Low Risk 74% | legacy screens: 0 | 
+12. Vijaya Laghubitta Bittiya Sanstha   | Score: 0.71 | Quality 70% · Value 82% · Reversal 89% | legacy screens: 0 | 
+13. Gurkhas Finance Ltd.                | Score: 0.70 | Quality 90% · Value 99% · Reversal 69% | legacy screens: 0 | 
+14. Infinity Laghubitta Bittiya Sanstha | Score: 0.70 | Quality 93% · Value 67% · Low Risk 57% | legacy screens: 0 | 
+15. National Microfinance Bittiya Sanst | Score: 0.69 | Quality 79% · Value 91% · Low Risk 78% | legacy screens: 1 | Defensive Low-Risk
+16. Kumari Bank                         | Score: 0.69 | Quality 84% · Value 97% · Low Risk 44% | legacy screens: 1 | Defensive Low-Risk
+17. Swabalamban Bikas Bank              | Score: 0.68 | Quality 77% · Low Risk 95% · Reversal 60% | legacy screens: 0 | 
+18. Nadep Laghubitta Bittiya Sanstha Lt | Score: 0.67 | Quality 80% · Value 90% · Low Risk 48% | legacy screens: 0 | 
+19. CYC Nepal Laghubitta Bittiya Sansth | Score: 0.67 | Quality 100% · Value 96% · Growth 98% | legacy screens: 5 | High Quality Stocks, High Profitability Leaders, Undervalued High Earners, Defensive Low-Risk, Strong Balance Sheet
+20. Neco Insurance                      | Score: 0.67 | Low Risk 91% · Quality 47% · Reversal 90% | legacy screens: 1 | Defensive Low-Risk
+21. Matribhumi Lagubitta Bittiya Sansth | Score: 0.67 | Quality 88% · Value 79% · Reversal 85% | legacy screens: 0 | 
+22. Siddhartha Premier Insurance Limite | Score: 0.66 | Quality 56% · Value 72% · Reversal 82% | legacy screens: 0 | 
 ====================================================================================================
 
 
