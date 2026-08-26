@@ -10,7 +10,7 @@ Total Stocks: 263
 ====================================================================================================
  1. Forward Community Microfinance Bitt | Score: 0.84 | Quality 94% · Value 85% · Low Risk 86% | legacy screens: 0 | 
  2. Garima Bikas Bank                   | Score: 0.74 | Quality 80% · Value 91% · Low Risk 89% | legacy screens: 4 | High Quality Stocks, High Profitability Leaders, Undervalued High Earners, Strong Balance Sheet
- 3. Kumari Bank                         | Score: 0.72 | Quality 94% · Value 99% · Liquidity 89% | legacy screens: 1 | Defensive Low-Risk
+ 3. Kumari Bank                         | Score: 0.72 | Quality 94% · Value 99% · Liquidity 90% | legacy screens: 1 | Defensive Low-Risk
  4. Sanima Bank                         | Score: 0.71 | Value 91% · Quality 67% · Low Risk 81% | legacy screens: 2 | Undervalued High Earners, Defensive Low-Risk
  5. NMB Bank                            | Score: 0.70 | Value 97% · Low Risk 91% · Quality 51% | legacy screens: 1 | Defensive Low-Risk
  6. Everest Bank                        | Score: 0.70 | Quality 74% · Value 81% · Low Risk 94% | legacy screens: 5 | High Quality Stocks, High Profitability Leaders, Undervalued High Earners, Defensive Low-Risk, Strong Balance Sheet
@@ -22,9 +22,9 @@ Total Stocks: 263
 12. Mountain Energy Nepal Limited       | Score: 0.68 | Quality 88% · Low Risk 78% · Value 59% | legacy screens: 5 | High Quality Stocks, High Profitability Leaders, Defensive Low-Risk, Strong Balance Sheet, Best Risk-Adjusted Returns
 13. Jyoti Bikas Bank                    | Score: 0.67 | Value 95% · Quality 63% · Reversal 67% | legacy screens: 0 | 
 14. Excel Development Bank              | Score: 0.67 | Quality 83% · Value 74% · Low Risk 58% | legacy screens: 0 | 
-15. Muktinath Bikas Bank                | Score: 0.66 | Value 87% · Low Risk 84% · Quality 53% | legacy screens: 0 | 
-16. CYC Nepal Laghubitta Bittiya Sansth | Score: 0.66 | Quality 99% · Value 71% · Liquidity 95% | legacy screens: 3 | High Quality Stocks, High Profitability Leaders, Defensive Low-Risk
-17. Sampada Laghubitta Bittiya Sanstha  | Score: 0.66 | Quality 72% · Value 61% · Low Risk 74% | legacy screens: 0 | 
+15. Muktinath Bikas Bank                | Score: 0.67 | Value 87% · Low Risk 84% · Quality 53% | legacy screens: 0 | 
+16. Sampada Laghubitta Bittiya Sanstha  | Score: 0.66 | Quality 72% · Value 61% · Low Risk 74% | legacy screens: 0 | 
+17. CYC Nepal Laghubitta Bittiya Sansth | Score: 0.66 | Quality 99% · Value 71% · Low Risk 46% | legacy screens: 3 | High Quality Stocks, High Profitability Leaders, Defensive Low-Risk
 18. Global IME Laghubitta Bittiya Sanst | Score: 0.66 | Quality 95% · Value 64% · Low Risk 66% | legacy screens: 0 | 
 ====================================================================================================
 
