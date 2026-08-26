@@ -163,7 +163,8 @@
         color: var(--text-muted);
         font-size: 0.875rem;
         margin: -0.5rem 0 1.25rem 0;
-        max-width: 1000px;
+        width: 100%;
+        line-height: 1.5;
     }
 
     .strategy-box {
@@ -608,7 +609,7 @@
 
         <div id="composite-scoring">
             <h2>⭐ Top Picks - Composite Scoring</h2>
-            <p class="section-description">Generation-3 RANKED-FACTOR scoring: every stock is graded on the MAGNITUDE of five factors vs today&#x27;s eligible universe — quality .30 (ROE+margin), value .25 (earnings+book yield), low_risk .20 (calm beta/volatility), reversal .15 (beaten-down 12w names — momentum is a reversal signal in NEPSE&#x27;s current regime), liquidity .10 (traded turnover). Composite Score = weighted percentile (0→1); only stocks clearing absolute floors (profitable, positive EPS, valid price) are ranked. &#x27;Why&#x27; shows the top-3 factor ranks that earned the spot — that IS the explanation; the old strategy screens below are reference material only.</p>
+            <p class="section-description">Ranked multi-factor model scoring across 5 core market pillars: Quality (30%), Value (25%), Low Risk (20%), Reversal (15%), and Liquidity (10%). The &#x27;Why&#x27; column highlights the top-3 percentile drivers for each stock.</p>
 <table class="table">
 <thead>
 <tr>
@@ -629,7 +630,7 @@
 <td>Rs 898.03</td>
 <td><span class="neutral">-0.21%</span></td>
 <td><span class="positive strong">0.84</span></td>
-<td><span class="neutral">quality 94% · value 85% · low_risk 86%</span></td>
+<td><span class="neutral">Quality 94% · Value 85% · Low Risk 86%</span></td>
 </tr>
 <tr>
 <td>Garima Bikas Bank</td>
@@ -638,7 +639,7 @@
 <td>Rs 422.00</td>
 <td><span class="neutral">+0.00%</span></td>
 <td><span class="positive strong">0.74</span></td>
-<td><span class="neutral">quality 80% · value 91% · low_risk 89%</span></td>
+<td><span class="neutral">Quality 80% · Value 91% · Low Risk 89%</span></td>
 </tr>
 <tr>
 <td>Kumari Bank</td>
@@ -647,7 +648,7 @@
 <td>Rs 214.43</td>
 <td><span class="neutral">-0.20%</span></td>
 <td><span class="positive strong">0.72</span></td>
-<td><span class="neutral">quality 94% · value 99% · liquidity 89%</span></td>
+<td><span class="neutral">Quality 94% · Value 99% · Liquidity 89%</span></td>
 </tr>
 <tr>
 <td>Sanima Bank</td>
@@ -656,7 +657,7 @@
 <td>Rs 368.83</td>
 <td><span class="neutral">+0.51%</span></td>
 <td><span class="positive strong">0.71</span></td>
-<td><span class="neutral">value 91% · quality 67% · low_risk 81%</span></td>
+<td><span class="neutral">Value 91% · Quality 67% · Low Risk 81%</span></td>
 </tr>
 <tr>
 <td>NMB Bank</td>
@@ -665,7 +666,7 @@
 <td>Rs 239.47</td>
 <td><span class="neutral">-0.20%</span></td>
 <td><span class="positive strong">0.70</span></td>
-<td><span class="neutral">value 97% · low_risk 91% · quality 51%</span></td>
+<td><span class="neutral">Value 97% · Low Risk 91% · Quality 51%</span></td>
 </tr>
 <tr>
 <td>Everest Bank</td>
@@ -674,7 +675,7 @@
 <td>Rs 729.97</td>
 <td><span class="neutral">+0.26%</span></td>
 <td><span class="positive strong">0.70</span></td>
-<td><span class="neutral">quality 74% · value 81% · low_risk 94%</span></td>
+<td><span class="neutral">Quality 74% · Value 81% · Low Risk 94%</span></td>
 </tr>
 <tr>
 <td>Nepal Bank</td>
@@ -683,7 +684,7 @@
 <td>Rs 275.00</td>
 <td><span class="neutral">-0.07%</span></td>
 <td><span class="positive strong">0.69</span></td>
-<td><span class="neutral">value 99% · low_risk 89% · quality 55%</span></td>
+<td><span class="neutral">Value 99% · Low Risk 89% · Quality 55%</span></td>
 </tr>
 <tr>
 <td>Gurkhas Finance Ltd.</td>
@@ -692,7 +693,7 @@
 <td>Rs 514.03</td>
 <td><span class="neutral">-0.84%</span></td>
 <td><span class="positive strong">0.69</span></td>
-<td><span class="neutral">quality 89% · value 79% · reversal 84%</span></td>
+<td><span class="neutral">Quality 89% · Value 79% · Reversal 84%</span></td>
 </tr>
 <tr>
 <td>Api Power</td>
@@ -701,7 +702,7 @@
 <td>Rs 329.93</td>
 <td><span class="neutral">-0.04%</span></td>
 <td><span class="positive strong">0.69</span></td>
-<td><span class="neutral">quality 82% · value 80% · liquidity 94%</span></td>
+<td><span class="neutral">Quality 82% · Value 80% · Liquidity 94%</span></td>
 </tr>
 <tr>
 <td>Swabalamban Bikas Bank</td>
@@ -710,7 +711,7 @@
 <td>Rs 668.67</td>
 <td><span class="neutral">+0.27%</span></td>
 <td><span class="positive strong">0.69</span></td>
-<td><span class="neutral">quality 71% · value 82% · low_risk 56%</span></td>
+<td><span class="neutral">Quality 71% · Value 82% · Low Risk 56%</span></td>
 </tr>
 <tr>
 <td>Deprosc Laghubitta</td>
@@ -719,7 +720,7 @@
 <td>Rs 834.00</td>
 <td><span class="neutral">+0.48%</span></td>
 <td><span class="positive strong">0.68</span></td>
-<td><span class="neutral">quality 81% · value 76% · low_risk 82%</span></td>
+<td><span class="neutral">Quality 81% · Value 76% · Low Risk 82%</span></td>
 </tr>
 <tr>
 <td>Mountain Energy Nepal Limited</td>
@@ -728,7 +729,7 @@
 <td>Rs 620.13</td>
 <td><span class="neutral">-0.02%</span></td>
 <td><span class="positive strong">0.68</span></td>
-<td><span class="neutral">quality 88% · low_risk 78% · value 59%</span></td>
+<td><span class="neutral">Quality 88% · Low Risk 78% · Value 59%</span></td>
 </tr>
 <tr>
 <td>Jyoti Bikas Bank</td>
@@ -737,7 +738,7 @@
 <td>Rs 332.23</td>
 <td><span class="neutral">+0.23%</span></td>
 <td><span class="positive strong">0.67</span></td>
-<td><span class="neutral">value 95% · quality 63% · reversal 67%</span></td>
+<td><span class="neutral">Value 95% · Quality 63% · Reversal 67%</span></td>
 </tr>
 <tr>
 <td>Excel Development Bank</td>
@@ -746,7 +747,7 @@
 <td>Rs 591.13</td>
 <td><span class="positive strong">-1.65%</span></td>
 <td><span class="positive strong">0.67</span></td>
-<td><span class="neutral">quality 83% · value 74% · low_risk 58%</span></td>
+<td><span class="neutral">Quality 83% · Value 74% · Low Risk 58%</span></td>
 </tr>
 <tr>
 <td>Muktinath Bikas Bank</td>
@@ -755,7 +756,7 @@
 <td>Rs 359.77</td>
 <td><span class="neutral">-0.41%</span></td>
 <td><span class="positive strong">0.66</span></td>
-<td><span class="neutral">value 87% · low_risk 84% · quality 53%</span></td>
+<td><span class="neutral">Value 87% · Low Risk 84% · Quality 53%</span></td>
 </tr>
 <tr>
 <td>CYC Nepal Laghubitta Bittiya Sanstha Limited</td>
@@ -764,7 +765,7 @@
 <td>Rs 1,583.00</td>
 <td><span class="neutral">+0.82%</span></td>
 <td><span class="positive strong">0.66</span></td>
-<td><span class="neutral">quality 99% · value 71% · liquidity 95%</span></td>
+<td><span class="neutral">Quality 99% · Value 71% · Liquidity 95%</span></td>
 </tr>
 <tr>
 <td>Sampada Laghubitta Bittiya Sanstha Limited</td>
@@ -773,7 +774,7 @@
 <td>Rs 736.70</td>
 <td><span class="neutral">-0.23%</span></td>
 <td><span class="positive strong">0.66</span></td>
-<td><span class="neutral">quality 72% · value 61% · low_risk 74%</span></td>
+<td><span class="neutral">Quality 72% · Value 61% · Low Risk 74%</span></td>
 </tr>
 <tr>
 <td>Global IME Laghubitta Bittiya Sanstha </td>
@@ -782,7 +783,7 @@
 <td>Rs 1,089.26</td>
 <td><span class="neutral">-0.25%</span></td>
 <td><span class="positive strong">0.66</span></td>
-<td><span class="neutral">quality 95% · value 64% · low_risk 66%</span></td>
+<td><span class="neutral">Quality 95% · Value 64% · Low Risk 66%</span></td>
 </tr>
 </tbody>
 </table>
