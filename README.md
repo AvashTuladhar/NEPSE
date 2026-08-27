@@ -35,13 +35,13 @@ Total Stocks: 263
 
 1. 💎 HIGH QUALITY STOCKS
 ----------------------------------------------------------------------------------------------------
- 1. CYC Nepal Laghubitta Bittiya Sanstha Limited  | Rs  1609.00 | ROE:  33.64% | PE:  14.54
- 2. Unilever Nepal                                | Rs 47200.00 | ROE:  31.77% | PE:  27.57
- 3. Soaltee Hotel                                 | Rs   508.00 | ROE:  25.21% | PE:  78.44
- 4. Mountain Energy Nepal Limited                 | Rs   615.00 | ROE:  18.17% | PE:  24.10
- 5. Garima Bikas Bank                             | Rs   420.70 | ROE:  17.18% | PE:  15.00
- 6. Everest Bank                                  | Rs   730.00 | ROE:  15.26% | PE:  19.76
- 7. Chhimek Laghubitta Bikas Bank                 | Rs   933.00 | ROE:  15.06% | PE:  25.98
+ 1. CYC Nepal Laghubitta Bittiya Sanstha Limited  | Rs  1609.00 | ROE:  33.64% | ROA:   4.02% | PE:  14.54
+ 2. Unilever Nepal                                | Rs 47200.00 | ROE:  31.77% | ROA:  19.91% | PE:  27.57
+ 3. Soaltee Hotel                                 | Rs   508.00 | ROE:  25.21% | ROA:  20.22% | PE:  78.44
+ 4. Mountain Energy Nepal Limited                 | Rs   615.00 | ROE:  18.17% | ROA:  11.62% | PE:  24.10
+ 5. Garima Bikas Bank                             | Rs   420.70 | ROE:  17.18% | ROA:   1.58% | PE:  15.00
+ 6. Everest Bank                                  | Rs   730.00 | ROE:  15.26% | ROA:   1.35% | PE:  19.76
+ 7. Chhimek Laghubitta Bikas Bank                 | Rs   933.00 | ROE:  15.06% | ROA:   2.36% | PE:  25.98
 
 2. 💰 HIGH PROFITABILITY LEADERS
 ----------------------------------------------------------------------------------------------------
@@ -235,180 +235,180 @@ Total Stocks: 263
 
 MANUFACTURING & CORPORATE:
 ----------------------------------------------------------------------------------------------------
-1. Unilever Nepal                                | Rs 47200.00 | ROE:  31.77% | PE:  27.57
-2. Himalayan Distillery                          | Rs  1162.00 | ROE:  26.27% | PE:  35.53
-3. CEDB Holdings Limited                         | Rs  2184.00 | ROE:  26.15% | PE:  35.73
-4. Soaltee Hotel                                 | Rs   508.00 | ROE:  25.21% | PE:  78.44
-5. Bottlers Nepal (Terai)                        | Rs 11505.00 | ROE:  17.36% | PE:  21.12
-6. Bottlers Nepal (Balaju)                       | Rs 14850.00 | ROE:  13.50% | PE:  32.95
-7. Radhi Bidhyut Company                         | Rs   688.00 | ROE:  12.24% | PE:  34.83
-8. Nepal Lube Oil                                | Rs   277.40 | ROE:  11.55% | PE:   4.73
-9. Sarbottam Cement Limited                      | Rs   779.00 | ROE:  10.87% | PE:  36.75
-10. Green Ventures Limited                        | Rs   472.50 | ROE:  10.75% | PE:  36.16
-11. Kalinchowk Darshan Limited                    | Rs   732.00 | ROE:   8.81% | PE:  79.95
-12. Shivam Cements Ltd                            | Rs   624.00 | ROE:   7.57% | PE:  44.49
-13. Nepal Doorsanchar Company                     | Rs   875.00 | ROE:   6.53% | PE:  25.82
-14. Citizen Investment Trust                      | Rs  1660.00 | ROE:   6.06% | PE:  83.67
-15. Sonapur Minerals And Oil Limited              | Rs   388.40 | ROE:   5.64% | PE:  35.43
+ 1. Unilever Nepal                           | Rs 47200.00 | ROE: 31.77% | ROA: 19.91% | PE: 27.57
+ 2. Himalayan Distillery                     | Rs  1162.00 | ROE: 26.27% | ROA: 22.94% | PE: 35.53
+ 3. CEDB Holdings Limited                    | Rs  2184.00 | ROE: 26.15% | ROA: 25.67% | PE: 35.73
+ 4. Soaltee Hotel                            | Rs   508.00 | ROE: 25.21% | ROA: 20.22% | PE: 78.44
+ 5. Bottlers Nepal (Terai)                   | Rs 11505.00 | ROE: 17.36% | ROA:  7.47% | PE: 21.12
+ 6. Bottlers Nepal (Balaju)                  | Rs 14850.00 | ROE: 13.50% | ROA:  6.49% | PE: 32.95
+ 7. Radhi Bidhyut Company                    | Rs   688.00 | ROE: 12.24% | ROA: 10.81% | PE: 34.83
+ 8. Nepal Lube Oil                           | Rs   277.40 | ROE: 11.55% | ROA:  4.74% | PE:  4.73
+ 9. Sarbottam Cement Limited                 | Rs   779.00 | ROE: 10.87% | ROA:  6.99% | PE: 36.75
+10. Green Ventures Limited                   | Rs   472.50 | ROE: 10.75% | ROA:  4.17% | PE: 36.16
+11. Kalinchowk Darshan Limited               | Rs   732.00 | ROE:  8.81% | ROA:  7.41% | PE: 79.95
+12. Shivam Cements Ltd                       | Rs   624.00 | ROE:  7.57% | ROA:  6.05% | PE: 44.49
+13. Nepal Doorsanchar Company                | Rs   875.00 | ROE:  6.53% | ROA:  4.77% | PE: 25.82
+14. Citizen Investment Trust                 | Rs  1660.00 | ROE:  6.06% | ROA:  0.41% | PE: 83.67
+15. Sonapur Minerals And Oil Limited         | Rs   388.40 | ROE:  5.64% | ROA:  2.32% | PE: 35.43
 
 HYDROPOWER:
 ----------------------------------------------------------------------------------------------------
-1. Dibyashwori Hydropower Ltd.                   | Rs   270.00 | ROE:  88.27% | PE:  48.97
-2. Mountain Hydro Nepal Limited                  | Rs   237.80 | ROE:  33.21% | PE:  18.61
-3. Mountain Energy Nepal Limited                 | Rs   615.00 | ROE:  18.17% | PE:  24.10
-4. Sahas Urja Limited                            | Rs   681.90 | ROE:  17.63% | PE:  22.95
-5. Upper Hewakhola Hydropower Company Limited    | Rs   667.00 | ROE:  16.90% | PE:  35.28
-6. Super Madi Hydropower Limited                 | Rs   518.00 | ROE:  16.72% | PE:  28.15
-7. Sanima Middle Tamor Hydropower Limited        | Rs   480.00 | ROE:  15.92% | PE:  25.62
-8. Mandu Hydropower Limited                      | Rs   732.40 | ROE:  15.42% | PE:  31.35
-9. Chirkhwa Hydropower Limited                   | Rs   577.50 | ROE:  14.14% | PE:  43.58
-10. Swet-Ganga Hydropower & Construction Limited  | Rs   290.00 | ROE:  13.90% | PE:  26.05
-11. Himalayan Power Partner Ltd.                  | Rs   375.00 | ROE:  13.70% | PE:  29.83
-12. Rawa Energy Development Limited               | Rs   405.00 | ROE:  13.63% | PE:  36.27
-13. Upper Solu Hydro Electric Company Limited     | Rs   492.00 | ROE:  13.53% | PE:  31.82
-14. Api Power                                     | Rs   327.50 | ROE:  13.40% | PE:  21.75
-15. Mai Khola Hydropower Limited                  | Rs   489.00 | ROE:  13.28% | PE:  35.36
-16. Sikles Hydropower Limited                     | Rs   559.00 | ROE:  13.16% | PE:  39.73
-17. Mid Solu Hydropower Limited                   | Rs   550.00 | ROE:  12.95% | PE:  37.81
-18. Terhathum Power Company Limited               | Rs   346.10 | ROE:  12.83% | PE:  30.99
-19. Nepal Hydro Developers Ltd.                   | Rs   628.00 | ROE:  11.69% | PE:  44.87
-20. Mathillo Mailun Khola Jalvidhyut Limited      | Rs   375.00 | ROE:  11.55% | PE:  33.70
-21. United IDI Mardi RB Hydropower Limited        | Rs   515.00 | ROE:  10.58% | PE:  44.68
-22. Bindhyabasini Hydropower Development Company  | Rs   417.00 | ROE:  10.37% | PE:  35.37
-23. Balephi Hydropower Limited                    | Rs   201.00 | ROE:  10.02% | PE:  25.42
-24. Kalika Power Company                          | Rs   457.00 | ROE:   9.34% | PE:  40.65
-25. Makar Jitumaya Suri Hydropower Limited        | Rs   426.00 | ROE:   9.23% | PE:  41.38
-26. Panchthar Power Company Ltd.                  | Rs   327.70 | ROE:   9.19% | PE:  37.04
-27. Upper Tamakoshi Hydropower Ltd                | Rs   184.50 | ROE:   9.12% | PE:  42.20
-28. Super Mai Hydropower Limited                  | Rs   497.00 | ROE:   9.05% | PE:  43.28
-29. Himalayan Hydropower Limited                  | Rs   325.00 | ROE:   8.87% | PE:  44.39
-30. Molung Hydropower Company Limited             | Rs   282.00 | ROE:   8.38% | PE:  39.21
-31. Bhagawati Hydropower Development Company Limi | Rs   489.90 | ROE:   8.15% | PE:  54.39
-32. Ru Ru Jalbidhyut Pariyojana Limited           | Rs   586.00 | ROE:   8.07% | PE:  56.34
-33. Himalaya Urja Bikas Company Limited           | Rs   228.00 | ROE:   8.01% | PE:  30.11
-34. Mandakini Hydropower Limited                  | Rs   450.00 | ROE:   7.81% | PE:  51.37
-35. Panchakanya Mai Hydropower                    | Rs   304.00 | ROE:   7.39% | PE:  50.06
-36. Singati Hydro Energy Limited                  | Rs   293.50 | ROE:   6.27% | PE:  43.29
-37. Chilime Hydropower                            | Rs   427.00 | ROE:   6.23% | PE:  56.25
-38. Synergy Power Development Ltd.                | Rs   352.00 | ROE:   5.64% | PE:  58.20
-39. United Modi Hydropower                        | Rs   563.00 | ROE:   5.56% | PE:  98.10
-40. Sanima Mai Hydropower                         | Rs   499.00 | ROE:   5.01% | PE:  63.56
+ 1. Dibyashwori Hydropower Ltd.              | Rs   270.00 | ROE: 88.27% | ROA:  2.41% | PE: 48.97
+ 2. Mountain Hydro Nepal Limited             | Rs   237.80 | ROE: 33.21% | ROA:  5.33% | PE: 18.61
+ 3. Mountain Energy Nepal Limited            | Rs   615.00 | ROE: 18.17% | ROA: 11.62% | PE: 24.10
+ 4. Sahas Urja Limited                       | Rs   681.90 | ROE: 17.63% | ROA:  8.25% | PE: 22.95
+ 5. Upper Hewakhola Hydropower Company Limit | Rs   667.00 | ROE: 16.90% | ROA:  7.02% | PE: 35.28
+ 6. Super Madi Hydropower Limited            | Rs   518.00 | ROE: 16.72% | ROA:  4.56% | PE: 28.15
+ 7. Sanima Middle Tamor Hydropower Limited   | Rs   480.00 | ROE: 15.92% | ROA:  4.68% | PE: 25.62
+ 8. Mandu Hydropower Limited                 | Rs   732.40 | ROE: 15.42% | ROA:  6.43% | PE: 31.35
+ 9. Chirkhwa Hydropower Limited              | Rs   577.50 | ROE: 14.14% | ROA:  4.97% | PE: 43.58
+10. Swet-Ganga Hydropower & Construction Lim | Rs   290.00 | ROE: 13.90% | ROA:  3.07% | PE: 26.05
+11. Himalayan Power Partner Ltd.             | Rs   375.00 | ROE: 13.70% | ROA:  3.94% | PE: 29.83
+12. Rawa Energy Development Limited          | Rs   405.00 | ROE: 13.63% | ROA:  4.94% | PE: 36.27
+13. Upper Solu Hydro Electric Company Limite | Rs   492.00 | ROE: 13.53% | ROA:  4.56% | PE: 31.82
+14. Api Power                                | Rs   327.50 | ROE: 13.40% | ROA:  7.29% | PE: 21.75
+15. Mai Khola Hydropower Limited             | Rs   489.00 | ROE: 13.28% | ROA:  7.90% | PE: 35.36
+16. Sikles Hydropower Limited                | Rs   559.00 | ROE: 13.16% | ROA:  7.00% | PE: 39.73
+17. Mid Solu Hydropower Limited              | Rs   550.00 | ROE: 12.95% | ROA:  5.78% | PE: 37.81
+18. Terhathum Power Company Limited          | Rs   346.10 | ROE: 12.83% | ROA:  7.82% | PE: 30.99
+19. Nepal Hydro Developers Ltd.              | Rs   628.00 | ROE: 11.69% | ROA: 10.59% | PE: 44.87
+20. Mathillo Mailun Khola Jalvidhyut Limited | Rs   375.00 | ROE: 11.55% | ROA:  3.73% | PE: 33.70
+21. United IDI Mardi RB Hydropower Limited   | Rs   515.00 | ROE: 10.58% | ROA:  4.18% | PE: 44.68
+22. Bindhyabasini Hydropower Development Com | Rs   417.00 | ROE: 10.37% | ROA:  4.90% | PE: 35.37
+23. Balephi Hydropower Limited               | Rs   201.00 | ROE: 10.02% | ROA:  3.38% | PE: 25.42
+24. Kalika Power Company                     | Rs   457.00 | ROE:  9.34% | ROA:  8.72% | PE: 40.65
+25. Makar Jitumaya Suri Hydropower Limited   | Rs   426.00 | ROE:  9.23% | ROA:  2.87% | PE: 41.38
+26. Panchthar Power Company Ltd.             | Rs   327.70 | ROE:  9.19% | ROA:  3.17% | PE: 37.04
+27. Upper Tamakoshi Hydropower Ltd           | Rs   184.50 | ROE:  9.12% | ROA:  1.15% | PE: 42.20
+28. Super Mai Hydropower Limited             | Rs   497.00 | ROE:  9.05% | ROA:  4.58% | PE: 43.28
+29. Himalayan Hydropower Limited             | Rs   325.00 | ROE:  8.87% | ROA:  3.66% | PE: 44.39
+30. Molung Hydropower Company Limited        | Rs   282.00 | ROE:  8.38% | ROA:  5.14% | PE: 39.21
+31. Bhagawati Hydropower Development Company | Rs   489.90 | ROE:  8.15% | ROA:  6.55% | PE: 54.39
+32. Ru Ru Jalbidhyut Pariyojana Limited      | Rs   586.00 | ROE:  8.07% | ROA:  7.93% | PE: 56.34
+33. Himalaya Urja Bikas Company Limited      | Rs   228.00 | ROE:  8.01% | ROA:  4.18% | PE: 30.11
+34. Mandakini Hydropower Limited             | Rs   450.00 | ROE:  7.81% | ROA:  5.69% | PE: 51.37
+35. Panchakanya Mai Hydropower               | Rs   304.00 | ROE:  7.39% | ROA:  3.25% | PE: 50.06
+36. Singati Hydro Energy Limited             | Rs   293.50 | ROE:  6.27% | ROA:  3.42% | PE: 43.29
+37. Chilime Hydropower                       | Rs   427.00 | ROE:  6.23% | ROA:  6.07% | PE: 56.25
+38. Synergy Power Development Ltd.           | Rs   352.00 | ROE:  5.64% | ROA:  4.67% | PE: 58.20
+39. United Modi Hydropower                   | Rs   563.00 | ROE:  5.56% | ROA:  3.54% | PE: 98.10
+40. Sanima Mai Hydropower                    | Rs   499.00 | ROE:  5.01% | ROA:  4.92% | PE: 63.56
 
 FINANCE:
 ----------------------------------------------------------------------------------------------------
-1. Pokhara Finance                               | Rs   364.00 | ROE:  32.06% | PE:  27.22
-2. Gurkhas Finance Ltd.                          | Rs   500.00 | ROE:  16.84% | PE:  19.78
-3. Manjushree Financial Institution              | Rs   728.90 | ROE:  15.47% | PE:  26.17
-4. Samriddhi Finance Company Limited             | Rs   370.00 | ROE:  14.13% | PE:  44.31
-5. ICFC Finance                                  | Rs   585.10 | ROE:  12.34% | PE:  26.21
-6. Central Finance                               | Rs   579.00 | ROE:  11.61% | PE:  43.07
-7. First Micro Finance Development Bank          | Rs   723.00 | ROE:  10.73% | PE:  50.98
-8. Progressive Finance                           | Rs   379.90 | ROE:   7.67% | PE:  64.22
-9. Multipurpose Finance                          | Rs   599.00 | ROE:   7.36% | PE:  67.25
-10. Goodwill Finance                              | Rs   568.00 | ROE:   6.98% | PE:  37.97
-11. Best Finance                                  | Rs   454.90 | ROE:   6.79% | PE:  58.05
+ 1. Pokhara Finance                          | Rs   364.00 | ROE: 32.06% | ROA:  2.83% | PE: 27.22
+ 2. Gurkhas Finance Ltd.                     | Rs   500.00 | ROE: 16.84% | ROA:  2.03% | PE: 19.78
+ 3. Manjushree Financial Institution         | Rs   728.90 | ROE: 15.47% | ROA:  1.38% | PE: 26.17
+ 4. Samriddhi Finance Company Limited        | Rs   370.00 | ROE: 14.13% | ROA:  1.95% | PE: 44.31
+ 5. ICFC Finance                             | Rs   585.10 | ROE: 12.34% | ROA:  1.06% | PE: 26.21
+ 6. Central Finance                          | Rs   579.00 | ROE: 11.61% | ROA:  1.34% | PE: 43.07
+ 7. First Micro Finance Development Bank     | Rs   723.00 | ROE: 10.73% | ROA:  3.18% | PE: 50.98
+ 8. Progressive Finance                      | Rs   379.90 | ROE:  7.67% | ROA:  0.59% | PE: 64.22
+ 9. Multipurpose Finance                     | Rs   599.00 | ROE:  7.36% | ROA:  1.28% | PE: 67.25
+10. Goodwill Finance                         | Rs   568.00 | ROE:  6.98% | ROA:  0.89% | PE: 37.97
+11. Best Finance                             | Rs   454.90 | ROE:  6.79% | ROA:  0.95% | PE: 58.05
 
 INSURANCE:
 ----------------------------------------------------------------------------------------------------
-1. Prabhu Insurance                              | Rs   600.00 | ROE:  12.78% | PE:  45.01
-2. Himalayan Everest Insurance Limited           | Rs   505.00 | ROE:  12.25% | PE:  37.37
-3. Sagarmatha Lumbini Insurance Co. Limited      | Rs   565.20 | ROE:  10.95% | PE:  47.34
-4. IME Life Insurance Company Limited            | Rs   405.20 | ROE:  10.36% | PE:  34.68
-5. Siddhartha Premier Insurance Limited          | Rs   640.00 | ROE:   9.78% | PE:  54.95
-6. Reliable Nepal Life Insurance Limited         | Rs   413.10 | ROE:   9.71% | PE:  36.85
-7. Neco Insurance                                | Rs   560.00 | ROE:   9.01% | PE:  53.85
-8. Asian Life Insurance                          | Rs   404.80 | ROE:   7.56% | PE:  51.32
-9. Sun Nepal Life Insurance Company Limited      | Rs   379.80 | ROE:   7.19% | PE:  47.93
-10. Sanima Reliance Life Insurance Limited        | Rs   357.00 | ROE:   7.17% | PE:  46.64
-11. Citizen Life Insurance Company Limited        | Rs   419.00 | ROE:   6.85% | PE:  53.61
-12. SuryaJyoti Life Insurance Company Limited     | Rs   400.10 | ROE:   6.75% | PE:  52.74
-13. Prabhu Mahalaxmi Life Insurance Limited       | Rs   404.10 | ROE:   6.66% | PE:  57.11
-14. National Life Insurance                       | Rs   560.00 | ROE:   6.06% | PE:  86.00
-15. Sanima GIC Insurance Limited                  | Rs   417.00 | ROE:   5.70% | PE:  72.39
-16. Nepal Insurance                               | Rs   455.00 | ROE:   5.13% | PE:  90.91
+ 1. Prabhu Insurance                         | Rs   600.00 | ROE: 12.78% | ROA:  3.30% | PE: 45.01
+ 2. Himalayan Everest Insurance Limited      | Rs   505.00 | ROE: 12.25% | ROA:  2.94% | PE: 37.37
+ 3. Sagarmatha Lumbini Insurance Co. Limited | Rs   565.20 | ROE: 10.95% | ROA:  2.06% | PE: 47.34
+ 4. IME Life Insurance Company Limited       | Rs   405.20 | ROE: 10.36% | ROA:  2.47% | PE: 34.68
+ 5. Siddhartha Premier Insurance Limited     | Rs   640.00 | ROE:  9.78% | ROA:  1.62% | PE: 54.95
+ 6. Reliable Nepal Life Insurance Limited    | Rs   413.10 | ROE:  9.71% | ROA:  2.44% | PE: 36.85
+ 7. Neco Insurance                           | Rs   560.00 | ROE:  9.01% | ROA:  2.42% | PE: 53.85
+ 8. Asian Life Insurance                     | Rs   404.80 | ROE:  7.56% | ROA:  0.70% | PE: 51.32
+ 9. Sun Nepal Life Insurance Company Limited | Rs   379.80 | ROE:  7.19% | ROA:  2.17% | PE: 47.93
+10. Sanima Reliance Life Insurance Limited   | Rs   357.00 | ROE:  7.17% | ROA:  1.32% | PE: 46.64
+11. Citizen Life Insurance Company Limited   | Rs   419.00 | ROE:  6.85% | ROA:  1.27% | PE: 53.61
+12. SuryaJyoti Life Insurance Company Limite | Rs   400.10 | ROE:  6.75% | ROA:  0.69% | PE: 52.74
+13. Prabhu Mahalaxmi Life Insurance Limited  | Rs   404.10 | ROE:  6.66% | ROA:  1.63% | PE: 57.11
+14. National Life Insurance                  | Rs   560.00 | ROE:  6.06% | ROA:  0.34% | PE: 86.00
+15. Sanima GIC Insurance Limited             | Rs   417.00 | ROE:  5.70% | ROA:  1.44% | PE: 72.39
+16. Nepal Insurance                          | Rs   455.00 | ROE:  5.13% | ROA:  1.65% | PE: 90.91
 
 BANKING:
 ----------------------------------------------------------------------------------------------------
-1. Saptakoshi Development Bank Ltd               | Rs   694.00 | ROE:  24.21% | PE:  38.48
-2. Kumari Bank                                   | Rs   212.50 | ROE:  18.34% | PE:   7.54
-3. Garima Bikas Bank                             | Rs   420.70 | ROE:  17.18% | PE:  15.00
-4. Swabalamban Bikas Bank                        | Rs   667.00 | ROE:  15.84% | PE:  18.83
-5. Shine Resunga Development Bank                | Rs   405.00 | ROE:  15.55% | PE:  17.22
-6. Everest Bank                                  | Rs   730.00 | ROE:  15.26% | PE:  19.76
-7. Shangrila Development Bank                    | Rs   404.00 | ROE:  15.26% | PE:  16.95
-8. Jyoti Bikas Bank                              | Rs   332.00 | ROE:  14.53% | PE:  14.51
-9. Excel Development Bank                        | Rs   568.00 | ROE:  14.35% | PE:  22.94
-10. Sanima Bank                                   | Rs   365.50 | ROE:  14.34% | PE:  16.04
-11. Kamana Sewa Bikas Bank Limited                | Rs   470.00 | ROE:  14.19% | PE:  20.30
-12. Standard Chartered Bank                       | Rs   644.00 | ROE:  12.96% | PE:  22.69
-13. Muktinath Bikas Bank                          | Rs   357.00 | ROE:  12.36% | PE:  18.81
-14. Nabil Bank                                    | Rs   536.80 | ROE:  12.15% | PE:  18.37
-15. NMB Bank                                      | Rs   237.50 | ROE:  12.01% | PE:  11.41
-16. Lumbini Bikas Bank Ltd.                       | Rs   473.00 | ROE:  11.80% | PE:  20.14
-17. Prime Commercial Bank                         | Rs   237.80 | ROE:  11.69% | PE:  12.12
-18. Nepal Bank                                    | Rs   271.70 | ROE:  11.40% | PE:   8.87
-19. Siddhartha Bank                               | Rs   408.50 | ROE:  11.11% | PE:  17.17
-20. Machhapuchhre Bank                            | Rs   248.00 | ROE:  10.46% | PE:  17.70
-21. Green Development Bank Ltd.                   | Rs   969.50 | ROE:  10.24% | PE:  82.44
-22. Nepal Sbi Bank                                | Rs   399.00 | ROE:   9.62% | PE:  22.12
-23. Global Ime Bank                               | Rs   243.10 | ROE:   9.14% | PE:  14.88
-24. Citizen Bank International                    | Rs   194.90 | ROE:   8.90% | PE:  14.40
-25. Mahalaxmi Bikas Bank Limited                  | Rs   344.00 | ROE:   8.72% | PE:  24.63
-26. Miteri Development Bank                       | Rs   562.00 | ROE:   8.25% | PE:  48.44
-27. Agriculture Development Bank                  | Rs   296.00 | ROE:   6.96% | PE:  18.37
-28. Corporate Development Bank                    | Rs   884.00 | ROE:   6.94% | PE:  92.63
-29. Laxmi Sunrise Bank Limited                    | Rs   216.90 | ROE:   6.80% | PE:  18.64
-30. Sana Kisan Bikas Bank                         | Rs   740.00 | ROE:   6.14% | PE:  55.82
-31. Nirdhan Utthan Bank                           | Rs   575.00 | ROE:   5.98% | PE:  44.93
+ 1. Saptakoshi Development Bank Ltd          | Rs   694.00 | ROE: 24.21% | ROA:  1.66% | PE: 38.48
+ 2. Kumari Bank                              | Rs   212.50 | ROE: 18.34% | ROA:  1.60% | PE:  7.54
+ 3. Garima Bikas Bank                        | Rs   420.70 | ROE: 17.18% | ROA:  1.58% | PE: 15.00
+ 4. Swabalamban Bikas Bank                   | Rs   667.00 | ROE: 15.84% | ROA:  2.42% | PE: 18.83
+ 5. Shine Resunga Development Bank           | Rs   405.00 | ROE: 15.55% | ROA:  1.42% | PE: 17.22
+ 6. Everest Bank                             | Rs   730.00 | ROE: 15.26% | ROA:  1.35% | PE: 19.76
+ 7. Shangrila Development Bank               | Rs   404.00 | ROE: 15.26% | ROA:  1.39% | PE: 16.95
+ 8. Jyoti Bikas Bank                         | Rs   332.00 | ROE: 14.53% | ROA:  1.35% | PE: 14.51
+ 9. Excel Development Bank                   | Rs   568.00 | ROE: 14.35% | ROA:  1.56% | PE: 22.94
+10. Sanima Bank                              | Rs   365.50 | ROE: 14.34% | ROA:  1.30% | PE: 16.04
+11. Kamana Sewa Bikas Bank Limited           | Rs   470.00 | ROE: 14.19% | ROA:  1.23% | PE: 20.30
+12. Standard Chartered Bank                  | Rs   644.00 | ROE: 12.96% | ROA:  1.70% | PE: 22.69
+13. Muktinath Bikas Bank                     | Rs   357.00 | ROE: 12.36% | ROA:  1.12% | PE: 18.81
+14. Nabil Bank                               | Rs   536.80 | ROE: 12.15% | ROA:  1.14% | PE: 18.37
+15. NMB Bank                                 | Rs   237.50 | ROE: 12.01% | ROA:  1.09% | PE: 11.41
+16. Lumbini Bikas Bank Ltd.                  | Rs   473.00 | ROE: 11.80% | ROA:  1.27% | PE: 20.14
+17. Prime Commercial Bank                    | Rs   237.80 | ROE: 11.69% | ROA:  1.27% | PE: 12.12
+18. Nepal Bank                               | Rs   271.70 | ROE: 11.40% | ROA:  1.04% | PE:  8.87
+19. Siddhartha Bank                          | Rs   408.50 | ROE: 11.11% | ROA:  0.99% | PE: 17.17
+20. Machhapuchhre Bank                       | Rs   248.00 | ROE: 10.46% | ROA:  0.89% | PE: 17.70
+21. Green Development Bank Ltd.              | Rs   969.50 | ROE: 10.24% | ROA:  1.02% | PE: 82.44
+22. Nepal Sbi Bank                           | Rs   399.00 | ROE:  9.62% | ROA:  0.83% | PE: 22.12
+23. Global Ime Bank                          | Rs   243.10 | ROE:  9.14% | ROA:  0.83% | PE: 14.88
+24. Citizen Bank International               | Rs   194.90 | ROE:  8.90% | ROA:  0.84% | PE: 14.40
+25. Mahalaxmi Bikas Bank Limited             | Rs   344.00 | ROE:  8.72% | ROA:  0.98% | PE: 24.63
+26. Miteri Development Bank                  | Rs   562.00 | ROE:  8.25% | ROA:  1.44% | PE: 48.44
+27. Agriculture Development Bank             | Rs   296.00 | ROE:  6.96% | ROA:  0.67% | PE: 18.37
+28. Corporate Development Bank               | Rs   884.00 | ROE:  6.94% | ROA:  1.68% | PE: 92.63
+29. Laxmi Sunrise Bank Limited               | Rs   216.90 | ROE:  6.80% | ROA:  0.66% | PE: 18.64
+30. Sana Kisan Bikas Bank                    | Rs   740.00 | ROE:  6.14% | ROA:  1.59% | PE: 55.82
+31. Nirdhan Utthan Bank                      | Rs   575.00 | ROE:  5.98% | ROA:  1.21% | PE: 44.93
 
 MICROFINANCE:
 ----------------------------------------------------------------------------------------------------
-1. Aviyan Laghubitta Bittiya Sanstha Limited     | Rs  1010.00 | ROE:  39.66% | PE:  17.71
-2. CYC Nepal Laghubitta Bittiya Sanstha Limited  | Rs  1609.00 | ROE:  33.64% | PE:  14.54
-3. Support Microfinance Bittiya Sanstha Ltd.     | Rs  1735.00 | ROE:  31.92% | PE:  30.53
-4. Matribhumi Lagubitta Bittiya Sanstha Limited  | Rs   754.00 | ROE:  29.46% | PE:  16.71
-5. Global IME Laghubitta Bittiya Sanstha         | Rs  1072.50 | ROE:  28.90% | PE:  17.33
-6. Samaj Laghubittya Bittiya Sanstha Limited     | Rs  1875.80 | ROE:  26.69% | PE:  30.20
-7. Jeevan Bikas Laghubitta Bittya Sanstha Ltd    | Rs  1242.20 | ROE:  24.48% | PE:  20.10
-8. Infinity Laghubitta Bittiya Sanstha Limited   | Rs   844.90 | ROE:  24.17% | PE:  23.05
-9. National Microfinance Bittiya Sanstha Ltd.    | Rs  1110.00 | ROE:  23.96% | PE:  18.95
-10. Mahuli Samudayik Laghubitta Sanstha Ltd.      | Rs  1224.00 | ROE:  23.68% | PE:  24.54
-11. Deprosc Laghubitta                            | Rs   829.20 | ROE:  23.35% | PE:  17.22
-12. Swarojgar Laghu Bitta Bikas Bank              | Rs   787.90 | ROE:  22.64% | PE:  22.64
-13. Samudayik Laghubitta Bittiya Sanstha Limited  | Rs   889.00 | ROE:  22.13% | PE:  33.35
-14. Forward Community Microfinance Bittiya Sansth | Rs   887.00 | ROE:  20.46% | PE:  17.01
-15. Asha Laghubitta Bittiya Sanstha Ltd           | Rs  1086.50 | ROE:  20.01% | PE:  33.29
-16. Gurans Laghubitta Bittiya Sanstha             | Rs  1675.00 | ROE:  19.80% | PE:  53.84
-17. Sampada Laghubitta Bittiya Sanstha Limited    | Rs   733.00 | ROE:  19.62% | PE:  22.54
-18. Upakar Laghubitta Bittiya Sanstha Limited     | Rs  2442.00 | ROE:  19.24% | PE:  46.14
-19. Manushi Laghubitta Bittiya Sanstha Limited    | Rs  1029.00 | ROE:  19.22% | PE:  41.73
-20. Aatmanirbhar Laghubitta Bittiya Sanstha Limit | Rs  5001.50 | ROE:  18.81% | PE:  71.74
-21. Himalayan Laghubitta Bittiya Sanstha Limited  | Rs   863.00 | ROE:  18.35% | PE:  27.61
-22. Nadep Laghubitta Bittiya Sanstha Ltd.         | Rs   710.00 | ROE:  17.72% | PE:  24.05
-23. Unnati Sahakarya Laghubitta Bittiya Sanstha L | Rs   970.00 | ROE:  17.40% | PE:  34.62
-24. NESDO Sambridha Laghubitta Bittiye Sanstha Li | Rs  1349.00 | ROE:  17.06% | PE:  28.68
-25. Swabhimaan Laghubitta Bittiya Sanstha Ltd     | Rs  1430.00 | ROE:  16.90% | PE:  42.34
-26. Mahila Lagubitta Bittiya Sanstha Limited      | Rs  1130.00 | ROE:  16.64% | PE:  29.80
-27. Aarambha Chautari Laghubitta Bittiya Sanstha  | Rs   880.00 | ROE:  16.47% | PE:  31.67
-28. Kalika Laghubitta Bittiya Sanstha             | Rs   778.00 | ROE:  16.27% | PE:  28.39
-29. Ganapati Microfinance Bittiya Sanstha         | Rs  1130.00 | ROE:  16.19% | PE:  39.40
-30. Vijaya Laghubitta Bittiya Sanstha             | Rs   627.90 | ROE:  15.41% | PE:  25.34
-31. Chhimek Laghubitta Bikas Bank                 | Rs   933.00 | ROE:  15.06% | PE:  25.98
-32. Swastik Laghubitta Bittiya Sanstha Limited    | Rs  1940.00 | ROE:  14.39% | PE:  91.90
-33. NMB Microfinance                              | Rs   578.00 | ROE:  14.30% | PE:  28.29
-34. Unique Nepal Laghubitta Bittiya Sanstha Limit | Rs  1242.90 | ROE:  13.69% | PE:  36.14
-35. Suryodaya Womi Laghubitta Bittiya Sanstha Lim | Rs   588.50 | ROE:  13.12% | PE:  29.89
-36. Samata Gharelu Laghubitta Bittiya Sanstha Lim | Rs   690.00 | ROE:  13.08% | PE:  38.24
-37. Laxmi Laghubitta Bittiya Sanstha              | Rs   885.00 | ROE:  13.07% | PE:  36.57
-38. Shrijanshil Laghubitta Bittiya Sanstha Limite | Rs  1350.00 | ROE:  11.95% | PE:  43.81
-39. Mithila Laghubitta Bikas Bank                 | Rs   954.00 | ROE:  10.96% | PE:  47.53
-40. RSDC Laghubitta Bittiya Sanstha Ltd.          | Rs   613.00 | ROE:  10.54% | PE:  45.85
-41. Dhaulagiri Laghubitta Bittiya Sanstha Limited | Rs  1034.00 | ROE:   9.59% | PE:  65.78
-42. Grameen Bikas Laghubitta                      | Rs   668.00 | ROE:   9.31% | PE:  25.18
-43. Nerude Mirmire Laghubitta Bittiya Sanstha Lim | Rs   490.00 | ROE:   8.46% | PE:  29.03
-44. Janautthan Samudayic Laghubitta Bikas Bank    | Rs   942.00 | ROE:   6.36% | PE:  88.00
-45. NIC ASIA Laghubitta Bittiya Sanstha Limited   | Rs   527.20 | ROE:   5.84% | PE:  75.16
-46. Mero Microfinance Bittiya Sanstha Ltd.        | Rs   605.60 | ROE:   5.63% | PE:  71.51
+ 1. Aviyan Laghubitta Bittiya Sanstha Limite | Rs  1010.00 | ROE: 39.66% | ROA:  3.87% | PE: 17.71
+ 2. CYC Nepal Laghubitta Bittiya Sanstha Lim | Rs  1609.00 | ROE: 33.64% | ROA:  4.02% | PE: 14.54
+ 3. Support Microfinance Bittiya Sanstha Ltd | Rs  1735.00 | ROE: 31.92% | ROA:  3.41% | PE: 30.53
+ 4. Matribhumi Lagubitta Bittiya Sanstha Lim | Rs   754.00 | ROE: 29.46% | ROA:  2.28% | PE: 16.71
+ 5. Global IME Laghubitta Bittiya Sanstha    | Rs  1072.50 | ROE: 28.90% | ROA:  3.65% | PE: 17.33
+ 6. Samaj Laghubittya Bittiya Sanstha Limite | Rs  1875.80 | ROE: 26.69% | ROA:  2.90% | PE: 30.20
+ 7. Jeevan Bikas Laghubitta Bittya Sanstha L | Rs  1242.20 | ROE: 24.48% | ROA:  3.40% | PE: 20.10
+ 8. Infinity Laghubitta Bittiya Sanstha Limi | Rs   844.90 | ROE: 24.17% | ROA:  2.93% | PE: 23.05
+ 9. National Microfinance Bittiya Sanstha Lt | Rs  1110.00 | ROE: 23.96% | ROA:  2.84% | PE: 18.95
+10. Mahuli Samudayik Laghubitta Sanstha Ltd. | Rs  1224.00 | ROE: 23.68% | ROA:  3.10% | PE: 24.54
+11. Deprosc Laghubitta                       | Rs   829.20 | ROE: 23.35% | ROA:  3.56% | PE: 17.22
+12. Swarojgar Laghu Bitta Bikas Bank         | Rs   787.90 | ROE: 22.64% | ROA:  2.84% | PE: 22.64
+13. Samudayik Laghubitta Bittiya Sanstha Lim | Rs   889.00 | ROE: 22.13% | ROA:  2.02% | PE: 33.35
+14. Forward Community Microfinance Bittiya S | Rs   887.00 | ROE: 20.46% | ROA:  2.71% | PE: 17.01
+15. Asha Laghubitta Bittiya Sanstha Ltd      | Rs  1086.50 | ROE: 20.01% | ROA:  2.24% | PE: 33.29
+16. Gurans Laghubitta Bittiya Sanstha        | Rs  1675.00 | ROE: 19.80% | ROA:  1.83% | PE: 53.84
+17. Sampada Laghubitta Bittiya Sanstha Limit | Rs   733.00 | ROE: 19.62% | ROA:  2.10% | PE: 22.54
+18. Upakar Laghubitta Bittiya Sanstha Limite | Rs  2442.00 | ROE: 19.24% | ROA:  1.85% | PE: 46.14
+19. Manushi Laghubitta Bittiya Sanstha Limit | Rs  1029.00 | ROE: 19.22% | ROA:  1.62% | PE: 41.73
+20. Aatmanirbhar Laghubitta Bittiya Sanstha  | Rs  5001.50 | ROE: 18.81% | ROA:  3.16% | PE: 71.74
+21. Himalayan Laghubitta Bittiya Sanstha Lim | Rs   863.00 | ROE: 18.35% | ROA:  1.81% | PE: 27.61
+22. Nadep Laghubitta Bittiya Sanstha Ltd.    | Rs   710.00 | ROE: 17.72% | ROA:  2.08% | PE: 24.05
+23. Unnati Sahakarya Laghubitta Bittiya Sans | Rs   970.00 | ROE: 17.40% | ROA:  1.64% | PE: 34.62
+24. NESDO Sambridha Laghubitta Bittiye Sanst | Rs  1349.00 | ROE: 17.06% | ROA:  3.30% | PE: 28.68
+25. Swabhimaan Laghubitta Bittiya Sanstha Lt | Rs  1430.00 | ROE: 16.90% | ROA:  1.60% | PE: 42.34
+26. Mahila Lagubitta Bittiya Sanstha Limited | Rs  1130.00 | ROE: 16.64% | ROA:  1.45% | PE: 29.80
+27. Aarambha Chautari Laghubitta Bittiya San | Rs   880.00 | ROE: 16.47% | ROA:  1.64% | PE: 31.67
+28. Kalika Laghubitta Bittiya Sanstha        | Rs   778.00 | ROE: 16.27% | ROA:  2.26% | PE: 28.39
+29. Ganapati Microfinance Bittiya Sanstha    | Rs  1130.00 | ROE: 16.19% | ROA:  1.67% | PE: 39.40
+30. Vijaya Laghubitta Bittiya Sanstha        | Rs   627.90 | ROE: 15.41% | ROA:  1.72% | PE: 25.34
+31. Chhimek Laghubitta Bikas Bank            | Rs   933.00 | ROE: 15.06% | ROA:  2.36% | PE: 25.98
+32. Swastik Laghubitta Bittiya Sanstha Limit | Rs  1940.00 | ROE: 14.39% | ROA:  1.60% | PE: 91.90
+33. NMB Microfinance                         | Rs   578.00 | ROE: 14.30% | ROA:  1.74% | PE: 28.29
+34. Unique Nepal Laghubitta Bittiya Sanstha  | Rs  1242.90 | ROE: 13.69% | ROA:  1.35% | PE: 36.14
+35. Suryodaya Womi Laghubitta Bittiya Sansth | Rs   588.50 | ROE: 13.12% | ROA:  1.69% | PE: 29.89
+36. Samata Gharelu Laghubitta Bittiya Sansth | Rs   690.00 | ROE: 13.08% | ROA:  1.77% | PE: 38.24
+37. Laxmi Laghubitta Bittiya Sanstha         | Rs   885.00 | ROE: 13.07% | ROA:  1.60% | PE: 36.57
+38. Shrijanshil Laghubitta Bittiya Sanstha L | Rs  1350.00 | ROE: 11.95% | ROA:  1.12% | PE: 43.81
+39. Mithila Laghubitta Bikas Bank            | Rs   954.00 | ROE: 10.96% | ROA:  1.44% | PE: 47.53
+40. RSDC Laghubitta Bittiya Sanstha Ltd.     | Rs   613.00 | ROE: 10.54% | ROA:  2.10% | PE: 45.85
+41. Dhaulagiri Laghubitta Bittiya Sanstha Li | Rs  1034.00 | ROE:  9.59% | ROA:  0.82% | PE: 65.78
+42. Grameen Bikas Laghubitta                 | Rs   668.00 | ROE:  9.31% | ROA:  1.73% | PE: 25.18
+43. Nerude Mirmire Laghubitta Bittiya Sansth | Rs   490.00 | ROE:  8.46% | ROA:  1.11% | PE: 29.03
+44. Janautthan Samudayic Laghubitta Bikas Ba | Rs   942.00 | ROE:  6.36% | ROA:  0.77% | PE: 88.00
+45. NIC ASIA Laghubitta Bittiya Sanstha Limi | Rs   527.20 | ROE:  5.84% | ROA:  0.53% | PE: 75.16
+46. Mero Microfinance Bittiya Sanstha Ltd.   | Rs   605.60 | ROE:  5.63% | ROA:  0.73% | PE: 71.51
 
 ====================================================================================================
 ✅ Analysis Complete!
