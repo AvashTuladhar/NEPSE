@@ -530,71 +530,6 @@
             font-size: 1.05rem;
         }
     }
-    /* Methodology Grid & Pillar Cards */
-    .methodology-box {
-        background: var(--panel-bg);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        border: 1px solid var(--border);
-        border-radius: var(--card-radius);
-        padding: 1.25rem;
-        margin-bottom: 1.5rem;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    }
-    .methodology-title {
-        font-size: 1rem;
-        font-weight: 700;
-        color: #60a5fa;
-        margin-bottom: 0.75rem;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
-    .pillar-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 0.85rem;
-        margin-top: 0.75rem;
-    }
-    .pillar-card {
-        background: rgba(15, 23, 42, 0.65);
-        border: 1px solid var(--border);
-        border-radius: 10px;
-        padding: 0.85rem;
-        border-top: 3px solid var(--accent);
-    }
-    .pillar-card.quality { border-top-color: #3b82f6; }
-    .pillar-card.value { border-top-color: #10b981; }
-    .pillar-card.risk { border-top-color: #8b5cf6; }
-    .pillar-card.reversal { border-top-color: #f59e0b; }
-    .pillar-card.growth { border-top-color: #ec4899; }
-    .pillar-card.liquidity { border-top-color: #06b6d4; }
-    
-    .pillar-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 0.35rem;
-    }
-    .pillar-name {
-        font-weight: 700;
-        font-size: 0.85rem;
-        color: var(--text-main);
-    }
-    .pillar-weight {
-        font-size: 0.75rem;
-        font-weight: 700;
-        padding: 1px 6px;
-        border-radius: 4px;
-        background: rgba(59, 130, 246, 0.15);
-        color: #93c5fd;
-    }
-    .pillar-desc {
-        font-size: 0.75rem;
-        color: var(--text-muted);
-        line-height: 1.4;
-    }
-    
     /* Conviction Badges */
     .tier-badge {
         display: inline-block;
@@ -666,35 +601,31 @@
 <body class="with-sidebar">
     <button class="sb-toggle" id="sbToggle" aria-label="Toggle navigation">☰</button>
     <nav class="sidebar" id="sidebar">
-        <div class="sb-title">📌 Navigate</div>
-        <a href="#composite-scoring">⭐ Top Picks (Gen-3)</a>
-        <a href="#strategy11">🚨 Stocks to Avoid</a>
-        <a href="#sector-analysis">🏢 Sector Analysis</a>
+        <div class="sb-title">Navigation</div>
+        <a href="#composite-scoring">Top Picks (Gen-3)</a>
+        <a href="#strategy11">Stocks to Avoid</a>
+        <a href="#sector-analysis">Sector Analysis</a>
         <hr class="sb-sep">
         <div class="sb-note" style="color:#60a5fa; font-weight:700;">DEEP DIVE &amp; TELEMETRY</div>
-        <a href="#strategy-evidence">🧪 Strategy Evidence</a>
-        <a href="#events-radar">📅 Corporate Actions</a>
+        <a href="#strategy-evidence">Strategy Evidence</a>
+        <a href="#events-radar">Corporate Actions</a>
         <hr class="sb-sep">
-        <a href="#legacy-screens">📋 Legacy Screens (Archive)</a>
+        <a href="#legacy-screens">Legacy Screens (Archive)</a>
     </nav>
     <a href="#top" class="back-top" title="Back to top">↑</a>
     <div class="container" id="top">
-        <h1>📊 Enhanced NpStocks Analysis Report</h1>
+        <h1>Enhanced NpStocks Analysis Report</h1>
         <div class="meta">
             <strong>Date:</strong> 2026-08-28 &nbsp;|&nbsp;
             <strong>Total Stocks Analyzed:</strong> 263 &nbsp;|&nbsp;
             <strong>Pick Engine:</strong> Gen-3 Ranked Multi-Factor
-        </div>
-        <div class="meta" style="border:1px solid rgba(96,165,250,.35); border-radius:10px; padding:0.6rem 0.9rem; background:rgba(96,165,250,.08);">
-            <strong>How picks are chosen:</strong> ⭐ Top Picks below = ranked-factor scores across 6 pillars (Quality, Value, Low Risk, Reversal, Growth, Liquidity).
-            Entry timing, position size, and stops are decided by the trading engine (6-gate confirmation: RSI &ge; 50, VWAP/EMA support, volume, circuit guard, floor-sheet smart money, and TWAP execution pricing).
         </div>
 
         
 
         
         <div class="summary-stats">
-            <h3>📊 Market Overview</h3>
+            <h3>Market Overview</h3>
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="stat-label">Median P/E Ratio</div>
@@ -726,76 +657,8 @@
 
 
         <div id="composite-scoring">
-            <h2>⭐ Top Picks - Composite Scoring</h2>
+            <h2>Top Picks - Composite Scoring</h2>
             <p class="section-description">Ranked multi-factor model scoring across 6 quantitative pillars: Quality (30%), Value (20%), Low Risk (20%), Reversal (15%), Growth (10%), and Liquidity (5%). The &#x27;Why&#x27; column highlights the top-3 percentile drivers for each stock.</p>
-    
-        <div class="methodology-box">
-            <div class="methodology-title">
-                <span>📐 Multi-Factor Quantitative Framework (Gen-3.3)</span>
-            </div>
-            <p class="section-description" style="margin-bottom:0.75rem;">
-                Stocks are scored across 6 distinct, cross-sectional percentile pillars. Every company is ranked from 0% to 100% relative to today's eligible universe, eliminating arbitrary single-metric hurdles and identifying true multidimensional leaders.
-            </p>
-            <div class="pillar-grid">
-                <div class="pillar-card quality">
-                    <div class="pillar-header">
-                        <span class="pillar-name">💎 Quality Pillar</span>
-                        <span class="pillar-weight">30%</span>
-                    </div>
-                    <div class="pillar-desc">
-                        DuPont ROA asset productivity (isolating real operating efficiency from bank leverage) + TTM Net Margin + MRQ margin maintenance.
-                    </div>
-                </div>
-                <div class="pillar-card value">
-                    <div class="pillar-header">
-                        <span class="pillar-name">💵 Value Pillar</span>
-                        <span class="pillar-weight">20%</span>
-                    </div>
-                    <div class="pillar-desc">
-                        Sector-relative Earnings Yield (1/PE) and Book Yield (1/PBV) anchored to cross-sector median bubble guards.
-                    </div>
-                </div>
-                <div class="pillar-card risk">
-                    <div class="pillar-header">
-                        <span class="pillar-name">🛡️ Low Risk Pillar</span>
-                        <span class="pillar-weight">20%</span>
-                    </div>
-                    <div class="pillar-desc">
-                        1-Week VaR @ 5% tail-risk protection + inverse volatility (-SD) + sector-differentiated solvency (equity multiplier for banks, inverse debt for hydro/industrials).
-                    </div>
-                </div>
-                <div class="pillar-card reversal">
-                    <div class="pillar-header">
-                        <span class="pillar-name">🔄 Reversal Pillar</span>
-                        <span class="pillar-weight">15%</span>
-                    </div>
-                    <div class="pillar-desc">
-                        Validated mean-reversion alpha: rank of negative 12-week price change. In NEPSE, oversold quality delivers strong forward outperformance.
-                    </div>
-                </div>
-                <div class="pillar-card growth">
-                    <div class="pillar-header">
-                        <span class="pillar-name">📈 Growth Pillar</span>
-                        <span class="pillar-weight">10%</span>
-                    </div>
-                    <div class="pillar-desc">
-                        Quarterly earnings momentum: continuous EPS acceleration ratio (EPS MRQ / EPS TTM).
-                    </div>
-                </div>
-                <div class="pillar-card liquidity">
-                    <div class="pillar-header">
-                        <span class="pillar-name">💧 Liquidity Pillar</span>
-                        <span class="pillar-weight">5%</span>
-                    </div>
-                    <div class="pillar-desc">
-                        Log traded turnover ensuring institutional execution feasibility without market impact.
-                    </div>
-                </div>
-            </div>
-            <div style="margin-top:1rem; padding:0.6rem 0.85rem; background:rgba(15,23,42,0.6); border-radius:8px; border:1px solid var(--border); font-size:0.8rem; color:var(--text-muted);">
-                💡 <strong>Execution Protocol:</strong> Composite scores determine <em>what</em> to buy (statistical alpha). The trading engine executes entries only when confirmed by the <strong>6-Gate Timing Check</strong> (RSI &ge; 50 &amp; rising, VWAP/EMA support, turnover floor, clean floor-sheet flow) using volatility-scaled ATR stops ($2:1$ reward:risk).
-            </div>
-        </div>
     <table class="table">
 <thead>
 <tr>
@@ -825,7 +688,7 @@
 <td><span class="positive strong">94%</span></td>
 <td><span class="positive strong">91%</span></td>
 <td><span class="positive strong">94%</span></td>
-<td><span class="positive strong">0.91</span><span class="tier-badge tier-1">🔥 Tier 1</span></td>
+<td><span class="positive strong">0.91</span><span class="tier-badge tier-1">Tier 1</span></td>
 <td><span class="neutral">Quality 94% · Value 100% · Low Risk 94%</span></td>
 </tr>
 <tr>
@@ -839,7 +702,7 @@
 <td><span class="positive">78%</span></td>
 <td><span class="positive strong">83%</span></td>
 <td><span class="positive strong">89%</span></td>
-<td><span class="positive strong">0.81</span><span class="tier-badge tier-1">🔥 Tier 1</span></td>
+<td><span class="positive strong">0.81</span><span class="tier-badge tier-1">Tier 1</span></td>
 <td><span class="neutral">Quality 72% · Value 94% · Low Risk 78%</span></td>
 </tr>
 <tr>
@@ -853,7 +716,7 @@
 <td><span class="positive strong">91%</span></td>
 <td><span class="negative">33%</span></td>
 <td><span class="positive">71%</span></td>
-<td><span class="positive">0.79</span><span class="tier-badge tier-2">✨ Tier 2</span></td>
+<td><span class="positive">0.79</span><span class="tier-badge tier-2">Tier 2</span></td>
 <td><span class="neutral">Quality 94% · Low Risk 91% · Value 90%</span></td>
 </tr>
 <tr>
@@ -867,7 +730,7 @@
 <td><span class="positive strong">98%</span></td>
 <td><span class="negative">19%</span></td>
 <td><span class="neutral">47%</span></td>
-<td><span class="positive">0.75</span><span class="tier-badge tier-2">✨ Tier 2</span></td>
+<td><span class="positive">0.75</span><span class="tier-badge tier-2">Tier 2</span></td>
 <td><span class="neutral">Quality 88% · Value 98% · Low Risk 98%</span></td>
 </tr>
 <tr>
@@ -881,7 +744,7 @@
 <td><span class="neutral">55%</span></td>
 <td><span class="neutral">52%</span></td>
 <td><span class="neutral">48%</span></td>
-<td><span class="positive">0.75</span><span class="tier-badge tier-2">✨ Tier 2</span></td>
+<td><span class="positive">0.75</span><span class="tier-badge tier-2">Tier 2</span></td>
 <td><span class="neutral">Quality 89% · Value 99% · Low Risk 55%</span></td>
 </tr>
 <tr>
@@ -895,7 +758,7 @@
 <td><span class="positive strong">97%</span></td>
 <td><span class="positive">78%</span></td>
 <td><span class="positive strong">82%</span></td>
-<td><span class="positive">0.74</span><span class="tier-badge tier-2">✨ Tier 2</span></td>
+<td><span class="positive">0.74</span><span class="tier-badge tier-2">Tier 2</span></td>
 <td><span class="neutral">Low Risk 97% · Value 84% · Quality 53%</span></td>
 </tr>
 <tr>
@@ -909,7 +772,7 @@
 <td><span class="positive">70%</span></td>
 <td><span class="positive">63%</span></td>
 <td><span class="positive strong">83%</span></td>
-<td><span class="positive">0.74</span><span class="tier-badge tier-2">✨ Tier 2</span></td>
+<td><span class="positive">0.74</span><span class="tier-badge tier-2">Tier 2</span></td>
 <td><span class="neutral">Quality 93% · Value 70% · Low Risk 70%</span></td>
 </tr>
 <tr>
@@ -923,7 +786,7 @@
 <td><span class="neutral">59%</span></td>
 <td><span class="negative">35%</span></td>
 <td><span class="positive">75%</span></td>
-<td><span class="positive">0.74</span><span class="tier-badge tier-2">✨ Tier 2</span></td>
+<td><span class="positive">0.74</span><span class="tier-badge tier-2">Tier 2</span></td>
 <td><span class="neutral">Quality 98% · Value 94% · Low Risk 59%</span></td>
 </tr>
 <tr>
@@ -937,7 +800,7 @@
 <td><span class="positive">78%</span></td>
 <td><span class="negative">11%</span></td>
 <td><span class="neutral">54%</span></td>
-<td><span class="positive">0.73</span><span class="tier-badge tier-2">✨ Tier 2</span></td>
+<td><span class="positive">0.73</span><span class="tier-badge tier-2">Tier 2</span></td>
 <td><span class="neutral">Quality 95% · Value 85% · Low Risk 78%</span></td>
 </tr>
 <tr>
@@ -951,7 +814,7 @@
 <td><span class="positive strong">85%</span></td>
 <td><span class="positive strong">92%</span></td>
 <td><span class="positive">61%</span></td>
-<td><span class="positive">0.72</span><span class="tier-badge tier-2">✨ Tier 2</span></td>
+<td><span class="positive">0.72</span><span class="tier-badge tier-2">Tier 2</span></td>
 <td><span class="neutral">Quality 66% · Low Risk 85% · Reversal 92%</span></td>
 </tr>
 <tr>
@@ -965,7 +828,7 @@
 <td><span class="neutral">51%</span></td>
 <td><span class="positive">71%</span></td>
 <td><span class="positive strong">99%</span></td>
-<td><span class="positive">0.72</span><span class="tier-badge tier-2">✨ Tier 2</span></td>
+<td><span class="positive">0.72</span><span class="tier-badge tier-2">Tier 2</span></td>
 <td><span class="neutral">Quality 87% · Value 71% · Reversal 71%</span></td>
 </tr>
 <tr>
@@ -979,7 +842,7 @@
 <td><span class="neutral">54%</span></td>
 <td><span class="positive strong">81%</span></td>
 <td><span class="positive strong">100%</span></td>
-<td><span class="positive">0.71</span><span class="tier-badge tier-2">✨ Tier 2</span></td>
+<td><span class="positive">0.71</span><span class="tier-badge tier-2">Tier 2</span></td>
 <td><span class="neutral">Quality 68% · Value 86% · Reversal 81%</span></td>
 </tr>
 <tr>
@@ -993,7 +856,7 @@
 <td><span class="negative">14%</span></td>
 <td><span class="positive">76%</span></td>
 <td><span class="positive">69%</span></td>
-<td><span class="positive">0.71</span><span class="tier-badge tier-2">✨ Tier 2</span></td>
+<td><span class="positive">0.71</span><span class="tier-badge tier-2">Tier 2</span></td>
 <td><span class="neutral">Quality 90% · Value 99% · Reversal 76%</span></td>
 </tr>
 <tr>
@@ -1007,7 +870,7 @@
 <td><span class="positive strong">81%</span></td>
 <td><span class="positive strong">88%</span></td>
 <td><span class="negative">20%</span></td>
-<td><span class="positive">0.71</span><span class="tier-badge tier-2">✨ Tier 2</span></td>
+<td><span class="positive">0.71</span><span class="tier-badge tier-2">Tier 2</span></td>
 <td><span class="neutral">Quality 68% · Value 81% · Low Risk 81%</span></td>
 </tr>
 <tr>
@@ -1021,7 +884,7 @@
 <td><span class="negative">27%</span></td>
 <td><span class="positive strong">88%</span></td>
 <td><span class="positive strong">94%</span></td>
-<td><span class="positive">0.70</span><span class="tier-badge tier-2">✨ Tier 2</span></td>
+<td><span class="positive">0.70</span><span class="tier-badge tier-2">Tier 2</span></td>
 <td><span class="neutral">Quality 87% · Value 78% · Reversal 88%</span></td>
 </tr>
 <tr>
@@ -1035,7 +898,7 @@
 <td><span class="positive">80%</span></td>
 <td><span class="negative">28%</span></td>
 <td><span class="neutral">55%</span></td>
-<td><span class="neutral">0.70</span><span class="tier-badge tier-3">⚡ Tier 3</span></td>
+<td><span class="neutral">0.70</span><span class="tier-badge tier-3">Tier 3</span></td>
 <td><span class="neutral">Quality 79% · Value 92% · Low Risk 80%</span></td>
 </tr>
 <tr>
@@ -1049,7 +912,7 @@
 <td><span class="negative">25%</span></td>
 <td><span class="negative">1%</span></td>
 <td><span class="positive strong">98%</span></td>
-<td><span class="neutral">0.69</span><span class="tier-badge tier-3">⚡ Tier 3</span></td>
+<td><span class="neutral">0.69</span><span class="tier-badge tier-3">Tier 3</span></td>
 <td><span class="neutral">Quality 100% · Value 96% · Growth 98%</span></td>
 </tr>
 <tr>
@@ -1063,7 +926,7 @@
 <td><span class="neutral">40%</span></td>
 <td><span class="negative">23%</span></td>
 <td><span class="positive">74%</span></td>
-<td><span class="neutral">0.68</span><span class="tier-badge tier-3">⚡ Tier 3</span></td>
+<td><span class="neutral">0.68</span><span class="tier-badge tier-3">Tier 3</span></td>
 <td><span class="neutral">Quality 84% · Value 97% · Low Risk 40%</span></td>
 </tr>
 <tr>
@@ -1077,7 +940,7 @@
 <td><span class="neutral">48%</span></td>
 <td><span class="neutral">47%</span></td>
 <td><span class="positive strong">81%</span></td>
-<td><span class="neutral">0.67</span><span class="tier-badge tier-3">⚡ Tier 3</span></td>
+<td><span class="neutral">0.67</span><span class="tier-badge tier-3">Tier 3</span></td>
 <td><span class="neutral">Quality 80% · Value 89% · Low Risk 48%</span></td>
 </tr>
 <tr>
@@ -1091,7 +954,7 @@
 <td><span class="positive strong">96%</span></td>
 <td><span class="positive strong">90%</span></td>
 <td><span class="positive">73%</span></td>
-<td><span class="neutral">0.67</span><span class="tier-badge tier-3">⚡ Tier 3</span></td>
+<td><span class="neutral">0.67</span><span class="tier-badge tier-3">Tier 3</span></td>
 <td><span class="neutral">Low Risk 96% · Quality 45% · Reversal 90%</span></td>
 </tr>
 <tr>
@@ -1105,7 +968,7 @@
 <td><span class="negative">4%</span></td>
 <td><span class="positive">67%</span></td>
 <td><span class="positive">80%</span></td>
-<td><span class="neutral">0.66</span><span class="tier-badge tier-3">⚡ Tier 3</span></td>
+<td><span class="neutral">0.66</span><span class="tier-badge tier-3">Tier 3</span></td>
 <td><span class="neutral">Quality 88% · Value 96% · Reversal 67%</span></td>
 </tr>
 <tr>
@@ -1119,7 +982,7 @@
 <td><span class="positive">68%</span></td>
 <td><span class="negative">30%</span></td>
 <td><span class="negative">35%</span></td>
-<td><span class="neutral">0.66</span><span class="tier-badge tier-3">⚡ Tier 3</span></td>
+<td><span class="neutral">0.66</span><span class="tier-badge tier-3">Tier 3</span></td>
 <td><span class="neutral">Quality 97% · Low Risk 68% · Value 53%</span></td>
 </tr>
 <tr>
@@ -1133,7 +996,7 @@
 <td><span class="neutral">58%</span></td>
 <td><span class="positive">73%</span></td>
 <td><span class="positive">71%</span></td>
-<td><span class="neutral">0.65</span><span class="tier-badge tier-3">⚡ Tier 3</span></td>
+<td><span class="neutral">0.65</span><span class="tier-badge tier-3">Tier 3</span></td>
 <td><span class="neutral">Quality 65% · Value 79% · Low Risk 58%</span></td>
 </tr>
 <tr>
@@ -1147,15 +1010,15 @@
 <td><span class="positive">67%</span></td>
 <td><span class="negative">17%</span></td>
 <td><span class="positive strong">83%</span></td>
-<td><span class="neutral">0.65</span><span class="tier-badge tier-3">⚡ Tier 3</span></td>
+<td><span class="neutral">0.65</span><span class="tier-badge tier-3">Tier 3</span></td>
 <td><span class="neutral">Quality 73% · Value 95% · Low Risk 67%</span></td>
 </tr>
 </tbody>
 </table>
-<p class="section-description" style="margin-top:0.5rem;">💡 <strong>Typical Price</strong> = (High+Low+Close)/3 — where the stock actually traded this session. <strong>Green %</strong> = closed below typical (favorable entry zone); <strong>red %</strong> = closed well above typical (chasing — consider waiting for a pullback toward typical before entering).</p>        </div>
+        </div>
 
         <div id="strategy11">
-            <h2>🚨 Stocks to Avoid (Red Flags) <span style="font-size:0.65em; color:var(--loss);">(active exclusion list)</span></h2>
+            <h2>Stocks to Avoid (Red Flags) <span style="font-size:0.65em; color:var(--loss);">(active exclusion list)</span></h2>
             <p class="section-description">Money-losers (ROE &amp; margin &lt; 0), over-leveraged (Debt &gt; 70% for non-financials), or absurdly expensive (PE &gt; 100 with ROE &lt; 5%) — stay away. Financial sectors are exempt from the debt rule (deposits are intrinsic to their business model).</p>
     <table class="table">
 <thead>
@@ -1996,7 +1859,7 @@
         </div>
 
         <div id="sector-analysis">
-            <h2>🏢 Sector-Specific Analysis</h2>
+            <h2>Sector-Specific Analysis</h2>
             <p class="section-description">Best stocks in each sector, compared fairly within their own group (banks are judged like banks, hydropower like hydropower).</p>
     <h3>Manufacturing &amp; Corporate</h3>
 <table class="table">
@@ -3361,11 +3224,11 @@
 </tbody>
 </table>
         </div>
-<h2 id="events-radar">📅 Upcoming Corporate Actions (10 days)</h2><p class="section-description">Dividends, AGMs/SGMs and book-closure dates on the horizon. Prices around ex-dates can distort momentum signals — verify before acting.</p><div style="overflow-x:auto;"><table><thead><tr><th>Date</th><th>Symbol</th><th>Company</th><th>Type</th><th>Agenda</th></tr></thead><tbody><tr><td style="white-space:nowrap;">2026-08-30</td><td>JBLB</td><td><strong>Jeevan Bikas Laghubitta Bittya Sanstha Ltd</strong></td><td>SGM</td><td>Approval of the merger of Jeevan Bikas Laghubitta Bittiya Sanstha Limited, Unique Nepal Laghubitta B</td></tr><tr><td style="white-space:nowrap;">2026-08-30</td><td>MLBS</td><td><strong>Manushi Laghubitta Bittiya Sanstha Limited</strong></td><td>SGM</td><td>Approval of the merger of Jeevan Bikas Laghubitta Bittiya Sanstha Limited, Unique Nepal Laghubitta B</td></tr><tr><td style="white-space:nowrap;">2026-08-30</td><td>UNLB</td><td><strong>Unique Nepal Laghubitta Bittiya Sanstha Limited</strong></td><td>SGM</td><td>Approval of the merger of Jeevan Bikas Laghubitta Bittiya Sanstha Limited, Unique Nepal Laghubitta B</td></tr><tr><td style="white-space:nowrap;">2026-08-30</td><td>DHEL</td><td><strong>Daramkhola Hydro Energy Limited</strong></td><td>AGM</td><td>Financial Highlights FY 2024/25 ##Election of Board Members</td></tr><tr><td style="white-space:nowrap;">2026-08-31</td><td>SIGS3</td><td><strong>Siddhartha Investment Growth Scheme 3</strong></td><td>Dividend</td><td>10% Cash Dividend (including tax) to be distributed to its unitholders for FY 2025/26</td></tr><tr><td style="white-space:nowrap;">2026-08-31</td><td>SIGS2</td><td><strong>Siddhartha Investment Growth Scheme 2</strong></td><td>Dividend</td><td>8% Cash Dividend (including tax) to be distributed to its unitholders for FY 2025/26</td></tr><tr><td style="white-space:nowrap;">2026-09-01</td><td>MPFL</td><td><strong>Multipurpose Finance</strong></td><td>AGM</td><td>Financial Highlights FY 2024/25</td></tr><tr><td style="white-space:nowrap;">2026-09-02</td><td>MEHL</td><td><strong>Manakamana Engineering Hydropower Limited</strong></td><td>AGM</td><td>Financial Highlights FY 2025/26 </td></tr><tr><td style="white-space:nowrap;">2026-09-03</td><td>MANDU</td><td><strong>Mandu Hydropower Limited</strong></td><td>AGM</td><td>Financial Highlights FY 2024/25 &amp; FY 2025/26  ##Proposal for 10 % Stock and 12.5263% Cash Dividend #</td></tr><tr><td style="white-space:nowrap;">2026-09-03</td><td>SAGF</td><td><strong>Sanima Growth Fund</strong></td><td>Dividend</td><td>5% Cash Dividend (including tax) to be distributed to its unitholders for FY 2025/26</td></tr><tr><td style="white-space:nowrap;">2026-09-03</td><td>KSBBL</td><td><strong>Kamana Sewa Bikas Bank Limited</strong></td><td>AGM</td><td>Financial Highlights FY 2025/26  ##Proposal for 15% Cash Dividend ##Appointment of Board Members</td></tr><tr><td style="white-space:nowrap;">2026-09-03</td><td>KSBBL</td><td><strong>Kamana Sewa Bikas Bank Limited</strong></td><td>Dividend</td><td>Proposal for 15% Cash Dividend subject to approval from Regulatory body and its upcoming AGM</td></tr></tbody></table></div><h2 id="strategy-evidence">🧪 Strategy Evidence (graded forward returns)</h2><p class="section-description">What actually happened AFTER each historical pick: win-rate and average return over the next 1 and 5 sessions, net of estimated fees. Verdicts strengthen as history accumulates (~60 sessions needed); treat small samples as directional.</p><div style="overflow-x:auto;"><table><thead><tr><th>Strategy</th><th>N(1d)</th><th>Win%(1d)</th><th>Avg%(1d)</th><th>N(5d)</th><th>Win%(5d)</th><th>Avg%(5d)</th></tr></thead><tbody><tr><td><strong>💪 Strong Balance Sheet</strong></td><td>84.0</td><td>+44.00</td><td>+0.00</td><td>55.0</td><td>+40.00</td><td>+0.14</td></tr><tr><td><strong>💰 High Profitability Leaders</strong></td><td>82.0</td><td>+45.10</td><td>+0.01</td><td>56.0</td><td>+35.70</td><td>-0.25</td></tr><tr><td><strong>📊 Best Risk-Adjusted Returns</strong></td><td>95.0</td><td>+42.10</td><td>-0.05</td><td>61.0</td><td>+32.80</td><td>-0.33</td></tr><tr><td><strong>💵 Undervalued High Earners</strong></td><td>100.0</td><td>+45.00</td><td>-0.02</td><td>59.0</td><td>+39.00</td><td>-0.47</td></tr><tr><td><strong>🛡️ Defensive Low-Risk</strong></td><td>180.0</td><td>+38.90</td><td>-0.18</td><td>108.0</td><td>+31.50</td><td>-0.93</td></tr><tr><td><strong>💎 High Quality Stocks</strong></td><td>63.0</td><td>+38.10</td><td>-0.22</td><td>45.0</td><td>+28.90</td><td>-1.07</td></tr></tbody></table></div>
+<h2 id="events-radar">Upcoming Corporate Actions (10 days)</h2><p class="section-description">Dividends, AGMs/SGMs and book-closure dates on the horizon. Prices around ex-dates can distort momentum signals — verify before acting.</p><div style="overflow-x:auto;"><table><thead><tr><th>Date</th><th>Symbol</th><th>Company</th><th>Type</th><th>Agenda</th></tr></thead><tbody><tr><td style="white-space:nowrap;">2026-08-30</td><td>JBLB</td><td><strong>Jeevan Bikas Laghubitta Bittya Sanstha Ltd</strong></td><td>SGM</td><td>Approval of the merger of Jeevan Bikas Laghubitta Bittiya Sanstha Limited, Unique Nepal Laghubitta B</td></tr><tr><td style="white-space:nowrap;">2026-08-30</td><td>MLBS</td><td><strong>Manushi Laghubitta Bittiya Sanstha Limited</strong></td><td>SGM</td><td>Approval of the merger of Jeevan Bikas Laghubitta Bittiya Sanstha Limited, Unique Nepal Laghubitta B</td></tr><tr><td style="white-space:nowrap;">2026-08-30</td><td>UNLB</td><td><strong>Unique Nepal Laghubitta Bittiya Sanstha Limited</strong></td><td>SGM</td><td>Approval of the merger of Jeevan Bikas Laghubitta Bittiya Sanstha Limited, Unique Nepal Laghubitta B</td></tr><tr><td style="white-space:nowrap;">2026-08-30</td><td>DHEL</td><td><strong>Daramkhola Hydro Energy Limited</strong></td><td>AGM</td><td>Financial Highlights FY 2024/25 ##Election of Board Members</td></tr><tr><td style="white-space:nowrap;">2026-08-31</td><td>SIGS3</td><td><strong>Siddhartha Investment Growth Scheme 3</strong></td><td>Dividend</td><td>10% Cash Dividend (including tax) to be distributed to its unitholders for FY 2025/26</td></tr><tr><td style="white-space:nowrap;">2026-08-31</td><td>SIGS2</td><td><strong>Siddhartha Investment Growth Scheme 2</strong></td><td>Dividend</td><td>8% Cash Dividend (including tax) to be distributed to its unitholders for FY 2025/26</td></tr><tr><td style="white-space:nowrap;">2026-09-01</td><td>MPFL</td><td><strong>Multipurpose Finance</strong></td><td>AGM</td><td>Financial Highlights FY 2024/25</td></tr><tr><td style="white-space:nowrap;">2026-09-02</td><td>MEHL</td><td><strong>Manakamana Engineering Hydropower Limited</strong></td><td>AGM</td><td>Financial Highlights FY 2025/26 </td></tr><tr><td style="white-space:nowrap;">2026-09-03</td><td>MANDU</td><td><strong>Mandu Hydropower Limited</strong></td><td>AGM</td><td>Financial Highlights FY 2024/25 &amp; FY 2025/26  ##Proposal for 10 % Stock and 12.5263% Cash Dividend #</td></tr><tr><td style="white-space:nowrap;">2026-09-03</td><td>SAGF</td><td><strong>Sanima Growth Fund</strong></td><td>Dividend</td><td>5% Cash Dividend (including tax) to be distributed to its unitholders for FY 2025/26</td></tr><tr><td style="white-space:nowrap;">2026-09-03</td><td>KSBBL</td><td><strong>Kamana Sewa Bikas Bank Limited</strong></td><td>AGM</td><td>Financial Highlights FY 2025/26  ##Proposal for 15% Cash Dividend ##Appointment of Board Members</td></tr><tr><td style="white-space:nowrap;">2026-09-03</td><td>KSBBL</td><td><strong>Kamana Sewa Bikas Bank Limited</strong></td><td>Dividend</td><td>Proposal for 15% Cash Dividend subject to approval from Regulatory body and its upcoming AGM</td></tr></tbody></table></div><h2 id="strategy-evidence">Strategy Evidence (graded forward returns)</h2><p class="section-description">What actually happened AFTER each historical pick: win-rate and average return over the next 1 and 5 sessions, net of estimated fees. Verdicts strengthen as history accumulates (~60 sessions needed); treat small samples as directional.</p><div style="overflow-x:auto;"><table><thead><tr><th>Strategy</th><th>N(1d)</th><th>Win%(1d)</th><th>Avg%(1d)</th><th>N(5d)</th><th>Win%(5d)</th><th>Avg%(5d)</th></tr></thead><tbody><tr><td><strong>💪 Strong Balance Sheet</strong></td><td>84.0</td><td>+44.00</td><td>+0.00</td><td>55.0</td><td>+40.00</td><td>+0.14</td></tr><tr><td><strong>💰 High Profitability Leaders</strong></td><td>82.0</td><td>+45.10</td><td>+0.01</td><td>56.0</td><td>+35.70</td><td>-0.25</td></tr><tr><td><strong>📊 Best Risk-Adjusted Returns</strong></td><td>95.0</td><td>+42.10</td><td>-0.05</td><td>61.0</td><td>+32.80</td><td>-0.33</td></tr><tr><td><strong>💵 Undervalued High Earners</strong></td><td>100.0</td><td>+45.00</td><td>-0.02</td><td>59.0</td><td>+39.00</td><td>-0.47</td></tr><tr><td><strong>🛡️ Defensive Low-Risk</strong></td><td>180.0</td><td>+38.90</td><td>-0.18</td><td>108.0</td><td>+31.50</td><td>-0.93</td></tr><tr><td><strong>💎 High Quality Stocks</strong></td><td>63.0</td><td>+38.10</td><td>-0.22</td><td>45.0</td><td>+28.90</td><td>-1.07</td></tr></tbody></table></div>
         <div id="legacy-screens">
             <details class="legacy-accordion">
                 <summary class="legacy-summary">
-                    <span>📋 Legacy Reference Screens (Strategies 1–10 — Archive &amp; Audit Trail)</span>
+                    <span>Legacy Reference Screens (Strategies 1–10 — Archive &amp; Audit Trail)</span>
                     <span style="font-size:0.8rem; color:var(--accent-soft); font-weight:500;">Click to Expand ▾</span>
                 </summary>
                 <div class="legacy-content">

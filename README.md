@@ -1,42 +1,42 @@
 ====================================================================================================
-🎯 ENHANCED NPSTOCKS ANALYSIS REPORT
+ENHANCED NPSTOCKS ANALYSIS REPORT
 ====================================================================================================
 Date: 2026-08-28
 Total Stocks: 263
 ====================================================================================================
 
 ====================================================================================================
-⭐ TOP PICKS — GEN-3 MULTI-FACTOR PERCENTILE SCORING
+TOP PICKS — GEN-3 MULTI-FACTOR PERCENTILE SCORING
 Quantitative Pillars: Quality (30%) · Value (20%) · Low Risk (20%) · Reversal (15%) · Growth (10%) · Liquidity (5%)
 ====================================================================================================
- 1. [🔥 TIER 1] Forward Community Microfinance B | Score: 0.91 | Q:94% | V:100% | LR:94% | Rev:91% | Gr:94% | Quality 94% · Value 100% · Low Risk 94%
- 2. [🔥 TIER 1] Himalayan Everest Insurance Limi | Score: 0.81 | Q:72% | V:94% | LR:78% | Rev:83% | Gr:89% | Quality 72% · Value 94% · Low Risk 78%
- 3. [✨ TIER 2] Jeevan Bikas Laghubitta Bittya S | Score: 0.79 | Q:94% | V:90% | LR:91% | Rev:33% | Gr:71% | Quality 94% · Low Risk 91% · Value 90%
- 4. [✨ TIER 2] Deprosc Laghubitta               | Score: 0.75 | Q:88% | V:98% | LR:98% | Rev:19% | Gr:47% | Quality 88% · Value 98% · Low Risk 98%
- 5. [✨ TIER 2] Api Power                        | Score: 0.75 | Q:89% | V:99% | LR:55% | Rev:52% | Gr:48% | Quality 89% · Value 99% · Low Risk 55%
- 6. [✨ TIER 2] Sagarmatha Lumbini Insurance Co. | Score: 0.74 | Q:53% | V:84% | LR:97% | Rev:78% | Gr:82% | Low Risk 97% · Value 84% · Quality 53%
- 7. [✨ TIER 2] Infinity Laghubitta Bittiya Sans | Score: 0.74 | Q:93% | V:70% | LR:70% | Rev:63% | Gr:83% | Quality 93% · Value 70% · Low Risk 70%
- 8. [✨ TIER 2] Global IME Laghubitta Bittiya Sa | Score: 0.74 | Q:98% | V:94% | LR:59% | Rev:35% | Gr:75% | Quality 98% · Value 94% · Low Risk 59%
- 9. [✨ TIER 2] Mountain Energy Nepal Limited    | Score: 0.73 | Q:95% | V:85% | LR:78% | Rev:11% | Gr:54% | Quality 95% · Value 85% · Low Risk 78%
-10. [✨ TIER 2] Chilime Hydropower               | Score: 0.72 | Q:66% | V:52% | LR:85% | Rev:92% | Gr:61% | Quality 66% · Low Risk 85% · Reversal 92%
-11. [✨ TIER 2] Kalika Laghubitta Bittiya Sansth | Score: 0.72 | Q:87% | V:71% | LR:51% | Rev:71% | Gr:99% | Quality 87% · Value 71% · Reversal 71%
-12. [✨ TIER 2] Vijaya Laghubitta Bittiya Sansth | Score: 0.71 | Q:68% | V:86% | LR:54% | Rev:81% | Gr:100% | Quality 68% · Value 86% · Reversal 81%
-13. [✨ TIER 2] Gurkhas Finance Ltd.             | Score: 0.71 | Q:90% | V:99% | LR:14% | Rev:76% | Gr:69% | Quality 90% · Value 99% · Reversal 76%
-14. [✨ TIER 2] Prabhu Insurance                 | Score: 0.71 | Q:68% | V:81% | LR:81% | Rev:88% | Gr:20% | Quality 68% · Value 81% · Low Risk 81%
-15. [✨ TIER 2] Matribhumi Lagubitta Bittiya San | Score: 0.70 | Q:87% | V:78% | LR:27% | Rev:88% | Gr:94% | Quality 87% · Value 78% · Reversal 88%
-16. [⚡ TIER 3] National Microfinance Bittiya Sa | Score: 0.70 | Q:79% | V:92% | LR:80% | Rev:28% | Gr:55% | Quality 79% · Value 92% · Low Risk 80%
-17. [⚡ TIER 3] CYC Nepal Laghubitta Bittiya San | Score: 0.69 | Q:100% | V:96% | LR:25% | Rev: 1% | Gr:98% | Quality 100% · Value 96% · Growth 98%
-18. [⚡ TIER 3] Kumari Bank                      | Score: 0.68 | Q:84% | V:97% | LR:40% | Rev:23% | Gr:74% | Quality 84% · Value 97% · Low Risk 40%
-19. [⚡ TIER 3] Nadep Laghubitta Bittiya Sanstha | Score: 0.67 | Q:80% | V:89% | LR:48% | Rev:47% | Gr:81% | Quality 80% · Value 89% · Low Risk 48%
-20. [⚡ TIER 3] Neco Insurance                   | Score: 0.67 | Q:45% | V:56% | LR:96% | Rev:90% | Gr:73% | Low Risk 96% · Quality 45% · Reversal 90%
-21. [⚡ TIER 3] Mountain Hydro Nepal Limited     | Score: 0.66 | Q:88% | V:96% | LR: 4% | Rev:67% | Gr:80% | Quality 88% · Value 96% · Reversal 67%
-22. [⚡ TIER 3] CEDB Holdings Limited            | Score: 0.66 | Q:97% | V:53% | LR:68% | Rev:30% | Gr:35% | Quality 97% · Low Risk 68% · Value 53%
-23. [⚡ TIER 3] Sampada Laghubitta Bittiya Sanst | Score: 0.65 | Q:65% | V:79% | LR:58% | Rev:73% | Gr:71% | Quality 65% · Value 79% · Low Risk 58%
-24. [⚡ TIER 3] Bottlers Nepal (Terai)           | Score: 0.65 | Q:73% | V:95% | LR:67% | Rev:17% | Gr:83% | Quality 73% · Value 95% · Low Risk 67%
+ 1. [TIER 1] Forward Community Microfinance B | Score: 0.91 | Q:94% | V:100% | LR:94% | Rev:91% | Gr:94% | Quality 94% · Value 100% · Low Risk 94%
+ 2. [TIER 1] Himalayan Everest Insurance Limi | Score: 0.81 | Q:72% | V:94% | LR:78% | Rev:83% | Gr:89% | Quality 72% · Value 94% · Low Risk 78%
+ 3. [TIER 2] Jeevan Bikas Laghubitta Bittya S | Score: 0.79 | Q:94% | V:90% | LR:91% | Rev:33% | Gr:71% | Quality 94% · Low Risk 91% · Value 90%
+ 4. [TIER 2] Deprosc Laghubitta               | Score: 0.75 | Q:88% | V:98% | LR:98% | Rev:19% | Gr:47% | Quality 88% · Value 98% · Low Risk 98%
+ 5. [TIER 2] Api Power                        | Score: 0.75 | Q:89% | V:99% | LR:55% | Rev:52% | Gr:48% | Quality 89% · Value 99% · Low Risk 55%
+ 6. [TIER 2] Sagarmatha Lumbini Insurance Co. | Score: 0.74 | Q:53% | V:84% | LR:97% | Rev:78% | Gr:82% | Low Risk 97% · Value 84% · Quality 53%
+ 7. [TIER 2] Infinity Laghubitta Bittiya Sans | Score: 0.74 | Q:93% | V:70% | LR:70% | Rev:63% | Gr:83% | Quality 93% · Value 70% · Low Risk 70%
+ 8. [TIER 2] Global IME Laghubitta Bittiya Sa | Score: 0.74 | Q:98% | V:94% | LR:59% | Rev:35% | Gr:75% | Quality 98% · Value 94% · Low Risk 59%
+ 9. [TIER 2] Mountain Energy Nepal Limited    | Score: 0.73 | Q:95% | V:85% | LR:78% | Rev:11% | Gr:54% | Quality 95% · Value 85% · Low Risk 78%
+10. [TIER 2] Chilime Hydropower               | Score: 0.72 | Q:66% | V:52% | LR:85% | Rev:92% | Gr:61% | Quality 66% · Low Risk 85% · Reversal 92%
+11. [TIER 2] Kalika Laghubitta Bittiya Sansth | Score: 0.72 | Q:87% | V:71% | LR:51% | Rev:71% | Gr:99% | Quality 87% · Value 71% · Reversal 71%
+12. [TIER 2] Vijaya Laghubitta Bittiya Sansth | Score: 0.71 | Q:68% | V:86% | LR:54% | Rev:81% | Gr:100% | Quality 68% · Value 86% · Reversal 81%
+13. [TIER 2] Gurkhas Finance Ltd.             | Score: 0.71 | Q:90% | V:99% | LR:14% | Rev:76% | Gr:69% | Quality 90% · Value 99% · Reversal 76%
+14. [TIER 2] Prabhu Insurance                 | Score: 0.71 | Q:68% | V:81% | LR:81% | Rev:88% | Gr:20% | Quality 68% · Value 81% · Low Risk 81%
+15. [TIER 2] Matribhumi Lagubitta Bittiya San | Score: 0.70 | Q:87% | V:78% | LR:27% | Rev:88% | Gr:94% | Quality 87% · Value 78% · Reversal 88%
+16. [TIER 3] National Microfinance Bittiya Sa | Score: 0.70 | Q:79% | V:92% | LR:80% | Rev:28% | Gr:55% | Quality 79% · Value 92% · Low Risk 80%
+17. [TIER 3] CYC Nepal Laghubitta Bittiya San | Score: 0.69 | Q:100% | V:96% | LR:25% | Rev: 1% | Gr:98% | Quality 100% · Value 96% · Growth 98%
+18. [TIER 3] Kumari Bank                      | Score: 0.68 | Q:84% | V:97% | LR:40% | Rev:23% | Gr:74% | Quality 84% · Value 97% · Low Risk 40%
+19. [TIER 3] Nadep Laghubitta Bittiya Sanstha | Score: 0.67 | Q:80% | V:89% | LR:48% | Rev:47% | Gr:81% | Quality 80% · Value 89% · Low Risk 48%
+20. [TIER 3] Neco Insurance                   | Score: 0.67 | Q:45% | V:56% | LR:96% | Rev:90% | Gr:73% | Low Risk 96% · Quality 45% · Reversal 90%
+21. [TIER 3] Mountain Hydro Nepal Limited     | Score: 0.66 | Q:88% | V:96% | LR: 4% | Rev:67% | Gr:80% | Quality 88% · Value 96% · Reversal 67%
+22. [TIER 3] CEDB Holdings Limited            | Score: 0.66 | Q:97% | V:53% | LR:68% | Rev:30% | Gr:35% | Quality 97% · Low Risk 68% · Value 53%
+23. [TIER 3] Sampada Laghubitta Bittiya Sanst | Score: 0.65 | Q:65% | V:79% | LR:58% | Rev:73% | Gr:71% | Quality 65% · Value 79% · Low Risk 58%
+24. [TIER 3] Bottlers Nepal (Terai)           | Score: 0.65 | Q:73% | V:95% | LR:67% | Rev:17% | Gr:83% | Quality 73% · Value 95% · Low Risk 67%
 ====================================================================================================
 
 
-🚨 STOCKS TO AVOID (RED FLAGS) (Active Exclusion List)
+STOCKS TO AVOID (RED FLAGS) (Active Exclusion List)
 ----------------------------------------------------------------------------------------------------
  1. Janaki Finance                         | Rs   384.80 | ROE: -57.31% | Margin:  2.63% | PE: 284.35 | Debt: 100.14%
  2. Narayani Development Bank              | Rs   751.20 | ROE: -45.49% | Margin: -235.15% | PE: -73.31 | Debt: 80.00%
@@ -123,7 +123,7 @@ Quantitative Pillars: Quality (30%) · Value (20%) · Low Risk (20%) · Reversal
 
 
 ====================================================================================================
-🏢 SECTOR-SPECIFIC ANALYSIS
+SECTOR-SPECIFIC ANALYSIS
 ====================================================================================================
 
 MANUFACTURING & CORPORATE:
@@ -305,9 +305,9 @@ MICROFINANCE:
 
 
 ====================================================================================================
-📋 LEGACY REFERENCE SCREENS (ARCHIVE & TRANSPARENCY)
+LEGACY REFERENCE SCREENS (ARCHIVE & TRANSPARENCY)
 ====================================================================================================
-<details><summary>📋 Click to expand Legacy Reference Screens (Strategies 1–10)</summary>
+<details><summary>Click to expand Legacy Reference Screens (Strategies 1–10)</summary>
 
 
 ### 💎 High Quality Stocks
