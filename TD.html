@@ -451,13 +451,63 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* Back-to-top button */
+        .back-top {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(59, 130, 246, 0.4);
+            color: #60a5fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            z-index: 101;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 0 12px rgba(59, 130, 246, 0.12);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .back-top svg {
+            flex-shrink: 0;
+            transition: transform 0.2s ease;
+        }
+
+        .back-top:hover {
+            background: rgba(59, 130, 246, 0.25);
+            border-color: rgba(59, 130, 246, 0.7);
+            color: #93c5fd;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 16px rgba(59, 130, 246, 0.35);
+        }
+
+        .back-top:hover svg {
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <a href="#top" class="back-top" title="Back to top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </a>
+    <div class="container" id="top">
         <nav class="top-nav">
-            <a href="index.html" class="nav-btn">Stock Analyzer Report</a>
-            <a href="TD.html" class="nav-btn active">Paper Trading Simulator</a>
+            <a href="index.html" class="nav-btn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                <span>Stock Analyzer Report</span>
+            </a>
+            <a href="TD.html" class="nav-btn active">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <span>Paper Trading Simulator</span>
+            </a>
         </nav>
 
         <div class="header-title-row">
@@ -467,7 +517,7 @@
         </div>
         <div class="meta">
             <div>Includes SEBON Fee (0.015%), Tiered Broker Commission (Jestha 2081 Revision), DP Fee (Rs. 25 on Sell), and 7.5% Short-Term CGT · <strong>Regime: Risk 50% · max 3 pos · 50% cash floor</strong></div>
-            <div>Last Updated: <strong>2026-08-28 13:27:56</strong></div>
+            <div>Last Updated: <strong>2026-08-28 14:34:45</strong></div>
         </div>
 
         <div class="summary-stats">
