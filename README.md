@@ -28,9 +28,10 @@ Total Stocks: 263
 18. Kumari Bank                         | Score: 0.68 | Quality 84% · Value 97% · Low Risk 40% | legacy screens: 1 | Defensive Low-Risk
 19. Nadep Laghubitta Bittiya Sanstha Lt | Score: 0.67 | Quality 80% · Value 89% · Low Risk 48% | legacy screens: 0 | 
 20. Neco Insurance                      | Score: 0.67 | Low Risk 96% · Quality 45% · Reversal 90% | legacy screens: 0 | 
-21. CEDB Holdings Limited               | Score: 0.66 | Quality 97% · Low Risk 68% · Value 53% | legacy screens: 0 | 
-22. Sampada Laghubitta Bittiya Sanstha  | Score: 0.65 | Quality 65% · Value 79% · Low Risk 58% | legacy screens: 0 | 
-23. Bottlers Nepal (Terai)              | Score: 0.65 | Quality 73% · Value 95% · Low Risk 67% | legacy screens: 1 | Defensive Low-Risk
+21. Mountain Hydro Nepal Limited        | Score: 0.66 | Quality 88% · Value 96% · Reversal 67% | legacy screens: 0 | 
+22. CEDB Holdings Limited               | Score: 0.66 | Quality 97% · Low Risk 68% · Value 53% | legacy screens: 0 | 
+23. Sampada Laghubitta Bittiya Sanstha  | Score: 0.65 | Quality 65% · Value 79% · Low Risk 58% | legacy screens: 0 | 
+24. Bottlers Nepal (Terai)              | Score: 0.65 | Quality 73% · Value 95% · Low Risk 67% | legacy screens: 1 | Defensive Low-Risk
 ====================================================================================================
 
 
@@ -59,52 +60,52 @@ Total Stocks: 263
 
 3. 💵 UNDERVALUED HIGH EARNERS
 ----------------------------------------------------------------------------------------------------
- 1. CYC Nepal Laghubitta Bittiya Sanstha Limited  | Rs  1612.00 | EPS: 110.66 | PE:  14.57
- 2. Nepal Lube Oil                                | Rs   277.40 | EPS:  58.64 | PE:   4.73
- 3. Everest Bank                                  | Rs   729.50 | EPS:  36.95 | PE:  19.74
- 4. Chhimek Laghubitta Bikas Bank                 | Rs   932.00 | EPS:  35.91 | PE:  25.95
- 5. Nepal Doorsanchar Company                     | Rs   875.00 | EPS:  33.88 | PE:  25.82
- 6. Nepal Bank                                    | Rs   272.30 | EPS:  30.63 | PE:   8.89
- 7. Sahas Urja Limited                            | Rs   682.00 | EPS:  29.72 | PE:  22.95
- 8. Nabil Bank                                    | Rs   540.20 | EPS:  29.22 | PE:  18.49
- 9. Garima Bikas Bank                             | Rs   422.00 | EPS:  28.04 | PE:  15.05
+ 1. Nepal Lube Oil                                | Rs   277.40 | EPS:  58.64 | PE:   4.73
+ 2. Nepal Bank                                    | Rs   272.30 | EPS:  30.63 | PE:   8.89
+ 3. CYC Nepal Laghubitta Bittiya Sanstha Limited  | Rs  1612.00 | EPS: 110.66 | PE:  14.57
+ 4. Garima Bikas Bank                             | Rs   422.00 | EPS:  28.04 | PE:  15.05
+ 5. Sanima Bank                                   | Rs   369.00 | EPS:  22.78 | PE:  16.20
+ 6. Siddhartha Bank                               | Rs   411.00 | EPS:  23.79 | PE:  17.28
+ 7. Nabil Bank                                    | Rs   540.20 | EPS:  29.22 | PE:  18.49
+ 8. Everest Bank                                  | Rs   729.50 | EPS:  36.95 | PE:  19.74
+ 9. Sahas Urja Limited                            | Rs   682.00 | EPS:  29.72 | PE:  22.95
 10. Mountain Energy Nepal Limited                 | Rs   618.00 | EPS:  25.52 | PE:  24.22
-11. Siddhartha Bank                               | Rs   411.00 | EPS:  23.79 | PE:  17.28
-12. Sanima Bank                                   | Rs   369.00 | EPS:  22.78 | PE:  16.20
-13. Sanima Middle Tamor Hydropower Limited        | Rs   482.00 | EPS:  18.73 | PE:  25.73
+11. Sanima Middle Tamor Hydropower Limited        | Rs   482.00 | EPS:  18.73 | PE:  25.73
+12. Nepal Doorsanchar Company                     | Rs   875.00 | EPS:  33.88 | PE:  25.82
+13. Chhimek Laghubitta Bikas Bank                 | Rs   932.00 | EPS:  35.91 | PE:  25.95
 14. Super Madi Hydropower Limited                 | Rs   525.00 | EPS:  18.40 | PE:  28.53
 15. Central Finance                               | Rs   585.70 | EPS:  13.44 | PE:  43.57
 
 4. 🛡️ DEFENSIVE LOW-RISK
 ----------------------------------------------------------------------------------------------------
- 1. Samaj Laghubittya Bittiya Sanstha Limited     | Rs  1875.80 | Beta:  -1.10 | YTD:   0.00%
- 2. Nepal Lube Oil                                | Rs   277.40 | Beta:  -0.02 | YTD:   9.17%
- 3. Unilever Nepal                                | Rs 47200.00 | Beta:   0.27 | YTD:   0.43%
- 4. CYC Nepal Laghubitta Bittiya Sanstha Limited  | Rs  1612.00 | Beta:   0.55 | YTD:  -1.65%
- 5. Standard Chartered Bank                       | Rs   645.00 | Beta:   0.67 | YTD:   2.06%
- 6. Mandu Hydropower Limited                      | Rs   700.10 | Beta:   0.73 | YTD:  -1.44%
- 7. Bottlers Nepal (Terai)                        | Rs 11550.10 | Beta:   0.73 | YTD:  -2.12%
- 8. Everest Bank                                  | Rs   729.50 | Beta:   0.73 | YTD:  11.89%
- 9. Nabil Bank                                    | Rs   540.20 | Beta:   0.74 | YTD:   9.80%
-10. Global Ime Bank                               | Rs   242.00 | Beta:   0.76 | YTD:   6.61%
-11. Nepal Sbi Bank                                | Rs   400.00 | Beta:   0.83 | YTD:  -1.23%
-12. Prime Commercial Bank                         | Rs   235.50 | Beta:   0.85 | YTD:  -2.62%
-13. NMB Bank                                      | Rs   236.80 | Beta:   0.87 | YTD:  -0.84%
-14. Support Microfinance Bittiya Sanstha Ltd.     | Rs  1745.00 | Beta:   0.87 | YTD:   0.00%
-15. Chhimek Laghubitta Bikas Bank                 | Rs   932.00 | Beta:   0.88 | YTD:   0.00%
-16. Sanima Bank                                   | Rs   369.00 | Beta:   0.91 | YTD:  16.37%
-17. Siddhartha Bank                               | Rs   411.00 | Beta:   0.91 | YTD:   9.08%
-18. Nepal Bank                                    | Rs   272.30 | Beta:   0.92 | YTD:  14.41%
-19. Jeevan Bikas Laghubitta Bittya Sanstha Ltd    | Rs  1249.20 | Beta:   0.93 | YTD:  -3.08%
-20. Machhapuchhre Bank                            | Rs   248.00 | Beta:   0.95 | YTD:  11.71%
-21. Sanima Middle Tamor Hydropower Limited        | Rs   482.00 | Beta:   0.95 | YTD:   8.56%
-22. Mountain Energy Nepal Limited                 | Rs   618.00 | Beta:   0.95 | YTD:   9.38%
-23. Kumari Bank                                   | Rs   212.00 | Beta:   0.95 | YTD:  18.17%
-24. Citizen Bank International                    | Rs   194.80 | Beta:   0.97 | YTD:  -2.01%
-25. National Microfinance Bittiya Sanstha Ltd.    | Rs  1105.20 | Beta:   0.98 | YTD:  -3.56%
-26. Terhathum Power Company Limited               | Rs   350.00 | Beta:   0.98 | YTD:  -4.84%
-27. Soaltee Hotel                                 | Rs   508.70 | Beta:   0.99 | YTD:   4.26%
-28. Aarambha Chautari Laghubitta Bittiya Sanstha  | Rs   900.00 | Beta:   1.00 | YTD:  -2.70%
+ 1. Nepal Lube Oil                                | Rs   277.40 | Beta:  -0.02 | YTD:   9.17%
+ 2. Unilever Nepal                                | Rs 47200.00 | Beta:   0.27 | YTD:   0.43%
+ 3. CYC Nepal Laghubitta Bittiya Sanstha Limited  | Rs  1612.00 | Beta:   0.55 | YTD:  -1.65%
+ 4. Standard Chartered Bank                       | Rs   645.00 | Beta:   0.67 | YTD:   2.06%
+ 5. Mandu Hydropower Limited                      | Rs   700.10 | Beta:   0.73 | YTD:  -1.44%
+ 6. Bottlers Nepal (Terai)                        | Rs 11550.10 | Beta:   0.73 | YTD:  -2.12%
+ 7. Everest Bank                                  | Rs   729.50 | Beta:   0.73 | YTD:  11.89%
+ 8. Nabil Bank                                    | Rs   540.20 | Beta:   0.74 | YTD:   9.80%
+ 9. Global Ime Bank                               | Rs   242.00 | Beta:   0.76 | YTD:   6.61%
+10. Nepal Sbi Bank                                | Rs   400.00 | Beta:   0.83 | YTD:  -1.23%
+11. Prime Commercial Bank                         | Rs   235.50 | Beta:   0.85 | YTD:  -2.62%
+12. NMB Bank                                      | Rs   236.80 | Beta:   0.87 | YTD:  -0.84%
+13. Support Microfinance Bittiya Sanstha Ltd.     | Rs  1745.00 | Beta:   0.87 | YTD:   0.00%
+14. Chhimek Laghubitta Bikas Bank                 | Rs   932.00 | Beta:   0.88 | YTD:   0.00%
+15. Sanima Bank                                   | Rs   369.00 | Beta:   0.91 | YTD:  16.37%
+16. Siddhartha Bank                               | Rs   411.00 | Beta:   0.91 | YTD:   9.08%
+17. Nepal Bank                                    | Rs   272.30 | Beta:   0.92 | YTD:  14.41%
+18. Jeevan Bikas Laghubitta Bittya Sanstha Ltd    | Rs  1249.20 | Beta:   0.93 | YTD:  -3.08%
+19. Machhapuchhre Bank                            | Rs   248.00 | Beta:   0.95 | YTD:  11.71%
+20. Sanima Middle Tamor Hydropower Limited        | Rs   482.00 | Beta:   0.95 | YTD:   8.56%
+21. Mountain Energy Nepal Limited                 | Rs   618.00 | Beta:   0.95 | YTD:   9.38%
+22. Kumari Bank                                   | Rs   212.00 | Beta:   0.95 | YTD:  18.17%
+23. Citizen Bank International                    | Rs   194.80 | Beta:   0.97 | YTD:  -2.01%
+24. National Microfinance Bittiya Sanstha Ltd.    | Rs  1105.20 | Beta:   0.98 | YTD:  -3.56%
+25. Terhathum Power Company Limited               | Rs   350.00 | Beta:   0.98 | YTD:  -4.84%
+26. Soaltee Hotel                                 | Rs   508.70 | Beta:   0.99 | YTD:   4.26%
+27. Aarambha Chautari Laghubitta Bittiya Sanstha  | Rs   900.00 | Beta:   1.00 | YTD:  -2.70%
+28. Samaj Laghubittya Bittiya Sanstha Limited     | Rs  1875.80 | Beta:  -1.10 | YTD:   0.00%
 
 5. 🔄 TURNAROUND OPPORTUNITIES
 ----------------------------------------------------------------------------------------------------
@@ -116,8 +117,12 @@ Total Stocks: 263
  2. Unilever Nepal                                | Rs 47200.00 | CR: 236.83 | Debt:  34.02%
  3. Soaltee Hotel                                 | Rs   508.70 | CR: 180.01 | Debt:  16.03%
  4. Mountain Energy Nepal Limited                 | Rs   618.00 | CR: 371.34 | Debt:  41.18%
- 5. Garima Bikas Bank                             | Rs   422.00 | CR:   0.00 | Debt:  90.56%
- 6. Everest Bank                                  | Rs   729.50 | CR:   0.00 | Debt:  90.83%
+ 5. Sahas Urja Limited                            | Rs   682.00 | CR: 1366.02 | Debt:  59.58%
+ 6. Garima Bikas Bank                             | Rs   422.00 | CR:   0.00 | Debt:  90.56%
+ 7. Upper Hewakhola Hydropower Company Limited    | Rs   604.00 | CR: 4619.53 | Debt:  58.35%
+ 8. Super Madi Hydropower Limited                 | Rs   525.00 | CR: 651.24 | Debt:  72.93%
+ 9. Sanima Middle Tamor Hydropower Limited        | Rs   482.00 | CR: 125.66 | Debt:  76.59%
+10. Everest Bank                                  | Rs   729.50 | CR:   0.00 | Debt:  90.83%
 
 7. 📊 BEST RISK-ADJUSTED RETURNS
 ----------------------------------------------------------------------------------------------------
@@ -170,65 +175,55 @@ Total Stocks: 263
 31. National Hydro Power                          | Rs   254.60 | ROE:  -0.96% | Margin: -16.70% | PE: -273.95
 32. Prabhu Bank                                   | Rs   178.60 | ROE:  -0.68% | Margin:  -1.10% | PE: -174.29
 33. Barahi Hydropower Public Limited              | Rs   458.00 | ROE:  -0.58% | Margin:  -2.63% | PE: -500.00
-34. Mabilung Energy Limited                       | Rs   567.30 | ROE:   0.00% | Margin:  -5.31% | PE: -488.00
-35. Jhapa Energy Limited                          | Rs  1013.00 | ROE:   0.00% | Margin:  14.00% | PE: 262.76
-36. Him Star Urja Company Limited                 | Rs   659.90 | ROE:   0.00% | Margin: -76.56% | PE: -22.21
-37. Bungal Hydro Limited                          | Rs   542.90 | ROE:   0.00% | Margin: -11.28% | PE: -141.39
-38. Upper Lohore Khola Hydropower Company Limited | Rs   301.00 | ROE:   0.00% | Margin: -41.56% | PE: -52.88
-39. IGI Prudential insurance Limited              | Rs   392.90 | ROE:   0.13% | Margin:   0.18% | PE: 500.00
-40. Sindhu Bikash Bank                            | Rs   613.90 | ROE:   0.20% | Margin:   0.26% | PE: 500.00
-41. Crest Micro Life Insurance Limited            | Rs  1074.10 | ROE:   0.33% | Margin:   0.52% | PE: 500.00
-42. Mailung Khola Jal Vidhyut Company Limited     | Rs   325.00 | ROE:   0.44% | Margin:   1.78% | PE: 500.00
-43. NIC Asia Bank                                 | Rs   308.10 | ROE:   0.65% | Margin:   0.80% | PE: 252.95
-44. Ngadi Group Power Ltd.                        | Rs   398.00 | ROE:   0.85% | Margin:  35.60% | PE: 314.06
-45. Trade Tower Limited                           | Rs   690.00 | ROE:   0.86% | Margin:   7.27% | PE: 500.00
-46. Hathway Investment Nepal Limited              | Rs   625.50 | ROE:   0.88% | Margin:  13.32% | PE: 500.00
-47. Upper Syange Hydropower Limited               | Rs   533.70 | ROE:   0.91% | Margin:   2.91% | PE: 500.00
-48. Universal Power Company Ltd                   | Rs   333.00 | ROE:   1.04% | Margin:  11.67% | PE: 295.89
-49. Sayapatri Hydropower Limited                  | Rs   523.00 | ROE:   1.06% | Margin:   5.98% | PE: 500.00
-50. Shreenagar Agritech Industries Limited        | Rs   970.10 | ROE:   1.29% | Margin:   0.97% | PE: 500.00
-51. Dordi Khola Jal Bidyut Company Limited        | Rs   242.00 | ROE:   1.35% | Margin:  10.92% | PE: 170.24
-52. Dolti Power Company Limited                   | Rs   291.60 | ROE:   1.49% | Margin:   4.66% | PE: 336.31
-53. Liberty Energy Company Limited                | Rs   213.00 | ROE:   1.60% | Margin:  14.46% | PE: 189.87
-54. Ridi Power Company Limited                    | Rs   345.90 | ROE:   1.99% | Margin:  12.85% | PE: 171.49
-55. Arun Kabeli Power Ltd.                        | Rs   244.00 | ROE:   2.01% | Margin:  12.99% | PE: 119.30
-56. Guardian Micro Life Insurance Limited         | Rs   958.40 | ROE:   2.06% | Margin:   2.87% | PE: 447.33
-57. GreenLife Hydropower Limited                  | Rs   247.50 | ROE:   2.10% | Margin:   0.00% | PE: 106.31
-58. Barun Hydropower                              | Rs   313.90 | ROE:   2.16% | Margin:  21.39% | PE: 150.79
-59. Nlg Insurance                                 | Rs   516.00 | ROE:   2.23% | Margin:   3.15% | PE: 238.12
-60. Peoples Hydropower Company Limited            | Rs   297.60 | ROE:   2.29% | Margin:   6.18% | PE: 133.35
-61. Chhyangdi Hydropower Ltd.                     | Rs   258.40 | ROE:   2.35% | Margin:   7.57% | PE: 150.17
-62. Emerging Nepal Limited                        | Rs   764.00 | ROE:   2.46% | Margin:  66.46% | PE: 282.73
-63. Maya Khola Hydropower Company Limited         | Rs   246.90 | ROE:   2.55% | Margin:   4.18% | PE: 155.77
-64. United Ajod Insurance Limited                 | Rs   388.80 | ROE:   2.68% | Margin:   3.50% | PE: 142.33
-65. Sanjen Jalavidhyut Company Limited            | Rs   227.00 | ROE:   2.69% | Margin:   4.99% | PE: 101.07
-66. Manakamana Engineering Hydropower Limited     | Rs   234.60 | ROE:   2.70% | Margin:   9.53% | PE: 135.25
-67. Buddha Bhumi Nepal Hydropower Company Limited | Rs   263.60 | ROE:   2.84% | Margin:   6.46% | PE: 176.79
-68. River Falls Power Limited                     | Rs   330.00 | ROE:   2.94% | Margin:  14.36% | PE: 121.75
-69. Madhya Bhotekoshi Jalavidyut Company Limited  | Rs   257.10 | ROE:   2.99% | Margin:   7.91% | PE:  90.96
-70. Pure Energy Limited                           | Rs   768.00 | ROE:   3.10% | Margin:  10.22% | PE: 242.83
-71. Shree Investment Finance                      | Rs   485.10 | ROE:   3.31% | Margin:   6.55% | PE: 104.96
-72. Ankhu Khola Jalvidhyut Company Ltd.           | Rs   343.00 | ROE:   3.45% | Margin:  28.35% | PE: 107.87
-73. Sagarmatha Jalabidhyut Company Limited        | Rs   419.00 | ROE:   3.50% | Margin:  19.86% | PE: 110.74
-74. Samling Power Company Limited                 | Rs   397.00 | ROE:   3.66% | Margin:   8.44% | PE: 100.01
-75. Nyadi Hydropower Limited                      | Rs   350.00 | ROE:   3.81% | Margin:   6.20% | PE: 142.78
-76. Shikhar Insurance                             | Rs   559.00 | ROE:   4.18% | Margin:   4.40% | PE: 133.28
-77. Nepal Life Insurance                          | Rs   690.30 | ROE:   4.53% | Margin:   0.63% | PE: 140.60
-78. Life Insurance Nepal                          | Rs   761.50 | ROE:   4.91% | Margin:   1.21% | PE: 103.22
-79. Citizen Investment Trust                      | Rs  1670.00 | ROE:   6.06% | Margin:  60.01% | PE:  84.17
-80. Menchhiyam Hydropower Limited                 | Rs   254.00 | ROE:   6.58% | Margin:  -4.20% | PE: -246.43
-81. Panchakanya Mai Hydropower                    | Rs   300.00 | ROE:   7.39% | Margin:  19.24% | PE:  49.40
-82. Upper Tamakoshi Hydropower Ltd                | Rs   184.00 | ROE:   9.12% | Margin:   8.68% | PE:  42.09
-83. Panchthar Power Company Ltd.                  | Rs   326.90 | ROE:   9.19% | Margin:  22.54% | PE:  36.95
-84. Mathillo Mailun Khola Jalvidhyut Limited      | Rs   345.00 | ROE:  11.55% | Margin:  25.81% | PE:  31.00
-85. Mai Khola Hydropower Limited                  | Rs   486.50 | ROE:  13.28% | Margin: 144.12% | PE:  35.18
-86. Upper Solu Hydro Electric Company Limited     | Rs   496.00 | ROE:  13.53% | Margin:  28.28% | PE:  32.07
-87. Swet-Ganga Hydropower & Construction Limited  | Rs   290.00 | ROE:  13.90% | Margin:  20.94% | PE:  26.05
-88. Chirkhwa Hydropower Limited                   | Rs   575.00 | ROE:  14.14% | Margin:  40.33% | PE:  43.39
-89. Sanima Middle Tamor Hydropower Limited        | Rs   482.00 | ROE:  15.92% | Margin:  30.83% | PE:  25.73
-90. Super Madi Hydropower Limited                 | Rs   525.00 | ROE:  16.72% | Margin:  32.02% | PE:  28.53
-91. Mountain Hydro Nepal Limited                  | Rs   238.80 | ROE:  33.21% | Margin:  35.14% | PE:  18.69
-92. Dibyashwori Hydropower Ltd.                   | Rs   274.50 | ROE:  88.27% | Margin:  13.94% | PE:  49.79
+34. Daramkhola Hydro Energy Limited               | Rs   564.00 | ROE:   0.00% | Margin: -89.33% | PE: -57.08
+35. Bandipur Cablecar and Tourism Limited         | Rs   657.00 | ROE:   0.00% | Margin: -66.07% | PE: -335.95
+36. Bungal Hydro Limited                          | Rs   542.90 | ROE:   0.00% | Margin: -11.28% | PE: -141.39
+37. Upper Lohore Khola Hydropower Company Limited | Rs   301.00 | ROE:   0.00% | Margin: -41.56% | PE: -52.88
+38. Mabilung Energy Limited                       | Rs   567.30 | ROE:   0.00% | Margin:  -5.31% | PE: -488.00
+39. Jhapa Energy Limited                          | Rs  1013.00 | ROE:   0.00% | Margin:  14.00% | PE: 262.76
+40. Him Star Urja Company Limited                 | Rs   659.90 | ROE:   0.00% | Margin: -76.56% | PE: -22.21
+41. IGI Prudential insurance Limited              | Rs   392.90 | ROE:   0.13% | Margin:   0.18% | PE: 500.00
+42. Sindhu Bikash Bank                            | Rs   613.90 | ROE:   0.20% | Margin:   0.26% | PE: 500.00
+43. Crest Micro Life Insurance Limited            | Rs  1074.10 | ROE:   0.33% | Margin:   0.52% | PE: 500.00
+44. Mailung Khola Jal Vidhyut Company Limited     | Rs   325.00 | ROE:   0.44% | Margin:   1.78% | PE: 500.00
+45. NIC Asia Bank                                 | Rs   308.10 | ROE:   0.65% | Margin:   0.80% | PE: 252.95
+46. Ngadi Group Power Ltd.                        | Rs   398.00 | ROE:   0.85% | Margin:  35.60% | PE: 314.06
+47. Trade Tower Limited                           | Rs   690.00 | ROE:   0.86% | Margin:   7.27% | PE: 500.00
+48. Hathway Investment Nepal Limited              | Rs   625.50 | ROE:   0.88% | Margin:  13.32% | PE: 500.00
+49. Upper Syange Hydropower Limited               | Rs   533.70 | ROE:   0.91% | Margin:   2.91% | PE: 500.00
+50. Universal Power Company Ltd                   | Rs   333.00 | ROE:   1.04% | Margin:  11.67% | PE: 295.89
+51. Sayapatri Hydropower Limited                  | Rs   523.00 | ROE:   1.06% | Margin:   5.98% | PE: 500.00
+52. Shreenagar Agritech Industries Limited        | Rs   970.10 | ROE:   1.29% | Margin:   0.97% | PE: 500.00
+53. Dordi Khola Jal Bidyut Company Limited        | Rs   242.00 | ROE:   1.35% | Margin:  10.92% | PE: 170.24
+54. Dolti Power Company Limited                   | Rs   291.60 | ROE:   1.49% | Margin:   4.66% | PE: 336.31
+55. Liberty Energy Company Limited                | Rs   213.00 | ROE:   1.60% | Margin:  14.46% | PE: 189.87
+56. Ridi Power Company Limited                    | Rs   345.90 | ROE:   1.99% | Margin:  12.85% | PE: 171.49
+57. Arun Kabeli Power Ltd.                        | Rs   244.00 | ROE:   2.01% | Margin:  12.99% | PE: 119.30
+58. Guardian Micro Life Insurance Limited         | Rs   958.40 | ROE:   2.06% | Margin:   2.87% | PE: 447.33
+59. GreenLife Hydropower Limited                  | Rs   247.50 | ROE:   2.10% | Margin:   0.00% | PE: 106.31
+60. Barun Hydropower                              | Rs   313.90 | ROE:   2.16% | Margin:  21.39% | PE: 150.79
+61. Nlg Insurance                                 | Rs   516.00 | ROE:   2.23% | Margin:   3.15% | PE: 238.12
+62. Peoples Hydropower Company Limited            | Rs   297.60 | ROE:   2.29% | Margin:   6.18% | PE: 133.35
+63. Chhyangdi Hydropower Ltd.                     | Rs   258.40 | ROE:   2.35% | Margin:   7.57% | PE: 150.17
+64. Emerging Nepal Limited                        | Rs   764.00 | ROE:   2.46% | Margin:  66.46% | PE: 282.73
+65. Maya Khola Hydropower Company Limited         | Rs   246.90 | ROE:   2.55% | Margin:   4.18% | PE: 155.77
+66. United Ajod Insurance Limited                 | Rs   388.80 | ROE:   2.68% | Margin:   3.50% | PE: 142.33
+67. Sanjen Jalavidhyut Company Limited            | Rs   227.00 | ROE:   2.69% | Margin:   4.99% | PE: 101.07
+68. Manakamana Engineering Hydropower Limited     | Rs   234.60 | ROE:   2.70% | Margin:   9.53% | PE: 135.25
+69. Buddha Bhumi Nepal Hydropower Company Limited | Rs   263.60 | ROE:   2.84% | Margin:   6.46% | PE: 176.79
+70. River Falls Power Limited                     | Rs   330.00 | ROE:   2.94% | Margin:  14.36% | PE: 121.75
+71. Pure Energy Limited                           | Rs   768.00 | ROE:   3.10% | Margin:  10.22% | PE: 242.83
+72. Shree Investment Finance                      | Rs   485.10 | ROE:   3.31% | Margin:   6.55% | PE: 104.96
+73. Ankhu Khola Jalvidhyut Company Ltd.           | Rs   343.00 | ROE:   3.45% | Margin:  28.35% | PE: 107.87
+74. Sagarmatha Jalabidhyut Company Limited        | Rs   419.00 | ROE:   3.50% | Margin:  19.86% | PE: 110.74
+75. Samling Power Company Limited                 | Rs   397.00 | ROE:   3.66% | Margin:   8.44% | PE: 100.01
+76. Nyadi Hydropower Limited                      | Rs   350.00 | ROE:   3.81% | Margin:   6.20% | PE: 142.78
+77. Shikhar Insurance                             | Rs   559.00 | ROE:   4.18% | Margin:   4.40% | PE: 133.28
+78. Nepal Life Insurance                          | Rs   690.30 | ROE:   4.53% | Margin:   0.63% | PE: 140.60
+79. Life Insurance Nepal                          | Rs   761.50 | ROE:   4.91% | Margin:   1.21% | PE: 103.22
+80. Citizen Investment Trust                      | Rs  1670.00 | ROE:   6.06% | Margin:  60.01% | PE:  84.17
+81. Menchhiyam Hydropower Limited                 | Rs   254.00 | ROE:   6.58% | Margin:  -4.20% | PE: -246.43
+82. Dibyashwori Hydropower Ltd.                   | Rs   274.50 | ROE:  88.27% | Margin:  13.94% | PE:  49.79
 
 
 ====================================================================================================
