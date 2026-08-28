@@ -4,7 +4,7 @@
     <title>Enhanced NpStocks Analysis Report</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+    <link rel="icon" href="data:,">
     
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
@@ -599,20 +599,20 @@
 
 </head>
 <body class="with-sidebar">
-    <button class="sb-toggle" id="sbToggle" aria-label="Toggle navigation">☰</button>
+    <button class="sb-toggle" id="sbToggle" aria-label="Toggle navigation">Menu</button>
     <nav class="sidebar" id="sidebar">
         <div class="sb-title">Navigation</div>
-        <a href="#composite-scoring">Top Picks (Gen-3)</a>
+        <a href="#composite-scoring">Top Picks</a>
         <a href="#strategy11">Stocks to Avoid</a>
         <a href="#sector-analysis">Sector Analysis</a>
         <hr class="sb-sep">
-        <div class="sb-note" style="color:#60a5fa; font-weight:700;">DEEP DIVE &amp; TELEMETRY</div>
+        <div class="sb-note" style="color:#60a5fa; font-weight:700;">DEEP DIVE &amp; EVIDENCE</div>
         <a href="#strategy-evidence">Strategy Evidence</a>
         <a href="#events-radar">Corporate Actions</a>
         <hr class="sb-sep">
         <a href="#legacy-screens">Legacy Screens (Archive)</a>
     </nav>
-    <a href="#top" class="back-top" title="Back to top">↑</a>
+    <a href="#top" class="back-top" title="Back to top">Top</a>
     <div class="container" id="top">
         <h1>Enhanced NpStocks Analysis Report</h1>
         <div class="meta">
@@ -658,7 +658,7 @@
 
         <div id="composite-scoring">
             <h2>Top Picks - Composite Scoring</h2>
-            <p class="section-description">Ranked multi-factor model scoring across 6 quantitative pillars: Quality (30%), Value (20%), Low Risk (20%), Reversal (15%), Growth (10%), and Liquidity (5%). The &#x27;Why&#x27; column highlights the top-3 percentile drivers for each stock.</p>
+            <p class="section-description">Cross-sectional percentile ranking across 6 quantitative pillars: Quality (30%: ROE &amp; net margin), Value (20%: earnings &amp; book yield), Low Risk (20%: inverse beta &amp; volatility), Reversal (15%: 12w oversold mean-reversion), Growth (10%: earnings trajectory), and Liquidity (5%). Typical Price is the session HLC/3 benchmark; negative Close vs Typical % indicates entry below the session average.</p>
     <table class="table">
 <thead>
 <tr>
@@ -1018,7 +1018,7 @@
         </div>
 
         <div id="strategy11">
-            <h2>Stocks to Avoid (Red Flags) <span style="font-size:0.65em; color:var(--loss);">(active exclusion list)</span></h2>
+            <h2>Stocks to Avoid <span style="font-size:0.65em; color:var(--loss);">(active exclusion list)</span></h2>
             <p class="section-description">Money-losers (ROE &amp; margin &lt; 0), over-leveraged (Debt &gt; 70% for non-financials), or absurdly expensive (PE &gt; 100 with ROE &lt; 5%) — stay away. Financial sectors are exempt from the debt rule (deposits are intrinsic to their business model).</p>
     <table class="table">
 <thead>
@@ -1042,7 +1042,7 @@
 <td><span class="neutral">2.63%</span></td>
 <td><span class="negative">284.35</span></td>
 <td><span class="negative">100.14%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Narayani Development Bank</td>
@@ -1052,7 +1052,7 @@
 <td><span class="negative">-235.15%</span></td>
 <td><span class="negative strong">-73.31</span></td>
 <td><span class="negative">80.00%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | Negative Margin</td>
 </tr>
 <tr>
 <td>Nepal Reinsurance Company Limited</td>
@@ -1062,7 +1062,7 @@
 <td><span class="negative">-48.58%</span></td>
 <td><span class="negative strong">-21.34</span></td>
 <td><span class="negative">62.93%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | Negative Margin</td>
 </tr>
 <tr>
 <td>Rasuwagadhi Hydropower Company Limited</td>
@@ -1072,7 +1072,7 @@
 <td><span class="negative">-114.15%</span></td>
 <td><span class="negative strong">-8.90</span></td>
 <td><span class="negative">102.53%</span></td>
-<td class="risk-flags">⚠️ High Debt | 🚨 Negative Earnings | ⚠️ Negative Margin</td>
+<td class="risk-flags">High Debt | Negative Earnings | Negative Margin</td>
 </tr>
 <tr>
 <td>Taragaon Regency Hotel</td>
@@ -1082,7 +1082,7 @@
 <td><span class="negative">-169.57%</span></td>
 <td><span class="negative strong">-22.74</span></td>
 <td><span class="neutral">35.33%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | Negative Margin</td>
 </tr>
 <tr>
 <td>Asian Hydropower Limited</td>
@@ -1092,7 +1092,7 @@
 <td><span class="negative">-72.65%</span></td>
 <td><span class="negative strong">-22.40</span></td>
 <td><span class="negative">103.69%</span></td>
-<td class="risk-flags">⚠️ High Debt | 🚨 Negative Earnings | ⚠️ Negative Margin</td>
+<td class="risk-flags">High Debt | Negative Earnings | Negative Margin</td>
 </tr>
 <tr>
 <td>Himalayan Reinsurance Limited</td>
@@ -1102,7 +1102,7 @@
 <td><span class="negative">-33.35%</span></td>
 <td><span class="negative strong">-25.00</span></td>
 <td><span class="negative">51.84%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | Negative Margin</td>
 </tr>
 <tr>
 <td>Joshi Hydropower Development Company Ltd</td>
@@ -1112,7 +1112,7 @@
 <td><span class="negative">-452.48%</span></td>
 <td><span class="negative strong">-39.75</span></td>
 <td><span class="positive">11.18%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | Negative Margin</td>
 </tr>
 <tr>
 <td>Shiva Shree Hydropower Ltd</td>
@@ -1122,7 +1122,7 @@
 <td><span class="negative">-31.75%</span></td>
 <td><span class="negative strong">-48.09</span></td>
 <td><span class="negative">75.36%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | Negative Margin</td>
 </tr>
 <tr>
 <td>Three Star Hydropower Limited</td>
@@ -1132,7 +1132,7 @@
 <td><span class="negative">-23.20%</span></td>
 <td><span class="negative strong">-52.81</span></td>
 <td><span class="negative">95.14%</span></td>
-<td class="risk-flags">⚠️ High Debt | 🚨 Negative Earnings | ⚠️ Negative Margin</td>
+<td class="risk-flags">High Debt | Negative Earnings | Negative Margin</td>
 </tr>
 <tr>
 <td>Karnali Development Bank</td>
@@ -1142,7 +1142,7 @@
 <td><span class="negative">-11.10%</span></td>
 <td><span class="negative strong">-82.84</span></td>
 <td><span class="negative">91.47%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | Negative Margin</td>
 </tr>
 <tr>
 <td>Trishuli Jal Vidhyut Company Limited</td>
@@ -1152,7 +1152,7 @@
 <td><span class="negative">0.00%</span></td>
 <td><span class="negative strong">-48.11</span></td>
 <td><span class="negative">105.95%</span></td>
-<td class="risk-flags">⚠️ High Debt | 🚨 Negative Earnings</td>
+<td class="risk-flags">High Debt | Negative Earnings</td>
 </tr>
 <tr>
 <td>Nepal Finance</td>
@@ -1162,7 +1162,7 @@
 <td><span class="negative">-20.63%</span></td>
 <td><span class="negative strong">-60.01</span></td>
 <td><span class="negative">83.09%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ High Volatility | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | High Volatility | Negative Margin</td>
 </tr>
 <tr>
 <td>City Hotel Limited</td>
@@ -1172,7 +1172,7 @@
 <td><span class="negative">-38.43%</span></td>
 <td><span class="negative strong">-60.41</span></td>
 <td><span class="neutral">48.38%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | Negative Margin</td>
 </tr>
 <tr>
 <td>Sanvi Energy Limited</td>
@@ -1182,7 +1182,7 @@
 <td><span class="negative">-54.11%</span></td>
 <td><span class="negative strong">-75.03</span></td>
 <td><span class="negative">73.95%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ High Volatility | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | High Volatility | Negative Margin</td>
 </tr>
 <tr>
 <td>Nepal Warehousing Company Limited</td>
@@ -1192,7 +1192,7 @@
 <td><span class="negative">-14.16%</span></td>
 <td><span class="negative strong">-92.26</span></td>
 <td><span class="positive">0.00%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | Negative Margin</td>
 </tr>
 <tr>
 <td>Sagar Distillery Limited</td>
@@ -1202,7 +1202,7 @@
 <td><span class="negative">-27.51%</span></td>
 <td><span class="negative strong">-192.94</span></td>
 <td><span class="neutral">43.38%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ High Volatility | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | High Volatility | Negative Margin</td>
 </tr>
 <tr>
 <td>Om Megashree Pharmaceuticals Limited</td>
@@ -1212,7 +1212,7 @@
 <td><span class="negative">-17.84%</span></td>
 <td><span class="negative strong">-138.57</span></td>
 <td><span class="negative">61.70%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ High Volatility | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | High Volatility | Negative Margin</td>
 </tr>
 <tr>
 <td>Ingwa Hydropower Limited</td>
@@ -1222,7 +1222,7 @@
 <td><span class="negative">-12.30%</span></td>
 <td><span class="negative strong">-57.29</span></td>
 <td><span class="negative">84.77%</span></td>
-<td class="risk-flags">⚠️ High Debt | 🚨 Negative Earnings | ⚠️ Negative Margin</td>
+<td class="risk-flags">High Debt | Negative Earnings | Negative Margin</td>
 </tr>
 <tr>
 <td>Modi Energy Limited</td>
@@ -1232,7 +1232,7 @@
 <td><span class="negative">-17.11%</span></td>
 <td><span class="negative strong">-72.92</span></td>
 <td><span class="negative">76.01%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | Negative Margin</td>
 </tr>
 <tr>
 <td>Himal Dolakha Hydropower Company Limited</td>
@@ -1242,7 +1242,7 @@
 <td><span class="negative">-136.81%</span></td>
 <td><span class="negative strong">-59.40</span></td>
 <td><span class="positive">19.91%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | Negative Margin</td>
 </tr>
 <tr>
 <td>Khanikhola Hydropower Co. Ltd.</td>
@@ -1252,7 +1252,7 @@
 <td><span class="negative">-27.63%</span></td>
 <td><span class="negative strong">-89.44</span></td>
 <td><span class="neutral">46.30%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | Negative Margin</td>
 </tr>
 <tr>
 <td>Nepal Republic Media Limited</td>
@@ -1262,7 +1262,7 @@
 <td><span class="negative">-27.03%</span></td>
 <td><span class="negative strong">-90.86</span></td>
 <td><span class="positive">29.82%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | Negative Margin</td>
 </tr>
 <tr>
 <td>Ghorahi Cement Industry Limited</td>
@@ -1272,7 +1272,7 @@
 <td><span class="negative">-6.45%</span></td>
 <td><span class="negative strong">-60.34</span></td>
 <td><span class="negative">61.09%</span></td>
-<td class="risk-flags">🚨 Negative Earnings</td>
+<td class="risk-flags">Negative Earnings</td>
 </tr>
 <tr>
 <td>Bhugol Energy Development Company Limited</td>
@@ -1282,7 +1282,7 @@
 <td><span class="negative">-14.78%</span></td>
 <td><span class="negative strong">-170.39</span></td>
 <td><span class="negative">73.34%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | Negative Margin</td>
 </tr>
 <tr>
 <td>NRN Infrastructure and Development Limited</td>
@@ -1292,7 +1292,7 @@
 <td><span class="negative">-159.76%</span></td>
 <td><span class="negative strong">-312.34</span></td>
 <td><span class="positive">8.62%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ High Volatility | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | High Volatility | Negative Margin</td>
 </tr>
 <tr>
 <td>Peoples Power Limited</td>
@@ -1302,7 +1302,7 @@
 <td><span class="negative">-24.21%</span></td>
 <td><span class="negative strong">-134.29</span></td>
 <td><span class="positive">0.14%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | Negative Margin</td>
 </tr>
 <tr>
 <td>Rapti Hydro And General Construction Limited</td>
@@ -1312,7 +1312,7 @@
 <td><span class="negative">-31.46%</span></td>
 <td><span class="negative strong">-115.51</span></td>
 <td><span class="neutral">35.53%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | Negative Margin</td>
 </tr>
 <tr>
 <td>Ghalemdi Hydro Limited</td>
@@ -1322,7 +1322,7 @@
 <td><span class="negative">-15.98%</span></td>
 <td><span class="negative strong">-171.13</span></td>
 <td><span class="neutral">31.59%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | Negative Margin</td>
 </tr>
 <tr>
 <td>Oriental Hotels</td>
@@ -1332,7 +1332,7 @@
 <td><span class="negative">-4.73%</span></td>
 <td><span class="negative strong">-154.78</span></td>
 <td><span class="neutral">36.43%</span></td>
-<td class="risk-flags">🚨 Negative Earnings</td>
+<td class="risk-flags">Negative Earnings</td>
 </tr>
 <tr>
 <td>National Hydro Power</td>
@@ -1342,7 +1342,7 @@
 <td><span class="negative">-16.70%</span></td>
 <td><span class="negative strong">-273.95</span></td>
 <td><span class="neutral">38.08%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ High Volatility | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | High Volatility | Negative Margin</td>
 </tr>
 <tr>
 <td>Prabhu Bank</td>
@@ -1352,7 +1352,7 @@
 <td><span class="negative">-1.10%</span></td>
 <td><span class="negative strong">-174.29</span></td>
 <td><span class="negative">91.95%</span></td>
-<td class="risk-flags">🚨 Negative Earnings</td>
+<td class="risk-flags">Negative Earnings</td>
 </tr>
 <tr>
 <td>Barahi Hydropower Public Limited</td>
@@ -1362,7 +1362,7 @@
 <td><span class="negative">-2.63%</span></td>
 <td><span class="negative strong">-500.00</span></td>
 <td><span class="negative">78.67%</span></td>
-<td class="risk-flags">🚨 Negative Earnings</td>
+<td class="risk-flags">Negative Earnings</td>
 </tr>
 <tr>
 <td>Daramkhola Hydro Energy Limited</td>
@@ -1372,7 +1372,7 @@
 <td><span class="negative">-89.33%</span></td>
 <td><span class="negative strong">-57.08</span></td>
 <td><span class="negative">63.06%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | Negative Margin</td>
 </tr>
 <tr>
 <td>Bandipur Cablecar and Tourism Limited</td>
@@ -1382,7 +1382,7 @@
 <td><span class="negative">-66.07%</span></td>
 <td><span class="negative strong">-335.95</span></td>
 <td><span class="neutral">33.33%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ High Volatility | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | High Volatility | Negative Margin</td>
 </tr>
 <tr>
 <td>Bungal Hydro Limited </td>
@@ -1392,7 +1392,7 @@
 <td><span class="negative">-11.28%</span></td>
 <td><span class="negative strong">-141.39</span></td>
 <td><span class="negative">85.28%</span></td>
-<td class="risk-flags">⚠️ High Debt | 🚨 Negative Earnings | ⚠️ High Volatility | ⚠️ Negative Margin</td>
+<td class="risk-flags">High Debt | Negative Earnings | High Volatility | Negative Margin</td>
 </tr>
 <tr>
 <td>Upper Lohore Khola Hydropower Company Limited</td>
@@ -1402,7 +1402,7 @@
 <td><span class="negative">-41.56%</span></td>
 <td><span class="negative strong">-52.88</span></td>
 <td><span class="negative">72.82%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | Negative Margin</td>
 </tr>
 <tr>
 <td>Mabilung Energy Limited</td>
@@ -1412,7 +1412,7 @@
 <td><span class="negative">-5.31%</span></td>
 <td><span class="negative strong">-488.00</span></td>
 <td><span class="negative">71.94%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ High Volatility</td>
+<td class="risk-flags">Negative Earnings | High Volatility</td>
 </tr>
 <tr>
 <td>Jhapa Energy Limited</td>
@@ -1422,7 +1422,7 @@
 <td><span class="positive">14.00%</span></td>
 <td><span class="negative">262.76</span></td>
 <td><span class="negative">57.15%</span></td>
-<td class="risk-flags">⚠️ High PE | ⚠️ High Volatility</td>
+<td class="risk-flags">High PE | High Volatility</td>
 </tr>
 <tr>
 <td>Him Star Urja Company Limited</td>
@@ -1432,7 +1432,7 @@
 <td><span class="negative">-76.56%</span></td>
 <td><span class="negative strong">-22.21</span></td>
 <td><span class="negative">101.73%</span></td>
-<td class="risk-flags">⚠️ High Debt | 🚨 Negative Earnings | ⚠️ High Volatility | ⚠️ Negative Margin</td>
+<td class="risk-flags">High Debt | Negative Earnings | High Volatility | Negative Margin</td>
 </tr>
 <tr>
 <td>IGI Prudential insurance Limited</td>
@@ -1442,7 +1442,7 @@
 <td><span class="neutral">0.18%</span></td>
 <td><span class="negative">500.00</span></td>
 <td><span class="negative">62.28%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Sindhu Bikash Bank</td>
@@ -1452,7 +1452,7 @@
 <td><span class="neutral">0.26%</span></td>
 <td><span class="negative">500.00</span></td>
 <td><span class="negative">91.20%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Crest Micro Life Insurance Limited</td>
@@ -1462,7 +1462,7 @@
 <td><span class="neutral">0.52%</span></td>
 <td><span class="negative">500.00</span></td>
 <td><span class="neutral">35.64%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Mailung Khola Jal Vidhyut Company Limited</td>
@@ -1472,7 +1472,7 @@
 <td><span class="neutral">1.78%</span></td>
 <td><span class="negative">500.00</span></td>
 <td><span class="negative">55.94%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>NIC Asia Bank</td>
@@ -1482,7 +1482,7 @@
 <td><span class="neutral">0.80%</span></td>
 <td><span class="negative">252.95</span></td>
 <td><span class="negative">93.47%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Ngadi Group Power Ltd.</td>
@@ -1492,7 +1492,7 @@
 <td><span class="positive strong">35.60%</span></td>
 <td><span class="negative">314.06</span></td>
 <td><span class="positive">18.86%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Trade Tower Limited</td>
@@ -1502,7 +1502,7 @@
 <td><span class="neutral">7.27%</span></td>
 <td><span class="negative">500.00</span></td>
 <td><span class="positive">0.00%</span></td>
-<td class="risk-flags">⚠️ High PE | ⚠️ High Volatility</td>
+<td class="risk-flags">High PE | High Volatility</td>
 </tr>
 <tr>
 <td>Hathway Investment Nepal Limited</td>
@@ -1512,7 +1512,7 @@
 <td><span class="positive">13.32%</span></td>
 <td><span class="negative">500.00</span></td>
 <td><span class="positive">19.21%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Upper Syange Hydropower Limited</td>
@@ -1522,7 +1522,7 @@
 <td><span class="neutral">2.91%</span></td>
 <td><span class="negative">500.00</span></td>
 <td><span class="negative">71.11%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Universal Power Company Ltd</td>
@@ -1532,7 +1532,7 @@
 <td><span class="positive">11.67%</span></td>
 <td><span class="negative">295.89</span></td>
 <td><span class="neutral">38.46%</span></td>
-<td class="risk-flags">⚠️ High PE | ⚠️ High Volatility</td>
+<td class="risk-flags">High PE | High Volatility</td>
 </tr>
 <tr>
 <td>Sayapatri Hydropower Limited</td>
@@ -1542,7 +1542,7 @@
 <td><span class="neutral">5.98%</span></td>
 <td><span class="negative">500.00</span></td>
 <td><span class="negative">51.18%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Shreenagar Agritech Industries Limited</td>
@@ -1552,7 +1552,7 @@
 <td><span class="neutral">0.97%</span></td>
 <td><span class="negative">500.00</span></td>
 <td><span class="neutral">42.21%</span></td>
-<td class="risk-flags">⚠️ High PE | ⚠️ High Volatility</td>
+<td class="risk-flags">High PE | High Volatility</td>
 </tr>
 <tr>
 <td>Dordi Khola Jal Bidyut Company Limited</td>
@@ -1562,7 +1562,7 @@
 <td><span class="positive">10.92%</span></td>
 <td><span class="negative">170.24</span></td>
 <td><span class="negative">53.76%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Dolti Power Company Limited</td>
@@ -1572,7 +1572,7 @@
 <td><span class="neutral">4.66%</span></td>
 <td><span class="negative">336.31</span></td>
 <td><span class="negative">77.95%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Liberty Energy Company Limited</td>
@@ -1582,7 +1582,7 @@
 <td><span class="positive">14.46%</span></td>
 <td><span class="negative">189.87</span></td>
 <td><span class="negative">73.56%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Ridi Power Company Limited</td>
@@ -1592,7 +1592,7 @@
 <td><span class="positive">12.85%</span></td>
 <td><span class="negative">171.49</span></td>
 <td><span class="neutral">40.61%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Arun Kabeli Power Ltd.</td>
@@ -1602,7 +1602,7 @@
 <td><span class="positive">12.99%</span></td>
 <td><span class="negative">119.30</span></td>
 <td><span class="neutral">49.70%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Guardian Micro Life Insurance Limited</td>
@@ -1612,7 +1612,7 @@
 <td><span class="neutral">2.87%</span></td>
 <td><span class="negative">447.33</span></td>
 <td><span class="neutral">39.11%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>GreenLife Hydropower Limited</td>
@@ -1622,7 +1622,7 @@
 <td><span class="negative">0.00%</span></td>
 <td><span class="negative">106.31</span></td>
 <td><span class="negative">95.41%</span></td>
-<td class="risk-flags">⚠️ High Debt | ⚠️ High PE</td>
+<td class="risk-flags">High Debt | High PE</td>
 </tr>
 <tr>
 <td>Barun Hydropower</td>
@@ -1632,7 +1632,7 @@
 <td><span class="positive strong">21.39%</span></td>
 <td><span class="negative">150.79</span></td>
 <td><span class="positive">19.15%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Nlg Insurance</td>
@@ -1642,7 +1642,7 @@
 <td><span class="neutral">3.15%</span></td>
 <td><span class="negative">238.12</span></td>
 <td><span class="negative">51.01%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Peoples Hydropower Company Limited</td>
@@ -1652,7 +1652,7 @@
 <td><span class="neutral">6.18%</span></td>
 <td><span class="negative">133.35</span></td>
 <td><span class="negative">72.05%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Chhyangdi Hydropower Ltd.</td>
@@ -1662,7 +1662,7 @@
 <td><span class="neutral">7.57%</span></td>
 <td><span class="negative">150.17</span></td>
 <td><span class="negative">52.46%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Emerging Nepal Limited</td>
@@ -1672,7 +1672,7 @@
 <td><span class="positive strong">66.46%</span></td>
 <td><span class="negative">282.73</span></td>
 <td><span class="positive">2.17%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Maya Khola Hydropower Company Limited</td>
@@ -1682,7 +1682,7 @@
 <td><span class="neutral">4.18%</span></td>
 <td><span class="negative">155.77</span></td>
 <td><span class="negative">85.99%</span></td>
-<td class="risk-flags">⚠️ High Debt | ⚠️ High PE</td>
+<td class="risk-flags">High Debt | High PE</td>
 </tr>
 <tr>
 <td>United Ajod Insurance Limited</td>
@@ -1692,7 +1692,7 @@
 <td><span class="neutral">3.50%</span></td>
 <td><span class="negative">142.33</span></td>
 <td><span class="negative">52.03%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Sanjen Jalavidhyut Company Limited</td>
@@ -1702,7 +1702,7 @@
 <td><span class="neutral">4.99%</span></td>
 <td><span class="negative">101.07</span></td>
 <td><span class="negative">82.60%</span></td>
-<td class="risk-flags">⚠️ High Debt | ⚠️ High PE</td>
+<td class="risk-flags">High Debt | High PE</td>
 </tr>
 <tr>
 <td>Manakamana Engineering Hydropower Limited</td>
@@ -1712,7 +1712,7 @@
 <td><span class="neutral">9.53%</span></td>
 <td><span class="negative">135.25</span></td>
 <td><span class="negative">61.17%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Buddha Bhumi Nepal Hydropower Company Limited</td>
@@ -1722,7 +1722,7 @@
 <td><span class="neutral">6.46%</span></td>
 <td><span class="negative">176.79</span></td>
 <td><span class="negative">50.74%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>River Falls Power Limited</td>
@@ -1732,7 +1732,7 @@
 <td><span class="positive">14.36%</span></td>
 <td><span class="negative">121.75</span></td>
 <td><span class="neutral">41.73%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Pure Energy Limited</td>
@@ -1742,7 +1742,7 @@
 <td><span class="positive">10.22%</span></td>
 <td><span class="negative">242.83</span></td>
 <td><span class="negative">67.85%</span></td>
-<td class="risk-flags">⚠️ High PE | ⚠️ High Volatility</td>
+<td class="risk-flags">High PE | High Volatility</td>
 </tr>
 <tr>
 <td>Shree Investment Finance</td>
@@ -1752,7 +1752,7 @@
 <td><span class="neutral">6.55%</span></td>
 <td><span class="negative">104.96</span></td>
 <td><span class="negative">86.62%</span></td>
-<td class="risk-flags">⚠️ High PE | ⚠️ High Volatility</td>
+<td class="risk-flags">High PE | High Volatility</td>
 </tr>
 <tr>
 <td>Ankhu Khola Jalvidhyut Company Ltd.</td>
@@ -1762,7 +1762,7 @@
 <td><span class="positive strong">28.35%</span></td>
 <td><span class="negative">107.87</span></td>
 <td><span class="positive">27.18%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Sagarmatha Jalabidhyut Company Limited</td>
@@ -1772,7 +1772,7 @@
 <td><span class="positive">19.86%</span></td>
 <td><span class="negative">110.74</span></td>
 <td><span class="negative">60.32%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Samling Power Company Limited</td>
@@ -1782,7 +1782,7 @@
 <td><span class="neutral">8.44%</span></td>
 <td><span class="negative">100.01</span></td>
 <td><span class="negative">83.21%</span></td>
-<td class="risk-flags">⚠️ High Debt | ⚠️ High PE</td>
+<td class="risk-flags">High Debt | High PE</td>
 </tr>
 <tr>
 <td>Nyadi Hydropower Limited</td>
@@ -1792,7 +1792,7 @@
 <td><span class="neutral">6.20%</span></td>
 <td><span class="negative">142.78</span></td>
 <td><span class="negative">84.79%</span></td>
-<td class="risk-flags">⚠️ High Debt | ⚠️ High PE</td>
+<td class="risk-flags">High Debt | High PE</td>
 </tr>
 <tr>
 <td>Shikhar Insurance</td>
@@ -1802,7 +1802,7 @@
 <td><span class="neutral">4.40%</span></td>
 <td><span class="negative">133.28</span></td>
 <td><span class="negative">60.98%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Nepal Life Insurance</td>
@@ -1812,7 +1812,7 @@
 <td><span class="neutral">0.63%</span></td>
 <td><span class="negative">140.60</span></td>
 <td><span class="negative">95.91%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Life Insurance Nepal</td>
@@ -1822,7 +1822,7 @@
 <td><span class="neutral">1.21%</span></td>
 <td><span class="negative">103.22</span></td>
 <td><span class="negative">93.86%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Citizen Investment Trust</td>
@@ -1832,7 +1832,7 @@
 <td><span class="positive strong">60.01%</span></td>
 <td><span class="negative">84.17</span></td>
 <td><span class="negative">94.73%</span></td>
-<td class="risk-flags">⚠️ High Debt | ⚠️ High PE</td>
+<td class="risk-flags">High Debt | High PE</td>
 </tr>
 <tr>
 <td>Menchhiyam Hydropower Limited</td>
@@ -1842,7 +1842,7 @@
 <td><span class="negative">-4.20%</span></td>
 <td><span class="negative strong">-246.43</span></td>
 <td><span class="negative">142.45%</span></td>
-<td class="risk-flags">⚠️ High Debt | 🚨 Negative Earnings</td>
+<td class="risk-flags">High Debt | Negative Earnings</td>
 </tr>
 <tr>
 <td>Dibyashwori Hydropower Ltd.</td>
@@ -1852,14 +1852,14 @@
 <td><span class="positive">13.94%</span></td>
 <td><span class="negative">49.79</span></td>
 <td><span class="negative">122.94%</span></td>
-<td class="risk-flags">⚠️ High Debt | ⚠️ High Volatility</td>
+<td class="risk-flags">High Debt | High Volatility</td>
 </tr>
 </tbody>
 </table>
         </div>
 
         <div id="sector-analysis">
-            <h2>Sector-Specific Analysis</h2>
+            <h2>Sector Analysis</h2>
             <p class="section-description">Best stocks in each sector, compared fairly within their own group (banks are judged like banks, hydropower like hydropower).</p>
     <h3>Manufacturing &amp; Corporate</h3>
 <table class="table">
@@ -3224,12 +3224,12 @@
 </tbody>
 </table>
         </div>
-<h2 id="events-radar">Upcoming Corporate Actions (10 days)</h2><p class="section-description">Dividends, AGMs/SGMs and book-closure dates on the horizon. Prices around ex-dates can distort momentum signals — verify before acting.</p><div style="overflow-x:auto;"><table><thead><tr><th>Date</th><th>Symbol</th><th>Company</th><th>Type</th><th>Agenda</th></tr></thead><tbody><tr><td style="white-space:nowrap;">2026-08-30</td><td>JBLB</td><td><strong>Jeevan Bikas Laghubitta Bittya Sanstha Ltd</strong></td><td>SGM</td><td>Approval of the merger of Jeevan Bikas Laghubitta Bittiya Sanstha Limited, Unique Nepal Laghubitta B</td></tr><tr><td style="white-space:nowrap;">2026-08-30</td><td>MLBS</td><td><strong>Manushi Laghubitta Bittiya Sanstha Limited</strong></td><td>SGM</td><td>Approval of the merger of Jeevan Bikas Laghubitta Bittiya Sanstha Limited, Unique Nepal Laghubitta B</td></tr><tr><td style="white-space:nowrap;">2026-08-30</td><td>UNLB</td><td><strong>Unique Nepal Laghubitta Bittiya Sanstha Limited</strong></td><td>SGM</td><td>Approval of the merger of Jeevan Bikas Laghubitta Bittiya Sanstha Limited, Unique Nepal Laghubitta B</td></tr><tr><td style="white-space:nowrap;">2026-08-30</td><td>DHEL</td><td><strong>Daramkhola Hydro Energy Limited</strong></td><td>AGM</td><td>Financial Highlights FY 2024/25 ##Election of Board Members</td></tr><tr><td style="white-space:nowrap;">2026-08-31</td><td>SIGS3</td><td><strong>Siddhartha Investment Growth Scheme 3</strong></td><td>Dividend</td><td>10% Cash Dividend (including tax) to be distributed to its unitholders for FY 2025/26</td></tr><tr><td style="white-space:nowrap;">2026-08-31</td><td>SIGS2</td><td><strong>Siddhartha Investment Growth Scheme 2</strong></td><td>Dividend</td><td>8% Cash Dividend (including tax) to be distributed to its unitholders for FY 2025/26</td></tr><tr><td style="white-space:nowrap;">2026-09-01</td><td>MPFL</td><td><strong>Multipurpose Finance</strong></td><td>AGM</td><td>Financial Highlights FY 2024/25</td></tr><tr><td style="white-space:nowrap;">2026-09-02</td><td>MEHL</td><td><strong>Manakamana Engineering Hydropower Limited</strong></td><td>AGM</td><td>Financial Highlights FY 2025/26 </td></tr><tr><td style="white-space:nowrap;">2026-09-03</td><td>MANDU</td><td><strong>Mandu Hydropower Limited</strong></td><td>AGM</td><td>Financial Highlights FY 2024/25 &amp; FY 2025/26  ##Proposal for 10 % Stock and 12.5263% Cash Dividend #</td></tr><tr><td style="white-space:nowrap;">2026-09-03</td><td>SAGF</td><td><strong>Sanima Growth Fund</strong></td><td>Dividend</td><td>5% Cash Dividend (including tax) to be distributed to its unitholders for FY 2025/26</td></tr><tr><td style="white-space:nowrap;">2026-09-03</td><td>KSBBL</td><td><strong>Kamana Sewa Bikas Bank Limited</strong></td><td>AGM</td><td>Financial Highlights FY 2025/26  ##Proposal for 15% Cash Dividend ##Appointment of Board Members</td></tr><tr><td style="white-space:nowrap;">2026-09-03</td><td>KSBBL</td><td><strong>Kamana Sewa Bikas Bank Limited</strong></td><td>Dividend</td><td>Proposal for 15% Cash Dividend subject to approval from Regulatory body and its upcoming AGM</td></tr></tbody></table></div><h2 id="strategy-evidence">Strategy Evidence (graded forward returns)</h2><p class="section-description">What actually happened AFTER each historical pick: win-rate and average return over the next 1 and 5 sessions, net of estimated fees. Verdicts strengthen as history accumulates (~60 sessions needed); treat small samples as directional.</p><div style="overflow-x:auto;"><table><thead><tr><th>Strategy</th><th>N(1d)</th><th>Win%(1d)</th><th>Avg%(1d)</th><th>N(5d)</th><th>Win%(5d)</th><th>Avg%(5d)</th></tr></thead><tbody><tr><td><strong>💪 Strong Balance Sheet</strong></td><td>84.0</td><td>+44.00</td><td>+0.00</td><td>55.0</td><td>+40.00</td><td>+0.14</td></tr><tr><td><strong>💰 High Profitability Leaders</strong></td><td>82.0</td><td>+45.10</td><td>+0.01</td><td>56.0</td><td>+35.70</td><td>-0.25</td></tr><tr><td><strong>📊 Best Risk-Adjusted Returns</strong></td><td>95.0</td><td>+42.10</td><td>-0.05</td><td>61.0</td><td>+32.80</td><td>-0.33</td></tr><tr><td><strong>💵 Undervalued High Earners</strong></td><td>100.0</td><td>+45.00</td><td>-0.02</td><td>59.0</td><td>+39.00</td><td>-0.47</td></tr><tr><td><strong>🛡️ Defensive Low-Risk</strong></td><td>180.0</td><td>+38.90</td><td>-0.18</td><td>108.0</td><td>+31.50</td><td>-0.93</td></tr><tr><td><strong>💎 High Quality Stocks</strong></td><td>63.0</td><td>+38.10</td><td>-0.22</td><td>45.0</td><td>+28.90</td><td>-1.07</td></tr></tbody></table></div>
+<div id="strategy-evidence"><h2>Strategy Evidence (Graded Forward Returns)</h2><p class="section-description">What actually happened AFTER each historical pick: win-rate and average return over the next 1 and 5 sessions, net of estimated fees. Verdicts strengthen as history accumulates (~60 sessions needed); treat small samples as directional.</p><div style="overflow-x:auto;"><table><thead><tr><th>Strategy</th><th>N(1d)</th><th>Win%(1d)</th><th>Avg%(1d)</th><th>N(5d)</th><th>Win%(5d)</th><th>Avg%(5d)</th></tr></thead><tbody><tr><td><strong>💪 Strong Balance Sheet</strong></td><td>84.0</td><td>+44.00</td><td>+0.00</td><td>55.0</td><td>+40.00</td><td>+0.14</td></tr><tr><td><strong>💰 High Profitability Leaders</strong></td><td>82.0</td><td>+45.10</td><td>+0.01</td><td>56.0</td><td>+35.70</td><td>-0.25</td></tr><tr><td><strong>📊 Best Risk-Adjusted Returns</strong></td><td>95.0</td><td>+42.10</td><td>-0.05</td><td>61.0</td><td>+32.80</td><td>-0.33</td></tr><tr><td><strong>💵 Undervalued High Earners</strong></td><td>100.0</td><td>+45.00</td><td>-0.02</td><td>59.0</td><td>+39.00</td><td>-0.47</td></tr><tr><td><strong>🛡️ Defensive Low-Risk</strong></td><td>180.0</td><td>+38.90</td><td>-0.18</td><td>108.0</td><td>+31.50</td><td>-0.93</td></tr><tr><td><strong>💎 High Quality Stocks</strong></td><td>63.0</td><td>+38.10</td><td>-0.22</td><td>45.0</td><td>+28.90</td><td>-1.07</td></tr></tbody></table></div></div><div id="events-radar"><h2>Corporate Actions (Upcoming 10 Days)</h2><p class="section-description">Dividends, AGMs/SGMs and book-closure dates on the horizon. Prices around ex-dates can distort momentum signals — verify before acting.</p><div style="overflow-x:auto;"><table><thead><tr><th>Date</th><th>Symbol</th><th>Company</th><th>Type</th><th>Agenda</th></tr></thead><tbody><tr><td style="white-space:nowrap;">2026-08-30</td><td>JBLB</td><td><strong>Jeevan Bikas Laghubitta Bittya Sanstha Ltd</strong></td><td>SGM</td><td>Approval of the merger of Jeevan Bikas Laghubitta Bittiya Sanstha Limited, Unique Nepal Laghubitta B</td></tr><tr><td style="white-space:nowrap;">2026-08-30</td><td>MLBS</td><td><strong>Manushi Laghubitta Bittiya Sanstha Limited</strong></td><td>SGM</td><td>Approval of the merger of Jeevan Bikas Laghubitta Bittiya Sanstha Limited, Unique Nepal Laghubitta B</td></tr><tr><td style="white-space:nowrap;">2026-08-30</td><td>UNLB</td><td><strong>Unique Nepal Laghubitta Bittiya Sanstha Limited</strong></td><td>SGM</td><td>Approval of the merger of Jeevan Bikas Laghubitta Bittiya Sanstha Limited, Unique Nepal Laghubitta B</td></tr><tr><td style="white-space:nowrap;">2026-08-30</td><td>DHEL</td><td><strong>Daramkhola Hydro Energy Limited</strong></td><td>AGM</td><td>Financial Highlights FY 2024/25 ##Election of Board Members</td></tr><tr><td style="white-space:nowrap;">2026-08-31</td><td>SIGS3</td><td><strong>Siddhartha Investment Growth Scheme 3</strong></td><td>Dividend</td><td>10% Cash Dividend (including tax) to be distributed to its unitholders for FY 2025/26</td></tr><tr><td style="white-space:nowrap;">2026-08-31</td><td>SIGS2</td><td><strong>Siddhartha Investment Growth Scheme 2</strong></td><td>Dividend</td><td>8% Cash Dividend (including tax) to be distributed to its unitholders for FY 2025/26</td></tr><tr><td style="white-space:nowrap;">2026-09-01</td><td>MPFL</td><td><strong>Multipurpose Finance</strong></td><td>AGM</td><td>Financial Highlights FY 2024/25</td></tr><tr><td style="white-space:nowrap;">2026-09-02</td><td>MEHL</td><td><strong>Manakamana Engineering Hydropower Limited</strong></td><td>AGM</td><td>Financial Highlights FY 2025/26 </td></tr><tr><td style="white-space:nowrap;">2026-09-03</td><td>MANDU</td><td><strong>Mandu Hydropower Limited</strong></td><td>AGM</td><td>Financial Highlights FY 2024/25 &amp; FY 2025/26  ##Proposal for 10 % Stock and 12.5263% Cash Dividend #</td></tr><tr><td style="white-space:nowrap;">2026-09-03</td><td>SAGF</td><td><strong>Sanima Growth Fund</strong></td><td>Dividend</td><td>5% Cash Dividend (including tax) to be distributed to its unitholders for FY 2025/26</td></tr><tr><td style="white-space:nowrap;">2026-09-03</td><td>KSBBL</td><td><strong>Kamana Sewa Bikas Bank Limited</strong></td><td>AGM</td><td>Financial Highlights FY 2025/26  ##Proposal for 15% Cash Dividend ##Appointment of Board Members</td></tr><tr><td style="white-space:nowrap;">2026-09-03</td><td>KSBBL</td><td><strong>Kamana Sewa Bikas Bank Limited</strong></td><td>Dividend</td><td>Proposal for 15% Cash Dividend subject to approval from Regulatory body and its upcoming AGM</td></tr></tbody></table></div></div>
         <div id="legacy-screens">
             <details class="legacy-accordion">
                 <summary class="legacy-summary">
-                    <span>Legacy Reference Screens (Strategies 1–10 — Archive &amp; Audit Trail)</span>
-                    <span style="font-size:0.8rem; color:var(--accent-soft); font-weight:500;">Click to Expand ▾</span>
+                    <span>Legacy Screens (Archive &amp; Audit Trail)</span>
+                    <span style="font-size:0.8rem; color:var(--accent-soft); font-weight:500;">[Expand]</span>
                 </summary>
                 <div class="legacy-content">
                     <p class="section-description">
@@ -3238,7 +3238,7 @@
                     </p>
     
                     <div id="strategy1" style="margin-bottom:1.5rem;">
-                        <h3 style="font-size:1.05rem; margin-top:1rem;">💎 High Quality Stocks <span style="font-size:0.65em; color:var(--text-muted);">(reference screen)</span></h3>
+                        <h3 style="font-size:1.05rem; margin-top:1rem;">High Quality Stocks <span style="font-size:0.65em; color:var(--text-muted);">(reference screen)</span></h3>
                         <p class="section-description" style="font-size:0.8rem;">Strong profit-makers at a fair price: sector-adjusted ROE bar (&gt; 15% banks/microfinance, &gt; 12% finance, &gt; 10% insurance, &gt; 8% hydropower), PE &lt; 40 OR near the sector median with a cross-sector bubble guard, Debt &lt; 50% for non-financials, uptrend.</p>
         <table class="table">
 <thead>
@@ -3262,7 +3262,7 @@
 <td><span class="positive strong">4.02%</span></td>
 <td><span class="positive">14.57</span></td>
 <td><span class="negative">86.88%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Unilever Nepal</td>
@@ -3272,7 +3272,7 @@
 <td><span class="positive strong">19.91%</span></td>
 <td><span class="negative">27.57</span></td>
 <td><span class="neutral">34.02%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Soaltee Hotel</td>
@@ -3282,7 +3282,7 @@
 <td><span class="positive strong">20.22%</span></td>
 <td><span class="negative">78.54</span></td>
 <td><span class="positive">16.03%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Mountain Energy Nepal Limited</td>
@@ -3292,7 +3292,7 @@
 <td><span class="positive strong">11.62%</span></td>
 <td><span class="neutral">24.22</span></td>
 <td><span class="neutral">41.18%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Garima Bikas Bank</td>
@@ -3302,7 +3302,7 @@
 <td><span class="positive">1.58%</span></td>
 <td><span class="neutral">15.05</span></td>
 <td><span class="negative">90.56%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Everest Bank</td>
@@ -3312,7 +3312,7 @@
 <td><span class="neutral">1.35%</span></td>
 <td><span class="neutral">19.74</span></td>
 <td><span class="negative">90.83%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Chhimek Laghubitta Bikas Bank</td>
@@ -3322,14 +3322,14 @@
 <td><span class="positive">2.36%</span></td>
 <td><span class="negative">25.95</span></td>
 <td><span class="negative">84.25%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 </tbody>
 </table>
                     </div>
 
                     <div id="strategy2" style="margin-bottom:1.5rem;">
-                        <h3 style="font-size:1.05rem; margin-top:1rem;">💰 High Profitability Leaders <span style="font-size:0.65em; color:var(--text-muted);">(reference screen)</span></h3>
+                        <h3 style="font-size:1.05rem; margin-top:1rem;">High Profitability Leaders <span style="font-size:0.65em; color:var(--text-muted);">(reference screen)</span></h3>
                         <p class="section-description" style="font-size:0.8rem;">Sector-calibrated earnings power: financials need positive margins with ROE above their sector bar; others need Net Margin &gt; 15% and ROE &gt; 10%. All names must be in an uptrend with earnings momentum.</p>
         <table class="table">
 <thead>
@@ -3351,7 +3351,7 @@
 <td><span class="positive strong">51.97%</span></td>
 <td><span class="positive">18.17%</span></td>
 <td><span class="neutral">24.22</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Upper Hewakhola Hydropower Company Limited</td>
@@ -3360,7 +3360,7 @@
 <td><span class="positive strong">41.54%</span></td>
 <td><span class="positive">16.90%</span></td>
 <td><span class="negative">31.95</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>CYC Nepal Laghubitta Bittiya Sanstha Limited</td>
@@ -3369,7 +3369,7 @@
 <td><span class="positive strong">33.91%</span></td>
 <td><span class="positive strong">33.64%</span></td>
 <td><span class="positive">14.57</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Super Madi Hydropower Limited</td>
@@ -3378,7 +3378,7 @@
 <td><span class="positive strong">32.02%</span></td>
 <td><span class="positive">16.72%</span></td>
 <td><span class="negative">28.53</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Sanima Middle Tamor Hydropower Limited</td>
@@ -3387,7 +3387,7 @@
 <td><span class="positive strong">30.83%</span></td>
 <td><span class="positive">15.92%</span></td>
 <td><span class="negative">25.73</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Soaltee Hotel</td>
@@ -3396,7 +3396,7 @@
 <td><span class="positive strong">29.08%</span></td>
 <td><span class="positive strong">25.21%</span></td>
 <td><span class="negative">78.54</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Everest Bank</td>
@@ -3405,7 +3405,7 @@
 <td><span class="positive strong">25.22%</span></td>
 <td><span class="positive">15.26%</span></td>
 <td><span class="neutral">19.74</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Garima Bikas Bank</td>
@@ -3414,7 +3414,7 @@
 <td><span class="positive strong">22.50%</span></td>
 <td><span class="positive">17.18%</span></td>
 <td><span class="neutral">15.05</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Unilever Nepal</td>
@@ -3423,7 +3423,7 @@
 <td><span class="positive">19.62%</span></td>
 <td><span class="positive strong">31.77%</span></td>
 <td><span class="negative">27.57</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Chhimek Laghubitta Bikas Bank</td>
@@ -3432,14 +3432,14 @@
 <td><span class="positive">19.34%</span></td>
 <td><span class="positive">15.06%</span></td>
 <td><span class="negative">25.95</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 </tbody>
 </table>
                     </div>
 
                     <div id="strategy3" style="margin-bottom:1.5rem;">
-                        <h3 style="font-size:1.05rem; margin-top:1rem;">💵 Undervalued High Earners <span style="font-size:0.65em; color:var(--text-muted);">(reference screen)</span></h3>
+                        <h3 style="font-size:1.05rem; margin-top:1rem;">Undervalued High Earners <span style="font-size:0.65em; color:var(--text-muted);">(reference screen)</span></h3>
                         <p class="section-description" style="font-size:0.8rem;">Profitable per share (EPS &gt; 0 — any magnitude, ranked best-first), trading cheap: PE &lt; 20 OR near the sector median with bubble guard, under 3x book value, uptrend.</p>
         <table class="table">
 <thead>
@@ -3461,7 +3461,7 @@
 <td><span class="positive strong">58.64</span></td>
 <td><span class="positive">4.73</span></td>
 <td><span class="positive">0.50</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Nepal Bank</td>
@@ -3470,7 +3470,7 @@
 <td><span class="positive strong">30.63</span></td>
 <td><span class="positive">8.89</span></td>
 <td><span class="positive">0.95</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>CYC Nepal Laghubitta Bittiya Sanstha Limited</td>
@@ -3479,7 +3479,7 @@
 <td><span class="positive strong">110.66</span></td>
 <td><span class="positive">14.57</span></td>
 <td><span class="negative">4.51</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Garima Bikas Bank</td>
@@ -3488,7 +3488,7 @@
 <td><span class="positive strong">28.04</span></td>
 <td><span class="neutral">15.05</span></td>
 <td><span class="neutral">2.38</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Sanima Bank</td>
@@ -3497,7 +3497,7 @@
 <td><span class="positive strong">22.78</span></td>
 <td><span class="neutral">16.20</span></td>
 <td><span class="neutral">2.08</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Siddhartha Bank</td>
@@ -3506,7 +3506,7 @@
 <td><span class="positive strong">23.79</span></td>
 <td><span class="neutral">17.28</span></td>
 <td><span class="neutral">1.82</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Nabil Bank</td>
@@ -3515,7 +3515,7 @@
 <td><span class="positive strong">29.22</span></td>
 <td><span class="neutral">18.49</span></td>
 <td><span class="neutral">2.18</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Everest Bank</td>
@@ -3524,7 +3524,7 @@
 <td><span class="positive strong">36.95</span></td>
 <td><span class="neutral">19.74</span></td>
 <td><span class="neutral">2.84</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Sahas Urja Limited</td>
@@ -3533,7 +3533,7 @@
 <td><span class="positive strong">29.72</span></td>
 <td><span class="neutral">22.95</span></td>
 <td><span class="negative">3.78</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Mountain Energy Nepal Limited</td>
@@ -3542,7 +3542,7 @@
 <td><span class="positive strong">25.52</span></td>
 <td><span class="neutral">24.22</span></td>
 <td><span class="negative">4.10</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Sanima Middle Tamor Hydropower Limited</td>
@@ -3551,7 +3551,7 @@
 <td><span class="positive">18.73</span></td>
 <td><span class="negative">25.73</span></td>
 <td><span class="negative">3.74</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Nepal Doorsanchar Company</td>
@@ -3560,7 +3560,7 @@
 <td><span class="positive strong">33.88</span></td>
 <td><span class="negative">25.82</span></td>
 <td><span class="neutral">1.59</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Chhimek Laghubitta Bikas Bank</td>
@@ -3569,7 +3569,7 @@
 <td><span class="positive strong">35.91</span></td>
 <td><span class="negative">25.95</span></td>
 <td><span class="negative">3.71</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Super Madi Hydropower Limited</td>
@@ -3578,7 +3578,7 @@
 <td><span class="positive">18.40</span></td>
 <td><span class="negative">28.53</span></td>
 <td><span class="negative">4.39</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Central Finance</td>
@@ -3587,14 +3587,14 @@
 <td><span class="positive">13.44</span></td>
 <td><span class="negative">43.57</span></td>
 <td><span class="negative">4.80</span></td>
-<td class="risk-flags">⚠️ High Volatility</td>
+<td class="risk-flags">High Volatility</td>
 </tr>
 </tbody>
 </table>
                     </div>
 
                     <div id="strategy4" style="margin-bottom:1.5rem;">
-                        <h3 style="font-size:1.05rem; margin-top:1rem;">🛡️ Defensive Low-Risk <span style="font-size:0.65em; color:var(--text-muted);">(reference screen)</span></h3>
+                        <h3 style="font-size:1.05rem; margin-top:1rem;">Defensive Low-Risk <span style="font-size:0.65em; color:var(--text-muted);">(reference screen)</span></h3>
                         <p class="section-description" style="font-size:0.8rem;">Calm, steady stock (Beta &lt; 1.0, YTD &gt; -5%) that still earns well (ROE &gt; 8%).</p>
         <table class="table">
 <thead>
@@ -3616,7 +3616,7 @@
 <td><span class="positive">-0.02</span></td>
 <td><span class="positive">+9.17%</span></td>
 <td><span class="positive">11.55%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Unilever Nepal</td>
@@ -3625,7 +3625,7 @@
 <td><span class="positive">0.27</span></td>
 <td><span class="positive">+0.43%</span></td>
 <td><span class="positive strong">31.77%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>CYC Nepal Laghubitta Bittiya Sanstha Limited</td>
@@ -3634,7 +3634,7 @@
 <td><span class="positive">0.55</span></td>
 <td><span class="negative">-1.65%</span></td>
 <td><span class="positive strong">33.64%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Standard Chartered Bank</td>
@@ -3643,7 +3643,7 @@
 <td><span class="positive">0.67</span></td>
 <td><span class="positive">+2.06%</span></td>
 <td><span class="positive">12.96%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Mandu Hydropower Limited</td>
@@ -3652,7 +3652,7 @@
 <td><span class="positive">0.73</span></td>
 <td><span class="negative">-1.44%</span></td>
 <td><span class="positive">15.42%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Bottlers Nepal (Terai)</td>
@@ -3661,7 +3661,7 @@
 <td><span class="positive">0.73</span></td>
 <td><span class="negative">-2.12%</span></td>
 <td><span class="positive">17.36%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Everest Bank</td>
@@ -3670,7 +3670,7 @@
 <td><span class="positive">0.73</span></td>
 <td><span class="positive">+11.89%</span></td>
 <td><span class="positive">15.26%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Nabil Bank</td>
@@ -3679,7 +3679,7 @@
 <td><span class="positive">0.74</span></td>
 <td><span class="positive">+9.80%</span></td>
 <td><span class="positive">12.15%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Global Ime Bank</td>
@@ -3688,7 +3688,7 @@
 <td><span class="positive">0.76</span></td>
 <td><span class="positive">+6.61%</span></td>
 <td><span class="neutral">9.14%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Nepal Sbi Bank</td>
@@ -3697,7 +3697,7 @@
 <td><span class="neutral">0.83</span></td>
 <td><span class="negative">-1.23%</span></td>
 <td><span class="neutral">9.62%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Prime Commercial Bank</td>
@@ -3706,7 +3706,7 @@
 <td><span class="neutral">0.85</span></td>
 <td><span class="negative">-2.62%</span></td>
 <td><span class="positive">11.69%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>NMB Bank</td>
@@ -3715,7 +3715,7 @@
 <td><span class="neutral">0.87</span></td>
 <td><span class="negative">-0.84%</span></td>
 <td><span class="positive">12.01%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Support Microfinance Bittiya Sanstha Ltd.</td>
@@ -3724,7 +3724,7 @@
 <td><span class="neutral">0.87</span></td>
 <td><span class="neutral">+0.00%</span></td>
 <td><span class="positive strong">31.92%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Chhimek Laghubitta Bikas Bank</td>
@@ -3733,7 +3733,7 @@
 <td><span class="neutral">0.88</span></td>
 <td><span class="neutral">+0.00%</span></td>
 <td><span class="positive">15.06%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Sanima Bank</td>
@@ -3742,7 +3742,7 @@
 <td><span class="neutral">0.91</span></td>
 <td><span class="positive">+16.37%</span></td>
 <td><span class="positive">14.34%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Siddhartha Bank</td>
@@ -3751,7 +3751,7 @@
 <td><span class="neutral">0.91</span></td>
 <td><span class="positive">+9.08%</span></td>
 <td><span class="positive">11.11%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Nepal Bank</td>
@@ -3760,7 +3760,7 @@
 <td><span class="neutral">0.92</span></td>
 <td><span class="positive">+14.41%</span></td>
 <td><span class="positive">11.40%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Jeevan Bikas Laghubitta Bittya Sanstha Ltd</td>
@@ -3769,7 +3769,7 @@
 <td><span class="neutral">0.93</span></td>
 <td><span class="negative">-3.08%</span></td>
 <td><span class="positive strong">24.48%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Machhapuchhre Bank</td>
@@ -3778,7 +3778,7 @@
 <td><span class="neutral">0.95</span></td>
 <td><span class="positive">+11.71%</span></td>
 <td><span class="positive">10.46%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Sanima Middle Tamor Hydropower Limited</td>
@@ -3787,7 +3787,7 @@
 <td><span class="neutral">0.95</span></td>
 <td><span class="positive">+8.56%</span></td>
 <td><span class="positive">15.92%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Mountain Energy Nepal Limited</td>
@@ -3796,7 +3796,7 @@
 <td><span class="neutral">0.95</span></td>
 <td><span class="positive">+9.38%</span></td>
 <td><span class="positive">18.17%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Kumari Bank</td>
@@ -3805,7 +3805,7 @@
 <td><span class="neutral">0.95</span></td>
 <td><span class="positive">+18.17%</span></td>
 <td><span class="positive">18.34%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Citizen Bank International</td>
@@ -3814,7 +3814,7 @@
 <td><span class="neutral">0.97</span></td>
 <td><span class="negative">-2.01%</span></td>
 <td><span class="neutral">8.90%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>National Microfinance Bittiya Sanstha Ltd.</td>
@@ -3823,7 +3823,7 @@
 <td><span class="neutral">0.98</span></td>
 <td><span class="negative">-3.56%</span></td>
 <td><span class="positive strong">23.96%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Terhathum Power Company Limited</td>
@@ -3832,7 +3832,7 @@
 <td><span class="neutral">0.98</span></td>
 <td><span class="negative">-4.84%</span></td>
 <td><span class="positive">12.83%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Soaltee Hotel</td>
@@ -3841,7 +3841,7 @@
 <td><span class="neutral">0.99</span></td>
 <td><span class="positive">+4.26%</span></td>
 <td><span class="positive strong">25.21%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Aarambha Chautari Laghubitta Bittiya Sanstha Limited</td>
@@ -3850,7 +3850,7 @@
 <td><span class="neutral">1.00</span></td>
 <td><span class="negative">-2.70%</span></td>
 <td><span class="positive">16.47%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Samaj Laghubittya Bittiya Sanstha Limited</td>
@@ -3859,19 +3859,19 @@
 <td><span class="positive">-1.10</span></td>
 <td><span class="neutral">+0.00%</span></td>
 <td><span class="positive strong">26.69%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 </tbody>
 </table>
                     </div>
 
                     <div id="strategy5" style="margin-bottom:1.5rem;">
-                        <h3 style="font-size:1.05rem; margin-top:1rem;">🔄 Turnaround Opportunities <span style="font-size:0.65em; color:var(--text-muted);">(reference screen)</span></h3>
+                        <h3 style="font-size:1.05rem; margin-top:1rem;">Turnaround Opportunities <span style="font-size:0.65em; color:var(--text-muted);">(reference screen)</span></h3>
                         <p class="section-description" style="font-size:0.8rem;">Fell hard over the past year (1Y &lt; -15%) but is recovering strongly (12W &gt; +8%) — and back in profit (ROE &gt; 0).</p>
         <p style="text-align:center; color:var(--text-secondary);">No stocks found matching criteria</p>                    </div>
 
                     <div id="strategy6" style="margin-bottom:1.5rem;">
-                        <h3 style="font-size:1.05rem; margin-top:1rem;">💪 Strong Balance Sheet <span style="font-size:0.65em; color:var(--text-muted);">(reference screen)</span></h3>
+                        <h3 style="font-size:1.05rem; margin-top:1rem;">Strong Balance Sheet <span style="font-size:0.65em; color:var(--text-muted);">(reference screen)</span></h3>
                         <p class="section-description" style="font-size:0.8rem;">Financially solid: plenty of cash (Current Ratio &gt; 150%), low debt (&lt; 50% for non-financials), earns &gt; 10% on equity. For banks: ROE &gt; 15% at a discount (PE &lt; 20, PBV &lt; 4).</p>
         <table class="table">
 <thead>
@@ -3893,7 +3893,7 @@
 <td><span class="neutral">-32.70%</span></td>
 <td><span class="negative">86.88%</span></td>
 <td><span class="positive strong">33.64%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Unilever Nepal</td>
@@ -3902,7 +3902,7 @@
 <td><span class="positive">236.83%</span></td>
 <td><span class="neutral">34.02%</span></td>
 <td><span class="positive strong">31.77%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Soaltee Hotel</td>
@@ -3911,7 +3911,7 @@
 <td><span class="neutral">180.01%</span></td>
 <td><span class="positive">16.03%</span></td>
 <td><span class="positive strong">25.21%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Mountain Energy Nepal Limited</td>
@@ -3920,7 +3920,7 @@
 <td><span class="positive">371.34%</span></td>
 <td><span class="neutral">41.18%</span></td>
 <td><span class="positive">18.17%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Sahas Urja Limited</td>
@@ -3929,7 +3929,7 @@
 <td><span class="positive">1366.02%</span></td>
 <td><span class="negative">59.58%</span></td>
 <td><span class="positive">17.63%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Garima Bikas Bank</td>
@@ -3938,7 +3938,7 @@
 <td><span class="neutral">0.00%</span></td>
 <td><span class="negative">90.56%</span></td>
 <td><span class="positive">17.18%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Upper Hewakhola Hydropower Company Limited</td>
@@ -3947,7 +3947,7 @@
 <td><span class="positive">4619.53%</span></td>
 <td><span class="negative">58.35%</span></td>
 <td><span class="positive">16.90%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Super Madi Hydropower Limited</td>
@@ -3956,7 +3956,7 @@
 <td><span class="positive">651.24%</span></td>
 <td><span class="negative">72.93%</span></td>
 <td><span class="positive">16.72%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Sanima Middle Tamor Hydropower Limited</td>
@@ -3965,7 +3965,7 @@
 <td><span class="neutral">125.66%</span></td>
 <td><span class="negative">76.59%</span></td>
 <td><span class="positive">15.92%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Everest Bank</td>
@@ -3974,14 +3974,14 @@
 <td><span class="neutral">0.00%</span></td>
 <td><span class="negative">90.83%</span></td>
 <td><span class="positive">15.26%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 </tbody>
 </table>
                     </div>
 
                     <div id="strategy7" style="margin-bottom:1.5rem;">
-                        <h3 style="font-size:1.05rem; margin-top:1rem;">📊 Best Risk-Adjusted Returns <span style="font-size:0.65em; color:var(--text-muted);">(reference screen)</span></h3>
+                        <h3 style="font-size:1.05rem; margin-top:1rem;">Best Risk-Adjusted Returns <span style="font-size:0.65em; color:var(--text-muted);">(reference screen)</span></h3>
                         <p class="section-description" style="font-size:0.8rem;">Best return for the risk taken (weekly return &gt; 0.2%, volatility &lt; 10%) — smooth gainers, not rollercoasters. Ranked by Mean Return / SD ratio.</p>
         <table class="table">
 <thead>
@@ -4001,7 +4001,7 @@
 <td>Rs 682.00</td>
 <td><span class="positive">+0.46%</span></td>
 <td><span class="positive">+2.90%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Ankhu Khola Jalvidhyut Company Ltd.</td>
@@ -4009,7 +4009,7 @@
 <td>Rs 343.00</td>
 <td><span class="positive">+1.00%</span></td>
 <td><span class="positive">+7.07%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Him Star Urja Company Limited</td>
@@ -4017,7 +4017,7 @@
 <td>Rs 659.90</td>
 <td><span class="positive">+1.21%</span></td>
 <td><span class="positive">+9.60%</span></td>
-<td class="risk-flags">⚠️ High Debt | 🚨 Negative Earnings | ⚠️ High Volatility | ⚠️ Negative Margin</td>
+<td class="risk-flags">High Debt | Negative Earnings | High Volatility | Negative Margin</td>
 </tr>
 <tr>
 <td>Siddhartha Bank</td>
@@ -4025,7 +4025,7 @@
 <td>Rs 411.00</td>
 <td><span class="positive">+0.29%</span></td>
 <td><span class="positive">+2.31%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Mountain Energy Nepal Limited</td>
@@ -4033,7 +4033,7 @@
 <td>Rs 618.00</td>
 <td><span class="positive">+0.32%</span></td>
 <td><span class="positive">+2.62%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Ridi Power Company Limited</td>
@@ -4041,7 +4041,7 @@
 <td>Rs 345.90</td>
 <td><span class="positive">+0.66%</span></td>
 <td><span class="positive">+5.82%</span></td>
-<td class="risk-flags">⚠️ High PE</td>
+<td class="risk-flags">High PE</td>
 </tr>
 <tr>
 <td>Asha Laghubitta Bittiya Sanstha Ltd</td>
@@ -4049,7 +4049,7 @@
 <td>Rs 1,108.00</td>
 <td><span class="positive">+0.34%</span></td>
 <td><span class="positive">+3.70%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Daramkhola Hydro Energy Limited</td>
@@ -4057,7 +4057,7 @@
 <td>Rs 564.00</td>
 <td><span class="positive">+0.58%</span></td>
 <td><span class="positive">+6.44%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | Negative Margin</td>
 </tr>
 <tr>
 <td>Api Power</td>
@@ -4065,7 +4065,7 @@
 <td>Rs 325.90</td>
 <td><span class="positive">+0.29%</span></td>
 <td><span class="positive">+3.37%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>Mabilung Energy Limited</td>
@@ -4073,7 +4073,7 @@
 <td>Rs 567.30</td>
 <td><span class="positive">+0.70%</span></td>
 <td><span class="positive">+8.14%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ High Volatility</td>
+<td class="risk-flags">Negative Earnings | High Volatility</td>
 </tr>
 <tr>
 <td>Upper Hewakhola Hydropower Company Limited</td>
@@ -4081,7 +4081,7 @@
 <td>Rs 604.00</td>
 <td><span class="positive">+0.30%</span></td>
 <td><span class="positive">+4.27%</span></td>
-<td class="risk-flags">✅ OK</td>
+<td class="risk-flags">OK</td>
 </tr>
 <tr>
 <td>National Hydro Power</td>
@@ -4089,7 +4089,7 @@
 <td>Rs 254.60</td>
 <td><span class="positive">+0.40%</span></td>
 <td><span class="positive">+6.63%</span></td>
-<td class="risk-flags">🚨 Negative Earnings | ⚠️ High Volatility | ⚠️ Negative Margin</td>
+<td class="risk-flags">Negative Earnings | High Volatility | Negative Margin</td>
 </tr>
 <tr>
 <td>Central Finance</td>
@@ -4097,7 +4097,7 @@
 <td>Rs 585.70</td>
 <td><span class="positive">+0.28%</span></td>
 <td><span class="positive">+4.84%</span></td>
-<td class="risk-flags">⚠️ High Volatility</td>
+<td class="risk-flags">High Volatility</td>
 </tr>
 </tbody>
 </table>

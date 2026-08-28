@@ -7,7 +7,8 @@ Total Stocks: 263
 
 ====================================================================================================
 TOP PICKS — GEN-3 MULTI-FACTOR PERCENTILE SCORING
-Quantitative Pillars: Quality (30%) · Value (20%) · Low Risk (20%) · Reversal (15%) · Growth (10%) · Liquidity (5%)
+Pillars: Quality 30% (ROE/Margin) · Value 20% (E/P, B/P) · Low Risk 20% (Inv Beta/Vol) · Reversal 15% (12W Mean Reversion) · Growth 10% · Liquidity 5%
+Typical Price = HLC/3 session benchmark; negative Close vs Typical indicates intraday discount entry.
 ====================================================================================================
  1. [TIER 1] Forward Community Microfinance B | Score: 0.91 | Q:94% | V:100% | LR:94% | Rev:91% | Gr:94% | Quality 94% · Value 100% · Low Risk 94%
  2. [TIER 1] Himalayan Everest Insurance Limi | Score: 0.81 | Q:72% | V:94% | LR:78% | Rev:83% | Gr:89% | Quality 72% · Value 94% · Low Risk 78%
@@ -310,7 +311,7 @@ LEGACY REFERENCE SCREENS (ARCHIVE & TRANSPARENCY)
 <details><summary>Click to expand Legacy Reference Screens (Strategies 1–10)</summary>
 
 
-### 💎 High Quality Stocks
+### High Quality Stocks
 ```
  1. CYC Nepal Laghubitta Bittiya Sanstha Limited  | Rs  1612.00 | ROE:  33.64% | ROA:   4.02% | PE:  14.57
  2. Unilever Nepal                                | Rs 47200.00 | ROE:  31.77% | ROA:  19.91% | PE:  27.57
@@ -322,7 +323,7 @@ LEGACY REFERENCE SCREENS (ARCHIVE & TRANSPARENCY)
 ```
 
 
-### 💰 High Profitability Leaders
+### High Profitability Leaders
 ```
  1. Mountain Energy Nepal Limited                 | Rs   618.00 | Margin:  51.97% | ROE:  18.17%
  2. Upper Hewakhola Hydropower Company Limited    | Rs   604.00 | Margin:  41.54% | ROE:  16.90%
@@ -337,7 +338,7 @@ LEGACY REFERENCE SCREENS (ARCHIVE & TRANSPARENCY)
 ```
 
 
-### 💵 Undervalued High Earners
+### Undervalued High Earners
 ```
  1. Nepal Lube Oil                                | Rs   277.40 | EPS:  58.64 | PE:   4.73
  2. Nepal Bank                                    | Rs   272.30 | EPS:  30.63 | PE:   8.89
@@ -357,7 +358,7 @@ LEGACY REFERENCE SCREENS (ARCHIVE & TRANSPARENCY)
 ```
 
 
-### 🛡️ Defensive Low-Risk
+### Defensive Low-Risk
 ```
  1. Nepal Lube Oil                                | Rs   277.40 | Beta:  -0.02 | YTD:   9.17%
  2. Unilever Nepal                                | Rs 47200.00 | Beta:   0.27 | YTD:   0.43%
@@ -390,13 +391,13 @@ LEGACY REFERENCE SCREENS (ARCHIVE & TRANSPARENCY)
 ```
 
 
-### 🔄 Turnaround Opportunities
+### Turnaround Opportunities
 ```
    No stocks found matching criteria
 ```
 
 
-### 💪 Strong Balance Sheet
+### Strong Balance Sheet
 ```
  1. CYC Nepal Laghubitta Bittiya Sanstha Limited  | Rs  1612.00 | CR: -32.70 | Debt:  86.88%
  2. Unilever Nepal                                | Rs 47200.00 | CR: 236.83 | Debt:  34.02%
@@ -411,7 +412,7 @@ LEGACY REFERENCE SCREENS (ARCHIVE & TRANSPARENCY)
 ```
 
 
-### 📊 Best Risk-Adjusted Returns
+### Best Risk-Adjusted Returns
 ```
  1. Sahas Urja Limited                            | Rs   682.00 | Return:   0.46% | SD:   2.90%
  2. Ankhu Khola Jalvidhyut Company Ltd.           | Rs   343.00 | Return:   1.00% | SD:   7.07%
@@ -431,5 +432,5 @@ LEGACY REFERENCE SCREENS (ARCHIVE & TRANSPARENCY)
 </details>
 
 ====================================================================================================
-✅ Analysis Complete!
+Analysis Complete!
 ====================================================================================================
