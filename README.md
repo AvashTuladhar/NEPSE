@@ -1,7 +1,7 @@
 ====================================================================================================
 ENHANCED NPSTOCKS ANALYSIS REPORT
 ====================================================================================================
-Date: 2026-09-04
+Date: 2026-09-05
 Total Stocks: 263
 ====================================================================================================
 
@@ -33,8 +33,8 @@ Typical Price = HLC/3 session benchmark; negative Close vs Typical indicates int
 21. [TIER 3] CHDC   | CEDB Holdings Limited          | Score: 0.67 | Q:97% | V:59% | LR:67% | Rev:35% | Gr:36% | Quality 97% · Low Risk 67% · Value 59%
 22. [TIER 3] KBL    | Kumari Bank                    | Score: 0.67 | Q:84% | V:98% | LR:41% | Rev:14% | Gr:74% | Quality 84% · Value 98% · Low Risk 41%
 23. [TIER 3] SPIL   | Siddhartha Premier Insurance L | Score: 0.66 | Q:55% | V:74% | LR:46% | Rev:91% | Gr:99% | Quality 55% · Value 74% · Reversal 91%
-24. [TIER 3] SWBBL  | Swabalamban Bikas Bank         | Score: 0.65 | Q:77% | V:38% | LR:75% | Rev:64% | Gr:77% | Quality 77% · Low Risk 75% · Reversal 64%
-25. [TIER 3] BNT    | Bottlers Nepal (Terai)         | Score: 0.65 | Q:73% | V:94% | LR:66% | Rev:17% | Gr:83% | Quality 73% · Value 94% · Low Risk 66%
+24. [TIER 3] BNT    | Bottlers Nepal (Terai)         | Score: 0.65 | Q:73% | V:94% | LR:66% | Rev:17% | Gr:83% | Quality 73% · Value 94% · Low Risk 66%
+25. [TIER 3] SWBBL  | Swabalamban Bikas Bank         | Score: 0.65 | Q:77% | V:38% | LR:75% | Rev:64% | Gr:77% | Quality 77% · Low Risk 75% · Reversal 64%
 26. [TIER 3] MHNL   | Mountain Hydro Nepal Limited   | Score: 0.65 | Q:86% | V:96% | LR: 4% | Rev:64% | Gr:80% | Quality 86% · Value 96% · Reversal 64%
 ====================================================================================================
 
