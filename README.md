@@ -10,36 +10,31 @@ TOP PICKS — GEN-3 MULTI-FACTOR PERCENTILE SCORING
 Pillars: Quality 30% (ROE/Margin) · Value 20% (E/P, B/P) · Low Risk 20% (Inv Beta/Vol) · Reversal 15% (12W Mean Reversion) · Growth 10% · Liquidity 5%
 Typical Price = HLC/3 session benchmark; negative Close vs Typical indicates intraday discount entry.
 ====================================================================================================
- 1. [TIER 1] FOWAD  | Forward Community Microfinance | Score: 0.90 | Q:94% | V:100% | LR:94% | Rev:84% | Gr:94% | Quality 94% · Value 100% · Low Risk 94%
- 2. [TIER 1] HEI    | Himalayan Everest Insurance Li | Score: 0.82 | Q:72% | V:95% | LR:78% | Rev:89% | Gr:89% | Quality 72% · Value 95% · Low Risk 78%
- 3. [TIER 2] JBLB   | Jeevan Bikas Laghubitta Bittya | Score: 0.79 | Q:94% | V:89% | LR:93% | Rev:31% | Gr:71% | Quality 94% · Low Risk 93% · Value 89%
- 4. [TIER 2] SALICO | Sagarmatha Lumbini Insurance C | Score: 0.77 | Q:54% | V:85% | LR:97% | Rev:88% | Gr:82% | Low Risk 97% · Value 85% · Quality 54%
- 5. [TIER 2] DDBL   | Deprosc Laghubitta             | Score: 0.75 | Q:89% | V:97% | LR:98% | Rev:20% | Gr:48% | Quality 89% · Low Risk 98% · Value 97%
- 6. [TIER 2] API    | Api Power                      | Score: 0.75 | Q:89% | V:99% | LR:56% | Rev:49% | Gr:49% | Quality 89% · Value 99% · Low Risk 56%
- 7. [TIER 2] GILB   | Global IME Laghubitta Bittiya  | Score: 0.74 | Q:98% | V:93% | LR:61% | Rev:33% | Gr:75% | Quality 98% · Value 93% · Low Risk 61%
- 8. [TIER 2] CHCL   | Chilime Hydropower             | Score: 0.73 | Q:66% | V:58% | LR:81% | Rev:96% | Gr:61% | Quality 66% · Low Risk 81% · Reversal 96%
- 9. [TIER 2] ILBS   | Infinity Laghubitta Bittiya Sa | Score: 0.73 | Q:93% | V:68% | LR:70% | Rev:56% | Gr:84% | Quality 93% · Low Risk 70% · Value 68%
-10. [TIER 2] MATRI  | Matribhumi Lagubitta Bittiya S | Score: 0.72 | Q:88% | V:86% | LR:28% | Rev:91% | Gr:94% | Quality 88% · Value 86% · Reversal 91%
-11. [TIER 2] VLBS   | Vijaya Laghubitta Bittiya Sans | Score: 0.72 | Q:69% | V:86% | LR:56% | Rev:81% | Gr:100% | Quality 69% · Value 86% · Reversal 81%
-12. [TIER 2] MEN    | Mountain Energy Nepal Limited  | Score: 0.71 | Q:95% | V:81% | LR:79% | Rev: 4% | Gr:54% | Quality 95% · Value 81% · Low Risk 79%
-13. [TIER 2] PRIN   | Prabhu Insurance               | Score: 0.71 | Q:68% | V:79% | LR:85% | Rev:86% | Gr:20% | Quality 68% · Low Risk 85% · Value 79%
-14. [TIER 2] GUFL   | Gurkhas Finance Ltd.           | Score: 0.71 | Q:90% | V:99% | LR:15% | Rev:74% | Gr:69% | Quality 90% · Value 99% · Reversal 74%
-15. [TIER 2] KMCDB  | Kalika Laghubitta Bittiya Sans | Score: 0.71 | Q:88% | V:69% | LR:50% | Rev:61% | Gr:99% | Quality 88% · Value 69% · Low Risk 50%
-16. [TIER 3] NMFBS  | National Microfinance Bittiya  | Score: 0.70 | Q:79% | V:91% | LR:80% | Rev:31% | Gr:56% | Quality 79% · Value 91% · Low Risk 80%
-17. [TIER 3] NADEP  | Nadep Laghubitta Bittiya Sanst | Score: 0.70 | Q:80% | V:92% | LR:49% | Rev:59% | Gr:81% | Quality 80% · Value 92% · Low Risk 49%
-18. [TIER 3] NIL    | Neco Insurance                 | Score: 0.69 | Q:46% | V:60% | LR:96% | Rev:94% | Gr:74% | Low Risk 96% · Reversal 94% · Quality 46%
-19. [TIER 3] CYCL   | CYC Nepal Laghubitta Bittiya S | Score: 0.68 | Q:100% | V:96% | LR:25% | Rev: 1% | Gr:98% | Quality 100% · Value 96% · Growth 98%
-20. [TIER 3] SMPDA  | Sampada Laghubitta Bittiya San | Score: 0.68 | Q:65% | V:84% | LR:59% | Rev:81% | Gr:71% | Quality 65% · Value 84% · Reversal 81%
-21. [TIER 3] CHDC   | CEDB Holdings Limited          | Score: 0.67 | Q:97% | V:59% | LR:67% | Rev:35% | Gr:36% | Quality 97% · Low Risk 67% · Value 59%
-22. [TIER 3] KBL    | Kumari Bank                    | Score: 0.67 | Q:84% | V:98% | LR:41% | Rev:14% | Gr:74% | Quality 84% · Value 98% · Low Risk 41%
-23. [TIER 3] SPIL   | Siddhartha Premier Insurance L | Score: 0.66 | Q:55% | V:74% | LR:46% | Rev:91% | Gr:99% | Quality 55% · Value 74% · Reversal 91%
-24. [TIER 3] BNT    | Bottlers Nepal (Terai)         | Score: 0.65 | Q:73% | V:94% | LR:66% | Rev:17% | Gr:83% | Quality 73% · Value 94% · Low Risk 66%
-25. [TIER 3] SWBBL  | Swabalamban Bikas Bank         | Score: 0.65 | Q:77% | V:38% | LR:75% | Rev:64% | Gr:77% | Quality 77% · Low Risk 75% · Reversal 64%
-26. [TIER 3] MHNL   | Mountain Hydro Nepal Limited   | Score: 0.65 | Q:86% | V:96% | LR: 4% | Rev:64% | Gr:80% | Quality 86% · Value 96% · Reversal 64%
+ 1. [TIER 1] HEI    | Himalayan Everest Insurance Li | Score: 0.90 | Q:96% | V:98% | LR:78% | Rev:89% | Gr:89% | Quality 96% · Value 98% · Low Risk 78%
+ 2. [TIER 1] FOWAD  | Forward Community Microfinance | Score: 0.88 | Q:86% | V:97% | LR:94% | Rev:84% | Gr:94% | Quality 86% · Value 97% · Low Risk 94%
+ 3. [TIER 1] SALICO | Sagarmatha Lumbini Insurance C | Score: 0.85 | Q:76% | V:93% | LR:97% | Rev:88% | Gr:82% | Quality 76% · Low Risk 97% · Value 93%
+ 4. [TIER 1] NIL    | Neco Insurance                 | Score: 0.82 | Q:79% | V:73% | LR:96% | Rev:94% | Gr:74% | Quality 79% · Low Risk 96% · Value 73%
+ 5. [TIER 2] JBLB   | Jeevan Bikas Laghubitta Bittya | Score: 0.78 | Q:91% | V:90% | LR:93% | Rev:31% | Gr:71% | Quality 91% · Low Risk 93% · Value 90%
+ 6. [TIER 2] SPIL   | Siddhartha Premier Insurance L | Score: 0.77 | Q:85% | V:86% | LR:46% | Rev:91% | Gr:99% | Quality 85% · Value 86% · Reversal 91%
+ 7. [TIER 2] GILB   | Global IME Laghubitta Bittiya  | Score: 0.74 | Q:99% | V:92% | LR:61% | Rev:33% | Gr:75% | Quality 99% · Value 92% · Low Risk 61%
+ 8. [TIER 2] API    | Api Power                      | Score: 0.74 | Q:88% | V:99% | LR:56% | Rev:49% | Gr:49% | Quality 88% · Value 99% · Low Risk 56%
+ 9. [TIER 2] DDBL   | Deprosc Laghubitta             | Score: 0.73 | Q:84% | V:96% | LR:98% | Rev:20% | Gr:48% | Quality 84% · Low Risk 98% · Value 96%
+10. [TIER 2] CHCL   | Chilime Hydropower             | Score: 0.73 | Q:66% | V:58% | LR:81% | Rev:96% | Gr:61% | Quality 66% · Low Risk 81% · Reversal 96%
+11. [TIER 2] MEN    | Mountain Energy Nepal Limited  | Score: 0.73 | Q:99% | V:82% | LR:79% | Rev: 4% | Gr:54% | Quality 99% · Value 82% · Low Risk 79%
+12. [TIER 2] KBL    | Kumari Bank                    | Score: 0.72 | Q:98% | V:100% | LR:41% | Rev:14% | Gr:74% | Quality 98% · Value 100% · Low Risk 41%
+13. [TIER 2] GUFL   | Gurkhas Finance Ltd.           | Score: 0.71 | Q:91% | V:99% | LR:15% | Rev:74% | Gr:69% | Quality 91% · Value 99% · Reversal 74%
+14. [TIER 3] PRIN   | Prabhu Insurance               | Score: 0.70 | Q:65% | V:77% | LR:85% | Rev:86% | Gr:20% | Quality 65% · Low Risk 85% · Value 77%
+15. [TIER 3] CYCL   | CYC Nepal Laghubitta Bittiya S | Score: 0.68 | Q:100% | V:95% | LR:25% | Rev: 1% | Gr:98% | Quality 100% · Value 95% · Growth 98%
+16. [TIER 3] JBBL   | Jyoti Bikas Bank               | Score: 0.68 | Q:66% | V:81% | LR:69% | Rev:55% | Gr:64% | Quality 66% · Value 81% · Low Risk 69%
+17. [TIER 3] GBBL   | Garima Bikas Bank              | Score: 0.68 | Q:89% | V:66% | LR:81% | Rev: 4% | Gr:66% | Quality 89% · Low Risk 81% · Value 66%
+18. [TIER 3] NMFBS  | National Microfinance Bittiya  | Score: 0.67 | Q:71% | V:89% | LR:80% | Rev:31% | Gr:56% | Quality 71% · Value 89% · Low Risk 80%
+19. [TIER 3] ILBS   | Infinity Laghubitta Bittiya Sa | Score: 0.67 | Q:77% | V:60% | LR:70% | Rev:56% | Gr:84% | Quality 77% · Low Risk 70% · Value 60%
+20. [TIER 3] CHDC   | CEDB Holdings Limited          | Score: 0.66 | Q:95% | V:56% | LR:67% | Rev:35% | Gr:36% | Quality 95% · Low Risk 67% · Value 56%
+21. [TIER 3] NBL    | Nepal Bank                     | Score: 0.65 | Q:78% | V:96% | LR:53% | Rev: 9% | Gr:66% | Quality 78% · Value 96% · Low Risk 53%
 ====================================================================================================
 
 
-STOCKS TO AVOID (RED FLAGS) (Active Exclusion List)
+STOCKS TO AVOID (RED FLAGS) (Active Exclusion List — 82 Total)
 ----------------------------------------------------------------------------------------------------
  1. JFL    | Janaki Finance                     | Rs   368.90 | ROE: -57.31% | Margin:  2.63% | PE: 272.60 | Debt: 100.14%
  2. NABBC  | Narayani Development Bank          | Rs   732.00 | ROE: -45.49% | Margin: -235.15% | PE: -71.43 | Debt: 80.00%
@@ -56,73 +51,7 @@ STOCKS TO AVOID (RED FLAGS) (Active Exclusion List)
 13. NFS    | Nepal Finance                      | Rs   525.00 | ROE: -7.20% | Margin: -20.63% | PE: -58.68 | Debt: 83.09%
 14. CITY   | City Hotel Limited                 | Rs   340.00 | ROE: -6.96% | Margin: -38.43% | PE: -59.19 | Debt: 48.38%
 15. SANVI  | Sanvi Energy Limited               | Rs   550.00 | ROE: -6.95% | Margin: -54.11% | PE: -71.27 | Debt: 73.95%
-16. NWCL   | Nepal Warehousing Company Limited  | Rs   597.00 | ROE: -6.80% | Margin: -14.16% | PE: -91.34 | Debt:  0.00%
-17. SAGAR  | Sagar Distillery Limited           | Rs  1500.00 | ROE: -6.38% | Margin: -27.51% | PE: -190.15 | Debt: 43.38%
-18. OMPL   | Om Megashree Pharmaceuticals Limit | Rs   883.00 | ROE: -6.32% | Margin: -17.84% | PE: -140.32 | Debt: 61.70%
-19. IHL    | Ingwa Hydropower Limited           | Rs   304.00 | ROE: -5.47% | Margin: -12.30% | PE: -58.05 | Debt: 84.77%
-20. MEL    | Modi Energy Limited                | Rs   200.50 | ROE: -4.67% | Margin: -17.11% | PE: -72.41 | Debt: 76.01%
-21. HDHPC  | Himal Dolakha Hydropower Company L | Rs   198.30 | ROE: -4.53% | Margin: -136.81% | PE: -58.31 | Debt: 19.91%
-22. KKHC   | Khanikhola Hydropower Co. Ltd.     | Rs   264.10 | ROE: -3.97% | Margin: -27.63% | PE: -87.81 | Debt: 46.30%
-23. NRM    | Nepal Republic Media Limited       | Rs   285.20 | ROE: -3.66% | Margin: -27.03% | PE: -89.82 | Debt: 29.82%
-24. GCIL   | Ghorahi Cement Industry Limited    | Rs   379.30 | ROE: -3.64% | Margin: -6.45% | PE: -61.86 | Debt: 61.09%
-25. BEDC   | Bhugol Energy Development Company  | Rs   286.00 | ROE: -3.52% | Margin: -14.78% | PE: -168.62 | Debt: 73.34%
-26. NRN    | NRN Infrastructure and Development | Rs  1391.00 | ROE: -2.49% | Margin: -159.76% | PE: -321.95 | Debt:  8.62%
-27. PPL    | Peoples Power Limited              | Rs   302.90 | ROE: -2.38% | Margin: -24.21% | PE: -132.07 | Debt:  0.14%
-28. RHGCL  | Rapti Hydro And General Constructi | Rs   247.80 | ROE: -2.34% | Margin: -31.46% | PE: -114.95 | Debt: 35.53%
-29. GHL    | Ghalemdi Hydro Limited             | Rs   221.00 | ROE: -1.39% | Margin: -15.98% | PE: -166.68 | Debt: 31.59%
-30. OHL    | Oriental Hotels                    | Rs   620.00 | ROE: -1.22% | Margin: -4.73% | PE: -154.78 | Debt: 36.43%
-31. NHPC   | National Hydro Power               | Rs   254.00 | ROE: -0.96% | Margin: -16.70% | PE: -273.30 | Debt: 38.08%
-32. PRVU   | Prabhu Bank                        | Rs   177.50 | ROE: -0.68% | Margin: -1.10% | PE: -173.22 | Debt: 91.95%
-33. BHPL   | Barahi Hydropower Public Limited   | Rs   438.00 | ROE: -0.58% | Margin: -2.63% | PE: -500.00 | Debt: 78.67%
-34. DHEL   | Daramkhola Hydro Energy Limited    | Rs   571.00 | ROE:  0.00% | Margin: -89.33% | PE: -57.79 | Debt: 63.06%
-35. BANDIPUR | Bandipur Cablecar and Tourism Limi | Rs   644.00 | ROE:  0.00% | Margin: -66.07% | PE: -329.30 | Debt: 33.33%
-36. BUNGAL | Bungal Hydro Limited               | Rs   515.00 | ROE:  0.00% | Margin: -11.28% | PE: -134.12 | Debt: 85.28%
-37. ULHC   | Upper Lohore Khola Hydropower Comp | Rs   300.00 | ROE:  0.00% | Margin: -41.56% | PE: -52.70 | Debt: 72.82%
-38. MABEL  | Mabilung Energy Limited            | Rs   564.00 | ROE:  0.00% | Margin: -5.31% | PE: -485.16 | Debt: 71.94%
-39. JHAPA  | Jhapa Energy Limited               | Rs  1012.00 | ROE:  0.00% | Margin: 14.00% | PE: 262.50 | Debt: 57.15%
-40. HIMSTAR | Him Star Urja Company Limited      | Rs   632.00 | ROE:  0.00% | Margin: -76.56% | PE: -21.27 | Debt: 101.73%
-41. IGI    | IGI Prudential insurance Limited   | Rs   377.00 | ROE:  0.13% | Margin:  0.18% | PE: 500.00 | Debt: 62.28%
-42. SINDU  | Sindhu Bikash Bank                 | Rs   585.50 | ROE:  0.20% | Margin:  0.26% | PE: 500.00 | Debt: 91.20%
-43. CREST  | Crest Micro Life Insurance Limited | Rs  1049.00 | ROE:  0.33% | Margin:  0.52% | PE: 500.00 | Debt: 35.64%
-44. MKJC   | Mailung Khola Jal Vidhyut Company  | Rs   290.00 | ROE:  0.44% | Margin:  1.78% | PE: 500.00 | Debt: 55.94%
-45. NICA   | NIC Asia Bank                      | Rs   309.50 | ROE:  0.65% | Margin:  0.80% | PE: 254.10 | Debt: 93.47%
-46. NGPL   | Ngadi Group Power Ltd.             | Rs   388.00 | ROE:  0.85% | Margin: 35.60% | PE: 306.17 | Debt: 18.86%
-47. TTL    | Trade Tower Limited                | Rs   680.00 | ROE:  0.86% | Margin:  7.27% | PE: 500.00 | Debt:  0.00%
-48. HATHY  | Hathway Investment Nepal Limited   | Rs   609.00 | ROE:  0.88% | Margin: 13.32% | PE: 500.00 | Debt: 19.21%
-49. USHL   | Upper Syange Hydropower Limited    | Rs   515.00 | ROE:  0.91% | Margin:  2.91% | PE: 500.00 | Debt: 71.11%
-50. UPCL   | Universal Power Company Ltd        | Rs   344.00 | ROE:  1.04% | Margin: 11.67% | PE: 305.66 | Debt: 38.46%
-51. SPHL   | Sayapatri Hydropower Limited       | Rs   518.00 | ROE:  1.06% | Margin:  5.98% | PE: 500.00 | Debt: 51.18%
-52. SAIL   | Shreenagar Agritech Industries Lim | Rs   994.00 | ROE:  1.29% | Margin:  0.97% | PE: 500.00 | Debt: 42.21%
-53. DORDI  | Dordi Khola Jal Bidyut Company Lim | Rs   236.70 | ROE:  1.35% | Margin: 10.92% | PE: 166.51 | Debt: 53.76%
-54. DOLTI  | Dolti Power Company Limited        | Rs   282.00 | ROE:  1.49% | Margin:  4.66% | PE: 325.24 | Debt: 77.95%
-55. LEC    | Liberty Energy Company Limited     | Rs   210.00 | ROE:  1.60% | Margin: 14.46% | PE: 187.20 | Debt: 73.56%
-56. RIDI   | Ridi Power Company Limited         | Rs   344.00 | ROE:  1.99% | Margin: 12.85% | PE: 170.55 | Debt: 40.61%
-57. AKPL   | Arun Kabeli Power Ltd.             | Rs   245.00 | ROE:  2.01% | Margin: 12.99% | PE: 119.79 | Debt: 49.70%
-58. GMLI   | Guardian Micro Life Insurance Limi | Rs   944.00 | ROE:  2.06% | Margin:  2.87% | PE: 440.61 | Debt: 39.11%
-59. GLH    | GreenLife Hydropower Limited       | Rs   245.00 | ROE:  2.10% | Margin:  0.00% | PE: 105.24 | Debt: 95.41%
-60. BARUN  | Barun Hydropower                   | Rs   307.00 | ROE:  2.16% | Margin: 21.39% | PE: 147.48 | Debt: 19.15%
-61. NLG    | Nlg Insurance                      | Rs   494.00 | ROE:  2.23% | Margin:  3.15% | PE: 227.96 | Debt: 51.01%
-62. PHCL   | Peoples Hydropower Company Limited | Rs   302.80 | ROE:  2.29% | Margin:  6.18% | PE: 135.68 | Debt: 72.05%
-63. CHL    | Chhyangdi Hydropower Ltd.          | Rs   250.00 | ROE:  2.35% | Margin:  7.57% | PE: 145.29 | Debt: 52.46%
-64. ENL    | Emerging Nepal Limited             | Rs   813.60 | ROE:  2.46% | Margin: 66.46% | PE: 301.08 | Debt:  2.17%
-65. MKHC   | Maya Khola Hydropower Company Limi | Rs   269.60 | ROE:  2.55% | Margin:  4.18% | PE: 170.09 | Debt: 85.99%
-66. UAIL   | United Ajod Insurance Limited      | Rs   363.30 | ROE:  2.68% | Margin:  3.50% | PE: 133.00 | Debt: 52.03%
-67. SJCL   | Sanjen Jalavidhyut Company Limited | Rs   236.20 | ROE:  2.69% | Margin:  4.99% | PE: 105.17 | Debt: 82.60%
-68. MEHL   | Manakamana Engineering Hydropower  | Rs   227.00 | ROE:  2.70% | Margin:  9.53% | PE: 130.87 | Debt: 61.17%
-69. BNHC   | Buddha Bhumi Nepal Hydropower Comp | Rs   259.50 | ROE:  2.84% | Margin:  6.46% | PE: 174.04 | Debt: 50.74%
-70. RFPL   | River Falls Power Limited          | Rs   326.00 | ROE:  2.94% | Margin: 14.36% | PE: 120.28 | Debt: 41.73%
-71. PURE   | Pure Energy Limited                | Rs   662.00 | ROE:  3.10% | Margin: 10.22% | PE: 209.31 | Debt: 67.85%
-72. SIFC   | Shree Investment Finance           | Rs   478.00 | ROE:  3.31% | Margin:  6.55% | PE: 103.43 | Debt: 86.62%
-73. AKJCL  | Ankhu Khola Jalvidhyut Company Ltd | Rs   340.30 | ROE:  3.45% | Margin: 28.35% | PE: 107.02 | Debt: 27.18%
-74. SMJC   | Sagarmatha Jalabidhyut Company Lim | Rs   405.00 | ROE:  3.50% | Margin: 19.86% | PE: 107.04 | Debt: 60.32%
-75. SPC    | Samling Power Company Limited      | Rs   397.90 | ROE:  3.66% | Margin:  8.44% | PE: 100.23 | Debt: 83.21%
-76. NYADI  | Nyadi Hydropower Limited           | Rs   345.00 | ROE:  3.81% | Margin:  6.20% | PE: 140.74 | Debt: 84.79%
-77. SICL   | Shikhar Insurance                  | Rs   522.60 | ROE:  4.18% | Margin:  4.40% | PE: 124.60 | Debt: 60.98%
-78. NLIC   | Nepal Life Insurance               | Rs   696.00 | ROE:  4.53% | Margin:  0.63% | PE: 141.76 | Debt: 95.91%
-79. LICN   | Life Insurance Nepal               | Rs   754.00 | ROE:  4.91% | Margin:  1.21% | PE: 102.20 | Debt: 93.86%
-80. CIT    | Citizen Investment Trust           | Rs  1719.90 | ROE:  6.06% | Margin: 60.01% | PE: 86.69 | Debt: 94.73%
-81. MCHL   | Menchhiyam Hydropower Limited      | Rs   253.00 | ROE:  6.58% | Margin: -4.20% | PE: -245.46 | Debt: 142.45%
-82. DHPL   | Dibyashwori Hydropower Ltd.        | Rs   264.00 | ROE: 88.27% | Margin: 13.94% | PE: 47.88 | Debt: 122.94%
+   ... and 67 more companies excluded by risk filters (see index.html for full list)
 
 
 ====================================================================================================
@@ -398,7 +327,12 @@ LEGACY REFERENCE SCREENS (ARCHIVE & TRANSPARENCY)
 
 ### Turnaround Opportunities
 ```
-   No stocks found matching criteria
+ 1. SMHL   | Super Madi Hydropower Limited            | Rs   527.00 | 1Y: -36.30% | 12W:   7.09%
+ 2. SAMAJ  | Samaj Laghubittya Bittiya Sanstha Limite | Rs  1875.80 | 1Y: -31.51% | 12W:   0.00%
+ 3. SMB    | Support Microfinance Bittiya Sanstha Ltd | Rs  1718.10 | 1Y: -15.39% | 12W:  -0.40%
+ 4. ULBSL  | Upakar Laghubitta Bittiya Sanstha Limite | Rs  2926.00 | 1Y: -18.23% | 12W:  -0.48%
+ 5. MKHL   | Mai Khola Hydropower Limited             | Rs   494.00 | 1Y: -35.44% | 12W:  -2.08%
+ 6. CGH    | Chandragiri Hills Limited                | Rs   767.00 | 1Y: -20.34% | 12W:  -2.29%
 ```
 
 
