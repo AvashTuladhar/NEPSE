@@ -281,8 +281,9 @@
     }
     #tab-avoid .table-box,
     #tab-chosen .table-box {
-      height: 90vh;
-      max-height: 90vh;
+      max-height: calc(100dvh - 250px);
+      max-height: calc(100vh - 250px);
+      height: auto;
     }
     .table-box::-webkit-scrollbar { width: 7px; height: 7px; }
     .table-box::-webkit-scrollbar-track { background: #131722; border-radius: 3px; }
@@ -488,4 +489,10 @@
       .panel { padding: 14px 12px; margin-bottom: 14px; }
       .stat-row { grid-template-columns: repeat(2, 1fr); gap: 8px; }
       .stat-num { font-size: 16px; }
+      #tab-avoid .table-box,
+      #tab-chosen .table-box {
+        max-height: calc(100dvh - 280px);
+        max-height: calc(100vh - 280px);
+        min-height: 260px;
+      }
     }
