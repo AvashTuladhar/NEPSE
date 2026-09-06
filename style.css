@@ -1002,3 +1002,225 @@ details.legacy-accordion[open] summary.legacy-summary {
         justify-content: space-between;
     }
 }
+
+/* ==========================================================================
+   Interactive Alpine.js Unified Single-Page Application Styles
+   ========================================================================== */
+
+.aurora-header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    background: rgba(15, 23, 42, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(12px);
+}
+
+.aurora-tabs-container {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding: 0.35rem;
+    background: rgba(11, 14, 20, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.aurora-tab-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.65rem 1.15rem;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.aurora-tab-btn:hover {
+    color: var(--text-main);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.aurora-tab-btn.active {
+    color: #fff;
+    background: rgba(41, 98, 255, 0.2);
+    border-color: rgba(41, 98, 255, 0.5);
+    box-shadow: 0 0 12px rgba(41, 98, 255, 0.25);
+}
+
+.aurora-tab-badge {
+    padding: 2px 7px;
+    border-radius: 10px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-main);
+}
+
+.aurora-tab-btn.active .aurora-tab-badge {
+    background: rgba(41, 98, 255, 0.4);
+    color: #fff;
+}
+
+/* Control Bar: Search, Sector, Flow Filters */
+.aurora-controls-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.85rem 1rem;
+    background: rgba(15, 23, 42, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    margin-bottom: 1.25rem;
+}
+
+.aurora-search-input {
+    flex: 1 1 240px;
+    background: rgba(11, 14, 20, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+    padding: 0.55rem 0.85rem;
+    color: #fff;
+    font-size: 0.85rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.aurora-search-input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(41, 98, 255, 0.2);
+}
+
+.aurora-select {
+    background: rgba(11, 14, 20, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+    padding: 0.55rem 0.85rem;
+    color: var(--text-main);
+    font-size: 0.85rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.aurora-pill-group {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+}
+
+.aurora-pill {
+    padding: 0.35rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.aurora-pill:hover {
+    color: var(--text-main);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.aurora-pill.active {
+    color: #fff;
+    background: rgba(41, 98, 255, 0.25);
+    border-color: rgba(41, 98, 255, 0.5);
+}
+
+/* Sortable Headers */
+th.sortable {
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.15s ease;
+}
+
+th.sortable:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: #fff;
+}
+
+.sort-icon {
+    display: inline-block;
+    margin-left: 4px;
+    font-size: 0.7rem;
+    opacity: 0.6;
+}
+
+/* Expandable Rows & Detail Drawer */
+tr.clickable-row {
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+tr.clickable-row:hover {
+    background: rgba(255, 255, 255, 0.035) !important;
+}
+
+tr.expanded-row-parent {
+    background: rgba(41, 98, 255, 0.08) !important;
+}
+
+.drawer-content-box {
+    padding: 1.25rem;
+    background: rgba(11, 14, 20, 0.95);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 0 8px 8px;
+    margin: 0.25rem 0;
+}
+
+.drawer-factor-bar {
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 4px;
+}
+
+.drawer-factor-fill {
+    height: 100%;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #26a69a, #2962ff);
+}
+
+/* 1-Click Copy Ticket Button */
+.tms-copy-pill {
+    padding: 4px 10px;
+    background: rgba(41, 98, 255, 0.18);
+    border: 1px solid rgba(41, 98, 255, 0.4);
+    color: #5b8cff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.tms-copy-pill:hover {
+    background: rgba(41, 98, 255, 0.35);
+    color: #fff;
+}
+
+.tms-copy-pill.copied {
+    background: rgba(38, 166, 154, 0.3) !important;
+    border-color: rgba(38, 166, 154, 0.7) !important;
+    color: #26a69a !important;
+}
+
