@@ -10,13 +10,13 @@ TOP PICKS — GEN-3 MULTI-FACTOR PERCENTILE SCORING
 Pillars: Quality 30% (ROE/Margin) · Value 20% (E/P, B/P) · Low Risk 20% (Inv Beta/Vol) · Reversal 15% (12W Mean Reversion) · Growth 10% · Liquidity 5%
 Typical Price = HLC/3 session benchmark; negative Close vs Typical indicates intraday discount entry.
 ====================================================================================================
- 1. [TIER 1] HEI    | Himalayan Everest Insurance Li | Score: 0.90 | Q:96% | V:98% | LR:78% | Rev:89% | Gr:89% | Quality 96% · Value 98% · Low Risk 78%
+ 1. [TIER 1] HEI    | Himalayan Everest Insurance Li | Score: 0.89 | Q:96% | V:98% | LR:78% | Rev:89% | Gr:89% | Quality 96% · Value 98% · Low Risk 78%
  2. [TIER 1] FOWAD  | Forward Community Microfinance | Score: 0.88 | Q:86% | V:97% | LR:94% | Rev:84% | Gr:94% | Quality 86% · Value 97% · Low Risk 94%
  3. [TIER 1] SALICO | Sagarmatha Lumbini Insurance C | Score: 0.85 | Q:76% | V:93% | LR:97% | Rev:88% | Gr:82% | Quality 76% · Low Risk 97% · Value 93%
  4. [TIER 1] NIL    | Neco Insurance                 | Score: 0.82 | Q:79% | V:73% | LR:96% | Rev:94% | Gr:74% | Quality 79% · Low Risk 96% · Value 73%
  5. [TIER 2] JBLB   | Jeevan Bikas Laghubitta Bittya | Score: 0.78 | Q:91% | V:90% | LR:93% | Rev:31% | Gr:71% | Quality 91% · Low Risk 93% · Value 90%
  6. [TIER 2] SPIL   | Siddhartha Premier Insurance L | Score: 0.77 | Q:85% | V:86% | LR:46% | Rev:91% | Gr:99% | Quality 85% · Value 86% · Reversal 91%
- 7. [TIER 2] GILB   | Global IME Laghubitta Bittiya  | Score: 0.74 | Q:99% | V:92% | LR:61% | Rev:33% | Gr:75% | Quality 99% · Value 92% · Low Risk 61%
+ 7. [TIER 2] GILB   | Global IME Laghubitta Bittiya  | Score: 0.75 | Q:99% | V:92% | LR:61% | Rev:33% | Gr:75% | Quality 99% · Value 92% · Low Risk 61%
  8. [TIER 2] API    | Api Power                      | Score: 0.74 | Q:88% | V:99% | LR:56% | Rev:49% | Gr:49% | Quality 88% · Value 99% · Low Risk 56%
  9. [TIER 2] DDBL   | Deprosc Laghubitta             | Score: 0.73 | Q:84% | V:96% | LR:98% | Rev:20% | Gr:48% | Quality 84% · Low Risk 98% · Value 96%
 10. [TIER 2] CHCL   | Chilime Hydropower             | Score: 0.73 | Q:66% | V:58% | LR:81% | Rev:96% | Gr:61% | Quality 66% · Low Risk 81% · Reversal 96%
@@ -242,35 +242,21 @@ LEGACY REFERENCE SCREENS (ARCHIVE & TRANSPARENCY)
 <details><summary>Click to expand Legacy Reference Screens (Strategies 1–10)</summary>
 
 
-### High Quality Stocks
+### Strong Balance Sheet
 ```
- 1. CYCL   | CYC Nepal Laghubitta Bittiya Sanstha Lim | Rs  1599.90 | ROE:  33.64% | ROA:   4.02% | PE:  14.46
- 2. HDL    | Himalayan Distillery                     | Rs  1170.30 | ROE:  26.27% | ROA:  22.94% | PE:  35.78
- 3. SHL    | Soaltee Hotel                            | Rs   502.00 | ROE:  25.21% | ROA:  20.22% | PE:  77.51
- 4. ALBSL  | Asha Laghubitta Bittiya Sanstha Ltd      | Rs  1190.00 | ROE:  20.01% | ROA:   2.24% | PE:  36.47
- 5. MEN    | Mountain Energy Nepal Limited            | Rs   627.10 | ROE:  18.17% | ROA:  11.62% | PE:  24.57
- 6. GBBL   | Garima Bikas Bank                        | Rs   436.30 | ROE:  17.18% | ROA:   1.58% | PE:  15.56
- 7. EBL    | Everest Bank                             | Rs   716.10 | ROE:  15.26% | ROA:   1.35% | PE:  19.38
- 8. CBBL   | Chhimek Laghubitta Bikas Bank            | Rs   932.00 | ROE:  15.06% | ROA:   2.36% | PE:  25.95
-```
-
-
-### High Profitability Leaders
-```
- 1. MEN    | Mountain Energy Nepal Limited            | Rs   627.10 | Margin:  51.97% | ROE:  18.17%
- 2. CYCL   | CYC Nepal Laghubitta Bittiya Sanstha Lim | Rs  1599.90 | Margin:  33.91% | ROE:  33.64%
- 3. SMHL   | Super Madi Hydropower Limited            | Rs   527.00 | Margin:  32.02% | ROE:  16.72%
- 4. TAMOR  | Sanima Middle Tamor Hydropower Limited   | Rs   503.00 | Margin:  30.83% | ROE:  15.92%
- 5. SHL    | Soaltee Hotel                            | Rs   502.00 | Margin:  29.08% | ROE:  25.21%
- 6. HDL    | Himalayan Distillery                     | Rs  1170.30 | Margin:  27.23% | ROE:  26.27%
- 7. EBL    | Everest Bank                             | Rs   716.10 | Margin:  25.22% | ROE:  15.26%
- 8. GBBL   | Garima Bikas Bank                        | Rs   436.30 | Margin:  22.50% | ROE:  17.18%
- 9. CBBL   | Chhimek Laghubitta Bikas Bank            | Rs   932.00 | Margin:  19.34% | ROE:  15.06%
-10. ALBSL  | Asha Laghubitta Bittiya Sanstha Ltd      | Rs  1190.00 | Margin:  17.04% | ROE:  20.01%
+ 1. CYCL   | CYC Nepal Laghubitta Bittiya Sanstha Lim | Rs  1599.90 | CR: -32.70 | Debt:  86.88%
+ 2. HDL    | Himalayan Distillery                     | Rs  1170.30 | CR: 937.92 | Debt:   9.65%
+ 3. SHL    | Soaltee Hotel                            | Rs   502.00 | CR: 180.01 | Debt:  16.03%
+ 4. MEN    | Mountain Energy Nepal Limited            | Rs   627.10 | CR: 371.34 | Debt:  41.18%
+ 5. SAHAS  | Sahas Urja Limited                       | Rs   686.90 | CR: 1366.02 | Debt:  59.58%
+ 6. GBBL   | Garima Bikas Bank                        | Rs   436.30 | CR:   0.00 | Debt:  90.56%
+ 7. SMHL   | Super Madi Hydropower Limited            | Rs   527.00 | CR: 651.24 | Debt:  72.93%
+ 8. TAMOR  | Sanima Middle Tamor Hydropower Limited   | Rs   503.00 | CR: 125.66 | Debt:  76.59%
+ 9. EBL    | Everest Bank                             | Rs   716.10 | CR:   0.00 | Debt:  90.83%
 ```
 
 
-### Undervalued High Earners
+### Undervalued Cash Generators
 ```
  1. NLO    | Nepal Lube Oil                           | Rs   277.40 | EPS:  58.64 | PE:   4.73
  2. NBL    | Nepal Bank                               | Rs   275.90 | EPS:  30.63 | PE:   9.01
@@ -293,80 +279,18 @@ LEGACY REFERENCE SCREENS (ARCHIVE & TRANSPARENCY)
 ```
 
 
-### Defensive Low-Risk
+### High Margin Leaders
 ```
- 1. NLO    | Nepal Lube Oil                           | Rs   277.40 | Beta:  -0.02 | YTD:   9.17%
- 2. UNL    | Unilever Nepal                           | Rs 46250.00 | Beta:   0.27 | YTD:  -1.60%
- 3. CYCL   | CYC Nepal Laghubitta Bittiya Sanstha Lim | Rs  1599.90 | Beta:   0.55 | YTD:  -2.39%
- 4. SCB    | Standard Chartered Bank                  | Rs   645.50 | Beta:   0.67 | YTD:   2.14%
- 5. MANDU  | Mandu Hydropower Limited                 | Rs   677.00 | Beta:   0.73 | YTD:  -4.69%
- 6. EBL    | Everest Bank                             | Rs   716.10 | Beta:   0.74 | YTD:   9.83%
- 7. BNT    | Bottlers Nepal (Terai)                   | Rs 11650.00 | Beta:   0.74 | YTD:  -1.27%
- 8. NABIL  | Nabil Bank                               | Rs   539.00 | Beta:   0.75 | YTD:   9.55%
- 9. GBIME  | Global Ime Bank                          | Rs   250.00 | Beta:   0.77 | YTD:  10.13%
-10. SBI    | Nepal Sbi Bank                           | Rs   397.90 | Beta:   0.83 | YTD:  -1.75%
-11. PCBL   | Prime Commercial Bank                    | Rs   238.00 | Beta:   0.85 | YTD:  -1.58%
-12. NMB    | NMB Bank                                 | Rs   238.50 | Beta:   0.87 | YTD:  -0.13%
-13. CBBL   | Chhimek Laghubitta Bikas Bank            | Rs   932.00 | Beta:   0.88 | YTD:   0.00%
-14. SMB    | Support Microfinance Bittiya Sanstha Ltd | Rs  1718.10 | Beta:   0.89 | YTD:  -1.54%
-15. SANIMA | Sanima Bank                              | Rs   360.00 | Beta:   0.91 | YTD:  13.53%
-16. SBL    | Siddhartha Bank                          | Rs   412.00 | Beta:   0.91 | YTD:   9.34%
-17. JBLB   | Jeevan Bikas Laghubitta Bittya Sanstha L | Rs  1248.10 | Beta:   0.93 | YTD:  -3.17%
-18. NBL    | Nepal Bank                               | Rs   275.90 | Beta:   0.93 | YTD:  15.92%
-19. MEN    | Mountain Energy Nepal Limited            | Rs   627.10 | Beta:   0.94 | YTD:  10.99%
-20. MBL    | Machhapuchhre Bank                       | Rs   246.00 | Beta:   0.95 | YTD:  10.81%
-21. TAMOR  | Sanima Middle Tamor Hydropower Limited   | Rs   503.00 | Beta:   0.95 | YTD:  13.29%
-22. KBL    | Kumari Bank                              | Rs   213.00 | Beta:   0.96 | YTD:  18.73%
-23. CZBIL  | Citizen Bank International               | Rs   198.80 | Beta:   0.98 | YTD:   0.00%
-24. NMFBS  | National Microfinance Bittiya Sanstha Lt | Rs  1112.00 | Beta:   0.98 | YTD:  -2.96%
-25. SHL    | Soaltee Hotel                            | Rs   502.00 | Beta:   0.99 | YTD:   2.89%
-26. ACLBSL | Aarambha Chautari Laghubitta Bittiya San | Rs   894.90 | Beta:   0.99 | YTD:  -3.25%
-27. SAMAJ  | Samaj Laghubittya Bittiya Sanstha Limite | Rs  1875.80 | Beta:  -1.10 | YTD:   0.00%
-```
-
-
-### Turnaround Opportunities
-```
- 1. SMHL   | Super Madi Hydropower Limited            | Rs   527.00 | 1Y: -36.30% | 12W:   7.09%
- 2. SAMAJ  | Samaj Laghubittya Bittiya Sanstha Limite | Rs  1875.80 | 1Y: -31.51% | 12W:   0.00%
- 3. SMB    | Support Microfinance Bittiya Sanstha Ltd | Rs  1718.10 | 1Y: -15.39% | 12W:  -0.40%
- 4. ULBSL  | Upakar Laghubitta Bittiya Sanstha Limite | Rs  2926.00 | 1Y: -18.23% | 12W:  -0.48%
- 5. MKHL   | Mai Khola Hydropower Limited             | Rs   494.00 | 1Y: -35.44% | 12W:  -2.08%
- 6. CGH    | Chandragiri Hills Limited                | Rs   767.00 | 1Y: -20.34% | 12W:  -2.29%
-```
-
-
-### Strong Balance Sheet
-```
- 1. CYCL   | CYC Nepal Laghubitta Bittiya Sanstha Lim | Rs  1599.90 | CR: -32.70 | Debt:  86.88%
- 2. HDL    | Himalayan Distillery                     | Rs  1170.30 | CR: 937.92 | Debt:   9.65%
- 3. SHL    | Soaltee Hotel                            | Rs   502.00 | CR: 180.01 | Debt:  16.03%
- 4. MEN    | Mountain Energy Nepal Limited            | Rs   627.10 | CR: 371.34 | Debt:  41.18%
- 5. SAHAS  | Sahas Urja Limited                       | Rs   686.90 | CR: 1366.02 | Debt:  59.58%
- 6. GBBL   | Garima Bikas Bank                        | Rs   436.30 | CR:   0.00 | Debt:  90.56%
- 7. SMHL   | Super Madi Hydropower Limited            | Rs   527.00 | CR: 651.24 | Debt:  72.93%
- 8. TAMOR  | Sanima Middle Tamor Hydropower Limited   | Rs   503.00 | CR: 125.66 | Debt:  76.59%
- 9. EBL    | Everest Bank                             | Rs   716.10 | CR:   0.00 | Debt:  90.83%
-```
-
-
-### Best Risk-Adjusted Returns
-```
- 1. SAHAS  | Sahas Urja Limited                       | Rs   686.90 | Return:   0.51% | SD:   2.88%
- 2. AKJCL  | Ankhu Khola Jalvidhyut Company Ltd.      | Rs   340.30 | Return:   1.05% | SD:   7.04%
- 3. MEN    | Mountain Energy Nepal Limited            | Rs   627.10 | Return:   0.38% | SD:   2.61%
- 4. RIDI   | Ridi Power Company Limited               | Rs   344.00 | Return:   0.77% | SD:   5.74%
- 5. SBL    | Siddhartha Bank                          | Rs   412.00 | Return:   0.29% | SD:   2.31%
- 6. ALBSL  | Asha Laghubitta Bittiya Sanstha Ltd      | Rs  1190.00 | Return:   0.44% | SD:   3.81%
- 7. HIMSTAR | Him Star Urja Company Limited            | Rs   632.00 | Return:   1.10% | SD:   9.53%
- 8. API    | Api Power                                | Rs   326.10 | Return:   0.32% | SD:   3.36%
- 9. DHEL   | Daramkhola Hydro Energy Limited          | Rs   571.00 | Return:   0.59% | SD:   6.36%
-10. SHIVM  | Shivam Cements Ltd                       | Rs   661.00 | Return:   0.29% | SD:   3.33%
-11. MABEL  | Mabilung Energy Limited                  | Rs   564.00 | Return:   0.67% | SD:   8.04%
-12. UHEWA  | Upper Hewakhola Hydropower Company Limit | Rs   583.60 | Return:   0.33% | SD:   4.23%
-13. CFCL   | Central Finance                          | Rs   598.40 | Return:   0.37% | SD:   4.83%
-14. NHPC   | National Hydro Power                     | Rs   254.00 | Return:   0.42% | SD:   6.63%
-15. MFIL   | Manjushree Financial Institution         | Rs   730.00 | Return:   0.21% | SD:   3.71%
+ 1. MEN    | Mountain Energy Nepal Limited            | Rs   627.10 | Margin:  51.97% | ROE:  18.17%
+ 2. CYCL   | CYC Nepal Laghubitta Bittiya Sanstha Lim | Rs  1599.90 | Margin:  33.91% | ROE:  33.64%
+ 3. SMHL   | Super Madi Hydropower Limited            | Rs   527.00 | Margin:  32.02% | ROE:  16.72%
+ 4. TAMOR  | Sanima Middle Tamor Hydropower Limited   | Rs   503.00 | Margin:  30.83% | ROE:  15.92%
+ 5. SHL    | Soaltee Hotel                            | Rs   502.00 | Margin:  29.08% | ROE:  25.21%
+ 6. HDL    | Himalayan Distillery                     | Rs  1170.30 | Margin:  27.23% | ROE:  26.27%
+ 7. EBL    | Everest Bank                             | Rs   716.10 | Margin:  25.22% | ROE:  15.26%
+ 8. GBBL   | Garima Bikas Bank                        | Rs   436.30 | Margin:  22.50% | ROE:  17.18%
+ 9. CBBL   | Chhimek Laghubitta Bikas Bank            | Rs   932.00 | Margin:  19.34% | ROE:  15.06%
+10. ALBSL  | Asha Laghubitta Bittiya Sanstha Ltd      | Rs  1190.00 | Margin:  17.04% | ROE:  20.01%
 ```
 
 </details>
