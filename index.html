@@ -18,7 +18,7 @@
         <span class="badge-terminal">Aurora 4.0 Quantitative Trading Terminal</span>
       </div>
       <div class="header-pills">
-        <span class="pill"><span class="dot-red"></span> REGIME: <strong>BEAR (Index < 20d VWAP)</strong></span>
+        <span class="pill"><span class="dot-red"></span> REGIME: <strong>BEAR (Index < 10d VWAP)</strong></span>
         <span class="pill"><span class="dot-green"></span> MANDATE: <strong>100% CASH PRESERVED</strong></span>
         <span class="pill">DATE: <strong>2026-09-07</strong></span>
       </div>
@@ -28,7 +28,7 @@
     <nav class="tab-bar">
       <button type="button" class="tab-btn" :class="{ 'active': activeTab === 'tab-regime' }" @click="switchTab('tab-regime')">
         <span>1. Market Regime &amp; VWAP</span>
-        <span class="tab-count">-2.10σ</span>
+        <span class="tab-count">-1.36σ</span>
       </button>
       <button type="button" class="tab-btn" :class="{ 'active': activeTab === 'tab-avoid' }" @click="switchTab('tab-avoid')">
         <span>2. Stocks to Avoid</span>
@@ -49,7 +49,7 @@
       <div class="panel">
         <div class="panel-header">
           <div class="panel-title">
-            <span>NEPSE Index vs 20-Day Turnover VWAP Diagnostic</span>
+            <span>NEPSE Index vs 10-Day Turnover VWAP Diagnostic</span>
             <span class="badge badge-red">BEAR Regime Active</span>
             <span class="badge badge-green">100% Cash Mandate</span>
           </div>
@@ -63,26 +63,26 @@
           <div class="stat-card">
             <div class="stat-label">NEPSE Latest Close</div>
             <div class="stat-num" style="color:var(--loss);">2,542.77</div>
-            <div class="stat-sub" style="color:var(--loss);">-102.13 pts (-3.86% session)</div>
+            <div class="stat-sub" style="color:var(--loss);">-44.43 pts (-1.72% session)</div>
           </div>
           <div class="stat-card">
-            <div class="stat-label">20-Day Index VWAP</div>
-            <div class="stat-num" style="color:var(--accent);">2,644.90</div>
+            <div class="stat-label">10-Day Index VWAP</div>
+            <div class="stat-num" style="color:var(--accent);">2,587.20</div>
             <div class="stat-sub" style="color:var(--text-muted);">True Capital Accumulation Anchor</div>
           </div>
           <div class="stat-card">
             <div class="stat-label">Difference vs VWAP</div>
-            <div class="stat-num" style="color:var(--loss);">-102.13 pts</div>
-            <div class="stat-sub" style="color:var(--loss);">-3.86% vs volume support</div>
+            <div class="stat-num" style="color:var(--loss);">-44.43 pts</div>
+            <div class="stat-sub" style="color:var(--loss);">-1.72% vs volume support</div>
           </div>
           <div class="stat-card">
             <div class="stat-label">Standard Deviation (Z)</div>
-            <div class="stat-num" style="color:var(--loss);">-2.10σ</div>
-            <div class="stat-sub" style="color:var(--text-muted);">1σ = 48.52 pts</div>
+            <div class="stat-num" style="color:var(--loss);">-1.36σ</div>
+            <div class="stat-sub" style="color:var(--text-muted);">1σ = 32.69 pts</div>
           </div>
           <div class="stat-card">
             <div class="stat-label">VWAP Slope Trajectory</div>
-            <div class="stat-num" style="color:var(--warning);">-0.14%/day</div>
+            <div class="stat-num" style="color:var(--warning);">-1.23%/day</div>
             <div class="stat-sub" style="color:var(--warning);">Distribution slope</div>
           </div>
           <div class="stat-card">
@@ -96,7 +96,7 @@
         <div class="spectrum-track">
           <div class="spectrum-legend-top">
             <span style="color:var(--loss);">Bear Regime: Distribution / Capital Exit</span>
-            <span style="color:var(--accent); font-weight:700;">20-Day VWAP Equilibrium (2,644.90)</span>
+            <span style="color:var(--accent); font-weight:700;">10-Day VWAP Equilibrium (2,587.20)</span>
             <span style="color:var(--profit);">Bull Regime: Smart Money Markup</span>
           </div>
 
@@ -104,17 +104,17 @@
             <div class="spec-bear"></div>
             <div class="spec-bull"></div>
             <div class="spec-vwap-line"></div>
-            <div class="spec-nepse-pin" style="left: 15.00%;" title="NEPSE: 2,542.77 (-2.10σ)"></div>
+            <div class="spec-nepse-pin" style="left: 27.33%;" title="NEPSE: 2,542.77 (-1.36σ)"></div>
           </div>
 
           <div class="spectrum-nodes">
-            <div class="spec-col"><span class="node-p">2,499.3</span><span class="node-l">-3.0σ</span></div>
-            <div class="spec-col"><span class="node-p">2,547.9</span><span class="node-l">-2.0σ Floor</span></div>
-            <div class="spec-col"><span class="node-p">2,596.4</span><span class="node-l">-1.0σ</span></div>
-            <div class="spec-col"><span class="node-p" style="color:var(--accent);">2,644.9</span><span class="node-l" style="color:var(--accent);">VWAP (0.0σ)</span></div>
-            <div class="spec-col"><span class="node-p">2,693.4</span><span class="node-l">+1.0σ</span></div>
-            <div class="spec-col"><span class="node-p">2,741.9</span><span class="node-l">+2.0σ Ceiling</span></div>
-            <div class="spec-col"><span class="node-p">2,790.5</span><span class="node-l">+3.0σ Blowoff</span></div>
+            <div class="spec-col"><span class="node-p">2,489.1</span><span class="node-l">-3.0σ</span></div>
+            <div class="spec-col"><span class="node-p">2,521.8</span><span class="node-l">-2.0σ Floor</span></div>
+            <div class="spec-col"><span class="node-p">2,554.5</span><span class="node-l">-1.0σ</span></div>
+            <div class="spec-col"><span class="node-p" style="color:var(--accent);">2,587.2</span><span class="node-l" style="color:var(--accent);">VWAP (0.0σ)</span></div>
+            <div class="spec-col"><span class="node-p">2,619.9</span><span class="node-l">+1.0σ</span></div>
+            <div class="spec-col"><span class="node-p">2,652.6</span><span class="node-l">+2.0σ Ceiling</span></div>
+            <div class="spec-col"><span class="node-p">2,685.3</span><span class="node-l">+3.0σ Blowoff</span></div>
           </div>
         </div>
 
@@ -164,7 +164,7 @@
             <span class="badge badge-red">Vetoed</span>
           </div>
           <div style="font-size: 15px; font-weight: 700; color: var(--loss); font-family: ui-monospace, monospace;">-3.15% RS</div>
-          <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">Below 20d SMA · Setups Rejected</div>
+          <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">Negative RS vs Index VWAP · Setups Rejected</div>
         </div>
         
         <div style="background: var(--panel); border: 1px solid var(--loss-border); border-radius: 5px; padding: 10px 12px;">
@@ -187,7 +187,7 @@
           </div>
           <div class="proof-item">
             <span class="status-indicator profit" style="display:inline-block; vertical-align:middle; margin-right:6px;"></span>
-            <span><strong>Turnover-Weighted Edge:</strong> Moving averages lag price action by 24.5 sessions. 20-Day Turnover VWAP acts as the true capital accumulation anchor.</span>
+            <span><strong>Turnover-Weighted Edge:</strong> Moving averages lag price action by 24.5 sessions. 10-Day Turnover VWAP acts as the true capital accumulation anchor.</span>
           </div>
         </div>
       </div>
@@ -1507,7 +1507,7 @@
             <span class="badge badge-blue">CDSC Demat T+2 Compliant</span>
           </div>
           <div style="font-size:12px; color:var(--text-muted);">
-            Single Unified Execution Desk &middot; ATR Stop Protection &middot; Multi-Tranche Scale-Out
+            Single Unified Execution Desk &middot; ATR Stop Protection &middot; 2-Tranche Exit Ladder (+2.0σ / +2.5σ) &middot; T+3 Demat Settlement Guard
           </div>
         </div>
 
@@ -1555,7 +1555,7 @@
               <span class="badge badge-green">Fill Model: Min(LTP, TWAP) * (1 + Slippage)</span>
             </div>
             <div style="font-size: 11px; color: var(--text-muted);">
-              Risk Budget Mandate: Max 1.0% NAV at Stop Loss
+              Risk Budget Mandate: Max 1.0% NAV at Stop Loss &middot; 2-Tranche Exit Ladder (T1: +2.0σ / T2: +2.5σ) &middot; Earliest TMS Sell: T+3
             </div>
           </div>
 
@@ -1565,7 +1565,7 @@
           <div class="lock-icon"><span class="status-indicator loss"></span></div>
           <div class="lock-details">
             <strong>TMS Order Dispatch Halted · Iron Cash Mandate Active</strong>
-            <span>NEPSE is trading at -2.10σ below the 20-day VWAP (2,542.77 vs 2,644.90). Capital preservation is strictly enforced. Zero buy orders allowed.</span>
+            <span>NEPSE is trading at -1.36σ below the 10-day VWAP (2,542.77 vs 2,587.20). Capital preservation is strictly enforced. Zero buy orders allowed.</span>
           </div>
           <span class="badge badge-red">0 Tickets Dispatched</span>
         </div>
@@ -1582,17 +1582,18 @@
                   <th>Order</th>
                   <th>Fill</th>
                   <th>ATR Stop</th>
-                  <th>Target 1</th>
+                  <th>2-Tranche Exit Ladder</th>
                   <th>Qty</th>
                   <th>Outlay</th>
                   <th>Max Risk</th>
+                  <th>T+3 Settlement</th>
                   <th>TMS Status</th>
                 </tr>
               </thead>
               <tbody>
                 
         <tr>
-          <td colspan="12" style="text-align: center; padding: 24px; color: var(--text-muted);">
+          <td colspan="13" style="text-align: center; padding: 24px; color: var(--text-muted);">
             TMS buy tickets locked: Iron Cash Mandate active. Capital preservation mode (0 buy orders dispatched).
           </td>
         </tr>
@@ -1669,7 +1670,7 @@
               <span class="badge badge-green">Tactical 100% Capital</span>
             </div>
             <div style="font-size: 11px; color: var(--text-muted);">
-              Dynamic -1.0R ATR Stop &middot; Multi-Tranche Scale-Out (+2σ to +6σ) &middot; T-2 Demat Exit Guard
+              Dynamic -1.0R ATR Stop &middot; 2-Tranche Exit Ladder (T1: +2.0σ 50% Lock / T2: +2.5σ Runner) &middot; T+3 Demat &amp; T-2 Pre-Closure Exit Guard
             </div>
           </div>
 
@@ -1682,15 +1683,16 @@
                   <th>Qty</th>
                   <th>Entry</th>
                   <th>LTP</th>
+                  <th>2-Tranche Exit Ladder</th>
                   <th>Risk/Reward Track</th>
                   <th>P&amp;L</th>
                   <th>Return</th>
                   <th>R-Mult</th>
-                  <th>Demat / Exit</th>
+                  <th>T+3 Settlement</th>
                 </tr>
               </thead>
               <tbody>
-                <tr><td colspan='10' style='text-align:center; padding: 25px; color: var(--text-muted);'>No open active positions (100% liquid cash preserved)</td></tr>
+                <tr><td colspan='11' style='text-align:center; padding: 25px; color: var(--text-muted);'>No open active positions (100% liquid cash preserved)</td></tr>
               </tbody>
             </table>
           </div>
@@ -1746,7 +1748,7 @@
         Aurora v26.09.05
     </div>
     <div style="margin-top: 0.35rem; color: #64748b; font-size: 0.78rem;">
-        Report Generated: <span style="color: #38bdf8; font-family: monospace; font-weight: 600;">2026-09-07 13:10:43 NPT</span>
+        Report Generated: <span style="color: #38bdf8; font-family: monospace; font-weight: 600;">2026-09-07 15:55:46 NPT</span>
     </div>
     <div style="margin-top: 0.4rem; font-size: 0.72rem; color: #475569;">
         Nepalese Stock Exchange (NEPSE) Quantitative Analytics &amp; Execution Engine
