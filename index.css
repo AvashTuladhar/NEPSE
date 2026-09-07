@@ -40,9 +40,13 @@
       padding-bottom: 14px;
       border-bottom: 1px solid var(--border);
       margin-bottom: 16px;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       gap: 12px;
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
     }
+    .top-header::-webkit-scrollbar { display: none; }
     .brand-group { display: flex; align-items: center; gap: 10px; }
     .brand-title { font-size: 18px; font-weight: 800; letter-spacing: -0.3px; color: var(--text-heading); }
     .badge-terminal {
@@ -294,9 +298,9 @@
       white-space: nowrap;
       table-layout: fixed;
     }
-    .table-box table, .active-table, .tms-table, #tab-avoid table, #tab-chosen table {
-      width: 100% !important;
-      min-width: 1150px !important;
+    .table-box table, .active-table, .tms-table, #tab-avoid table, #tab-chosen table, .tab2-table, .tab3-table {
+      width: max-content !important;
+      min-width: 950px !important;
       border-collapse: collapse !important;
       table-layout: auto !important;
     }
@@ -478,10 +482,15 @@
       flex: 0 0 auto;
       white-space: nowrap;
     }
-    .chip:hover, .chip.active {
+    .chip:hover {
       border-color: var(--accent);
       color: var(--text-heading);
       background: var(--accent-soft);
+    }
+    .chip.active {
+      border-color: var(--accent);
+      color: #fff;
+      background: var(--accent);
     }
 
     @media (max-width: 960px) {
@@ -490,11 +499,11 @@
     }
     @media (max-width: 640px) {
       body { padding: 8px 6px 40px; }
-      .container { width: 96%; max-width: 96%; }
+      .container { width: 100%; max-width: 100%; padding: 0 4px; }
       .top-header { padding-bottom: 10px; margin-bottom: 10px; gap: 8px; }
       .brand-title { font-size: 16px; }
       .tab-btn { min-width: 140px; font-size: 12px; padding: 8px 10px; }
-      .panel { padding: 14px 12px; margin-bottom: 14px; }
+      .panel { padding: 12px 6px; margin-bottom: 14px; }
       .stat-row { grid-template-columns: repeat(2, 1fr); gap: 8px; }
       .stat-num { font-size: 16px; }
     }
