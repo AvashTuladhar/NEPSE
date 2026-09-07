@@ -1,16 +1,16 @@
 {
   "meta": {
     "as_of": "2026-09-07",
-    "generated_at": "2026-09-07 01:03:33 NPT",
+    "generated_at": "2026-09-07 14:21:04 NPT",
     "version": "Aurora v26.09.05",
     "calver": "v26.09.05",
     "regime": {
-      "factor": 0.5,
-      "label": "BEAR",
+      "factor": 0.6,
+      "label": "CHOP",
       "icon": "",
-      "mandate": "100% Cash Preservation (0 Buys)",
+      "mandate": "30% Cash Buffer (Defensive)",
       "latest_close": 2542.77,
-      "sma_slope": -0.9764,
+      "sma_slope": -2.8746,
       "bandwidth": 8.25,
       "vwap": 2644.9,
       "vwap_slope": -0.1435,
@@ -28,7 +28,7 @@
         "dn2": 2547.86,
         "dn3": 2499.34
       },
-      "is_sideways": false
+      "is_sideways": true
     },
     "pulse": {
       "score": 41.0,
@@ -691,7 +691,7 @@
       "cash": 500000.0,
       "invested": 0.0,
       "active": 0,
-      "max": 0
+      "max": 4
     },
     "positions": [],
     "orders": [],
