@@ -28,7 +28,7 @@
     <nav class="tab-bar">
       <button type="button" class="tab-btn" :class="{ 'active': activeTab === 'tab-regime' }" @click="switchTab('tab-regime')">
         <span>1. Market Regime &amp; VWAP</span>
-        <span class="tab-count">-5.14σ</span>
+        <span class="tab-count">-0.39σ</span>
       </button>
       <button type="button" class="tab-btn" :class="{ 'active': activeTab === 'tab-avoid' }" @click="switchTab('tab-avoid')">
         <span>2. Stocks to Avoid</span>
@@ -36,7 +36,7 @@
       </button>
       <button type="button" class="tab-btn" :class="{ 'active': activeTab === 'tab-chosen' }" @click="switchTab('tab-chosen')">
         <span>3. Chosen Stocks &amp; Gates</span>
-        <span class="tab-count">21 Scored</span>
+        <span class="tab-count">24 Scored</span>
       </button>
       <button type="button" class="tab-btn" :class="{ 'active': activeTab === 'tab-portfolio' }" @click="switchTab('tab-portfolio')">
         <span>4. Tactical Portfolio Desk</span>
@@ -63,26 +63,26 @@
           <div class="stat-card">
             <div class="stat-label">NEPSE Latest Close</div>
             <div class="stat-num" style="color:var(--loss);">2,560.84</div>
-            <div class="stat-sub" style="color:var(--loss);">-49.06 pts (-1.88% session)</div>
+            <div class="stat-sub" style="color:var(--loss);">-12.77 pts (-0.50% session)</div>
           </div>
           <div class="stat-card">
             <div class="stat-label">10-Day Index VWAP</div>
-            <div class="stat-num" style="color:var(--accent);">2,609.90</div>
+            <div class="stat-num" style="color:var(--accent);">2,573.61</div>
             <div class="stat-sub" style="color:var(--text-muted);">True Capital Accumulation Anchor</div>
           </div>
           <div class="stat-card">
             <div class="stat-label">Difference vs VWAP</div>
-            <div class="stat-num" style="color:var(--loss);">-49.06 pts</div>
-            <div class="stat-sub" style="color:var(--loss);">-1.88% vs volume support</div>
+            <div class="stat-num" style="color:var(--loss);">-12.77 pts</div>
+            <div class="stat-sub" style="color:var(--loss);">-0.50% vs volume support</div>
           </div>
           <div class="stat-card">
             <div class="stat-label">Standard Deviation (Z)</div>
-            <div class="stat-num" style="color:var(--loss);">-5.14σ</div>
-            <div class="stat-sub" style="color:var(--text-muted);">1σ = 9.54 pts</div>
+            <div class="stat-num" style="color:var(--loss);">-0.39σ</div>
+            <div class="stat-sub" style="color:var(--text-muted);">1σ = 33.00 pts</div>
           </div>
           <div class="stat-card">
             <div class="stat-label">5-Day VWAP Slope</div>
-            <div class="stat-num" style="color:var(--warning);">-0.19%/day</div>
+            <div class="stat-num" style="color:var(--warning);">-1.13%/day</div>
             <div class="stat-sub" style="color:var(--warning);">(DOWNTREND)</div>
           </div>
           <div class="stat-card">
@@ -96,7 +96,7 @@
         <div class="spectrum-track">
           <div class="spectrum-legend-top">
             <span style="color:var(--loss);">Bear Regime: Distribution / Capital Exit</span>
-            <span style="color:var(--accent); font-weight:700;">10-Day VWAP Equilibrium (2,609.90)</span>
+            <span style="color:var(--accent); font-weight:700;">10-Day VWAP Equilibrium (2,573.61)</span>
             <span style="color:var(--profit);">Bull Regime: Smart Money Markup</span>
           </div>
 
@@ -104,17 +104,17 @@
             <div class="spec-bear"></div>
             <div class="spec-bull"></div>
             <div class="spec-vwap-line"></div>
-            <div class="spec-nepse-pin" style="left: 0.00%;" title="NEPSE: 2,560.84 (-5.14σ)"></div>
+            <div class="spec-nepse-pin" style="left: 43.50%;" title="NEPSE: 2,560.84 (-0.39σ)"></div>
           </div>
 
           <div class="spectrum-nodes">
-            <div class="spec-col"><span class="node-p">2,581.3</span><span class="node-l">-3.0σ</span></div>
-            <div class="spec-col"><span class="node-p">2,590.8</span><span class="node-l">-2.0σ Floor</span></div>
-            <div class="spec-col"><span class="node-p">2,600.4</span><span class="node-l">-1.0σ</span></div>
-            <div class="spec-col"><span class="node-p" style="color:var(--accent);">2,609.9</span><span class="node-l" style="color:var(--accent);">VWAP (0.0σ)</span></div>
-            <div class="spec-col"><span class="node-p">2,619.4</span><span class="node-l">+1.0σ</span></div>
-            <div class="spec-col"><span class="node-p">2,629.0</span><span class="node-l">+2.0σ Ceiling</span></div>
-            <div class="spec-col"><span class="node-p">2,638.5</span><span class="node-l">+3.0σ Blowoff</span></div>
+            <div class="spec-col"><span class="node-p">2,474.6</span><span class="node-l">-3.0σ</span></div>
+            <div class="spec-col"><span class="node-p">2,507.6</span><span class="node-l">-2.0σ Floor</span></div>
+            <div class="spec-col"><span class="node-p">2,540.6</span><span class="node-l">-1.0σ</span></div>
+            <div class="spec-col"><span class="node-p" style="color:var(--accent);">2,573.6</span><span class="node-l" style="color:var(--accent);">VWAP (0.0σ)</span></div>
+            <div class="spec-col"><span class="node-p">2,606.6</span><span class="node-l">+1.0σ</span></div>
+            <div class="spec-col"><span class="node-p">2,639.6</span><span class="node-l">+2.0σ Ceiling</span></div>
+            <div class="spec-col"><span class="node-p">2,672.6</span><span class="node-l">+3.0σ Blowoff</span></div>
           </div>
         </div>
 
@@ -235,10 +235,10 @@
               <td><span class="sym-pill">JFL</span></td>
               <td>Janaki Finance</td>
               <td>Finance</td>
-              <td class="mono">Rs 368.90</td>
+              <td class="mono">Rs 313.60</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-57.3%</td>
               <td class="mono" style="color:var(--text);">2.6%</td>
-              <td class="mono" style="color:var(--loss);">272.6</td>
+              <td class="mono" style="color:var(--loss);">231.7</td>
               <td class="mono" style="color:var(--loss);">100.1%</td>
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
@@ -247,10 +247,10 @@
               <td><span class="sym-pill">NABBC</span></td>
               <td>Narayani Development Bank</td>
               <td>Banking</td>
-              <td class="mono">Rs 732.00</td>
+              <td class="mono">Rs 711.10</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-45.5%</td>
               <td class="mono" style="color:var(--loss);">-235.2%</td>
-              <td class="mono" style="color:var(--loss);">-71.4</td>
+              <td class="mono" style="color:var(--loss);">-69.4</td>
               <td class="mono" style="color:var(--text);">80.0%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -259,10 +259,10 @@
               <td><span class="sym-pill">NRIC</span></td>
               <td>Nepal Reinsurance Company Limited</td>
               <td>Insurance</td>
-              <td class="mono">Rs 800.00</td>
+              <td class="mono">Rs 805.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-33.3%</td>
               <td class="mono" style="color:var(--loss);">-48.6%</td>
-              <td class="mono" style="color:var(--loss);">-20.1</td>
+              <td class="mono" style="color:var(--loss);">-20.2</td>
               <td class="mono" style="color:var(--text);">62.9%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -271,10 +271,10 @@
               <td><span class="sym-pill">RHPL</span></td>
               <td>Rasuwagadhi Hydropower Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 173.10</td>
+              <td class="mono">Rs 170.20</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-28.2%</td>
               <td class="mono" style="color:var(--loss);">-114.1%</td>
-              <td class="mono" style="color:var(--loss);">-8.2</td>
+              <td class="mono" style="color:var(--loss);">-8.1</td>
               <td class="mono" style="color:var(--loss);">102.5%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -283,10 +283,10 @@
               <td><span class="sym-pill">TRH</span></td>
               <td>Taragaon Regency Hotel</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 790.00</td>
+              <td class="mono">Rs 798.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-24.5%</td>
               <td class="mono" style="color:var(--loss);">-169.6%</td>
-              <td class="mono" style="color:var(--loss);">-22.0</td>
+              <td class="mono" style="color:var(--loss);">-22.2</td>
               <td class="mono" style="color:var(--text);">35.3%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -295,10 +295,10 @@
               <td><span class="sym-pill">AHL</span></td>
               <td>Asian Hydropower Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 366.00</td>
+              <td class="mono">Rs 360.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-22.1%</td>
               <td class="mono" style="color:var(--loss);">-72.7%</td>
-              <td class="mono" style="color:var(--loss);">-21.0</td>
+              <td class="mono" style="color:var(--loss);">-20.7</td>
               <td class="mono" style="color:var(--loss);">103.7%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -307,10 +307,10 @@
               <td><span class="sym-pill">HRL</span></td>
               <td>Himalayan Reinsurance Limited</td>
               <td>Insurance</td>
-              <td class="mono">Rs 519.90</td>
+              <td class="mono">Rs 516.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-14.7%</td>
               <td class="mono" style="color:var(--loss);">-33.4%</td>
-              <td class="mono" style="color:var(--loss);">-24.2</td>
+              <td class="mono" style="color:var(--loss);">-24.0</td>
               <td class="mono" style="color:var(--text);">51.8%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -319,10 +319,10 @@
               <td><span class="sym-pill">JOSHI</span></td>
               <td>Joshi Hydropower Development Company Ltd</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 256.00</td>
+              <td class="mono">Rs 261.50</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-11.4%</td>
               <td class="mono" style="color:var(--loss);">-452.5%</td>
-              <td class="mono" style="color:var(--loss);">-39.2</td>
+              <td class="mono" style="color:var(--loss);">-40.0</td>
               <td class="mono" style="color:var(--text);">11.2%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -331,10 +331,10 @@
               <td><span class="sym-pill">SSHL</span></td>
               <td>Shiva Shree Hydropower Ltd</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 191.20</td>
+              <td class="mono">Rs 193.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-10.6%</td>
               <td class="mono" style="color:var(--loss);">-31.8%</td>
-              <td class="mono" style="color:var(--loss);">-47.4</td>
+              <td class="mono" style="color:var(--loss);">-47.8</td>
               <td class="mono" style="color:var(--text);">75.4%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -343,10 +343,10 @@
               <td><span class="sym-pill">TSHL</span></td>
               <td>Three Star Hydropower Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 333.40</td>
+              <td class="mono">Rs 333.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-9.8%</td>
               <td class="mono" style="color:var(--loss);">-23.2%</td>
-              <td class="mono" style="color:var(--loss);">-52.1</td>
+              <td class="mono" style="color:var(--loss);">-52.0</td>
               <td class="mono" style="color:var(--loss);">95.1%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -367,10 +367,10 @@
               <td><span class="sym-pill">TVCL</span></td>
               <td>Trishuli Jal Vidhyut Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 330.00</td>
+              <td class="mono">Rs 317.20</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-9.2%</td>
               <td class="mono" style="color:var(--text);">0.0%</td>
-              <td class="mono" style="color:var(--loss);">-44.8</td>
+              <td class="mono" style="color:var(--loss);">-43.1</td>
               <td class="mono" style="color:var(--loss);">105.9%</td>
               <td><span class="badge badge-red">Excessive Debt Overhang</span></td>
             </tr>
@@ -379,7 +379,7 @@
               <td><span class="sym-pill">NFS</span></td>
               <td>Nepal Finance</td>
               <td>Finance</td>
-              <td class="mono">Rs 525.00</td>
+              <td class="mono">Rs 524.90</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-7.2%</td>
               <td class="mono" style="color:var(--loss);">-20.6%</td>
               <td class="mono" style="color:var(--loss);">-58.7</td>
@@ -391,10 +391,10 @@
               <td><span class="sym-pill">CITY</span></td>
               <td>City Hotel Limited</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 340.00</td>
+              <td class="mono">Rs 342.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-7.0%</td>
               <td class="mono" style="color:var(--loss);">-38.4%</td>
-              <td class="mono" style="color:var(--loss);">-59.2</td>
+              <td class="mono" style="color:var(--loss);">-59.5</td>
               <td class="mono" style="color:var(--text);">48.4%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -403,10 +403,10 @@
               <td><span class="sym-pill">SANVI</span></td>
               <td>Sanvi Energy Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 550.00</td>
+              <td class="mono">Rs 559.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-7.0%</td>
               <td class="mono" style="color:var(--loss);">-54.1%</td>
-              <td class="mono" style="color:var(--loss);">-71.3</td>
+              <td class="mono" style="color:var(--loss);">-72.4</td>
               <td class="mono" style="color:var(--text);">73.9%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -415,10 +415,10 @@
               <td><span class="sym-pill">NWCL</span></td>
               <td>Nepal Warehousing Company Limited</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 597.00</td>
+              <td class="mono">Rs 598.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-6.8%</td>
               <td class="mono" style="color:var(--loss);">-14.2%</td>
-              <td class="mono" style="color:var(--loss);">-91.3</td>
+              <td class="mono" style="color:var(--loss);">-91.5</td>
               <td class="mono" style="color:var(--text);">0.0%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -427,10 +427,10 @@
               <td><span class="sym-pill">SAGAR</span></td>
               <td>Sagar Distillery Limited</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 1500.00</td>
+              <td class="mono">Rs 1593.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-6.4%</td>
               <td class="mono" style="color:var(--loss);">-27.5%</td>
-              <td class="mono" style="color:var(--loss);">-190.2</td>
+              <td class="mono" style="color:var(--loss);">-201.9</td>
               <td class="mono" style="color:var(--text);">43.4%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -439,10 +439,10 @@
               <td><span class="sym-pill">OMPL</span></td>
               <td>Om Megashree Pharmaceuticals Limited</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 883.00</td>
+              <td class="mono">Rs 895.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-6.3%</td>
               <td class="mono" style="color:var(--loss);">-17.8%</td>
-              <td class="mono" style="color:var(--loss);">-140.3</td>
+              <td class="mono" style="color:var(--loss);">-142.2</td>
               <td class="mono" style="color:var(--text);">61.7%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -451,10 +451,10 @@
               <td><span class="sym-pill">IHL</span></td>
               <td>Ingwa Hydropower Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 304.00</td>
+              <td class="mono">Rs 292.20</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-5.5%</td>
               <td class="mono" style="color:var(--loss);">-12.3%</td>
-              <td class="mono" style="color:var(--loss);">-58.1</td>
+              <td class="mono" style="color:var(--loss);">-55.8</td>
               <td class="mono" style="color:var(--loss);">84.8%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -463,10 +463,10 @@
               <td><span class="sym-pill">MEL</span></td>
               <td>Modi Energy Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 200.50</td>
+              <td class="mono">Rs 199.60</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-4.7%</td>
               <td class="mono" style="color:var(--loss);">-17.1%</td>
-              <td class="mono" style="color:var(--loss);">-72.4</td>
+              <td class="mono" style="color:var(--loss);">-72.1</td>
               <td class="mono" style="color:var(--text);">76.0%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -475,10 +475,10 @@
               <td><span class="sym-pill">HDHPC</span></td>
               <td>Himal Dolakha Hydropower Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 198.30</td>
+              <td class="mono">Rs 200.80</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-4.5%</td>
               <td class="mono" style="color:var(--loss);">-136.8%</td>
-              <td class="mono" style="color:var(--loss);">-58.3</td>
+              <td class="mono" style="color:var(--loss);">-59.0</td>
               <td class="mono" style="color:var(--text);">19.9%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -487,10 +487,10 @@
               <td><span class="sym-pill">KKHC</span></td>
               <td>Khanikhola Hydropower Co. Ltd.</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 264.10</td>
+              <td class="mono">Rs 267.90</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-4.0%</td>
               <td class="mono" style="color:var(--loss);">-27.6%</td>
-              <td class="mono" style="color:var(--loss);">-87.8</td>
+              <td class="mono" style="color:var(--loss);">-89.1</td>
               <td class="mono" style="color:var(--text);">46.3%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -499,10 +499,10 @@
               <td><span class="sym-pill">NRM</span></td>
               <td>Nepal Republic Media Limited</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 285.20</td>
+              <td class="mono">Rs 287.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-3.7%</td>
               <td class="mono" style="color:var(--loss);">-27.0%</td>
-              <td class="mono" style="color:var(--loss);">-89.8</td>
+              <td class="mono" style="color:var(--loss);">-90.4</td>
               <td class="mono" style="color:var(--text);">29.8%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -511,10 +511,10 @@
               <td><span class="sym-pill">GCIL</span></td>
               <td>Ghorahi Cement Industry Limited</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 379.30</td>
+              <td class="mono">Rs 378.50</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-3.6%</td>
               <td class="mono" style="color:var(--loss);">-6.5%</td>
-              <td class="mono" style="color:var(--loss);">-61.9</td>
+              <td class="mono" style="color:var(--loss);">-61.7</td>
               <td class="mono" style="color:var(--text);">61.1%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -523,10 +523,10 @@
               <td><span class="sym-pill">BEDC</span></td>
               <td>Bhugol Energy Development Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 286.00</td>
+              <td class="mono">Rs 287.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-3.5%</td>
               <td class="mono" style="color:var(--loss);">-14.8%</td>
-              <td class="mono" style="color:var(--loss);">-168.6</td>
+              <td class="mono" style="color:var(--loss);">-169.2</td>
               <td class="mono" style="color:var(--text);">73.3%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -535,10 +535,10 @@
               <td><span class="sym-pill">NRN</span></td>
               <td>NRN Infrastructure and Development Limited</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 1391.00</td>
+              <td class="mono">Rs 1400.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-2.5%</td>
               <td class="mono" style="color:var(--loss);">-159.8%</td>
-              <td class="mono" style="color:var(--loss);">-321.9</td>
+              <td class="mono" style="color:var(--loss);">-324.0</td>
               <td class="mono" style="color:var(--text);">8.6%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -547,10 +547,10 @@
               <td><span class="sym-pill">PPL</span></td>
               <td>Peoples Power Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 302.90</td>
+              <td class="mono">Rs 306.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-2.4%</td>
               <td class="mono" style="color:var(--loss);">-24.2%</td>
-              <td class="mono" style="color:var(--loss);">-132.1</td>
+              <td class="mono" style="color:var(--loss);">-133.4</td>
               <td class="mono" style="color:var(--text);">0.1%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -559,10 +559,10 @@
               <td><span class="sym-pill">RHGCL</span></td>
               <td>Rapti Hydro And General Construction Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 247.80</td>
+              <td class="mono">Rs 250.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-2.3%</td>
               <td class="mono" style="color:var(--loss);">-31.5%</td>
-              <td class="mono" style="color:var(--loss);">-115.0</td>
+              <td class="mono" style="color:var(--loss);">-116.0</td>
               <td class="mono" style="color:var(--text);">35.5%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -571,10 +571,10 @@
               <td><span class="sym-pill">GHL</span></td>
               <td>Ghalemdi Hydro Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 221.00</td>
+              <td class="mono">Rs 228.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-1.4%</td>
               <td class="mono" style="color:var(--loss);">-16.0%</td>
-              <td class="mono" style="color:var(--loss);">-166.7</td>
+              <td class="mono" style="color:var(--loss);">-172.0</td>
               <td class="mono" style="color:var(--text);">31.6%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -583,10 +583,10 @@
               <td><span class="sym-pill">OHL</span></td>
               <td>Oriental Hotels</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 620.00</td>
+              <td class="mono">Rs 623.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-1.2%</td>
               <td class="mono" style="color:var(--loss);">-4.7%</td>
-              <td class="mono" style="color:var(--loss);">-154.8</td>
+              <td class="mono" style="color:var(--loss);">-155.5</td>
               <td class="mono" style="color:var(--text);">36.4%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -595,10 +595,10 @@
               <td><span class="sym-pill">NHPC</span></td>
               <td>National Hydro Power</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 254.00</td>
+              <td class="mono">Rs 257.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-1.0%</td>
               <td class="mono" style="color:var(--loss);">-16.7%</td>
-              <td class="mono" style="color:var(--loss);">-273.3</td>
+              <td class="mono" style="color:var(--loss);">-276.5</td>
               <td class="mono" style="color:var(--text);">38.1%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -607,10 +607,10 @@
               <td><span class="sym-pill">PRVU</span></td>
               <td>Prabhu Bank</td>
               <td>Banking</td>
-              <td class="mono">Rs 177.50</td>
+              <td class="mono">Rs 180.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-0.7%</td>
               <td class="mono" style="color:var(--loss);">-1.1%</td>
-              <td class="mono" style="color:var(--loss);">-173.2</td>
+              <td class="mono" style="color:var(--loss);">-175.7</td>
               <td class="mono" style="color:var(--loss);">91.9%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -619,10 +619,10 @@
               <td><span class="sym-pill">BHPL</span></td>
               <td>Barahi Hydropower Public Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 438.00</td>
+              <td class="mono">Rs 432.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-0.6%</td>
               <td class="mono" style="color:var(--loss);">-2.6%</td>
-              <td class="mono" style="color:var(--loss);">-1475.3</td>
+              <td class="mono" style="color:var(--loss);">-1455.1</td>
               <td class="mono" style="color:var(--text);">78.7%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -631,10 +631,10 @@
               <td><span class="sym-pill">DHEL</span></td>
               <td>Daramkhola Hydro Energy Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 571.00</td>
+              <td class="mono">Rs 577.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.0%</td>
               <td class="mono" style="color:var(--loss);">-89.3%</td>
-              <td class="mono" style="color:var(--loss);">-57.8</td>
+              <td class="mono" style="color:var(--loss);">-58.4</td>
               <td class="mono" style="color:var(--text);">63.1%</td>
               <td><span class="badge badge-red">Capital Preservation Veto</span></td>
             </tr>
@@ -643,10 +643,10 @@
               <td><span class="sym-pill">BANDIPUR</span></td>
               <td>Bandipur Cablecar and Tourism Limited</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 644.00</td>
+              <td class="mono">Rs 645.90</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.0%</td>
               <td class="mono" style="color:var(--loss);">-66.1%</td>
-              <td class="mono" style="color:var(--loss);">-329.3</td>
+              <td class="mono" style="color:var(--loss);">-330.3</td>
               <td class="mono" style="color:var(--text);">33.3%</td>
               <td><span class="badge badge-red">Capital Preservation Veto</span></td>
             </tr>
@@ -655,10 +655,10 @@
               <td><span class="sym-pill">BUNGAL</span></td>
               <td>Bungal Hydro Limited </td>
               <td>Hydropower</td>
-              <td class="mono">Rs 515.00</td>
+              <td class="mono">Rs 526.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.0%</td>
               <td class="mono" style="color:var(--loss);">-11.3%</td>
-              <td class="mono" style="color:var(--loss);">-134.1</td>
+              <td class="mono" style="color:var(--loss);">-137.0</td>
               <td class="mono" style="color:var(--loss);">85.3%</td>
               <td><span class="badge badge-red">Excessive Debt Overhang</span></td>
             </tr>
@@ -667,10 +667,10 @@
               <td><span class="sym-pill">ULHC</span></td>
               <td>Upper Lohore Khola Hydropower Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 300.00</td>
+              <td class="mono">Rs 260.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.0%</td>
               <td class="mono" style="color:var(--loss);">-41.6%</td>
-              <td class="mono" style="color:var(--loss);">-52.7</td>
+              <td class="mono" style="color:var(--loss);">-45.7</td>
               <td class="mono" style="color:var(--text);">72.8%</td>
               <td><span class="badge badge-red">Capital Preservation Veto</span></td>
             </tr>
@@ -679,10 +679,10 @@
               <td><span class="sym-pill">MABEL</span></td>
               <td>Mabilung Energy Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 564.00</td>
+              <td class="mono">Rs 587.70</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.0%</td>
               <td class="mono" style="color:var(--loss);">-5.3%</td>
-              <td class="mono" style="color:var(--loss);">-485.2</td>
+              <td class="mono" style="color:var(--loss);">-505.5</td>
               <td class="mono" style="color:var(--text);">71.9%</td>
               <td><span class="badge badge-red">Capital Preservation Veto</span></td>
             </tr>
@@ -691,10 +691,10 @@
               <td><span class="sym-pill">JHAPA</span></td>
               <td>Jhapa Energy Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 1012.00</td>
+              <td class="mono">Rs 1021.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.0%</td>
               <td class="mono" style="color:var(--text);">14.0%</td>
-              <td class="mono" style="color:var(--loss);">262.5</td>
+              <td class="mono" style="color:var(--loss);">264.8</td>
               <td class="mono" style="color:var(--text);">57.2%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -703,10 +703,10 @@
               <td><span class="sym-pill">HIMSTAR</span></td>
               <td>Him Star Urja Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 632.00</td>
+              <td class="mono">Rs 649.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.0%</td>
               <td class="mono" style="color:var(--loss);">-76.6%</td>
-              <td class="mono" style="color:var(--loss);">-21.3</td>
+              <td class="mono" style="color:var(--loss);">-21.8</td>
               <td class="mono" style="color:var(--loss);">101.7%</td>
               <td><span class="badge badge-red">Excessive Debt Overhang</span></td>
             </tr>
@@ -715,10 +715,10 @@
               <td><span class="sym-pill">IGI</span></td>
               <td>IGI Prudential insurance Limited</td>
               <td>Insurance</td>
-              <td class="mono">Rs 377.00</td>
+              <td class="mono">Rs 378.80</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.1%</td>
               <td class="mono" style="color:var(--text);">0.2%</td>
-              <td class="mono" style="color:var(--loss);">2827.9</td>
+              <td class="mono" style="color:var(--loss);">2841.4</td>
               <td class="mono" style="color:var(--text);">62.3%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -727,10 +727,10 @@
               <td><span class="sym-pill">SINDU</span></td>
               <td>Sindhu Bikash Bank</td>
               <td>Banking</td>
-              <td class="mono">Rs 585.50</td>
+              <td class="mono">Rs 497.70</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.2%</td>
               <td class="mono" style="color:var(--text);">0.3%</td>
-              <td class="mono" style="color:var(--loss);">3258.9</td>
+              <td class="mono" style="color:var(--loss);">2770.2</td>
               <td class="mono" style="color:var(--loss);">91.2%</td>
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
@@ -739,10 +739,10 @@
               <td><span class="sym-pill">CREST</span></td>
               <td>Crest Micro Life Insurance Limited</td>
               <td>Insurance</td>
-              <td class="mono">Rs 1049.00</td>
+              <td class="mono">Rs 1074.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.3%</td>
               <td class="mono" style="color:var(--text);">0.5%</td>
-              <td class="mono" style="color:var(--loss);">3114.1</td>
+              <td class="mono" style="color:var(--loss);">3188.3</td>
               <td class="mono" style="color:var(--text);">35.6%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -751,10 +751,10 @@
               <td><span class="sym-pill">MKJC</span></td>
               <td>Mailung Khola Jal Vidhyut Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 290.00</td>
+              <td class="mono">Rs 289.40</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.4%</td>
               <td class="mono" style="color:var(--text);">1.8%</td>
-              <td class="mono" style="color:var(--loss);">629.9</td>
+              <td class="mono" style="color:var(--loss);">628.6</td>
               <td class="mono" style="color:var(--text);">55.9%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -763,10 +763,10 @@
               <td><span class="sym-pill">NICA</span></td>
               <td>NIC Asia Bank</td>
               <td>Banking</td>
-              <td class="mono">Rs 309.50</td>
+              <td class="mono">Rs 309.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.6%</td>
               <td class="mono" style="color:var(--text);">0.8%</td>
-              <td class="mono" style="color:var(--loss);">254.1</td>
+              <td class="mono" style="color:var(--loss);">253.7</td>
               <td class="mono" style="color:var(--loss);">93.5%</td>
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
@@ -775,10 +775,10 @@
               <td><span class="sym-pill">NGPL</span></td>
               <td>Ngadi Group Power Ltd.</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 388.00</td>
+              <td class="mono">Rs 393.80</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.8%</td>
               <td class="mono" style="color:var(--text);">35.6%</td>
-              <td class="mono" style="color:var(--loss);">306.2</td>
+              <td class="mono" style="color:var(--loss);">310.7</td>
               <td class="mono" style="color:var(--text);">18.9%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -787,10 +787,10 @@
               <td><span class="sym-pill">TTL</span></td>
               <td>Trade Tower Limited</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 680.00</td>
+              <td class="mono">Rs 685.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.9%</td>
               <td class="mono" style="color:var(--text);">7.3%</td>
-              <td class="mono" style="color:var(--loss);">751.2</td>
+              <td class="mono" style="color:var(--loss);">756.7</td>
               <td class="mono" style="color:var(--text);">0.0%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -799,10 +799,10 @@
               <td><span class="sym-pill">HATHY</span></td>
               <td>Hathway Investment Nepal Limited</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 609.00</td>
+              <td class="mono">Rs 594.50</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.9%</td>
               <td class="mono" style="color:var(--text);">13.3%</td>
-              <td class="mono" style="color:var(--loss);">1020.8</td>
+              <td class="mono" style="color:var(--loss);">996.5</td>
               <td class="mono" style="color:var(--text);">19.2%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -811,10 +811,10 @@
               <td><span class="sym-pill">USHL</span></td>
               <td>Upper Syange Hydropower Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 515.00</td>
+              <td class="mono">Rs 501.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.9%</td>
               <td class="mono" style="color:var(--text);">2.9%</td>
-              <td class="mono" style="color:var(--loss);">594.3</td>
+              <td class="mono" style="color:var(--loss);">578.1</td>
               <td class="mono" style="color:var(--text);">71.1%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -823,10 +823,10 @@
               <td><span class="sym-pill">UPCL</span></td>
               <td>Universal Power Company Ltd</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 344.00</td>
+              <td class="mono">Rs 345.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">1.0%</td>
               <td class="mono" style="color:var(--text);">11.7%</td>
-              <td class="mono" style="color:var(--loss);">305.7</td>
+              <td class="mono" style="color:var(--loss);">306.6</td>
               <td class="mono" style="color:var(--text);">38.5%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -835,10 +835,10 @@
               <td><span class="sym-pill">SPHL</span></td>
               <td>Sayapatri Hydropower Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 518.00</td>
+              <td class="mono">Rs 514.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">1.1%</td>
               <td class="mono" style="color:var(--text);">6.0%</td>
-              <td class="mono" style="color:var(--loss);">517.2</td>
+              <td class="mono" style="color:var(--loss);">513.2</td>
               <td class="mono" style="color:var(--text);">51.2%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -847,10 +847,10 @@
               <td><span class="sym-pill">SAIL</span></td>
               <td>Shreenagar Agritech Industries Limited</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 994.00</td>
+              <td class="mono">Rs 1056.20</td>
               <td class="mono" style="color:var(--text); font-weight:700;">1.3%</td>
               <td class="mono" style="color:var(--text);">1.0%</td>
-              <td class="mono" style="color:var(--loss);">909.2</td>
+              <td class="mono" style="color:var(--loss);">966.1</td>
               <td class="mono" style="color:var(--text);">42.2%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -859,10 +859,10 @@
               <td><span class="sym-pill">DORDI</span></td>
               <td>Dordi Khola Jal Bidyut Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 236.70</td>
+              <td class="mono">Rs 240.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">1.4%</td>
               <td class="mono" style="color:var(--text);">10.9%</td>
-              <td class="mono" style="color:var(--loss);">166.5</td>
+              <td class="mono" style="color:var(--loss);">168.8</td>
               <td class="mono" style="color:var(--text);">53.8%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -871,10 +871,10 @@
               <td><span class="sym-pill">DOLTI</span></td>
               <td>Dolti Power Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 282.00</td>
+              <td class="mono">Rs 280.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">1.5%</td>
               <td class="mono" style="color:var(--text);">4.7%</td>
-              <td class="mono" style="color:var(--loss);">325.2</td>
+              <td class="mono" style="color:var(--loss);">322.9</td>
               <td class="mono" style="color:var(--text);">78.0%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -883,10 +883,10 @@
               <td><span class="sym-pill">LEC</span></td>
               <td>Liberty Energy Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 210.00</td>
+              <td class="mono">Rs 215.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">1.6%</td>
               <td class="mono" style="color:var(--text);">14.5%</td>
-              <td class="mono" style="color:var(--loss);">187.2</td>
+              <td class="mono" style="color:var(--loss);">191.7</td>
               <td class="mono" style="color:var(--text);">73.6%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -895,10 +895,10 @@
               <td><span class="sym-pill">RIDI</span></td>
               <td>Ridi Power Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 344.00</td>
+              <td class="mono">Rs 347.70</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.0%</td>
               <td class="mono" style="color:var(--text);">12.8%</td>
-              <td class="mono" style="color:var(--loss);">170.5</td>
+              <td class="mono" style="color:var(--loss);">172.4</td>
               <td class="mono" style="color:var(--text);">40.6%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -907,10 +907,10 @@
               <td><span class="sym-pill">AKPL</span></td>
               <td>Arun Kabeli Power Ltd.</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 245.00</td>
+              <td class="mono">Rs 250.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.0%</td>
               <td class="mono" style="color:var(--text);">13.0%</td>
-              <td class="mono" style="color:var(--loss);">119.8</td>
+              <td class="mono" style="color:var(--loss);">122.2</td>
               <td class="mono" style="color:var(--text);">49.7%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -919,10 +919,10 @@
               <td><span class="sym-pill">GMLI</span></td>
               <td>Guardian Micro Life Insurance Limited</td>
               <td>Insurance</td>
-              <td class="mono">Rs 944.00</td>
+              <td class="mono">Rs 951.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.1%</td>
               <td class="mono" style="color:var(--text);">2.9%</td>
-              <td class="mono" style="color:var(--loss);">440.6</td>
+              <td class="mono" style="color:var(--loss);">443.9</td>
               <td class="mono" style="color:var(--text);">39.1%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -931,10 +931,10 @@
               <td><span class="sym-pill">GLH</span></td>
               <td>GreenLife Hydropower Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 245.00</td>
+              <td class="mono">Rs 246.20</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.1%</td>
               <td class="mono" style="color:var(--text);">0.0%</td>
-              <td class="mono" style="color:var(--loss);">105.2</td>
+              <td class="mono" style="color:var(--loss);">105.8</td>
               <td class="mono" style="color:var(--loss);">95.4%</td>
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
@@ -943,10 +943,10 @@
               <td><span class="sym-pill">BARUN</span></td>
               <td>Barun Hydropower</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 307.00</td>
+              <td class="mono">Rs 312.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.2%</td>
               <td class="mono" style="color:var(--text);">21.4%</td>
-              <td class="mono" style="color:var(--loss);">147.5</td>
+              <td class="mono" style="color:var(--loss);">149.9</td>
               <td class="mono" style="color:var(--text);">19.2%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -955,10 +955,10 @@
               <td><span class="sym-pill">NLG</span></td>
               <td>Nlg Insurance</td>
               <td>Insurance</td>
-              <td class="mono">Rs 494.00</td>
+              <td class="mono">Rs 514.50</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.2%</td>
               <td class="mono" style="color:var(--text);">3.1%</td>
-              <td class="mono" style="color:var(--loss);">228.0</td>
+              <td class="mono" style="color:var(--loss);">237.4</td>
               <td class="mono" style="color:var(--text);">51.0%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -967,10 +967,10 @@
               <td><span class="sym-pill">PHCL</span></td>
               <td>Peoples Hydropower Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 302.80</td>
+              <td class="mono">Rs 298.80</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.3%</td>
               <td class="mono" style="color:var(--text);">6.2%</td>
-              <td class="mono" style="color:var(--loss);">135.7</td>
+              <td class="mono" style="color:var(--loss);">133.9</td>
               <td class="mono" style="color:var(--text);">72.0%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -979,10 +979,10 @@
               <td><span class="sym-pill">CHL</span></td>
               <td>Chhyangdi Hydropower Ltd.</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 250.00</td>
+              <td class="mono">Rs 250.50</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.4%</td>
               <td class="mono" style="color:var(--text);">7.6%</td>
-              <td class="mono" style="color:var(--loss);">145.3</td>
+              <td class="mono" style="color:var(--loss);">145.6</td>
               <td class="mono" style="color:var(--text);">52.5%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -991,10 +991,10 @@
               <td><span class="sym-pill">ENL</span></td>
               <td>Emerging Nepal Limited</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 813.60</td>
+              <td class="mono">Rs 691.60</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.5%</td>
               <td class="mono" style="color:var(--text);">66.5%</td>
-              <td class="mono" style="color:var(--loss);">301.1</td>
+              <td class="mono" style="color:var(--loss);">255.9</td>
               <td class="mono" style="color:var(--text);">2.2%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -1003,10 +1003,10 @@
               <td><span class="sym-pill">MKHC</span></td>
               <td>Maya Khola Hydropower Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 269.60</td>
+              <td class="mono">Rs 260.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.5%</td>
               <td class="mono" style="color:var(--text);">4.2%</td>
-              <td class="mono" style="color:var(--loss);">170.1</td>
+              <td class="mono" style="color:var(--loss);">164.0</td>
               <td class="mono" style="color:var(--loss);">86.0%</td>
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
@@ -1015,10 +1015,10 @@
               <td><span class="sym-pill">UAIL</span></td>
               <td>United Ajod Insurance Limited</td>
               <td>Insurance</td>
-              <td class="mono">Rs 363.30</td>
+              <td class="mono">Rs 368.50</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.7%</td>
               <td class="mono" style="color:var(--text);">3.5%</td>
-              <td class="mono" style="color:var(--loss);">133.0</td>
+              <td class="mono" style="color:var(--loss);">134.9</td>
               <td class="mono" style="color:var(--text);">52.0%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -1027,10 +1027,10 @@
               <td><span class="sym-pill">SJCL</span></td>
               <td>Sanjen Jalavidhyut Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 236.20</td>
+              <td class="mono">Rs 232.50</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.7%</td>
               <td class="mono" style="color:var(--text);">5.0%</td>
-              <td class="mono" style="color:var(--loss);">105.2</td>
+              <td class="mono" style="color:var(--loss);">103.5</td>
               <td class="mono" style="color:var(--loss);">82.6%</td>
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
@@ -1039,10 +1039,10 @@
               <td><span class="sym-pill">MEHL</span></td>
               <td>Manakamana Engineering Hydropower Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 227.00</td>
+              <td class="mono">Rs 228.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.7%</td>
               <td class="mono" style="color:var(--text);">9.5%</td>
-              <td class="mono" style="color:var(--loss);">130.9</td>
+              <td class="mono" style="color:var(--loss);">131.4</td>
               <td class="mono" style="color:var(--text);">61.2%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -1051,10 +1051,10 @@
               <td><span class="sym-pill">BNHC</span></td>
               <td>Buddha Bhumi Nepal Hydropower Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 259.50</td>
+              <td class="mono">Rs 263.80</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.8%</td>
               <td class="mono" style="color:var(--text);">6.5%</td>
-              <td class="mono" style="color:var(--loss);">174.0</td>
+              <td class="mono" style="color:var(--loss);">176.9</td>
               <td class="mono" style="color:var(--text);">50.7%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -1063,10 +1063,10 @@
               <td><span class="sym-pill">RFPL</span></td>
               <td>River Falls Power Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 326.00</td>
+              <td class="mono">Rs 328.10</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.9%</td>
               <td class="mono" style="color:var(--text);">14.4%</td>
-              <td class="mono" style="color:var(--loss);">120.3</td>
+              <td class="mono" style="color:var(--loss);">121.1</td>
               <td class="mono" style="color:var(--text);">41.7%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -1075,10 +1075,10 @@
               <td><span class="sym-pill">PURE</span></td>
               <td>Pure Energy Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 662.00</td>
+              <td class="mono">Rs 761.30</td>
               <td class="mono" style="color:var(--text); font-weight:700;">3.1%</td>
               <td class="mono" style="color:var(--text);">10.2%</td>
-              <td class="mono" style="color:var(--loss);">209.3</td>
+              <td class="mono" style="color:var(--loss);">240.7</td>
               <td class="mono" style="color:var(--text);">67.9%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -1087,10 +1087,10 @@
               <td><span class="sym-pill">SIFC</span></td>
               <td>Shree Investment Finance</td>
               <td>Finance</td>
-              <td class="mono">Rs 478.00</td>
+              <td class="mono">Rs 480.10</td>
               <td class="mono" style="color:var(--text); font-weight:700;">3.3%</td>
               <td class="mono" style="color:var(--text);">6.5%</td>
-              <td class="mono" style="color:var(--loss);">103.4</td>
+              <td class="mono" style="color:var(--loss);">103.9</td>
               <td class="mono" style="color:var(--loss);">86.6%</td>
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
@@ -1099,10 +1099,10 @@
               <td><span class="sym-pill">AKJCL</span></td>
               <td>Ankhu Khola Jalvidhyut Company Ltd.</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 340.30</td>
+              <td class="mono">Rs 340.60</td>
               <td class="mono" style="color:var(--text); font-weight:700;">3.4%</td>
               <td class="mono" style="color:var(--text);">28.4%</td>
-              <td class="mono" style="color:var(--loss);">107.0</td>
+              <td class="mono" style="color:var(--loss);">107.1</td>
               <td class="mono" style="color:var(--text);">27.2%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -1111,10 +1111,10 @@
               <td><span class="sym-pill">SMJC</span></td>
               <td>Sagarmatha Jalabidhyut Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 405.00</td>
+              <td class="mono">Rs 403.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">3.5%</td>
               <td class="mono" style="color:var(--text);">19.9%</td>
-              <td class="mono" style="color:var(--loss);">107.0</td>
+              <td class="mono" style="color:var(--loss);">106.5</td>
               <td class="mono" style="color:var(--text);">60.3%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -1123,10 +1123,10 @@
               <td><span class="sym-pill">SPC</span></td>
               <td>Samling Power Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 397.90</td>
+              <td class="mono">Rs 398.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">3.7%</td>
               <td class="mono" style="color:var(--text);">8.4%</td>
-              <td class="mono" style="color:var(--loss);">100.2</td>
+              <td class="mono" style="color:var(--loss);">100.3</td>
               <td class="mono" style="color:var(--loss);">83.2%</td>
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
@@ -1135,10 +1135,10 @@
               <td><span class="sym-pill">NYADI</span></td>
               <td>Nyadi Hydropower Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 345.00</td>
+              <td class="mono">Rs 351.10</td>
               <td class="mono" style="color:var(--text); font-weight:700;">3.8%</td>
               <td class="mono" style="color:var(--text);">6.2%</td>
-              <td class="mono" style="color:var(--loss);">140.7</td>
+              <td class="mono" style="color:var(--loss);">143.2</td>
               <td class="mono" style="color:var(--loss);">84.8%</td>
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
@@ -1147,10 +1147,10 @@
               <td><span class="sym-pill">SICL</span></td>
               <td>Shikhar Insurance</td>
               <td>Insurance</td>
-              <td class="mono">Rs 522.60</td>
+              <td class="mono">Rs 550.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">4.2%</td>
               <td class="mono" style="color:var(--text);">4.4%</td>
-              <td class="mono" style="color:var(--loss);">124.6</td>
+              <td class="mono" style="color:var(--loss);">131.1</td>
               <td class="mono" style="color:var(--text);">61.0%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -1159,10 +1159,10 @@
               <td><span class="sym-pill">NLIC</span></td>
               <td>Nepal Life Insurance</td>
               <td>Insurance</td>
-              <td class="mono">Rs 696.00</td>
+              <td class="mono">Rs 701.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">4.5%</td>
               <td class="mono" style="color:var(--text);">0.6%</td>
-              <td class="mono" style="color:var(--loss);">141.8</td>
+              <td class="mono" style="color:var(--loss);">142.8</td>
               <td class="mono" style="color:var(--loss);">95.9%</td>
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
@@ -1171,10 +1171,10 @@
               <td><span class="sym-pill">LICN</span></td>
               <td>Life Insurance Nepal</td>
               <td>Insurance</td>
-              <td class="mono">Rs 754.00</td>
+              <td class="mono">Rs 756.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">4.9%</td>
               <td class="mono" style="color:var(--text);">1.2%</td>
-              <td class="mono" style="color:var(--loss);">102.2</td>
+              <td class="mono" style="color:var(--loss);">102.5</td>
               <td class="mono" style="color:var(--loss);">93.9%</td>
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
@@ -1183,10 +1183,10 @@
               <td><span class="sym-pill">CIT</span></td>
               <td>Citizen Investment Trust</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 1719.90</td>
+              <td class="mono">Rs 1713.90</td>
               <td class="mono" style="color:var(--text); font-weight:700;">6.1%</td>
               <td class="mono" style="color:var(--text);">60.0%</td>
-              <td class="mono" style="color:var(--text);">86.7</td>
+              <td class="mono" style="color:var(--text);">86.4</td>
               <td class="mono" style="color:var(--loss);">94.7%</td>
               <td><span class="badge badge-red">Excessive Debt Overhang</span></td>
             </tr>
@@ -1195,10 +1195,10 @@
               <td><span class="sym-pill">MCHL</span></td>
               <td>Menchhiyam Hydropower Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 253.00</td>
+              <td class="mono">Rs 255.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">6.6%</td>
               <td class="mono" style="color:var(--loss);">-4.2%</td>
-              <td class="mono" style="color:var(--loss);">-245.5</td>
+              <td class="mono" style="color:var(--loss);">-247.4</td>
               <td class="mono" style="color:var(--loss);">142.5%</td>
               <td><span class="badge badge-red">Excessive Debt Overhang</span></td>
             </tr>
@@ -1207,10 +1207,10 @@
               <td><span class="sym-pill">DHPL</span></td>
               <td>Dibyashwori Hydropower Ltd.</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 264.00</td>
+              <td class="mono">Rs 272.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">88.3%</td>
               <td class="mono" style="color:var(--text);">13.9%</td>
-              <td class="mono" style="color:var(--text);">47.9</td>
+              <td class="mono" style="color:var(--text);">49.3</td>
               <td class="mono" style="color:var(--loss);">122.9%</td>
               <td><span class="badge badge-red">Excessive Debt Overhang</span></td>
             </tr>
@@ -1227,7 +1227,7 @@
         <div class="panel-header">
           <div class="panel-title">
             <span>Stage 2 &amp; 3: Candidate Pool &amp; Sniper Timing Gates</span>
-            <span class="badge badge-green">21 Scored Candidates</span>
+            <span class="badge badge-green">24 Scored Candidates</span>
             <span class="badge badge-blue">DuPont Factor Model Gen-3</span>
           </div>
           <div style="font-size:12px; color:var(--text-muted);">
@@ -1237,7 +1237,7 @@
 
         <div class="filter-strip">
           <input type="text" class="search-box" x-model="chosenSearch" placeholder="Search symbol or keyword...">
-          <span class="chip" :class="{ 'active': chosenChip === 'All' }" @click="chosenChip = 'All'">All Candidates (21)</span>
+          <span class="chip" :class="{ 'active': chosenChip === 'All' }" @click="chosenChip = 'All'">All Candidates (24)</span>
           <span class="chip" :class="{ 'active': chosenChip === 'Passed Timing' }" @click="chosenChip = 'Passed Timing'">Passed Timing</span>
           <span class="chip" :class="{ 'active': chosenChip === 'Lock-in Unlock' }" @click="chosenChip = 'Lock-in Unlock'">Lock-in Unlock</span>
           <span class="chip" :class="{ 'active': chosenChip === 'Knife Veto' }" @click="chosenChip = 'Knife Veto'">Knife Veto</span>
@@ -1264,61 +1264,61 @@
               <td class="mono"><strong>#1</strong></td>
               <td><span class="sym-pill">HEI</span></td>
               <td>Himalayan Everest Insurance Limited</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.893</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.889</td>
               <td>
                 <span class="badge badge-green">PASSED GATES</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.893 Gen-3)</td>
+              <td>DuPont Quality, Basing in Pocket (0.889 Gen-3)</td>
               <td><span class="badge badge-blue">Clean Flow</span></td>
               <td>
                 <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 464.70 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 442.86</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 497.04 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 505.13 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 545.56 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                  <div><strong>Entry:</strong> Rs 469.90 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 447.81</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 502.61 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 510.78 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 551.66 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
                 </div>
                 </td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
               <td class="mono"><strong>#2</strong></td>
-              <td><span class="sym-pill">FOWAD</span></td>
-              <td>Forward Community Microfinance Bittiya Sanstha Ltd.</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.875</td>
+              <td><span class="sym-pill">SALICO</span></td>
+              <td>Sagarmatha Lumbini Insurance Co. Limited</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.830</td>
               <td>
                 <span class="badge badge-green">PASSED GATES</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.875 Gen-3)</td>
+              <td>DuPont Quality, Basing in Pocket (0.830 Gen-3)</td>
               <td><span class="badge badge-blue">Clean Flow</span></td>
               <td>
                 <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 874.50 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 833.40</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 935.37 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 950.58 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 1026.66 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                  <div><strong>Entry:</strong> Rs 527.50 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 502.71</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 564.21 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 573.39 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 619.28 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
                 </div>
                 </td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
               <td class="mono"><strong>#3</strong></td>
-              <td><span class="sym-pill">SALICO</span></td>
-              <td>Sagarmatha Lumbini Insurance Co. Limited</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.847</td>
+              <td><span class="sym-pill">FOWAD</span></td>
+              <td>Forward Community Microfinance Bittiya Sanstha Ltd.</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.829</td>
               <td>
                 <span class="badge badge-green">PASSED GATES</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.847 Gen-3)</td>
+              <td>DuPont Quality, Basing in Pocket (0.829 Gen-3)</td>
               <td><span class="badge badge-blue">Clean Flow</span></td>
               <td>
                 <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 526.80 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 502.04</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 563.47 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 572.63 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 618.46 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                  <div><strong>Entry:</strong> Rs 880.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 838.64</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 941.25 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 956.56 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 1033.12 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
                 </div>
                 </td>
             </tr>
@@ -1327,166 +1327,166 @@
               <td class="mono"><strong>#4</strong></td>
               <td><span class="sym-pill">NIL</span></td>
               <td>Neco Insurance</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.817</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.814</td>
               <td>
                 <span class="badge badge-green">PASSED GATES</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.817 Gen-3)</td>
+              <td>DuPont Quality, Basing in Pocket (0.814 Gen-3)</td>
               <td><span class="badge badge-blue">Clean Flow</span></td>
               <td>
                 <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 520.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 495.56</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 556.19 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 565.24 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 610.48 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                  <div><strong>Entry:</strong> Rs 525.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 500.32</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 561.54 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 570.67 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 616.35 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
                 </div>
                 </td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
               <td class="mono"><strong>#5</strong></td>
-              <td><span class="sym-pill">JBLB</span></td>
-              <td>Jeevan Bikas Laghubitta Bittya Sanstha Ltd</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.779</td>
+              <td><span class="sym-pill">API</span></td>
+              <td>Api Power</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.776</td>
               <td>
                 <span class="badge badge-green">PASSED GATES</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.779 Gen-3)</td>
+              <td>DuPont Quality, Basing in Pocket (0.776 Gen-3)</td>
               <td><span class="badge badge-blue">Clean Flow</span></td>
               <td>
                 <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 1248.10 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 1189.44</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 1334.97 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 1356.68 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 1465.27 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                  <div><strong>Entry:</strong> Rs 329.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 313.54</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 351.90 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 357.62 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 386.25 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
                 </div>
                 </td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
               <td class="mono"><strong>#6</strong></td>
-              <td><span class="sym-pill">SPIL</span></td>
-              <td>Siddhartha Premier Insurance Limited</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.775</td>
+              <td><span class="sym-pill">JBLB</span></td>
+              <td>Jeevan Bikas Laghubitta Bittya Sanstha Ltd</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.771</td>
               <td>
                 <span class="badge badge-green">PASSED GATES</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.775 Gen-3)</td>
+              <td>DuPont Quality, Basing in Pocket (0.771 Gen-3)</td>
               <td><span class="badge badge-blue">Clean Flow</span></td>
               <td>
                 <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 595.30 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 567.32</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 636.73 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 647.09 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 698.88 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                  <div><strong>Entry:</strong> Rs 1252.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 1193.16</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 1339.14 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 1360.92 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 1469.85 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
                 </div>
                 </td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
               <td class="mono"><strong>#7</strong></td>
-              <td><span class="sym-pill">GILB</span></td>
-              <td>Global IME Laghubitta Bittiya Sanstha </td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.745</td>
+              <td><span class="sym-pill">SPIL</span></td>
+              <td>Siddhartha Premier Insurance Limited</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.769</td>
               <td>
                 <span class="badge badge-green">PASSED GATES</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.745 Gen-3)</td>
+              <td>DuPont Quality, Basing in Pocket (0.769 Gen-3)</td>
               <td><span class="badge badge-blue">Clean Flow</span></td>
               <td>
                 <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 1091.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 1039.72</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 1166.93 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 1185.92 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 1280.83 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                  <div><strong>Entry:</strong> Rs 599.90 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 571.70</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 641.65 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 652.09 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 704.28 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
                 </div>
                 </td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
               <td class="mono"><strong>#8</strong></td>
-              <td><span class="sym-pill">API</span></td>
-              <td>Api Power</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.742</td>
+              <td><span class="sym-pill">GILB</span></td>
+              <td>Global IME Laghubitta Bittiya Sanstha </td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.734</td>
               <td>
                 <span class="badge badge-green">PASSED GATES</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.742 Gen-3)</td>
+              <td>DuPont Quality, Basing in Pocket (0.734 Gen-3)</td>
               <td><span class="badge badge-blue">Clean Flow</span></td>
               <td>
                 <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 326.10 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 310.77</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 348.80 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 354.47 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 382.84 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                  <div><strong>Entry:</strong> Rs 1116.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 1063.55</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 1193.67 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 1213.09 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 1310.18 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
                 </div>
                 </td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
               <td class="mono"><strong>#9</strong></td>
-              <td><span class="sym-pill">DDBL</span></td>
-              <td>Deprosc Laghubitta</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.735</td>
+              <td><span class="sym-pill">MEN</span></td>
+              <td>Mountain Energy Nepal Limited</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.734</td>
               <td>
                 <span class="badge badge-green">PASSED GATES</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.735 Gen-3)</td>
-              <td><span class="badge badge-blue">Clean Flow</span></td>
+              <td>DuPont Quality, Basing in Pocket (0.734 Gen-3)</td>
+              <td><span class="badge badge-green">Smart Money #3</span></td>
               <td>
                 <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 831.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 791.94</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 888.84 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 903.30 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 975.59 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                  <div><strong>Entry:</strong> Rs 630.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 600.39</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 673.85 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 684.81 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 739.62 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
                 </div>
                 </td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
               <td class="mono"><strong>#10</strong></td>
-              <td><span class="sym-pill">CHCL</span></td>
-              <td>Chilime Hydropower</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.731</td>
+              <td><span class="sym-pill">DDBL</span></td>
+              <td>Deprosc Laghubitta</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.729</td>
               <td>
                 <span class="badge badge-green">PASSED GATES</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.731 Gen-3)</td>
-              <td><span class="badge badge-green">Smart Money #5</span></td>
+              <td>DuPont Quality, Basing in Pocket (0.729 Gen-3)</td>
+              <td><span class="badge badge-blue">Clean Flow</span></td>
               <td>
                 <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 370.20 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 352.80</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 395.97 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 402.41 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 434.61 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                  <div><strong>Entry:</strong> Rs 841.10 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 801.57</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 899.64 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 914.28 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 987.45 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
                 </div>
                 </td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
               <td class="mono"><strong>#11</strong></td>
-              <td><span class="sym-pill">MEN</span></td>
-              <td>Mountain Energy Nepal Limited</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.728</td>
+              <td><span class="sym-pill">GUFL</span></td>
+              <td>Gurkhas Finance Ltd.</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.724</td>
               <td>
                 <span class="badge badge-green">PASSED GATES</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.728 Gen-3)</td>
-              <td><span class="badge badge-green">Smart Money #3</span></td>
+              <td>DuPont Quality, Basing in Pocket (0.724 Gen-3)</td>
+              <td><span class="badge badge-blue">Clean Flow</span></td>
               <td>
                 <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 627.10 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 597.63</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 670.75 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 681.66 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 736.22 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                  <div><strong>Entry:</strong> Rs 502.70 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 479.07</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 537.69 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 546.43 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 590.17 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
                 </div>
                 </td>
             </tr>
@@ -1495,208 +1495,271 @@
               <td class="mono"><strong>#12</strong></td>
               <td><span class="sym-pill">KBL</span></td>
               <td>Kumari Bank</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.717</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.718</td>
               <td>
                 <span class="badge badge-green">PASSED GATES</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.717 Gen-3)</td>
+              <td>DuPont Quality, Basing in Pocket (0.718 Gen-3)</td>
               <td><span class="badge badge-blue">Clean Flow</span></td>
               <td>
                 <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 213.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 202.99</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 227.82 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 231.53 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 250.06 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                  <div><strong>Entry:</strong> Rs 215.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 204.89</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 229.96 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 233.70 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 252.41 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
                 </div>
                 </td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
               <td class="mono"><strong>#13</strong></td>
-              <td><span class="sym-pill">GUFL</span></td>
-              <td>Gurkhas Finance Ltd.</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.712</td>
+              <td><span class="sym-pill">CHCL</span></td>
+              <td>Chilime Hydropower</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.713</td>
               <td>
                 <span class="badge badge-green">PASSED GATES</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.712 Gen-3)</td>
-              <td><span class="badge badge-blue">Clean Flow</span></td>
+              <td>DuPont Quality, Basing in Pocket (0.713 Gen-3)</td>
+              <td><span class="badge badge-green">Smart Money #5</span></td>
               <td>
                 <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 506.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 482.22</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 541.22 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 550.02 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 594.04 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                  <div><strong>Entry:</strong> Rs 369.20 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 351.85</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 394.90 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 401.32 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 433.44 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
                 </div>
                 </td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
               <td class="mono"><strong>#14</strong></td>
-              <td><span class="sym-pill">PRIN</span></td>
-              <td>Prabhu Insurance</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.697</td>
+              <td><span class="sym-pill">CYCL</span></td>
+              <td>CYC Nepal Laghubitta Bittiya Sanstha Limited</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.683</td>
               <td>
                 <span class="badge badge-green">PASSED GATES</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.697 Gen-3)</td>
+              <td>DuPont Quality, Basing in Pocket (0.683 Gen-3)</td>
               <td><span class="badge badge-blue">Clean Flow</span></td>
               <td>
                 <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 593.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 565.13</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 634.27 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 644.59 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 696.18 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                  <div><strong>Entry:</strong> Rs 1584.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 1509.55</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 1694.25 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 1721.81 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 1859.62 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
                 </div>
                 </td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
               <td class="mono"><strong>#15</strong></td>
-              <td><span class="sym-pill">CYCL</span></td>
-              <td>CYC Nepal Laghubitta Bittiya Sanstha Limited</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.682</td>
+              <td><span class="sym-pill">GBBL</span></td>
+              <td>Garima Bikas Bank</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.678</td>
               <td>
                 <span class="badge badge-green">PASSED GATES</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.682 Gen-3)</td>
+              <td>DuPont Quality, Basing in Pocket (0.678 Gen-3)</td>
               <td><span class="badge badge-blue">Clean Flow</span></td>
               <td>
                 <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 1599.90 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 1524.70</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 1711.25 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 1739.09 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 1878.28 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                  <div><strong>Entry:</strong> Rs 447.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 425.99</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 478.11 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 485.89 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 524.78 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
                 </div>
                 </td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
               <td class="mono"><strong>#16</strong></td>
-              <td><span class="sym-pill">JBBL</span></td>
-              <td>Jyoti Bikas Bank</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.682</td>
+              <td><span class="sym-pill">PRIN</span></td>
+              <td>Prabhu Insurance</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.676</td>
               <td>
                 <span class="badge badge-green">PASSED GATES</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.682 Gen-3)</td>
+              <td>DuPont Quality, Basing in Pocket (0.676 Gen-3)</td>
               <td><span class="badge badge-blue">Clean Flow</span></td>
               <td>
                 <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 325.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 309.72</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 347.62 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 353.27 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 381.55 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                  <div><strong>Entry:</strong> Rs 600.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 571.80</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 641.76 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 652.20 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 704.40 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
                 </div>
                 </td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
               <td class="mono"><strong>#17</strong></td>
-              <td><span class="sym-pill">GBBL</span></td>
-              <td>Garima Bikas Bank</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.677</td>
+              <td><span class="sym-pill">ILI</span></td>
+              <td>IME Life Insurance Company Limited</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.664</td>
               <td>
                 <span class="badge badge-green">PASSED GATES</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.677 Gen-3)</td>
+              <td>DuPont Quality, Basing in Pocket (0.664 Gen-3)</td>
               <td><span class="badge badge-blue">Clean Flow</span></td>
               <td>
                 <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 436.30 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 415.79</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 466.67 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 474.26 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 512.22 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                  <div><strong>Entry:</strong> Rs 405.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 385.96</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 433.19 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 440.24 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 475.47 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
                 </div>
                 </td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
               <td class="mono"><strong>#18</strong></td>
-              <td><span class="sym-pill">NMFBS</span></td>
-              <td>National Microfinance Bittiya Sanstha Ltd.</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.668</td>
+              <td><span class="sym-pill">SAHAS</span></td>
+              <td>Sahas Urja Limited</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.663</td>
               <td>
                 <span class="badge badge-green">PASSED GATES</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.668 Gen-3)</td>
-              <td><span class="badge badge-blue">Clean Flow</span></td>
+              <td>DuPont Quality, Basing in Pocket (0.663 Gen-3)</td>
+              <td><span class="badge badge-green">Smart Money #10</span></td>
               <td>
                 <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 1112.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 1059.74</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 1189.40 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 1208.74 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 1305.49 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                  <div><strong>Entry:</strong> Rs 694.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 661.38</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 742.30 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 754.38 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 814.76 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
                 </div>
                 </td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
               <td class="mono"><strong>#19</strong></td>
-              <td><span class="sym-pill">ILBS</span></td>
-              <td>Infinity Laghubitta Bittiya Sanstha Limited</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.667</td>
+              <td><span class="sym-pill">NMFBS</span></td>
+              <td>National Microfinance Bittiya Sanstha Ltd.</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.659</td>
               <td>
                 <span class="badge badge-green">PASSED GATES</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.667 Gen-3)</td>
+              <td>DuPont Quality, Basing in Pocket (0.659 Gen-3)</td>
               <td><span class="badge badge-blue">Clean Flow</span></td>
               <td>
                 <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 837.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 797.66</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 895.26 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 909.82 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 982.64 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                  <div><strong>Entry:</strong> Rs 1135.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 1081.65</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 1214.00 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 1233.74 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 1332.49 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
                 </div>
                 </td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
               <td class="mono"><strong>#20</strong></td>
-              <td><span class="sym-pill">CHDC</span></td>
-              <td>CEDB Holdings Limited</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.662</td>
+              <td><span class="sym-pill">ILBS</span></td>
+              <td>Infinity Laghubitta Bittiya Sanstha Limited</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.659</td>
               <td>
                 <span class="badge badge-green">PASSED GATES</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.662 Gen-3)</td>
+              <td>DuPont Quality, Basing in Pocket (0.659 Gen-3)</td>
               <td><span class="badge badge-blue">Clean Flow</span></td>
               <td>
                 <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 2179.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 2076.59</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 2330.66 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 2368.57 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 2558.15 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                  <div><strong>Entry:</strong> Rs 836.90 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 797.57</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 895.15 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 909.71 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 982.52 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
                 </div>
                 </td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
               <td class="mono"><strong>#21</strong></td>
-              <td><span class="sym-pill">NBL</span></td>
-              <td>Nepal Bank</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.654</td>
+              <td><span class="sym-pill">SWBBL</span></td>
+              <td>Swabalamban Bikas Bank</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.655</td>
               <td>
                 <span class="badge badge-green">PASSED GATES</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.654 Gen-3)</td>
+              <td>DuPont Quality, Basing in Pocket (0.655 Gen-3)</td>
               <td><span class="badge badge-blue">Clean Flow</span></td>
               <td>
                 <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 275.90 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 262.93</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 295.10 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 299.90 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 323.91 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                  <div><strong>Entry:</strong> Rs 677.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 645.18</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 724.12 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 735.90 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 794.80 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                </div>
+                </td>
+            </tr>
+            
+            <tr x-show="matchesChosen($el.textContent)">
+              <td class="mono"><strong>#22</strong></td>
+              <td><span class="sym-pill">PFL</span></td>
+              <td>Pokhara Finance</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.655</td>
+              <td>
+                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
+              </td>
+              <td>DuPont Quality, Basing in Pocket (0.655 Gen-3)</td>
+              <td><span class="badge badge-blue">Clean Flow</span></td>
+              <td>
+                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
+                  <div><strong>Entry:</strong> Rs 364.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 346.89</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 389.33 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 395.67 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 427.34 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                </div>
+                </td>
+            </tr>
+            
+            <tr x-show="matchesChosen($el.textContent)">
+              <td class="mono"><strong>#23</strong></td>
+              <td><span class="sym-pill">JBBL</span></td>
+              <td>Jyoti Bikas Bank</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.653</td>
+              <td>
+                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
+              </td>
+              <td>DuPont Quality, Basing in Pocket (0.653 Gen-3)</td>
+              <td><span class="badge badge-blue">Clean Flow</span></td>
+              <td>
+                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
+                  <div><strong>Entry:</strong> Rs 334.90 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 319.16</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 358.21 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 364.04 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 393.17 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                </div>
+                </td>
+            </tr>
+            
+            <tr x-show="matchesChosen($el.textContent)">
+              <td class="mono"><strong>#24</strong></td>
+              <td><span class="sym-pill">NBL</span></td>
+              <td>Nepal Bank</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.653</td>
+              <td>
+                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
+              </td>
+              <td>DuPont Quality, Basing in Pocket (0.653 Gen-3)</td>
+              <td><span class="badge badge-blue">Clean Flow</span></td>
+              <td>
+                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
+                  <div><strong>Entry:</strong> Rs 279.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 265.89</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 298.42 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 303.27 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 327.55 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
                 </div>
                 </td>
             </tr>
@@ -1721,12 +1784,18 @@
           </div>
         </div>
 
-        <!-- Sub-Pill Navigation -->
-        <div class="chip-row" style="margin-bottom: 12px;">
-          <div class="chip" :class="portfolioView === 'active' ? 'active' : ''" @click="portfolioView = 'active'">Active Positions (0)</div>
-          <div class="chip" :class="portfolioView === 'tickets' ? 'active' : ''" @click="portfolioView = 'tickets'">Executable Buy Tickets (0)</div>
-          <div class="chip" :class="portfolioView === 'chart' ? 'active' : ''" @click="portfolioView = 'chart'">Equity Curve &amp; Alpha</div>
-          <div class="chip" :class="portfolioView === 'history' ? 'active' : ''" @click="portfolioView = 'history'">Closed Trades Ledger</div>
+        <!-- Dual-Book Navigation Structure -->
+        <div style="margin-bottom: 16px; display: flex; flex-direction: column; gap: 8px;">
+          <div class="chip-row" style="margin-bottom: 0; display: flex; gap: 6px; flex-wrap: wrap; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: none;">
+            <div class="chip" :class="portfolioView === 'radar' ? 'active' : ''" @click="portfolioView = 'radar'" style="border-color: var(--accent);">Intraday Watchlist (12)</div>
+          </div>
+          <div style="font-size: 11px; font-weight: 700; color: var(--text-muted); letter-spacing: 1px; margin-top: 4px; padding-left: 2px;">——— AUTO TRADE SIMULATOR ———</div>
+          <div class="chip-row" style="margin-bottom: 4px; display: flex; gap: 6px; flex-wrap: wrap; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: none;">
+            <div class="chip" :class="portfolioView === 'tickets' ? 'active' : ''" @click="portfolioView = 'tickets'">Pending Tickets (0)</div>
+            <div class="chip" :class="portfolioView === 'active' ? 'active' : ''" @click="portfolioView = 'active'">Active Portfolio (0)</div>
+            <div class="chip" :class="portfolioView === 'history' ? 'active' : ''" @click="portfolioView = 'history'">Closed Ledger</div>
+            <div class="chip" :class="portfolioView === 'chart' ? 'active' : ''" @click="portfolioView = 'chart'">Analytics</div>
+          </div>
         </div>
 
         <!-- Top 6 Stat Cards -->
@@ -1764,6 +1833,122 @@
         </div>
 
         <!-- TABLE 0: Today's Executable TMS Buy Tickets (with Regime Lock) -->
+        
+        <!-- RADAR VIEW -->
+        <div x-show="portfolioView === 'radar'" style="background: var(--panel-card); border: 1px solid var(--border); border-radius: 6px; padding: 16px 18px; margin-bottom: 20px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span style="font-size: 14px; font-weight: 700; color: var(--text-heading);">Live Intraday Watchlist (Dual-Book Radar)</span>
+              <span class="badge badge-amber">10-Minute Market Sweeps</span>
+            </div>
+            <div style="font-size: 11px; color: var(--text-muted);">
+              Unlimited Ghost Tracking &middot; Bypasses Portfolio Caps &amp; Regime Lock
+            </div>
+          </div>
+
+          <div class="table-box" style="height: auto; max-height: none; overflow-y: visible !important; overflow-x: auto;">
+            <table class="tms-table">
+              <thead>
+                <tr>
+                  <th>Symbol</th>
+                  <th>Theoretical Entry (Buy Zone)</th>
+                  <th>Stop Loss (-1.0R)</th>
+                  <th>Conservative Target (+1.0R)</th>
+                  <th>Intraday Status</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td><strong>API</strong></td>
+                  <td>Rs 329.00</td>
+                  <td style="color:var(--loss);">Rs 312.55</td>
+                  <td style="color:var(--profit);">Rs 345.45</td>
+                  <td><span class="badge badge-blue">RADAR: INTRADAY WATCH</span></td>
+                </tr>
+                <tr>
+                  <td><strong>CHDC</strong></td>
+                  <td>Rs 2,215.00</td>
+                  <td style="color:var(--loss);">Rs 2,104.25</td>
+                  <td style="color:var(--profit);">Rs 2,325.75</td>
+                  <td><span class="badge badge-blue">RADAR: INTRADAY WATCH</span></td>
+                </tr>
+                <tr>
+                  <td><strong>DDBL</strong></td>
+                  <td>Rs 841.10</td>
+                  <td style="color:var(--loss);">Rs 799.04</td>
+                  <td style="color:var(--profit);">Rs 883.16</td>
+                  <td><span class="badge badge-blue">RADAR: INTRADAY WATCH</span></td>
+                </tr>
+                <tr>
+                  <td><strong>EBL</strong></td>
+                  <td>Rs 716.00</td>
+                  <td style="color:var(--loss);">Rs 680.20</td>
+                  <td style="color:var(--profit);">Rs 751.80</td>
+                  <td><span class="badge badge-blue">RADAR: INTRADAY WATCH</span></td>
+                </tr>
+                <tr>
+                  <td><strong>HDL</strong></td>
+                  <td>Rs 1,187.00</td>
+                  <td style="color:var(--loss);">Rs 1,127.65</td>
+                  <td style="color:var(--profit);">Rs 1,246.35</td>
+                  <td><span class="badge badge-blue">RADAR: INTRADAY WATCH</span></td>
+                </tr>
+                <tr>
+                  <td><strong>JBLB</strong></td>
+                  <td>Rs 1,252.00</td>
+                  <td style="color:var(--loss);">Rs 1,189.40</td>
+                  <td style="color:var(--profit);">Rs 1,314.60</td>
+                  <td><span class="badge badge-blue">RADAR: INTRADAY WATCH</span></td>
+                </tr>
+                <tr>
+                  <td><strong>MEN</strong></td>
+                  <td>Rs 630.00</td>
+                  <td style="color:var(--loss);">Rs 598.50</td>
+                  <td style="color:var(--profit);">Rs 661.50</td>
+                  <td><span class="badge badge-blue">RADAR: INTRADAY WATCH</span></td>
+                </tr>
+                <tr>
+                  <td><strong>NMFBS</strong></td>
+                  <td>Rs 1,135.00</td>
+                  <td style="color:var(--loss);">Rs 1,078.25</td>
+                  <td style="color:var(--profit);">Rs 1,191.75</td>
+                  <td><span class="badge badge-blue">RADAR: INTRADAY WATCH</span></td>
+                </tr>
+                <tr>
+                  <td><strong>SAMAJ</strong></td>
+                  <td>Rs 1,875.80</td>
+                  <td style="color:var(--loss);">Rs 1,782.01</td>
+                  <td style="color:var(--profit);">Rs 1,969.59</td>
+                  <td><span class="badge badge-blue">RADAR: INTRADAY WATCH</span></td>
+                </tr>
+                <tr>
+                  <td><strong>SHL</strong></td>
+                  <td>Rs 502.50</td>
+                  <td style="color:var(--loss);">Rs 477.38</td>
+                  <td style="color:var(--profit);">Rs 527.62</td>
+                  <td><span class="badge badge-blue">RADAR: INTRADAY WATCH</span></td>
+                </tr>
+                <tr>
+                  <td><strong>SWBBL</strong></td>
+                  <td>Rs 677.00</td>
+                  <td style="color:var(--loss);">Rs 643.15</td>
+                  <td style="color:var(--profit);">Rs 710.85</td>
+                  <td><span class="badge badge-blue">RADAR: INTRADAY WATCH</span></td>
+                </tr>
+                <tr>
+                  <td><strong>TPC</strong></td>
+                  <td>Rs 346.00</td>
+                  <td style="color:var(--loss);">Rs 328.70</td>
+                  <td style="color:var(--profit);">Rs 363.30</td>
+                  <td><span class="badge badge-blue">RADAR: INTRADAY WATCH</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    
+
         <div x-show="portfolioView === 'tickets'" style="background: var(--panel-card); border: 1px solid var(--border); border-radius: 6px; padding: 16px 18px; margin-bottom: 20px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
             <div style="display:flex; align-items:center; gap:8px;">
@@ -1783,7 +1968,7 @@
           <div class="lock-icon"><span class="status-indicator loss"></span></div>
           <div class="lock-details">
             <strong>TMS Order Dispatch Halted · Iron Cash Mandate Active</strong>
-            <span>NEPSE is trading at -5.14σ below the 10-day VWAP (2,560.84 vs 2,609.90). Capital preservation is strictly enforced. Zero buy orders allowed.</span>
+            <span>NEPSE is trading at -0.39σ below the 10-day VWAP (2,560.84 vs 2,573.61). Capital preservation is strictly enforced. Zero buy orders allowed.</span>
           </div>
           <span class="badge badge-red">0 Tickets Dispatched</span>
         </div>
@@ -1961,7 +2146,7 @@
         Aurora v26.09.05
     </div>
     <div style="margin-top: 0.35rem; color: #64748b; font-size: 0.78rem;">
-        Report Generated: <span style="color: #38bdf8; font-family: monospace; font-weight: 600;">2026-09-08 22:24:07 NPT</span>
+        Report Generated: <span style="color: #38bdf8; font-family: monospace; font-weight: 600;">2026-09-09 01:42:45 NPT</span>
     </div>
     <div style="margin-top: 0.4rem; font-size: 0.72rem; color: #475569;">
         Nepalese Stock Exchange (NEPSE) Quantitative Analytics &amp; Execution Engine

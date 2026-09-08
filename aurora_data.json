@@ -1,7 +1,7 @@
 {
   "meta": {
-    "as_of": "2026-09-08",
-    "generated_at": "2026-09-08 22:31:33 NPT",
+    "as_of": "2026-09-09",
+    "generated_at": "2026-09-09 01:56:29 NPT",
     "version": "Aurora v26.09.05",
     "calver": "v26.09.05",
     "regime": {
@@ -12,21 +12,21 @@
       "latest_close": 2560.84,
       "sma_slope": null,
       "bandwidth": 5.07,
-      "vwap": 2609.9,
-      "vwap_slope": -0.1946,
-      "vwap_sd": 9.54,
+      "vwap": 2573.61,
+      "vwap_slope": -1.134,
+      "vwap_sd": 33.0,
       "vwap_bands": {
-        "vwap": 2609.9,
-        "sd": 9.54,
-        "up1": 2619.44,
-        "up2": 2628.98,
-        "up3": 2638.52,
-        "up4": 2648.06,
-        "up5": 2657.6,
-        "up6": 2667.14,
-        "dn1": 2600.36,
-        "dn2": 2590.82,
-        "dn3": 2581.28
+        "vwap": 2573.61,
+        "sd": 33.0,
+        "up1": 2606.61,
+        "up2": 2639.61,
+        "up3": 2672.61,
+        "up4": 2705.61,
+        "up5": 2738.61,
+        "up6": 2771.61,
+        "dn1": 2540.61,
+        "dn2": 2507.61,
+        "dn3": 2474.61
       },
       "is_sideways": false
     },
@@ -812,7 +812,7 @@
         "symbol": "MANDU",
         "company": "Mandu Hydropower Limited",
         "unlock_date": "2026-09-10",
-        "days_to_unlock": 2,
+        "days_to_unlock": 1,
         "status": "VETOED",
         "badge_cls": "badge-topi",
         "directive": "Gate 0 Hard Veto \u00b7 Dilution Dump Guard"
@@ -821,7 +821,7 @@
         "symbol": "HATHY",
         "company": "Hathway Investment Nepal Limited",
         "unlock_date": "2026-09-19",
-        "days_to_unlock": 11,
+        "days_to_unlock": 10,
         "status": "VETOED",
         "badge_cls": "badge-topi",
         "directive": "Gate 0 Hard Veto \u00b7 Dilution Dump Guard"
@@ -830,7 +830,7 @@
         "symbol": "MSHL",
         "company": "Mid Solu Hydropower Limited",
         "unlock_date": "2026-09-27",
-        "days_to_unlock": 19,
+        "days_to_unlock": 18,
         "status": "VETOED",
         "badge_cls": "badge-topi",
         "directive": "Gate 0 Hard Veto \u00b7 Dilution Dump Guard"
@@ -839,7 +839,7 @@
         "symbol": "SONA",
         "company": "Sonapur Minerals And Oil Limited",
         "unlock_date": "2026-10-11",
-        "days_to_unlock": 33,
+        "days_to_unlock": 32,
         "status": "WATCH",
         "badge_cls": "badge-flow-veto",
         "directive": "Monitor distribution & volume drying"
@@ -848,7 +848,7 @@
         "symbol": "MMKJL",
         "company": "Mathillo Mailun Khola Jalvidhyut Limited",
         "unlock_date": "2026-10-21",
-        "days_to_unlock": 43,
+        "days_to_unlock": 42,
         "status": "WATCH",
         "badge_cls": "badge-flow-veto",
         "directive": "Monitor distribution & volume drying"
@@ -857,7 +857,7 @@
         "symbol": "CKHL",
         "company": "Chirkhwa Hydropower Limited",
         "unlock_date": "2026-11-03",
-        "days_to_unlock": 56,
+        "days_to_unlock": 55,
         "status": "CLEAR",
         "badge_cls": "badge-smart",
         "directive": "Safe from promoter supply shock"
@@ -866,7 +866,7 @@
         "symbol": "VLUCL",
         "company": "Vision Lumbini Urja Company Limited",
         "unlock_date": "2026-11-22",
-        "days_to_unlock": 75,
+        "days_to_unlock": 74,
         "status": "CLEAR",
         "badge_cls": "badge-smart",
         "directive": "Safe from promoter supply shock"
@@ -875,7 +875,7 @@
         "symbol": "MKCL",
         "company": "Muktinath Krishi Company Limited",
         "unlock_date": "2026-12-06",
-        "days_to_unlock": 89,
+        "days_to_unlock": 88,
         "status": "CLEAR",
         "badge_cls": "badge-smart",
         "directive": "Safe from promoter supply shock"
@@ -884,7 +884,7 @@
         "symbol": "NWCL",
         "company": "Nepal Warehousing Company Limited",
         "unlock_date": "2026-12-07",
-        "days_to_unlock": 90,
+        "days_to_unlock": 89,
         "status": "CLEAR",
         "badge_cls": "badge-smart",
         "directive": "Safe from promoter supply shock"
@@ -893,7 +893,7 @@
         "symbol": "HRL",
         "company": "Himalayan Reinsurance Limited",
         "unlock_date": "2026-12-27",
-        "days_to_unlock": 110,
+        "days_to_unlock": 109,
         "status": "CLEAR",
         "badge_cls": "badge-smart",
         "directive": "Safe from promoter supply shock"
