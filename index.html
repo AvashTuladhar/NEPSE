@@ -1724,7 +1724,7 @@
         <!-- Sub-Pill Navigation -->
         <div class="chip-row" style="margin-bottom: 12px;">
           <div class="chip" :class="portfolioView === 'active' ? 'active' : ''" @click="portfolioView = 'active'">Active Positions (1)</div>
-          <div class="chip" :class="portfolioView === 'tickets' ? 'active' : ''" @click="portfolioView = 'tickets'">Executable Buy Tickets (5)</div>
+          <div class="chip" :class="portfolioView === 'tickets' ? 'active' : ''" @click="portfolioView = 'tickets'">Executable Buy Tickets (0)</div>
           <div class="chip" :class="portfolioView === 'chart' ? 'active' : ''" @click="portfolioView = 'chart'">Equity Curve &amp; Alpha</div>
           <div class="chip" :class="portfolioView === 'history' ? 'active' : ''" @click="portfolioView = 'history'">Closed Trades Ledger</div>
         </div>
@@ -1809,107 +1809,7 @@
                 </tr>
               </thead>
               <tbody>
-                
-            <tr>
-              <td class="mono">#1</td>
-              <td><span class="sym-pill">FOWAD</span></td>
-              <td>Forward Community Microfinance Bittiya Sanstha</td>
-              <td><div class="col-two-tier"><span>DuPont Quality · Gen-3</span><span class="sub-text">Gen-3 Scored</span></div></td>
-              <td><span class="badge badge-blue">LIMIT (TWAP)</span></td>
-              <td class="mono">Rs 878.00</td>
-              <td class="mono" style="color:var(--loss);">Rs 842.70</td>
-              <td class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                <div style="color:var(--profit); font-weight:600;">T1 (+2.0σ &middot; 40%): Rs 939.11 <span style="font-size:9px; color:var(--text-muted); font-weight:normal;">Lock 40% &amp; Ratchet Stop to Breakeven (+0.8%)</span></div>
-                <div style="color:var(--accent); font-weight:600;">T2 (+2.5σ &middot; 40%): Rs 954.39 <span style="font-size:9px; color:var(--profit); font-weight:normal;">Core Institutional Exit (+8.7% edge)</span></div>
-                <div style="color:#e0e3eb; font-weight:600;">T3 (+5.0σ &middot; 20%): Rs 1030.77 <span style="font-size:9px; color:var(--warning); font-weight:normal;">Moonshot Runner (Trailing Prev Day Low)</span></div>
-              </td>
-              <td class="mono">110</td>
-              <td class="mono">Rs 96,580.00</td>
-              <td class="mono" style="color:var(--loss);">-Rs 3,883.00</td>
-              <td><span class="badge badge-red">LOCKED (Bear Mandate)</span></td>
-              <td><span class="badge badge-red">LOCKED (Bear Mandate)</span></td>
-            </tr>
-            
-            <tr>
-              <td class="mono">#2</td>
-              <td><span class="sym-pill">FOWAD</span></td>
-              <td>Forward Community Microfinance Bittiya Sanstha</td>
-              <td><div class="col-two-tier"><span>DuPont Quality · Gen-3</span><span class="sub-text">Gen-3 Scored</span></div></td>
-              <td><span class="badge badge-blue">LIMIT (TWAP)</span></td>
-              <td class="mono">Rs 878.00</td>
-              <td class="mono" style="color:var(--loss);">Rs 842.70</td>
-              <td class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                <div style="color:var(--profit); font-weight:600;">T1 (+2.0σ &middot; 40%): Rs 939.11 <span style="font-size:9px; color:var(--text-muted); font-weight:normal;">Lock 40% &amp; Ratchet Stop to Breakeven (+0.8%)</span></div>
-                <div style="color:var(--accent); font-weight:600;">T2 (+2.5σ &middot; 40%): Rs 954.39 <span style="font-size:9px; color:var(--profit); font-weight:normal;">Core Institutional Exit (+8.7% edge)</span></div>
-                <div style="color:#e0e3eb; font-weight:600;">T3 (+5.0σ &middot; 20%): Rs 1030.77 <span style="font-size:9px; color:var(--warning); font-weight:normal;">Moonshot Runner (Trailing Prev Day Low)</span></div>
-              </td>
-              <td class="mono">110</td>
-              <td class="mono">Rs 96,580.00</td>
-              <td class="mono" style="color:var(--loss);">-Rs 3,883.00</td>
-              <td><span class="badge badge-red">LOCKED (Bear Mandate)</span></td>
-              <td><span class="badge badge-red">LOCKED (Bear Mandate)</span></td>
-            </tr>
-            
-            <tr>
-              <td class="mono">#3</td>
-              <td><span class="sym-pill">FOWAD</span></td>
-              <td>Forward Community Microfinance Bittiya Sanstha</td>
-              <td><div class="col-two-tier"><span>DuPont Quality · Gen-3</span><span class="sub-text">Gen-3 Scored</span></div></td>
-              <td><span class="badge badge-blue">LIMIT (TWAP)</span></td>
-              <td class="mono">Rs 860.00</td>
-              <td class="mono" style="color:var(--loss);">Rs 825.43</td>
-              <td class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                <div style="color:var(--profit); font-weight:600;">T1 (+2.0σ &middot; 40%): Rs 919.86 <span style="font-size:9px; color:var(--text-muted); font-weight:normal;">Lock 40% &amp; Ratchet Stop to Breakeven (+0.8%)</span></div>
-                <div style="color:var(--accent); font-weight:600;">T2 (+2.5σ &middot; 40%): Rs 934.82 <span style="font-size:9px; color:var(--profit); font-weight:normal;">Core Institutional Exit (+8.7% edge)</span></div>
-                <div style="color:#e0e3eb; font-weight:600;">T3 (+5.0σ &middot; 20%): Rs 1009.64 <span style="font-size:9px; color:var(--warning); font-weight:normal;">Moonshot Runner (Trailing Prev Day Low)</span></div>
-              </td>
-              <td class="mono">110</td>
-              <td class="mono">Rs 94,600.00</td>
-              <td class="mono" style="color:var(--loss);">-Rs 3,802.70</td>
-              <td><span class="badge badge-red">LOCKED (Bear Mandate)</span></td>
-              <td><span class="badge badge-red">LOCKED (Bear Mandate)</span></td>
-            </tr>
-            
-            <tr>
-              <td class="mono">#4</td>
-              <td><span class="sym-pill">FOWAD</span></td>
-              <td>Forward Community Microfinance Bittiya Sanstha</td>
-              <td><div class="col-two-tier"><span>DuPont Quality · Gen-3</span><span class="sub-text">Gen-3 Scored</span></div></td>
-              <td><span class="badge badge-blue">LIMIT (TWAP)</span></td>
-              <td class="mono">Rs 859.00</td>
-              <td class="mono" style="color:var(--loss);">Rs 824.47</td>
-              <td class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                <div style="color:var(--profit); font-weight:600;">T1 (+2.0σ &middot; 40%): Rs 918.79 <span style="font-size:9px; color:var(--text-muted); font-weight:normal;">Lock 40% &amp; Ratchet Stop to Breakeven (+0.8%)</span></div>
-                <div style="color:var(--accent); font-weight:600;">T2 (+2.5σ &middot; 40%): Rs 933.73 <span style="font-size:9px; color:var(--profit); font-weight:normal;">Core Institutional Exit (+8.7% edge)</span></div>
-                <div style="color:#e0e3eb; font-weight:600;">T3 (+5.0σ &middot; 20%): Rs 1008.47 <span style="font-size:9px; color:var(--warning); font-weight:normal;">Moonshot Runner (Trailing Prev Day Low)</span></div>
-              </td>
-              <td class="mono">110</td>
-              <td class="mono">Rs 94,490.00</td>
-              <td class="mono" style="color:var(--loss);">-Rs 3,798.30</td>
-              <td><span class="badge badge-red">LOCKED (Bear Mandate)</span></td>
-              <td><span class="badge badge-red">LOCKED (Bear Mandate)</span></td>
-            </tr>
-            
-            <tr>
-              <td class="mono">#5</td>
-              <td><span class="sym-pill">SALICO</span></td>
-              <td>Sagarmatha Lumbini Insurance</td>
-              <td><div class="col-two-tier"><span>DuPont Quality · Gen-3</span><span class="sub-text">Gen-3 Scored</span></div></td>
-              <td><span class="badge badge-blue">LIMIT (TWAP)</span></td>
-              <td class="mono">Rs 553.00</td>
-              <td class="mono" style="color:var(--loss);">Rs 530.77</td>
-              <td class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                <div style="color:var(--profit); font-weight:600;">T1 (+2.0σ &middot; 40%): Rs 591.49 <span style="font-size:9px; color:var(--text-muted); font-weight:normal;">Lock 40% &amp; Ratchet Stop to Breakeven (+0.8%)</span></div>
-                <div style="color:var(--accent); font-weight:600;">T2 (+2.5σ &middot; 40%): Rs 601.11 <span style="font-size:9px; color:var(--profit); font-weight:normal;">Core Institutional Exit (+8.7% edge)</span></div>
-                <div style="color:#e0e3eb; font-weight:600;">T3 (+5.0σ &middot; 20%): Rs 649.22 <span style="font-size:9px; color:var(--warning); font-weight:normal;">Moonshot Runner (Trailing Prev Day Low)</span></div>
-              </td>
-              <td class="mono">70</td>
-              <td class="mono">Rs 38,710.00</td>
-              <td class="mono" style="color:var(--loss);">-Rs 1,556.10</td>
-              <td><span class="badge badge-red">LOCKED (Bear Mandate)</span></td>
-              <td><span class="badge badge-red">LOCKED (Bear Mandate)</span></td>
-            </tr>
-            
+                <tr><td colspan='13' style='text-align:center; padding: 25px; color: var(--text-muted);'>TMS buy tickets locked: Iron Cash Mandate active. Capital preservation mode (0 buy orders dispatched).</td></tr>
               </tbody>
             </table>
           </div>
@@ -2097,7 +1997,7 @@
         Aurora v26.09.05
     </div>
     <div style="margin-top: 0.35rem; color: #64748b; font-size: 0.78rem;">
-        Report Generated: <span style="color: #38bdf8; font-family: monospace; font-weight: 600;">2026-09-08 21:44:15 NPT</span>
+        Report Generated: <span style="color: #38bdf8; font-family: monospace; font-weight: 600;">2026-09-08 22:00:43 NPT</span>
     </div>
     <div style="margin-top: 0.4rem; font-size: 0.72rem; color: #475569;">
         Nepalese Stock Exchange (NEPSE) Quantitative Analytics &amp; Execution Engine
