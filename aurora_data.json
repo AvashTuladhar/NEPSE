@@ -1,7 +1,7 @@
 {
   "meta": {
-    "as_of": "2026-09-07",
-    "generated_at": "2026-09-07 22:20:38 NPT",
+    "as_of": "2026-09-08",
+    "generated_at": "2026-09-08 09:06:41 NPT",
     "version": "Aurora v26.09.05",
     "calver": "v26.09.05",
     "regime": {
@@ -10,7 +10,7 @@
       "icon": "",
       "mandate": "100% Cash Preservation (0 Buys)",
       "latest_close": 2560.84,
-      "sma_slope": -0.1946,
+      "sma_slope": null,
       "bandwidth": 5.07,
       "vwap": 2609.9,
       "vwap_slope": -0.1946,
@@ -687,13 +687,34 @@
   },
   "simulator": {
     "state": {
-      "equity": 500000.0,
-      "cash": 500000.0,
-      "invested": 0.0,
-      "active": 0,
+      "equity": 499730.9,
+      "cash": 421730.9,
+      "invested": 78269.1,
+      "active": 1,
       "max": 0
     },
-    "positions": [],
+    "positions": [
+      {
+        "symbol": "Neco Insurance",
+        "company": "Neco Insurance",
+        "qty": 150,
+        "entry_price": 520.0,
+        "effective_price": 521.79,
+        "current_price": 520.0,
+        "invested_cost": 78269.1,
+        "market_value": 78000.0,
+        "pnl_net": -269.1,
+        "pnl_pct": -0.34,
+        "stop_loss": 495.79,
+        "target": 599.79,
+        "risk_per_share": 26.0,
+        "entry_date": "2026-09-07",
+        "days_held": 1,
+        "can_sell": false,
+        "book": "TACTICAL",
+        "is_runner": false
+      }
+    ],
     "orders": [],
     "trades": [],
     "capital_history": []
