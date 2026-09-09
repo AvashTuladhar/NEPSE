@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aurora 4.0 Quantitative Trading Terminal</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="index.css">
   <!-- Alpine.js via CDN -->
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
 </head>
@@ -242,7 +241,7 @@
             </thead>
             <tbody>
               
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="JFL Janaki Finance Finance" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">JFL</span></td>
               <td>Janaki Finance</td>
               <td>Finance</td>
@@ -254,7 +253,7 @@
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="NABBC Narayani Development Bank Banking" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">NABBC</span></td>
               <td>Narayani Development Bank</td>
               <td>Banking</td>
@@ -266,7 +265,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="NRIC Nepal Reinsurance Company Limited Insurance" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">NRIC</span></td>
               <td>Nepal Reinsurance Company Limited</td>
               <td>Insurance</td>
@@ -278,7 +277,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="RHPL Rasuwagadhi Hydropower Company Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">RHPL</span></td>
               <td>Rasuwagadhi Hydropower Company Limited</td>
               <td>Hydropower</td>
@@ -290,7 +289,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="TRH Taragaon Regency Hotel Manufacturing & Corporate" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">TRH</span></td>
               <td>Taragaon Regency Hotel</td>
               <td>Manufacturing & Corporate</td>
@@ -302,7 +301,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="AHL Asian Hydropower Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">AHL</span></td>
               <td>Asian Hydropower Limited</td>
               <td>Hydropower</td>
@@ -314,7 +313,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="HRL Himalayan Reinsurance Limited Insurance" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">HRL</span></td>
               <td>Himalayan Reinsurance Limited</td>
               <td>Insurance</td>
@@ -326,7 +325,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="JOSHI Joshi Hydropower Development Company Ltd Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">JOSHI</span></td>
               <td>Joshi Hydropower Development Company Ltd</td>
               <td>Hydropower</td>
@@ -338,7 +337,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="SSHL Shiva Shree Hydropower Ltd Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">SSHL</span></td>
               <td>Shiva Shree Hydropower Ltd</td>
               <td>Hydropower</td>
@@ -350,7 +349,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="TSHL Three Star Hydropower Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">TSHL</span></td>
               <td>Three Star Hydropower Limited</td>
               <td>Hydropower</td>
@@ -362,7 +361,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="KRBL Karnali Development Bank Banking" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">KRBL</span></td>
               <td>Karnali Development Bank</td>
               <td>Banking</td>
@@ -374,7 +373,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="TVCL Trishuli Jal Vidhyut Company Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">TVCL</span></td>
               <td>Trishuli Jal Vidhyut Company Limited</td>
               <td>Hydropower</td>
@@ -386,7 +385,7 @@
               <td><span class="badge badge-red">Excessive Debt Overhang</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="NFS Nepal Finance Finance" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">NFS</span></td>
               <td>Nepal Finance</td>
               <td>Finance</td>
@@ -398,7 +397,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="CITY City Hotel Limited Manufacturing & Corporate" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">CITY</span></td>
               <td>City Hotel Limited</td>
               <td>Manufacturing & Corporate</td>
@@ -410,7 +409,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="SANVI Sanvi Energy Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">SANVI</span></td>
               <td>Sanvi Energy Limited</td>
               <td>Hydropower</td>
@@ -422,7 +421,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="NWCL Nepal Warehousing Company Limited Manufacturing & Corporate" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">NWCL</span></td>
               <td>Nepal Warehousing Company Limited</td>
               <td>Manufacturing & Corporate</td>
@@ -434,7 +433,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="SAGAR Sagar Distillery Limited Manufacturing & Corporate" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">SAGAR</span></td>
               <td>Sagar Distillery Limited</td>
               <td>Manufacturing & Corporate</td>
@@ -446,7 +445,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="OMPL Om Megashree Pharmaceuticals Limited Manufacturing & Corporate" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">OMPL</span></td>
               <td>Om Megashree Pharmaceuticals Limited</td>
               <td>Manufacturing & Corporate</td>
@@ -458,7 +457,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="IHL Ingwa Hydropower Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">IHL</span></td>
               <td>Ingwa Hydropower Limited</td>
               <td>Hydropower</td>
@@ -470,7 +469,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="MEL Modi Energy Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">MEL</span></td>
               <td>Modi Energy Limited</td>
               <td>Hydropower</td>
@@ -482,7 +481,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="HDHPC Himal Dolakha Hydropower Company Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">HDHPC</span></td>
               <td>Himal Dolakha Hydropower Company Limited</td>
               <td>Hydropower</td>
@@ -494,7 +493,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="KKHC Khanikhola Hydropower Co. Ltd. Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">KKHC</span></td>
               <td>Khanikhola Hydropower Co. Ltd.</td>
               <td>Hydropower</td>
@@ -506,7 +505,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="NRM Nepal Republic Media Limited Manufacturing & Corporate" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">NRM</span></td>
               <td>Nepal Republic Media Limited</td>
               <td>Manufacturing & Corporate</td>
@@ -518,7 +517,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="GCIL Ghorahi Cement Industry Limited Manufacturing & Corporate" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">GCIL</span></td>
               <td>Ghorahi Cement Industry Limited</td>
               <td>Manufacturing & Corporate</td>
@@ -530,7 +529,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="BEDC Bhugol Energy Development Company Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">BEDC</span></td>
               <td>Bhugol Energy Development Company Limited</td>
               <td>Hydropower</td>
@@ -542,7 +541,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="NRN NRN Infrastructure and Development Limited Manufacturing & Corporate" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">NRN</span></td>
               <td>NRN Infrastructure and Development Limited</td>
               <td>Manufacturing & Corporate</td>
@@ -554,7 +553,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="PPL Peoples Power Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">PPL</span></td>
               <td>Peoples Power Limited</td>
               <td>Hydropower</td>
@@ -566,7 +565,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="RHGCL Rapti Hydro And General Construction Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">RHGCL</span></td>
               <td>Rapti Hydro And General Construction Limited</td>
               <td>Hydropower</td>
@@ -578,7 +577,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="GHL Ghalemdi Hydro Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">GHL</span></td>
               <td>Ghalemdi Hydro Limited</td>
               <td>Hydropower</td>
@@ -590,7 +589,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="OHL Oriental Hotels Manufacturing & Corporate" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">OHL</span></td>
               <td>Oriental Hotels</td>
               <td>Manufacturing & Corporate</td>
@@ -602,7 +601,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="NHPC National Hydro Power Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">NHPC</span></td>
               <td>National Hydro Power</td>
               <td>Hydropower</td>
@@ -614,7 +613,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="PRVU Prabhu Bank Banking" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">PRVU</span></td>
               <td>Prabhu Bank</td>
               <td>Banking</td>
@@ -626,7 +625,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="BHPL Barahi Hydropower Public Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">BHPL</span></td>
               <td>Barahi Hydropower Public Limited</td>
               <td>Hydropower</td>
@@ -638,7 +637,7 @@
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="DHEL Daramkhola Hydro Energy Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">DHEL</span></td>
               <td>Daramkhola Hydro Energy Limited</td>
               <td>Hydropower</td>
@@ -650,7 +649,7 @@
               <td><span class="badge badge-red">Capital Preservation Veto</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="BANDIPUR Bandipur Cablecar and Tourism Limited Manufacturing & Corporate" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">BANDIPUR</span></td>
               <td>Bandipur Cablecar and Tourism Limited</td>
               <td>Manufacturing & Corporate</td>
@@ -662,7 +661,7 @@
               <td><span class="badge badge-red">Capital Preservation Veto</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="BUNGAL Bungal Hydro Limited  Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">BUNGAL</span></td>
               <td>Bungal Hydro Limited </td>
               <td>Hydropower</td>
@@ -674,7 +673,7 @@
               <td><span class="badge badge-red">Excessive Debt Overhang</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="ULHC Upper Lohore Khola Hydropower Company Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">ULHC</span></td>
               <td>Upper Lohore Khola Hydropower Company Limited</td>
               <td>Hydropower</td>
@@ -686,7 +685,7 @@
               <td><span class="badge badge-red">Capital Preservation Veto</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="MABEL Mabilung Energy Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">MABEL</span></td>
               <td>Mabilung Energy Limited</td>
               <td>Hydropower</td>
@@ -698,7 +697,7 @@
               <td><span class="badge badge-red">Capital Preservation Veto</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="JHAPA Jhapa Energy Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">JHAPA</span></td>
               <td>Jhapa Energy Limited</td>
               <td>Hydropower</td>
@@ -710,7 +709,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="HIMSTAR Him Star Urja Company Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">HIMSTAR</span></td>
               <td>Him Star Urja Company Limited</td>
               <td>Hydropower</td>
@@ -722,7 +721,7 @@
               <td><span class="badge badge-red">Excessive Debt Overhang</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="IGI IGI Prudential insurance Limited Insurance" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">IGI</span></td>
               <td>IGI Prudential insurance Limited</td>
               <td>Insurance</td>
@@ -734,7 +733,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="SINDU Sindhu Bikash Bank Banking" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">SINDU</span></td>
               <td>Sindhu Bikash Bank</td>
               <td>Banking</td>
@@ -746,7 +745,7 @@
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="CREST Crest Micro Life Insurance Limited Insurance" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">CREST</span></td>
               <td>Crest Micro Life Insurance Limited</td>
               <td>Insurance</td>
@@ -758,7 +757,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="MKJC Mailung Khola Jal Vidhyut Company Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">MKJC</span></td>
               <td>Mailung Khola Jal Vidhyut Company Limited</td>
               <td>Hydropower</td>
@@ -770,7 +769,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="NICA NIC Asia Bank Banking" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">NICA</span></td>
               <td>NIC Asia Bank</td>
               <td>Banking</td>
@@ -782,7 +781,7 @@
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="NGPL Ngadi Group Power Ltd. Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">NGPL</span></td>
               <td>Ngadi Group Power Ltd.</td>
               <td>Hydropower</td>
@@ -794,7 +793,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="TTL Trade Tower Limited Manufacturing & Corporate" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">TTL</span></td>
               <td>Trade Tower Limited</td>
               <td>Manufacturing & Corporate</td>
@@ -806,7 +805,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="HATHY Hathway Investment Nepal Limited Manufacturing & Corporate" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">HATHY</span></td>
               <td>Hathway Investment Nepal Limited</td>
               <td>Manufacturing & Corporate</td>
@@ -818,7 +817,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="USHL Upper Syange Hydropower Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">USHL</span></td>
               <td>Upper Syange Hydropower Limited</td>
               <td>Hydropower</td>
@@ -830,7 +829,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="UPCL Universal Power Company Ltd Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">UPCL</span></td>
               <td>Universal Power Company Ltd</td>
               <td>Hydropower</td>
@@ -842,7 +841,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="SPHL Sayapatri Hydropower Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">SPHL</span></td>
               <td>Sayapatri Hydropower Limited</td>
               <td>Hydropower</td>
@@ -854,7 +853,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="SAIL Shreenagar Agritech Industries Limited Manufacturing & Corporate" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">SAIL</span></td>
               <td>Shreenagar Agritech Industries Limited</td>
               <td>Manufacturing & Corporate</td>
@@ -866,7 +865,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="DORDI Dordi Khola Jal Bidyut Company Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">DORDI</span></td>
               <td>Dordi Khola Jal Bidyut Company Limited</td>
               <td>Hydropower</td>
@@ -878,7 +877,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="DOLTI Dolti Power Company Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">DOLTI</span></td>
               <td>Dolti Power Company Limited</td>
               <td>Hydropower</td>
@@ -890,7 +889,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="LEC Liberty Energy Company Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">LEC</span></td>
               <td>Liberty Energy Company Limited</td>
               <td>Hydropower</td>
@@ -902,7 +901,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="RIDI Ridi Power Company Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">RIDI</span></td>
               <td>Ridi Power Company Limited</td>
               <td>Hydropower</td>
@@ -914,7 +913,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="AKPL Arun Kabeli Power Ltd. Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">AKPL</span></td>
               <td>Arun Kabeli Power Ltd.</td>
               <td>Hydropower</td>
@@ -926,7 +925,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="GMLI Guardian Micro Life Insurance Limited Insurance" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">GMLI</span></td>
               <td>Guardian Micro Life Insurance Limited</td>
               <td>Insurance</td>
@@ -938,7 +937,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="GLH GreenLife Hydropower Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">GLH</span></td>
               <td>GreenLife Hydropower Limited</td>
               <td>Hydropower</td>
@@ -950,7 +949,7 @@
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="BARUN Barun Hydropower Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">BARUN</span></td>
               <td>Barun Hydropower</td>
               <td>Hydropower</td>
@@ -962,7 +961,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="NLG Nlg Insurance Insurance" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">NLG</span></td>
               <td>Nlg Insurance</td>
               <td>Insurance</td>
@@ -974,7 +973,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="PHCL Peoples Hydropower Company Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">PHCL</span></td>
               <td>Peoples Hydropower Company Limited</td>
               <td>Hydropower</td>
@@ -986,7 +985,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="CHL Chhyangdi Hydropower Ltd. Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">CHL</span></td>
               <td>Chhyangdi Hydropower Ltd.</td>
               <td>Hydropower</td>
@@ -998,7 +997,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="ENL Emerging Nepal Limited Manufacturing & Corporate" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">ENL</span></td>
               <td>Emerging Nepal Limited</td>
               <td>Manufacturing & Corporate</td>
@@ -1010,7 +1009,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="MKHC Maya Khola Hydropower Company Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">MKHC</span></td>
               <td>Maya Khola Hydropower Company Limited</td>
               <td>Hydropower</td>
@@ -1022,7 +1021,7 @@
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="UAIL United Ajod Insurance Limited Insurance" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">UAIL</span></td>
               <td>United Ajod Insurance Limited</td>
               <td>Insurance</td>
@@ -1034,7 +1033,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="SJCL Sanjen Jalavidhyut Company Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">SJCL</span></td>
               <td>Sanjen Jalavidhyut Company Limited</td>
               <td>Hydropower</td>
@@ -1046,7 +1045,7 @@
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="MEHL Manakamana Engineering Hydropower Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">MEHL</span></td>
               <td>Manakamana Engineering Hydropower Limited</td>
               <td>Hydropower</td>
@@ -1058,7 +1057,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="BNHC Buddha Bhumi Nepal Hydropower Company Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">BNHC</span></td>
               <td>Buddha Bhumi Nepal Hydropower Company Limited</td>
               <td>Hydropower</td>
@@ -1070,7 +1069,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="RFPL River Falls Power Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">RFPL</span></td>
               <td>River Falls Power Limited</td>
               <td>Hydropower</td>
@@ -1082,7 +1081,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="PURE Pure Energy Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">PURE</span></td>
               <td>Pure Energy Limited</td>
               <td>Hydropower</td>
@@ -1094,7 +1093,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="SIFC Shree Investment Finance Finance" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">SIFC</span></td>
               <td>Shree Investment Finance</td>
               <td>Finance</td>
@@ -1106,7 +1105,7 @@
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="AKJCL Ankhu Khola Jalvidhyut Company Ltd. Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">AKJCL</span></td>
               <td>Ankhu Khola Jalvidhyut Company Ltd.</td>
               <td>Hydropower</td>
@@ -1118,7 +1117,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="SMJC Sagarmatha Jalabidhyut Company Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">SMJC</span></td>
               <td>Sagarmatha Jalabidhyut Company Limited</td>
               <td>Hydropower</td>
@@ -1130,7 +1129,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="SPC Samling Power Company Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">SPC</span></td>
               <td>Samling Power Company Limited</td>
               <td>Hydropower</td>
@@ -1142,7 +1141,7 @@
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="NYADI Nyadi Hydropower Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">NYADI</span></td>
               <td>Nyadi Hydropower Limited</td>
               <td>Hydropower</td>
@@ -1154,7 +1153,7 @@
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="SICL Shikhar Insurance Insurance" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">SICL</span></td>
               <td>Shikhar Insurance</td>
               <td>Insurance</td>
@@ -1166,7 +1165,7 @@
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="NLIC Nepal Life Insurance Insurance" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">NLIC</span></td>
               <td>Nepal Life Insurance</td>
               <td>Insurance</td>
@@ -1178,7 +1177,7 @@
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="LICN Life Insurance Nepal Insurance" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">LICN</span></td>
               <td>Life Insurance Nepal</td>
               <td>Insurance</td>
@@ -1190,7 +1189,7 @@
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="CIT Citizen Investment Trust Manufacturing & Corporate" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">CIT</span></td>
               <td>Citizen Investment Trust</td>
               <td>Manufacturing & Corporate</td>
@@ -1202,7 +1201,7 @@
               <td><span class="badge badge-red">Excessive Debt Overhang</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="MCHL Menchhiyam Hydropower Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">MCHL</span></td>
               <td>Menchhiyam Hydropower Limited</td>
               <td>Hydropower</td>
@@ -1214,7 +1213,7 @@
               <td><span class="badge badge-red">Excessive Debt Overhang</span></td>
             </tr>
             
-            <tr x-show="matchesAvoid($el.textContent)">
+            <tr data-search="DHPL Dibyashwori Hydropower Ltd. Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">DHPL</span></td>
               <td>Dibyashwori Hydropower Ltd.</td>
               <td>Hydropower</td>
@@ -1271,7 +1270,7 @@
             </thead>
             <tbody>
               
-            <tr x-show="matchesChosen($el.textContent)">
+            <tr data-search="HEI Himalayan Everest Insurance Limited" x-show="matchesChosen($el)">
               <td class="mono"><strong>#1</strong></td>
               <td><span class="sym-pill">HEI</span></td>
               <td>Himalayan Everest Insurance Limited</td>
@@ -1285,7 +1284,7 @@
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr x-show="matchesChosen($el.textContent)">
+            <tr data-search="SALICO Sagarmatha Lumbini Insurance Co. Limited" x-show="matchesChosen($el)">
               <td class="mono"><strong>#2</strong></td>
               <td><span class="sym-pill">SALICO</span></td>
               <td>Sagarmatha Lumbini Insurance Co. Limited</td>
@@ -1299,7 +1298,7 @@
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr x-show="matchesChosen($el.textContent)">
+            <tr data-search="FOWAD Forward Community Microfinance Bittiya Sanstha Ltd." x-show="matchesChosen($el)">
               <td class="mono"><strong>#3</strong></td>
               <td><span class="sym-pill">FOWAD</span></td>
               <td>Forward Community Microfinance Bittiya Sanstha Ltd.</td>
@@ -1313,7 +1312,7 @@
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr x-show="matchesChosen($el.textContent)">
+            <tr data-search="NIL Neco Insurance" x-show="matchesChosen($el)">
               <td class="mono"><strong>#4</strong></td>
               <td><span class="sym-pill">NIL</span></td>
               <td>Neco Insurance</td>
@@ -1327,7 +1326,7 @@
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr x-show="matchesChosen($el.textContent)">
+            <tr data-search="API Api Power" x-show="matchesChosen($el)">
               <td class="mono"><strong>#5</strong></td>
               <td><span class="sym-pill">API</span></td>
               <td>Api Power</td>
@@ -1341,7 +1340,7 @@
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr x-show="matchesChosen($el.textContent)">
+            <tr data-search="JBLB Jeevan Bikas Laghubitta Bittya Sanstha Ltd" x-show="matchesChosen($el)">
               <td class="mono"><strong>#6</strong></td>
               <td><span class="sym-pill">JBLB</span></td>
               <td>Jeevan Bikas Laghubitta Bittya Sanstha Ltd</td>
@@ -1355,7 +1354,7 @@
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr x-show="matchesChosen($el.textContent)">
+            <tr data-search="SPIL Siddhartha Premier Insurance Limited" x-show="matchesChosen($el)">
               <td class="mono"><strong>#7</strong></td>
               <td><span class="sym-pill">SPIL</span></td>
               <td>Siddhartha Premier Insurance Limited</td>
@@ -1369,7 +1368,7 @@
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr x-show="matchesChosen($el.textContent)">
+            <tr data-search="GILB Global IME Laghubitta Bittiya Sanstha " x-show="matchesChosen($el)">
               <td class="mono"><strong>#8</strong></td>
               <td><span class="sym-pill">GILB</span></td>
               <td>Global IME Laghubitta Bittiya Sanstha </td>
@@ -1383,7 +1382,7 @@
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr x-show="matchesChosen($el.textContent)">
+            <tr data-search="MEN Mountain Energy Nepal Limited" x-show="matchesChosen($el)">
               <td class="mono"><strong>#9</strong></td>
               <td><span class="sym-pill">MEN</span></td>
               <td>Mountain Energy Nepal Limited</td>
@@ -1397,7 +1396,7 @@
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr x-show="matchesChosen($el.textContent)">
+            <tr data-search="DDBL Deprosc Laghubitta" x-show="matchesChosen($el)">
               <td class="mono"><strong>#10</strong></td>
               <td><span class="sym-pill">DDBL</span></td>
               <td>Deprosc Laghubitta</td>
@@ -1411,7 +1410,7 @@
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr x-show="matchesChosen($el.textContent)">
+            <tr data-search="GUFL Gurkhas Finance Ltd." x-show="matchesChosen($el)">
               <td class="mono"><strong>#11</strong></td>
               <td><span class="sym-pill">GUFL</span></td>
               <td>Gurkhas Finance Ltd.</td>
@@ -1425,7 +1424,7 @@
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr x-show="matchesChosen($el.textContent)">
+            <tr data-search="KBL Kumari Bank" x-show="matchesChosen($el)">
               <td class="mono"><strong>#12</strong></td>
               <td><span class="sym-pill">KBL</span></td>
               <td>Kumari Bank</td>
@@ -1439,7 +1438,7 @@
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr x-show="matchesChosen($el.textContent)">
+            <tr data-search="CHCL Chilime Hydropower" x-show="matchesChosen($el)">
               <td class="mono"><strong>#13</strong></td>
               <td><span class="sym-pill">CHCL</span></td>
               <td>Chilime Hydropower</td>
@@ -1453,7 +1452,7 @@
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr x-show="matchesChosen($el.textContent)">
+            <tr data-search="CYCL CYC Nepal Laghubitta Bittiya Sanstha Limited" x-show="matchesChosen($el)">
               <td class="mono"><strong>#14</strong></td>
               <td><span class="sym-pill">CYCL</span></td>
               <td>CYC Nepal Laghubitta Bittiya Sanstha Limited</td>
@@ -1474,7 +1473,7 @@
                 </td>
             </tr>
             
-            <tr x-show="matchesChosen($el.textContent)">
+            <tr data-search="GBBL Garima Bikas Bank" x-show="matchesChosen($el)">
               <td class="mono"><strong>#15</strong></td>
               <td><span class="sym-pill">GBBL</span></td>
               <td>Garima Bikas Bank</td>
@@ -1488,7 +1487,7 @@
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr x-show="matchesChosen($el.textContent)">
+            <tr data-search="PRIN Prabhu Insurance" x-show="matchesChosen($el)">
               <td class="mono"><strong>#16</strong></td>
               <td><span class="sym-pill">PRIN</span></td>
               <td>Prabhu Insurance</td>
@@ -1502,7 +1501,7 @@
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr x-show="matchesChosen($el.textContent)">
+            <tr data-search="ILI IME Life Insurance Company Limited" x-show="matchesChosen($el)">
               <td class="mono"><strong>#17</strong></td>
               <td><span class="sym-pill">ILI</span></td>
               <td>IME Life Insurance Company Limited</td>
@@ -1516,7 +1515,7 @@
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr x-show="matchesChosen($el.textContent)">
+            <tr data-search="SAHAS Sahas Urja Limited" x-show="matchesChosen($el)">
               <td class="mono"><strong>#18</strong></td>
               <td><span class="sym-pill">SAHAS</span></td>
               <td>Sahas Urja Limited</td>
@@ -1530,7 +1529,7 @@
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr x-show="matchesChosen($el.textContent)">
+            <tr data-search="NMFBS National Microfinance Bittiya Sanstha Ltd." x-show="matchesChosen($el)">
               <td class="mono"><strong>#19</strong></td>
               <td><span class="sym-pill">NMFBS</span></td>
               <td>National Microfinance Bittiya Sanstha Ltd.</td>
@@ -1544,7 +1543,7 @@
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr x-show="matchesChosen($el.textContent)">
+            <tr data-search="ILBS Infinity Laghubitta Bittiya Sanstha Limited" x-show="matchesChosen($el)">
               <td class="mono"><strong>#20</strong></td>
               <td><span class="sym-pill">ILBS</span></td>
               <td>Infinity Laghubitta Bittiya Sanstha Limited</td>
@@ -1558,7 +1557,7 @@
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr x-show="matchesChosen($el.textContent)">
+            <tr data-search="SWBBL Swabalamban Bikas Bank" x-show="matchesChosen($el)">
               <td class="mono"><strong>#21</strong></td>
               <td><span class="sym-pill">SWBBL</span></td>
               <td>Swabalamban Bikas Bank</td>
@@ -1572,7 +1571,7 @@
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr x-show="matchesChosen($el.textContent)">
+            <tr data-search="PFL Pokhara Finance" x-show="matchesChosen($el)">
               <td class="mono"><strong>#22</strong></td>
               <td><span class="sym-pill">PFL</span></td>
               <td>Pokhara Finance</td>
@@ -1586,7 +1585,7 @@
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr x-show="matchesChosen($el.textContent)">
+            <tr data-search="JBBL Jyoti Bikas Bank" x-show="matchesChosen($el)">
               <td class="mono"><strong>#23</strong></td>
               <td><span class="sym-pill">JBBL</span></td>
               <td>Jyoti Bikas Bank</td>
@@ -1600,7 +1599,7 @@
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr x-show="matchesChosen($el.textContent)">
+            <tr data-search="NBL Nepal Bank" x-show="matchesChosen($el)">
               <td class="mono"><strong>#24</strong></td>
               <td><span class="sym-pill">NBL</span></td>
               <td>Nepal Bank</td>
@@ -1712,7 +1711,7 @@
               </thead>
               <tbody>
 
-                <tr x-show="matchesSearch($el.textContent)">
+                <tr data-search="CYCL Cyc Nepal Laghubitta Bittiya Sanstha" x-show="matchesSearch($el)">
                   <td><span class="sym-pill">CYCL</span></td>
                   <td><div class="col-two-tier"><span>Cyc Nepal Laghubitta Bittiya Sanstha</span><span class="sub-text">Gen-3 Scored</span></div></td>
                   <td class="mono" style="font-weight:700;">Rs 1,584.00</td>
@@ -1928,7 +1927,7 @@
         Aurora v26.09.05
     </div>
     <div style="margin-top: 0.35rem; color: #64748b; font-size: 0.78rem;">
-        Report Generated: <span style="color: #38bdf8; font-family: monospace; font-weight: 600;">2026-09-09 08:52:23 NPT</span>
+        Report Generated: <span style="color: #38bdf8; font-family: monospace; font-weight: 600;">2026-09-09 09:01:13 NPT</span>
     </div>
     <div style="margin-top: 0.4rem; font-size: 0.72rem; color: #475569;">
         Nepalese Stock Exchange (NEPSE) Quantitative Analytics &amp; Execution Engine
@@ -1956,26 +1955,31 @@
             this.$refs.universalSearchInput.focus();
           }
         },
-        matchesSearch(text) {
+        matchesSearch(elOrText) {
           const q = this.searchQuery.toLowerCase().trim();
           if (!q) return true;
-          return (text || '').toLowerCase().includes(q);
+          const searchData = (typeof elOrText === 'object' && elOrText) 
+            ? (elOrText.dataset.search || elOrText.textContent || '')
+            : (elOrText || '');
+          return searchData.toLowerCase().includes(q);
         },
-        matchesAvoid(text) {
-          if (!this.matchesSearch(text)) return false;
+        matchesAvoid(elOrText) {
+          if (!this.matchesSearch(elOrText)) return false;
           const c = this.avoidChip;
           if (c === 'All') return true;
-          const t = (text || '').toLowerCase();
+          const rawText = (typeof elOrText === 'object' && elOrText) ? elOrText.textContent : (elOrText || '');
+          const t = rawText.toLowerCase();
           if (c === 'Negative Earnings') return t.includes('negative earnings') || t.includes('margin collapse');
           if (c === 'Extreme PE') return t.includes('extreme pe') || t.includes('bubble');
           if (c === 'Excessive Debt') return t.includes('debt') || t.includes('overhang') || t.includes('insolvent');
           return true;
         },
-        matchesChosen(text) {
-          if (!this.matchesSearch(text)) return false;
+        matchesChosen(elOrText) {
+          if (!this.matchesSearch(elOrText)) return false;
           const c = this.chosenChip;
           if (c === 'All') return true;
-          const t = (text || '').toLowerCase();
+          const rawText = (typeof elOrText === 'object' && elOrText) ? elOrText.textContent : (elOrText || '');
+          const t = rawText.toLowerCase();
           if (c === 'Passed Timing') return t.includes('passed gates');
           if (c === 'Lock-in Unlock') return t.includes('gate 0') || t.includes('lock-in');
           if (c === 'Knife Veto') return t.includes('gate 1') || t.includes('knife');
