@@ -37,19 +37,19 @@
     <nav class="tab-bar">
       <button type="button" class="tab-btn" :class="{ 'active': activeTab === 'tab-regime' }" @click="switchTab('tab-regime')">
         <span>1. Market Regime &amp; VWAP</span>
-        <span class="tab-count">-0.39σ</span>
+        <span class="tab-count">-0.56σ</span>
       </button>
       <button type="button" class="tab-btn" :class="{ 'active': activeTab === 'tab-avoid' }" @click="switchTab('tab-avoid')">
         <span>2. Stocks to Avoid</span>
-        <span class="tab-count">82 Filtered</span>
+        <span class="tab-count">81 Filtered</span>
       </button>
       <button type="button" class="tab-btn" :class="{ 'active': activeTab === 'tab-chosen' }" @click="switchTab('tab-chosen')">
         <span>3. Multi-Factor Ranking</span>
-        <span class="tab-count">24 Scored</span>
+        <span class="tab-count">21 Scored</span>
       </button>
       <button type="button" class="tab-btn" :class="{ 'active': activeTab === 'tab-watchlist' }" @click="switchTab('tab-watchlist')">
         <span>4. Execution Radar</span>
-        <span class="tab-count">1 Ready</span>
+        <span class="tab-count">0 Ready</span>
       </button>
       <button type="button" class="tab-btn" :class="{ 'active': activeTab === 'tab-portfolio' }" @click="switchTab('tab-portfolio')">
         <span>5. Tactical Portfolio Desk</span>
@@ -75,27 +75,27 @@
         <div class="stat-row">
           <div class="stat-card">
             <div class="stat-label">NEPSE Latest Close</div>
-            <div class="stat-num" style="color:var(--loss);">2,560.84</div>
-            <div class="stat-sub" style="color:var(--loss);">-12.77 pts (-0.50% session)</div>
+            <div class="stat-num" style="color:var(--loss);">2,545.40</div>
+            <div class="stat-sub" style="color:var(--loss);">-14.49 pts (-0.57% session)</div>
           </div>
           <div class="stat-card">
             <div class="stat-label">10-Day Index VWAP</div>
-            <div class="stat-num" style="color:var(--accent);">2,573.61</div>
+            <div class="stat-num" style="color:var(--accent);">2,559.89</div>
             <div class="stat-sub" style="color:var(--text-muted);">True Capital Accumulation Anchor</div>
           </div>
           <div class="stat-card">
             <div class="stat-label">Difference vs VWAP</div>
-            <div class="stat-num" style="color:var(--loss);">-12.77 pts</div>
-            <div class="stat-sub" style="color:var(--loss);">-0.50% vs volume support</div>
+            <div class="stat-num" style="color:var(--loss);">-14.49 pts</div>
+            <div class="stat-sub" style="color:var(--loss);">-0.57% vs volume support</div>
           </div>
           <div class="stat-card">
             <div class="stat-label">Standard Deviation (Z)</div>
-            <div class="stat-num" style="color:var(--loss);">-0.39σ</div>
-            <div class="stat-sub" style="color:var(--text-muted);">1σ = 33.00 pts</div>
+            <div class="stat-num" style="color:var(--loss);">-0.56σ</div>
+            <div class="stat-sub" style="color:var(--text-muted);">1σ = 25.79 pts</div>
           </div>
           <div class="stat-card">
             <div class="stat-label">5-Day VWAP Slope</div>
-            <div class="stat-num" style="color:var(--warning);">-1.13%/day</div>
+            <div class="stat-num" style="color:var(--warning);">-1.34%/day</div>
             <div class="stat-sub" style="color:var(--warning);">(DOWNTREND)</div>
           </div>
           <div class="stat-card">
@@ -109,7 +109,7 @@
         <div class="spectrum-track">
           <div class="spectrum-legend-top">
             <span style="color:var(--loss);">Bear Regime: Distribution / Capital Exit</span>
-            <span style="color:var(--accent); font-weight:700;">10-Day VWAP Equilibrium (2,573.61)</span>
+            <span style="color:var(--accent); font-weight:700;">10-Day VWAP Equilibrium (2,559.89)</span>
             <span style="color:var(--profit);">Bull Regime: Smart Money Markup</span>
           </div>
 
@@ -117,17 +117,17 @@
             <div class="spec-bear"></div>
             <div class="spec-bull"></div>
             <div class="spec-vwap-line"></div>
-            <div class="spec-nepse-pin" style="left: 43.50%;" title="NEPSE: 2,560.84 (-0.39σ)"></div>
+            <div class="spec-nepse-pin" style="left: 40.67%;" title="NEPSE: 2,545.40 (-0.56σ)"></div>
           </div>
 
           <div class="spectrum-nodes">
-            <div class="spec-col"><span class="node-p">2,474.6</span><span class="node-l">-3.0σ</span></div>
-            <div class="spec-col"><span class="node-p">2,507.6</span><span class="node-l">-2.0σ Floor</span></div>
-            <div class="spec-col"><span class="node-p">2,540.6</span><span class="node-l">-1.0σ</span></div>
-            <div class="spec-col"><span class="node-p" style="color:var(--accent);">2,573.6</span><span class="node-l" style="color:var(--accent);">VWAP (0.0σ)</span></div>
-            <div class="spec-col"><span class="node-p">2,606.6</span><span class="node-l">+1.0σ</span></div>
-            <div class="spec-col"><span class="node-p">2,639.6</span><span class="node-l">+2.0σ Ceiling</span></div>
-            <div class="spec-col"><span class="node-p">2,672.6</span><span class="node-l">+3.0σ Blowoff</span></div>
+            <div class="spec-col"><span class="node-p">2,482.5</span><span class="node-l">-3.0σ</span></div>
+            <div class="spec-col"><span class="node-p">2,508.3</span><span class="node-l">-2.0σ Floor</span></div>
+            <div class="spec-col"><span class="node-p">2,534.1</span><span class="node-l">-1.0σ</span></div>
+            <div class="spec-col"><span class="node-p" style="color:var(--accent);">2,559.9</span><span class="node-l" style="color:var(--accent);">VWAP (0.0σ)</span></div>
+            <div class="spec-col"><span class="node-p">2,585.7</span><span class="node-l">+1.0σ</span></div>
+            <div class="spec-col"><span class="node-p">2,611.5</span><span class="node-l">+2.0σ Ceiling</span></div>
+            <div class="spec-col"><span class="node-p">2,637.3</span><span class="node-l">+3.0σ Blowoff</span></div>
           </div>
         </div>
 
@@ -212,7 +212,7 @@
         <div class="panel-header">
           <div class="panel-title">
             <span>Pipeline Filter: Capital Preservation: Stocks to Avoid</span>
-            <span class="badge badge-red">82 Companies Screened Out</span>
+            <span class="badge badge-red">81 Companies Screened Out</span>
           </div>
           <div style="font-size:12px; color:var(--text-muted);">
             Filtered BEFORE factor ranking: Chronic money-losers, insolvent balance sheets &amp; extreme leverage.
@@ -220,7 +220,7 @@
         </div>
 
         <div class="filter-strip">
-          <span class="chip" :class="{ 'active': avoidChip === 'All' }" @click="avoidChip = 'All'">All Avoid (82)</span>
+          <span class="chip" :class="{ 'active': avoidChip === 'All' }" @click="avoidChip = 'All'">All Avoid (81)</span>
           <span class="chip" :class="{ 'active': avoidChip === 'Negative Earnings' }" @click="avoidChip = 'Negative Earnings'">Negative Earnings</span>
           <span class="chip" :class="{ 'active': avoidChip === 'Extreme PE' }" @click="avoidChip = 'Extreme PE'">Extreme PE</span>
           <span class="chip" :class="{ 'active': avoidChip === 'Excessive Debt' }" @click="avoidChip = 'Excessive Debt'">Excessive Debt</span>
@@ -248,10 +248,10 @@
               <td><span class="sym-pill">JFL</span></td>
               <td>Janaki Finance</td>
               <td>Finance</td>
-              <td class="mono">Rs 313.60</td>
+              <td class="mono">Rs 266.60</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-57.3%</td>
               <td class="mono" style="color:var(--text);">2.6%</td>
-              <td class="mono" style="color:var(--loss);">231.7</td>
+              <td class="mono" style="color:var(--loss);">197.0</td>
               <td class="mono" style="color:var(--loss);">100.1%</td>
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
@@ -260,10 +260,10 @@
               <td><span class="sym-pill">NABBC</span></td>
               <td>Narayani Development Bank</td>
               <td>Banking</td>
-              <td class="mono">Rs 711.10</td>
+              <td class="mono">Rs 709.90</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-45.5%</td>
               <td class="mono" style="color:var(--loss);">-235.2%</td>
-              <td class="mono" style="color:var(--loss);">-69.4</td>
+              <td class="mono" style="color:var(--loss);">-69.3</td>
               <td class="mono" style="color:var(--text);">80.0%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -272,10 +272,10 @@
               <td><span class="sym-pill">NRIC</span></td>
               <td>Nepal Reinsurance Company Limited</td>
               <td>Insurance</td>
-              <td class="mono">Rs 805.00</td>
+              <td class="mono">Rs 799.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-33.3%</td>
               <td class="mono" style="color:var(--loss);">-48.6%</td>
-              <td class="mono" style="color:var(--loss);">-20.2</td>
+              <td class="mono" style="color:var(--loss);">-20.0</td>
               <td class="mono" style="color:var(--text);">62.9%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -284,10 +284,10 @@
               <td><span class="sym-pill">RHPL</span></td>
               <td>Rasuwagadhi Hydropower Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 170.20</td>
+              <td class="mono">Rs 163.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-28.2%</td>
               <td class="mono" style="color:var(--loss);">-114.1%</td>
-              <td class="mono" style="color:var(--loss);">-8.1</td>
+              <td class="mono" style="color:var(--loss);">-7.7</td>
               <td class="mono" style="color:var(--loss);">102.5%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -296,10 +296,10 @@
               <td><span class="sym-pill">TRH</span></td>
               <td>Taragaon Regency Hotel</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 798.00</td>
+              <td class="mono">Rs 765.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-24.5%</td>
               <td class="mono" style="color:var(--loss);">-169.6%</td>
-              <td class="mono" style="color:var(--loss);">-22.2</td>
+              <td class="mono" style="color:var(--loss);">-21.3</td>
               <td class="mono" style="color:var(--text);">35.3%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -308,10 +308,10 @@
               <td><span class="sym-pill">AHL</span></td>
               <td>Asian Hydropower Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 360.00</td>
+              <td class="mono">Rs 356.30</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-22.1%</td>
               <td class="mono" style="color:var(--loss);">-72.7%</td>
-              <td class="mono" style="color:var(--loss);">-20.7</td>
+              <td class="mono" style="color:var(--loss);">-20.5</td>
               <td class="mono" style="color:var(--loss);">103.7%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -320,10 +320,10 @@
               <td><span class="sym-pill">HRL</span></td>
               <td>Himalayan Reinsurance Limited</td>
               <td>Insurance</td>
-              <td class="mono">Rs 516.00</td>
+              <td class="mono">Rs 502.10</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-14.7%</td>
               <td class="mono" style="color:var(--loss);">-33.4%</td>
-              <td class="mono" style="color:var(--loss);">-24.0</td>
+              <td class="mono" style="color:var(--loss);">-23.4</td>
               <td class="mono" style="color:var(--text);">51.8%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -332,10 +332,10 @@
               <td><span class="sym-pill">JOSHI</span></td>
               <td>Joshi Hydropower Development Company Ltd</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 261.50</td>
+              <td class="mono">Rs 258.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-11.4%</td>
               <td class="mono" style="color:var(--loss);">-452.5%</td>
-              <td class="mono" style="color:var(--loss);">-40.0</td>
+              <td class="mono" style="color:var(--loss);">-39.5</td>
               <td class="mono" style="color:var(--text);">11.2%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -344,10 +344,10 @@
               <td><span class="sym-pill">SSHL</span></td>
               <td>Shiva Shree Hydropower Ltd</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 193.00</td>
+              <td class="mono">Rs 191.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-10.6%</td>
               <td class="mono" style="color:var(--loss);">-31.8%</td>
-              <td class="mono" style="color:var(--loss);">-47.8</td>
+              <td class="mono" style="color:var(--loss);">-47.3</td>
               <td class="mono" style="color:var(--text);">75.4%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -356,10 +356,10 @@
               <td><span class="sym-pill">TSHL</span></td>
               <td>Three Star Hydropower Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 333.00</td>
+              <td class="mono">Rs 342.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-9.8%</td>
               <td class="mono" style="color:var(--loss);">-23.2%</td>
-              <td class="mono" style="color:var(--loss);">-52.0</td>
+              <td class="mono" style="color:var(--loss);">-53.4</td>
               <td class="mono" style="color:var(--loss);">95.1%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -380,10 +380,10 @@
               <td><span class="sym-pill">TVCL</span></td>
               <td>Trishuli Jal Vidhyut Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 317.20</td>
+              <td class="mono">Rs 293.10</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-9.2%</td>
               <td class="mono" style="color:var(--text);">0.0%</td>
-              <td class="mono" style="color:var(--loss);">-43.1</td>
+              <td class="mono" style="color:var(--loss);">-39.8</td>
               <td class="mono" style="color:var(--loss);">105.9%</td>
               <td><span class="badge badge-red">Excessive Debt Overhang</span></td>
             </tr>
@@ -392,10 +392,10 @@
               <td><span class="sym-pill">NFS</span></td>
               <td>Nepal Finance</td>
               <td>Finance</td>
-              <td class="mono">Rs 524.90</td>
+              <td class="mono">Rs 491.10</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-7.2%</td>
               <td class="mono" style="color:var(--loss);">-20.6%</td>
-              <td class="mono" style="color:var(--loss);">-58.7</td>
+              <td class="mono" style="color:var(--loss);">-54.9</td>
               <td class="mono" style="color:var(--loss);">83.1%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -404,10 +404,10 @@
               <td><span class="sym-pill">CITY</span></td>
               <td>City Hotel Limited</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 342.00</td>
+              <td class="mono">Rs 337.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-7.0%</td>
               <td class="mono" style="color:var(--loss);">-38.4%</td>
-              <td class="mono" style="color:var(--loss);">-59.5</td>
+              <td class="mono" style="color:var(--loss);">-58.7</td>
               <td class="mono" style="color:var(--text);">48.4%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -416,10 +416,10 @@
               <td><span class="sym-pill">SANVI</span></td>
               <td>Sanvi Energy Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 559.00</td>
+              <td class="mono">Rs 558.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-7.0%</td>
               <td class="mono" style="color:var(--loss);">-54.1%</td>
-              <td class="mono" style="color:var(--loss);">-72.4</td>
+              <td class="mono" style="color:var(--loss);">-72.3</td>
               <td class="mono" style="color:var(--text);">73.9%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -428,10 +428,10 @@
               <td><span class="sym-pill">NWCL</span></td>
               <td>Nepal Warehousing Company Limited</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 598.00</td>
+              <td class="mono">Rs 590.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-6.8%</td>
               <td class="mono" style="color:var(--loss);">-14.2%</td>
-              <td class="mono" style="color:var(--loss);">-91.5</td>
+              <td class="mono" style="color:var(--loss);">-90.3</td>
               <td class="mono" style="color:var(--text);">0.0%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -440,10 +440,10 @@
               <td><span class="sym-pill">SAGAR</span></td>
               <td>Sagar Distillery Limited</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 1593.00</td>
+              <td class="mono">Rs 1559.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-6.4%</td>
               <td class="mono" style="color:var(--loss);">-27.5%</td>
-              <td class="mono" style="color:var(--loss);">-201.9</td>
+              <td class="mono" style="color:var(--loss);">-197.6</td>
               <td class="mono" style="color:var(--text);">43.4%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -452,10 +452,10 @@
               <td><span class="sym-pill">OMPL</span></td>
               <td>Om Megashree Pharmaceuticals Limited</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 895.00</td>
+              <td class="mono">Rs 900.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-6.3%</td>
               <td class="mono" style="color:var(--loss);">-17.8%</td>
-              <td class="mono" style="color:var(--loss);">-142.2</td>
+              <td class="mono" style="color:var(--loss);">-143.0</td>
               <td class="mono" style="color:var(--text);">61.7%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -464,10 +464,10 @@
               <td><span class="sym-pill">IHL</span></td>
               <td>Ingwa Hydropower Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 292.20</td>
+              <td class="mono">Rs 302.90</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-5.5%</td>
               <td class="mono" style="color:var(--loss);">-12.3%</td>
-              <td class="mono" style="color:var(--loss);">-55.8</td>
+              <td class="mono" style="color:var(--loss);">-57.8</td>
               <td class="mono" style="color:var(--loss);">84.8%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -476,10 +476,10 @@
               <td><span class="sym-pill">MEL</span></td>
               <td>Modi Energy Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 199.60</td>
+              <td class="mono">Rs 199.30</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-4.7%</td>
               <td class="mono" style="color:var(--loss);">-17.1%</td>
-              <td class="mono" style="color:var(--loss);">-72.1</td>
+              <td class="mono" style="color:var(--loss);">-72.0</td>
               <td class="mono" style="color:var(--text);">76.0%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -488,10 +488,10 @@
               <td><span class="sym-pill">HDHPC</span></td>
               <td>Himal Dolakha Hydropower Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 200.80</td>
+              <td class="mono">Rs 197.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-4.5%</td>
               <td class="mono" style="color:var(--loss);">-136.8%</td>
-              <td class="mono" style="color:var(--loss);">-59.0</td>
+              <td class="mono" style="color:var(--loss);">-57.9</td>
               <td class="mono" style="color:var(--text);">19.9%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -500,10 +500,10 @@
               <td><span class="sym-pill">KKHC</span></td>
               <td>Khanikhola Hydropower Co. Ltd.</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 267.90</td>
+              <td class="mono">Rs 265.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-4.0%</td>
               <td class="mono" style="color:var(--loss);">-27.6%</td>
-              <td class="mono" style="color:var(--loss);">-89.1</td>
+              <td class="mono" style="color:var(--loss);">-88.1</td>
               <td class="mono" style="color:var(--text);">46.3%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -512,10 +512,10 @@
               <td><span class="sym-pill">NRM</span></td>
               <td>Nepal Republic Media Limited</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 287.00</td>
+              <td class="mono">Rs 275.10</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-3.7%</td>
               <td class="mono" style="color:var(--loss);">-27.0%</td>
-              <td class="mono" style="color:var(--loss);">-90.4</td>
+              <td class="mono" style="color:var(--loss);">-86.6</td>
               <td class="mono" style="color:var(--text);">29.8%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -524,10 +524,10 @@
               <td><span class="sym-pill">GCIL</span></td>
               <td>Ghorahi Cement Industry Limited</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 378.50</td>
+              <td class="mono">Rs 372.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-3.6%</td>
               <td class="mono" style="color:var(--loss);">-6.5%</td>
-              <td class="mono" style="color:var(--loss);">-61.7</td>
+              <td class="mono" style="color:var(--loss);">-60.7</td>
               <td class="mono" style="color:var(--text);">61.1%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -536,10 +536,10 @@
               <td><span class="sym-pill">BEDC</span></td>
               <td>Bhugol Energy Development Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 287.00</td>
+              <td class="mono">Rs 285.50</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-3.5%</td>
               <td class="mono" style="color:var(--loss);">-14.8%</td>
-              <td class="mono" style="color:var(--loss);">-169.2</td>
+              <td class="mono" style="color:var(--loss);">-168.3</td>
               <td class="mono" style="color:var(--text);">73.3%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -548,10 +548,10 @@
               <td><span class="sym-pill">NRN</span></td>
               <td>NRN Infrastructure and Development Limited</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 1400.00</td>
+              <td class="mono">Rs 1405.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-2.5%</td>
               <td class="mono" style="color:var(--loss);">-159.8%</td>
-              <td class="mono" style="color:var(--loss);">-324.0</td>
+              <td class="mono" style="color:var(--loss);">-325.2</td>
               <td class="mono" style="color:var(--text);">8.6%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -560,10 +560,10 @@
               <td><span class="sym-pill">PPL</span></td>
               <td>Peoples Power Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 306.00</td>
+              <td class="mono">Rs 304.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-2.4%</td>
               <td class="mono" style="color:var(--loss);">-24.2%</td>
-              <td class="mono" style="color:var(--loss);">-133.4</td>
+              <td class="mono" style="color:var(--loss);">-132.5</td>
               <td class="mono" style="color:var(--text);">0.1%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -572,10 +572,10 @@
               <td><span class="sym-pill">RHGCL</span></td>
               <td>Rapti Hydro And General Construction Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 250.00</td>
+              <td class="mono">Rs 245.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-2.3%</td>
               <td class="mono" style="color:var(--loss);">-31.5%</td>
-              <td class="mono" style="color:var(--loss);">-116.0</td>
+              <td class="mono" style="color:var(--loss);">-113.7</td>
               <td class="mono" style="color:var(--text);">35.5%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -596,10 +596,10 @@
               <td><span class="sym-pill">OHL</span></td>
               <td>Oriental Hotels</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 623.00</td>
+              <td class="mono">Rs 607.60</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-1.2%</td>
               <td class="mono" style="color:var(--loss);">-4.7%</td>
-              <td class="mono" style="color:var(--loss);">-155.5</td>
+              <td class="mono" style="color:var(--loss);">-151.7</td>
               <td class="mono" style="color:var(--text);">36.4%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -608,10 +608,10 @@
               <td><span class="sym-pill">NHPC</span></td>
               <td>National Hydro Power</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 257.00</td>
+              <td class="mono">Rs 254.50</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-1.0%</td>
               <td class="mono" style="color:var(--loss);">-16.7%</td>
-              <td class="mono" style="color:var(--loss);">-276.5</td>
+              <td class="mono" style="color:var(--loss);">-273.8</td>
               <td class="mono" style="color:var(--text);">38.1%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -620,10 +620,10 @@
               <td><span class="sym-pill">PRVU</span></td>
               <td>Prabhu Bank</td>
               <td>Banking</td>
-              <td class="mono">Rs 180.00</td>
+              <td class="mono">Rs 180.40</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-0.7%</td>
               <td class="mono" style="color:var(--loss);">-1.1%</td>
-              <td class="mono" style="color:var(--loss);">-175.7</td>
+              <td class="mono" style="color:var(--loss);">-176.0</td>
               <td class="mono" style="color:var(--loss);">91.9%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
             </tr>
@@ -632,71 +632,23 @@
               <td><span class="sym-pill">BHPL</span></td>
               <td>Barahi Hydropower Public Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 432.00</td>
+              <td class="mono">Rs 457.00</td>
               <td class="mono" style="color:var(--loss); font-weight:700;">-0.6%</td>
               <td class="mono" style="color:var(--loss);">-2.6%</td>
-              <td class="mono" style="color:var(--loss);">-1455.1</td>
+              <td class="mono" style="color:var(--loss);">-1539.3</td>
               <td class="mono" style="color:var(--text);">78.7%</td>
               <td><span class="badge badge-red">Negative Earnings | Margin Collapse</span></td>
-            </tr>
-            
-            <tr data-search="DHEL Daramkhola Hydro Energy Limited Hydropower" x-show="matchesAvoid($el)">
-              <td><span class="sym-pill">DHEL</span></td>
-              <td>Daramkhola Hydro Energy Limited</td>
-              <td>Hydropower</td>
-              <td class="mono">Rs 577.00</td>
-              <td class="mono" style="color:var(--text); font-weight:700;">0.0%</td>
-              <td class="mono" style="color:var(--loss);">-89.3%</td>
-              <td class="mono" style="color:var(--loss);">-58.4</td>
-              <td class="mono" style="color:var(--text);">63.1%</td>
-              <td><span class="badge badge-red">Capital Preservation Veto</span></td>
-            </tr>
-            
-            <tr data-search="BANDIPUR Bandipur Cablecar and Tourism Limited Manufacturing & Corporate" x-show="matchesAvoid($el)">
-              <td><span class="sym-pill">BANDIPUR</span></td>
-              <td>Bandipur Cablecar and Tourism Limited</td>
-              <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 645.90</td>
-              <td class="mono" style="color:var(--text); font-weight:700;">0.0%</td>
-              <td class="mono" style="color:var(--loss);">-66.1%</td>
-              <td class="mono" style="color:var(--loss);">-330.3</td>
-              <td class="mono" style="color:var(--text);">33.3%</td>
-              <td><span class="badge badge-red">Capital Preservation Veto</span></td>
-            </tr>
-            
-            <tr data-search="BUNGAL Bungal Hydro Limited  Hydropower" x-show="matchesAvoid($el)">
-              <td><span class="sym-pill">BUNGAL</span></td>
-              <td>Bungal Hydro Limited </td>
-              <td>Hydropower</td>
-              <td class="mono">Rs 526.00</td>
-              <td class="mono" style="color:var(--text); font-weight:700;">0.0%</td>
-              <td class="mono" style="color:var(--loss);">-11.3%</td>
-              <td class="mono" style="color:var(--loss);">-137.0</td>
-              <td class="mono" style="color:var(--loss);">85.3%</td>
-              <td><span class="badge badge-red">Excessive Debt Overhang</span></td>
             </tr>
             
             <tr data-search="ULHC Upper Lohore Khola Hydropower Company Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">ULHC</span></td>
               <td>Upper Lohore Khola Hydropower Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 260.00</td>
+              <td class="mono">Rs 299.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.0%</td>
               <td class="mono" style="color:var(--loss);">-41.6%</td>
-              <td class="mono" style="color:var(--loss);">-45.7</td>
+              <td class="mono" style="color:var(--loss);">-52.5</td>
               <td class="mono" style="color:var(--text);">72.8%</td>
-              <td><span class="badge badge-red">Capital Preservation Veto</span></td>
-            </tr>
-            
-            <tr data-search="MABEL Mabilung Energy Limited Hydropower" x-show="matchesAvoid($el)">
-              <td><span class="sym-pill">MABEL</span></td>
-              <td>Mabilung Energy Limited</td>
-              <td>Hydropower</td>
-              <td class="mono">Rs 587.70</td>
-              <td class="mono" style="color:var(--text); font-weight:700;">0.0%</td>
-              <td class="mono" style="color:var(--loss);">-5.3%</td>
-              <td class="mono" style="color:var(--loss);">-505.5</td>
-              <td class="mono" style="color:var(--text);">71.9%</td>
               <td><span class="badge badge-red">Capital Preservation Veto</span></td>
             </tr>
             
@@ -704,10 +656,10 @@
               <td><span class="sym-pill">JHAPA</span></td>
               <td>Jhapa Energy Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 1021.00</td>
+              <td class="mono">Rs 1038.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.0%</td>
               <td class="mono" style="color:var(--text);">14.0%</td>
-              <td class="mono" style="color:var(--loss);">264.8</td>
+              <td class="mono" style="color:var(--loss);">269.2</td>
               <td class="mono" style="color:var(--text);">57.2%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -716,11 +668,59 @@
               <td><span class="sym-pill">HIMSTAR</span></td>
               <td>Him Star Urja Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 649.00</td>
+              <td class="mono">Rs 650.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.0%</td>
               <td class="mono" style="color:var(--loss);">-76.6%</td>
-              <td class="mono" style="color:var(--loss);">-21.8</td>
+              <td class="mono" style="color:var(--loss);">-21.9</td>
               <td class="mono" style="color:var(--loss);">101.7%</td>
+              <td><span class="badge badge-red">Excessive Debt Overhang</span></td>
+            </tr>
+            
+            <tr data-search="MABEL Mabilung Energy Limited Hydropower" x-show="matchesAvoid($el)">
+              <td><span class="sym-pill">MABEL</span></td>
+              <td>Mabilung Energy Limited</td>
+              <td>Hydropower</td>
+              <td class="mono">Rs 587.10</td>
+              <td class="mono" style="color:var(--text); font-weight:700;">0.0%</td>
+              <td class="mono" style="color:var(--loss);">-5.3%</td>
+              <td class="mono" style="color:var(--loss);">-505.0</td>
+              <td class="mono" style="color:var(--text);">71.9%</td>
+              <td><span class="badge badge-red">Capital Preservation Veto</span></td>
+            </tr>
+            
+            <tr data-search="BANDIPUR Bandipur Cablecar and Tourism Limited Manufacturing & Corporate" x-show="matchesAvoid($el)">
+              <td><span class="sym-pill">BANDIPUR</span></td>
+              <td>Bandipur Cablecar and Tourism Limited</td>
+              <td>Manufacturing & Corporate</td>
+              <td class="mono">Rs 643.40</td>
+              <td class="mono" style="color:var(--text); font-weight:700;">0.0%</td>
+              <td class="mono" style="color:var(--loss);">-66.1%</td>
+              <td class="mono" style="color:var(--loss);">-329.0</td>
+              <td class="mono" style="color:var(--text);">33.3%</td>
+              <td><span class="badge badge-red">Capital Preservation Veto</span></td>
+            </tr>
+            
+            <tr data-search="DHEL Daramkhola Hydro Energy Limited Hydropower" x-show="matchesAvoid($el)">
+              <td><span class="sym-pill">DHEL</span></td>
+              <td>Daramkhola Hydro Energy Limited</td>
+              <td>Hydropower</td>
+              <td class="mono">Rs 559.00</td>
+              <td class="mono" style="color:var(--text); font-weight:700;">0.0%</td>
+              <td class="mono" style="color:var(--loss);">-89.3%</td>
+              <td class="mono" style="color:var(--loss);">-56.6</td>
+              <td class="mono" style="color:var(--text);">63.1%</td>
+              <td><span class="badge badge-red">Capital Preservation Veto</span></td>
+            </tr>
+            
+            <tr data-search="BUNGAL Bungal Hydro Limited  Hydropower" x-show="matchesAvoid($el)">
+              <td><span class="sym-pill">BUNGAL</span></td>
+              <td>Bungal Hydro Limited </td>
+              <td>Hydropower</td>
+              <td class="mono">Rs 531.00</td>
+              <td class="mono" style="color:var(--text); font-weight:700;">0.0%</td>
+              <td class="mono" style="color:var(--loss);">-11.3%</td>
+              <td class="mono" style="color:var(--loss);">-138.3</td>
+              <td class="mono" style="color:var(--loss);">85.3%</td>
               <td><span class="badge badge-red">Excessive Debt Overhang</span></td>
             </tr>
             
@@ -728,10 +728,10 @@
               <td><span class="sym-pill">IGI</span></td>
               <td>IGI Prudential insurance Limited</td>
               <td>Insurance</td>
-              <td class="mono">Rs 378.80</td>
+              <td class="mono">Rs 380.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.1%</td>
               <td class="mono" style="color:var(--text);">0.2%</td>
-              <td class="mono" style="color:var(--loss);">2841.4</td>
+              <td class="mono" style="color:var(--loss);">2850.4</td>
               <td class="mono" style="color:var(--text);">62.3%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -740,10 +740,10 @@
               <td><span class="sym-pill">SINDU</span></td>
               <td>Sindhu Bikash Bank</td>
               <td>Banking</td>
-              <td class="mono">Rs 497.70</td>
+              <td class="mono">Rs 423.10</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.2%</td>
               <td class="mono" style="color:var(--text);">0.3%</td>
-              <td class="mono" style="color:var(--loss);">2770.2</td>
+              <td class="mono" style="color:var(--loss);">2355.0</td>
               <td class="mono" style="color:var(--loss);">91.2%</td>
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
@@ -752,10 +752,10 @@
               <td><span class="sym-pill">CREST</span></td>
               <td>Crest Micro Life Insurance Limited</td>
               <td>Insurance</td>
-              <td class="mono">Rs 1074.00</td>
+              <td class="mono">Rs 1050.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.3%</td>
               <td class="mono" style="color:var(--text);">0.5%</td>
-              <td class="mono" style="color:var(--loss);">3188.3</td>
+              <td class="mono" style="color:var(--loss);">3117.1</td>
               <td class="mono" style="color:var(--text);">35.6%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -764,10 +764,10 @@
               <td><span class="sym-pill">MKJC</span></td>
               <td>Mailung Khola Jal Vidhyut Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 289.40</td>
+              <td class="mono">Rs 274.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.4%</td>
               <td class="mono" style="color:var(--text);">1.8%</td>
-              <td class="mono" style="color:var(--loss);">628.6</td>
+              <td class="mono" style="color:var(--loss);">595.1</td>
               <td class="mono" style="color:var(--text);">55.9%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -776,10 +776,10 @@
               <td><span class="sym-pill">NICA</span></td>
               <td>NIC Asia Bank</td>
               <td>Banking</td>
-              <td class="mono">Rs 309.00</td>
+              <td class="mono">Rs 308.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.6%</td>
               <td class="mono" style="color:var(--text);">0.8%</td>
-              <td class="mono" style="color:var(--loss);">253.7</td>
+              <td class="mono" style="color:var(--loss);">252.9</td>
               <td class="mono" style="color:var(--loss);">93.5%</td>
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
@@ -788,10 +788,10 @@
               <td><span class="sym-pill">NGPL</span></td>
               <td>Ngadi Group Power Ltd.</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 393.80</td>
+              <td class="mono">Rs 392.90</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.8%</td>
               <td class="mono" style="color:var(--text);">35.6%</td>
-              <td class="mono" style="color:var(--loss);">310.7</td>
+              <td class="mono" style="color:var(--loss);">310.0</td>
               <td class="mono" style="color:var(--text);">18.9%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -800,10 +800,10 @@
               <td><span class="sym-pill">TTL</span></td>
               <td>Trade Tower Limited</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 685.00</td>
+              <td class="mono">Rs 684.20</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.9%</td>
               <td class="mono" style="color:var(--text);">7.3%</td>
-              <td class="mono" style="color:var(--loss);">756.7</td>
+              <td class="mono" style="color:var(--loss);">755.9</td>
               <td class="mono" style="color:var(--text);">0.0%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -812,10 +812,10 @@
               <td><span class="sym-pill">HATHY</span></td>
               <td>Hathway Investment Nepal Limited</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 594.50</td>
+              <td class="mono">Rs 575.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.9%</td>
               <td class="mono" style="color:var(--text);">13.3%</td>
-              <td class="mono" style="color:var(--loss);">996.5</td>
+              <td class="mono" style="color:var(--loss);">963.8</td>
               <td class="mono" style="color:var(--text);">19.2%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -824,10 +824,10 @@
               <td><span class="sym-pill">USHL</span></td>
               <td>Upper Syange Hydropower Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 501.00</td>
+              <td class="mono">Rs 512.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">0.9%</td>
               <td class="mono" style="color:var(--text);">2.9%</td>
-              <td class="mono" style="color:var(--loss);">578.1</td>
+              <td class="mono" style="color:var(--loss);">590.8</td>
               <td class="mono" style="color:var(--text);">71.1%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -836,10 +836,10 @@
               <td><span class="sym-pill">UPCL</span></td>
               <td>Universal Power Company Ltd</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 345.00</td>
+              <td class="mono">Rs 344.50</td>
               <td class="mono" style="color:var(--text); font-weight:700;">1.0%</td>
               <td class="mono" style="color:var(--text);">11.7%</td>
-              <td class="mono" style="color:var(--loss);">306.6</td>
+              <td class="mono" style="color:var(--loss);">306.1</td>
               <td class="mono" style="color:var(--text);">38.5%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -860,10 +860,10 @@
               <td><span class="sym-pill">SAIL</span></td>
               <td>Shreenagar Agritech Industries Limited</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 1056.20</td>
+              <td class="mono">Rs 1027.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">1.3%</td>
               <td class="mono" style="color:var(--text);">1.0%</td>
-              <td class="mono" style="color:var(--loss);">966.1</td>
+              <td class="mono" style="color:var(--loss);">939.4</td>
               <td class="mono" style="color:var(--text);">42.2%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -884,10 +884,10 @@
               <td><span class="sym-pill">DOLTI</span></td>
               <td>Dolti Power Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 280.00</td>
+              <td class="mono">Rs 276.30</td>
               <td class="mono" style="color:var(--text); font-weight:700;">1.5%</td>
               <td class="mono" style="color:var(--text);">4.7%</td>
-              <td class="mono" style="color:var(--loss);">322.9</td>
+              <td class="mono" style="color:var(--loss);">318.7</td>
               <td class="mono" style="color:var(--text);">78.0%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -896,10 +896,10 @@
               <td><span class="sym-pill">LEC</span></td>
               <td>Liberty Energy Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 215.00</td>
+              <td class="mono">Rs 214.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">1.6%</td>
               <td class="mono" style="color:var(--text);">14.5%</td>
-              <td class="mono" style="color:var(--loss);">191.7</td>
+              <td class="mono" style="color:var(--loss);">190.8</td>
               <td class="mono" style="color:var(--text);">73.6%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -908,10 +908,10 @@
               <td><span class="sym-pill">RIDI</span></td>
               <td>Ridi Power Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 347.70</td>
+              <td class="mono">Rs 347.90</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.0%</td>
               <td class="mono" style="color:var(--text);">12.8%</td>
-              <td class="mono" style="color:var(--loss);">172.4</td>
+              <td class="mono" style="color:var(--loss);">172.5</td>
               <td class="mono" style="color:var(--text);">40.6%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -920,10 +920,10 @@
               <td><span class="sym-pill">AKPL</span></td>
               <td>Arun Kabeli Power Ltd.</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 250.00</td>
+              <td class="mono">Rs 249.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.0%</td>
               <td class="mono" style="color:var(--text);">13.0%</td>
-              <td class="mono" style="color:var(--loss);">122.2</td>
+              <td class="mono" style="color:var(--loss);">121.7</td>
               <td class="mono" style="color:var(--text);">49.7%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -932,10 +932,10 @@
               <td><span class="sym-pill">GMLI</span></td>
               <td>Guardian Micro Life Insurance Limited</td>
               <td>Insurance</td>
-              <td class="mono">Rs 951.00</td>
+              <td class="mono">Rs 957.90</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.1%</td>
               <td class="mono" style="color:var(--text);">2.9%</td>
-              <td class="mono" style="color:var(--loss);">443.9</td>
+              <td class="mono" style="color:var(--loss);">447.1</td>
               <td class="mono" style="color:var(--text);">39.1%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -944,10 +944,10 @@
               <td><span class="sym-pill">GLH</span></td>
               <td>GreenLife Hydropower Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 246.20</td>
+              <td class="mono">Rs 245.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.1%</td>
               <td class="mono" style="color:var(--text);">0.0%</td>
-              <td class="mono" style="color:var(--loss);">105.8</td>
+              <td class="mono" style="color:var(--loss);">105.2</td>
               <td class="mono" style="color:var(--loss);">95.4%</td>
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
@@ -956,10 +956,10 @@
               <td><span class="sym-pill">BARUN</span></td>
               <td>Barun Hydropower</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 312.00</td>
+              <td class="mono">Rs 309.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.2%</td>
               <td class="mono" style="color:var(--text);">21.4%</td>
-              <td class="mono" style="color:var(--loss);">149.9</td>
+              <td class="mono" style="color:var(--loss);">148.4</td>
               <td class="mono" style="color:var(--text);">19.2%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -968,10 +968,10 @@
               <td><span class="sym-pill">NLG</span></td>
               <td>Nlg Insurance</td>
               <td>Insurance</td>
-              <td class="mono">Rs 514.50</td>
+              <td class="mono">Rs 504.30</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.2%</td>
               <td class="mono" style="color:var(--text);">3.1%</td>
-              <td class="mono" style="color:var(--loss);">237.4</td>
+              <td class="mono" style="color:var(--loss);">232.7</td>
               <td class="mono" style="color:var(--text);">51.0%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -980,10 +980,10 @@
               <td><span class="sym-pill">PHCL</span></td>
               <td>Peoples Hydropower Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 298.80</td>
+              <td class="mono">Rs 297.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.3%</td>
               <td class="mono" style="color:var(--text);">6.2%</td>
-              <td class="mono" style="color:var(--loss);">133.9</td>
+              <td class="mono" style="color:var(--loss);">133.1</td>
               <td class="mono" style="color:var(--text);">72.0%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -992,10 +992,10 @@
               <td><span class="sym-pill">CHL</span></td>
               <td>Chhyangdi Hydropower Ltd.</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 250.50</td>
+              <td class="mono">Rs 246.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.4%</td>
               <td class="mono" style="color:var(--text);">7.6%</td>
-              <td class="mono" style="color:var(--loss);">145.6</td>
+              <td class="mono" style="color:var(--loss);">143.0</td>
               <td class="mono" style="color:var(--text);">52.5%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -1004,10 +1004,10 @@
               <td><span class="sym-pill">ENL</span></td>
               <td>Emerging Nepal Limited</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 691.60</td>
+              <td class="mono">Rs 587.90</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.5%</td>
               <td class="mono" style="color:var(--text);">66.5%</td>
-              <td class="mono" style="color:var(--loss);">255.9</td>
+              <td class="mono" style="color:var(--loss);">217.6</td>
               <td class="mono" style="color:var(--text);">2.2%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -1016,10 +1016,10 @@
               <td><span class="sym-pill">MKHC</span></td>
               <td>Maya Khola Hydropower Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 260.00</td>
+              <td class="mono">Rs 257.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.5%</td>
               <td class="mono" style="color:var(--text);">4.2%</td>
-              <td class="mono" style="color:var(--loss);">164.0</td>
+              <td class="mono" style="color:var(--loss);">162.1</td>
               <td class="mono" style="color:var(--loss);">86.0%</td>
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
@@ -1028,10 +1028,10 @@
               <td><span class="sym-pill">UAIL</span></td>
               <td>United Ajod Insurance Limited</td>
               <td>Insurance</td>
-              <td class="mono">Rs 368.50</td>
+              <td class="mono">Rs 362.70</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.7%</td>
               <td class="mono" style="color:var(--text);">3.5%</td>
-              <td class="mono" style="color:var(--loss);">134.9</td>
+              <td class="mono" style="color:var(--loss);">132.8</td>
               <td class="mono" style="color:var(--text);">52.0%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -1040,10 +1040,10 @@
               <td><span class="sym-pill">SJCL</span></td>
               <td>Sanjen Jalavidhyut Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 232.50</td>
+              <td class="mono">Rs 232.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.7%</td>
               <td class="mono" style="color:var(--text);">5.0%</td>
-              <td class="mono" style="color:var(--loss);">103.5</td>
+              <td class="mono" style="color:var(--loss);">103.3</td>
               <td class="mono" style="color:var(--loss);">82.6%</td>
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
@@ -1064,10 +1064,10 @@
               <td><span class="sym-pill">BNHC</span></td>
               <td>Buddha Bhumi Nepal Hydropower Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 263.80</td>
+              <td class="mono">Rs 262.90</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.8%</td>
               <td class="mono" style="color:var(--text);">6.5%</td>
-              <td class="mono" style="color:var(--loss);">176.9</td>
+              <td class="mono" style="color:var(--loss);">176.3</td>
               <td class="mono" style="color:var(--text);">50.7%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -1076,10 +1076,10 @@
               <td><span class="sym-pill">RFPL</span></td>
               <td>River Falls Power Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 328.10</td>
+              <td class="mono">Rs 327.20</td>
               <td class="mono" style="color:var(--text); font-weight:700;">2.9%</td>
               <td class="mono" style="color:var(--text);">14.4%</td>
-              <td class="mono" style="color:var(--loss);">121.1</td>
+              <td class="mono" style="color:var(--loss);">120.7</td>
               <td class="mono" style="color:var(--text);">41.7%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -1088,10 +1088,10 @@
               <td><span class="sym-pill">PURE</span></td>
               <td>Pure Energy Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 761.30</td>
+              <td class="mono">Rs 769.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">3.1%</td>
               <td class="mono" style="color:var(--text);">10.2%</td>
-              <td class="mono" style="color:var(--loss);">240.7</td>
+              <td class="mono" style="color:var(--loss);">243.1</td>
               <td class="mono" style="color:var(--text);">67.9%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -1100,10 +1100,10 @@
               <td><span class="sym-pill">SIFC</span></td>
               <td>Shree Investment Finance</td>
               <td>Finance</td>
-              <td class="mono">Rs 480.10</td>
+              <td class="mono">Rs 469.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">3.3%</td>
               <td class="mono" style="color:var(--text);">6.5%</td>
-              <td class="mono" style="color:var(--loss);">103.9</td>
+              <td class="mono" style="color:var(--loss);">101.5</td>
               <td class="mono" style="color:var(--loss);">86.6%</td>
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
@@ -1112,10 +1112,10 @@
               <td><span class="sym-pill">AKJCL</span></td>
               <td>Ankhu Khola Jalvidhyut Company Ltd.</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 340.60</td>
+              <td class="mono">Rs 338.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">3.4%</td>
               <td class="mono" style="color:var(--text);">28.4%</td>
-              <td class="mono" style="color:var(--loss);">107.1</td>
+              <td class="mono" style="color:var(--loss);">106.3</td>
               <td class="mono" style="color:var(--text);">27.2%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
             </tr>
@@ -1124,34 +1124,22 @@
               <td><span class="sym-pill">SMJC</span></td>
               <td>Sagarmatha Jalabidhyut Company Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 403.00</td>
+              <td class="mono">Rs 404.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">3.5%</td>
               <td class="mono" style="color:var(--text);">19.9%</td>
-              <td class="mono" style="color:var(--loss);">106.5</td>
+              <td class="mono" style="color:var(--loss);">106.8</td>
               <td class="mono" style="color:var(--text);">60.3%</td>
               <td><span class="badge badge-red">Extreme PE Bubble (>100)</span></td>
-            </tr>
-            
-            <tr data-search="SPC Samling Power Company Limited Hydropower" x-show="matchesAvoid($el)">
-              <td><span class="sym-pill">SPC</span></td>
-              <td>Samling Power Company Limited</td>
-              <td>Hydropower</td>
-              <td class="mono">Rs 398.00</td>
-              <td class="mono" style="color:var(--text); font-weight:700;">3.7%</td>
-              <td class="mono" style="color:var(--text);">8.4%</td>
-              <td class="mono" style="color:var(--loss);">100.3</td>
-              <td class="mono" style="color:var(--loss);">83.2%</td>
-              <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
             
             <tr data-search="NYADI Nyadi Hydropower Limited Hydropower" x-show="matchesAvoid($el)">
               <td><span class="sym-pill">NYADI</span></td>
               <td>Nyadi Hydropower Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 351.10</td>
+              <td class="mono">Rs 351.20</td>
               <td class="mono" style="color:var(--text); font-weight:700;">3.8%</td>
               <td class="mono" style="color:var(--text);">6.2%</td>
-              <td class="mono" style="color:var(--loss);">143.2</td>
+              <td class="mono" style="color:var(--loss);">143.3</td>
               <td class="mono" style="color:var(--loss);">84.8%</td>
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
@@ -1172,10 +1160,10 @@
               <td><span class="sym-pill">NLIC</span></td>
               <td>Nepal Life Insurance</td>
               <td>Insurance</td>
-              <td class="mono">Rs 701.00</td>
+              <td class="mono">Rs 701.90</td>
               <td class="mono" style="color:var(--text); font-weight:700;">4.5%</td>
               <td class="mono" style="color:var(--text);">0.6%</td>
-              <td class="mono" style="color:var(--loss);">142.8</td>
+              <td class="mono" style="color:var(--loss);">143.0</td>
               <td class="mono" style="color:var(--loss);">95.9%</td>
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
@@ -1184,10 +1172,10 @@
               <td><span class="sym-pill">LICN</span></td>
               <td>Life Insurance Nepal</td>
               <td>Insurance</td>
-              <td class="mono">Rs 756.00</td>
+              <td class="mono">Rs 751.70</td>
               <td class="mono" style="color:var(--text); font-weight:700;">4.9%</td>
               <td class="mono" style="color:var(--text);">1.2%</td>
-              <td class="mono" style="color:var(--loss);">102.5</td>
+              <td class="mono" style="color:var(--loss);">101.9</td>
               <td class="mono" style="color:var(--loss);">93.9%</td>
               <td><span class="badge badge-red">Extreme PE & Insolvent</span></td>
             </tr>
@@ -1196,10 +1184,10 @@
               <td><span class="sym-pill">CIT</span></td>
               <td>Citizen Investment Trust</td>
               <td>Manufacturing & Corporate</td>
-              <td class="mono">Rs 1713.90</td>
+              <td class="mono">Rs 1700.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">6.1%</td>
               <td class="mono" style="color:var(--text);">60.0%</td>
-              <td class="mono" style="color:var(--text);">86.4</td>
+              <td class="mono" style="color:var(--text);">85.7</td>
               <td class="mono" style="color:var(--loss);">94.7%</td>
               <td><span class="badge badge-red">Excessive Debt Overhang</span></td>
             </tr>
@@ -1208,10 +1196,10 @@
               <td><span class="sym-pill">MCHL</span></td>
               <td>Menchhiyam Hydropower Limited</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 255.00</td>
+              <td class="mono">Rs 247.50</td>
               <td class="mono" style="color:var(--text); font-weight:700;">6.6%</td>
               <td class="mono" style="color:var(--loss);">-4.2%</td>
-              <td class="mono" style="color:var(--loss);">-247.4</td>
+              <td class="mono" style="color:var(--loss);">-240.1</td>
               <td class="mono" style="color:var(--loss);">142.5%</td>
               <td><span class="badge badge-red">Excessive Debt Overhang</span></td>
             </tr>
@@ -1220,10 +1208,10 @@
               <td><span class="sym-pill">DHPL</span></td>
               <td>Dibyashwori Hydropower Ltd.</td>
               <td>Hydropower</td>
-              <td class="mono">Rs 272.00</td>
+              <td class="mono">Rs 268.00</td>
               <td class="mono" style="color:var(--text); font-weight:700;">88.3%</td>
               <td class="mono" style="color:var(--text);">13.9%</td>
-              <td class="mono" style="color:var(--text);">49.3</td>
+              <td class="mono" style="color:var(--text);">48.6</td>
               <td class="mono" style="color:var(--loss);">122.9%</td>
               <td><span class="badge badge-red">Excessive Debt Overhang</span></td>
             </tr>
@@ -1240,7 +1228,7 @@
         <div class="panel-header">
           <div class="panel-title">
             <span>Stage 2 &amp; 3: Candidate Pool &amp; Sniper Timing Gates</span>
-            <span class="badge badge-green">24 Scored Candidates</span>
+            <span class="badge badge-green">21 Scored Candidates</span>
             <span class="badge badge-blue">DuPont Factor Model Gen-3</span>
           </div>
           <div style="font-size:12px; color:var(--text-muted);">
@@ -1249,7 +1237,7 @@
         </div>
 
         <div class="filter-strip">
-          <span class="chip" :class="{ 'active': chosenChip === 'All' }" @click="chosenChip = 'All'">All Candidates (24)</span>
+          <span class="chip" :class="{ 'active': chosenChip === 'All' }" @click="chosenChip = 'All'">All Candidates (21)</span>
           <span class="chip" :class="{ 'active': chosenChip === 'Passed Timing' }" @click="chosenChip = 'Passed Timing'">Passed Timing</span>
           <span class="chip" :class="{ 'active': chosenChip === 'Lock-in Unlock' }" @click="chosenChip = 'Lock-in Unlock'">Lock-in Unlock</span>
           <span class="chip" :class="{ 'active': chosenChip === 'Knife Veto' }" @click="chosenChip = 'Knife Veto'">Knife Veto</span>
@@ -1277,9 +1265,9 @@
               <td class="mono"><strong>#1</strong></td>
               <td><span class="sym-pill">HEI</span></td>
               <td>Himalayan Everest Insurance Limited</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.889</td>
-              <td><span class="badge badge-red">VETOED: GATE 1</span></td>
-              <td>Falling knife: 1W change -4.1% < -2.5%</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.885</td>
+              <td><span class="badge badge-red">VETOED: GATE 3</span></td>
+              <td>VWAP downtrending: 5d slope -6.08% < 0.0% — institutional distribution trap</td>
               <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
@@ -1288,42 +1276,42 @@
               <td class="mono"><strong>#2</strong></td>
               <td><span class="sym-pill">SALICO</span></td>
               <td>Sagarmatha Lumbini Insurance Co. Limited</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.830</td>
-              <td><span class="badge badge-red">VETOED: GATE 1</span></td>
-              <td>Falling knife: 1W change -4.6% < -2.5%</td>
-              <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
-              <td><span class='mono'>Trade Blocked</span></td>
-            </tr>
-            
-            <tr data-search="FOWAD Forward Community Microfinance Bittiya Sanstha Ltd." x-show="matchesChosen($el)">
-              <td class="mono"><strong>#3</strong></td>
-              <td><span class="sym-pill">FOWAD</span></td>
-              <td>Forward Community Microfinance Bittiya Sanstha Ltd.</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.829</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.834</td>
               <td><span class="badge badge-red">VETOED: GATE 3</span></td>
-              <td>VWAP downtrending: 5d slope -2.75% < 0.0% — institutional distribution trap</td>
+              <td>VWAP downtrending: 5d slope -3.44% < 0.0% — institutional distribution trap</td>
               <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr data-search="NIL Neco Insurance" x-show="matchesChosen($el)">
-              <td class="mono"><strong>#4</strong></td>
+              <td class="mono"><strong>#3</strong></td>
               <td><span class="sym-pill">NIL</span></td>
               <td>Neco Insurance</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.814</td>
-              <td><span class="badge badge-red">VETOED: GATE 1</span></td>
-              <td>Falling knife: 1W change -4.5% < -2.5%</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.812</td>
+              <td><span class="badge badge-red">VETOED: GATE 3</span></td>
+              <td>VWAP downtrending: 5d slope -6.55% < 0.0% — institutional distribution trap</td>
               <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr data-search="API Api Power" x-show="matchesChosen($el)">
-              <td class="mono"><strong>#5</strong></td>
-              <td><span class="sym-pill">API</span></td>
-              <td>Api Power</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.776</td>
+            <tr data-search="SPIL Siddhartha Premier Insurance Limited" x-show="matchesChosen($el)">
+              <td class="mono"><strong>#4</strong></td>
+              <td><span class="sym-pill">SPIL</span></td>
+              <td>Siddhartha Premier Insurance Limited</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.794</td>
               <td><span class="badge badge-red">VETOED: GATE 3</span></td>
-              <td>VWAP downtrending: 5d slope -0.82% < 0.0% — institutional distribution trap</td>
+              <td>VWAP downtrending: 5d slope -4.09% < 0.0% — institutional distribution trap</td>
+              <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
+            </tr>
+            
+            <tr data-search="FOWAD Forward Community Microfinance Bittiya Sanstha Ltd." x-show="matchesChosen($el)">
+              <td class="mono"><strong>#5</strong></td>
+              <td><span class="sym-pill">FOWAD</span></td>
+              <td>Forward Community Microfinance Bittiya Sanstha Ltd.</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.784</td>
+              <td><span class="badge badge-red">VETOED: GATE 3</span></td>
+              <td>VWAP downtrending: 5d slope -2.11% < 0.0% — institutional distribution trap</td>
               <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
@@ -1332,31 +1320,31 @@
               <td class="mono"><strong>#6</strong></td>
               <td><span class="sym-pill">JBLB</span></td>
               <td>Jeevan Bikas Laghubitta Bittya Sanstha Ltd</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.771</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.770</td>
               <td><span class="badge badge-red">VETOED: GATE 3</span></td>
-              <td>VWAP downtrending: 5d slope -0.95% < 0.0% — institutional distribution trap</td>
+              <td>VWAP downtrending: 5d slope -0.84% < 0.0% — institutional distribution trap</td>
               <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr data-search="SPIL Siddhartha Premier Insurance Limited" x-show="matchesChosen($el)">
+            <tr data-search="API Api Power" x-show="matchesChosen($el)">
               <td class="mono"><strong>#7</strong></td>
-              <td><span class="sym-pill">SPIL</span></td>
-              <td>Siddhartha Premier Insurance Limited</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.769</td>
-              <td><span class="badge badge-red">VETOED: GATE 1</span></td>
-              <td>Falling knife: 1W change -4.0% < -2.5%</td>
+              <td><span class="sym-pill">API</span></td>
+              <td>Api Power</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.759</td>
+              <td><span class="badge badge-red">VETOED: GATE 3</span></td>
+              <td>VWAP downtrending: 5d slope -0.72% < 0.0% — institutional distribution trap</td>
               <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr data-search="GILB Global IME Laghubitta Bittiya Sanstha " x-show="matchesChosen($el)">
+            <tr data-search="CHCL Chilime Hydropower" x-show="matchesChosen($el)">
               <td class="mono"><strong>#8</strong></td>
-              <td><span class="sym-pill">GILB</span></td>
-              <td>Global IME Laghubitta Bittiya Sanstha </td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.734</td>
+              <td><span class="sym-pill">CHCL</span></td>
+              <td>Chilime Hydropower</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.741</td>
               <td><span class="badge badge-red">VETOED: GATE 3</span></td>
-              <td>VWAP downtrending: 5d slope -0.51% < 0.0% — institutional distribution trap</td>
+              <td>VWAP downtrending: 5d slope -4.37% < 0.0% — institutional distribution trap</td>
               <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
@@ -1365,9 +1353,9 @@
               <td class="mono"><strong>#9</strong></td>
               <td><span class="sym-pill">MEN</span></td>
               <td>Mountain Energy Nepal Limited</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.734</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.727</td>
               <td><span class="badge badge-red">VETOED: GATE 3</span></td>
-              <td>VWAP downtrending: 5d slope -0.17% < 0.0% — institutional distribution trap</td>
+              <td>VWAP downtrending: 5d slope -0.38% < 0.0% — institutional distribution trap</td>
               <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
@@ -1376,170 +1364,137 @@
               <td class="mono"><strong>#10</strong></td>
               <td><span class="sym-pill">DDBL</span></td>
               <td>Deprosc Laghubitta</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.729</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.726</td>
               <td><span class="badge badge-red">VETOED: GATE 3</span></td>
-              <td>VWAP downtrending: 5d slope -0.94% < 0.0% — institutional distribution trap</td>
-              <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
-              <td><span class='mono'>Trade Blocked</span></td>
-            </tr>
-            
-            <tr data-search="GUFL Gurkhas Finance Ltd." x-show="matchesChosen($el)">
-              <td class="mono"><strong>#11</strong></td>
-              <td><span class="sym-pill">GUFL</span></td>
-              <td>Gurkhas Finance Ltd.</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.724</td>
-              <td><span class="badge badge-red">VETOED: GATE 3</span></td>
-              <td>VWAP downtrending: 5d slope -3.60% < 0.0% — institutional distribution trap</td>
+              <td>VWAP downtrending: 5d slope -0.80% < 0.0% — institutional distribution trap</td>
               <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr data-search="KBL Kumari Bank" x-show="matchesChosen($el)">
-              <td class="mono"><strong>#12</strong></td>
+              <td class="mono"><strong>#11</strong></td>
               <td><span class="sym-pill">KBL</span></td>
               <td>Kumari Bank</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.718</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.725</td>
               <td><span class="badge badge-red">VETOED: GATE 3</span></td>
-              <td>VWAP downtrending: 5d slope -0.60% < 0.0% — institutional distribution trap</td>
+              <td>VWAP downtrending: 5d slope -0.25% < 0.0% — institutional distribution trap</td>
               <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr data-search="CHCL Chilime Hydropower" x-show="matchesChosen($el)">
+            <tr data-search="GUFL Gurkhas Finance Ltd." x-show="matchesChosen($el)">
+              <td class="mono"><strong>#12</strong></td>
+              <td><span class="sym-pill">GUFL</span></td>
+              <td>Gurkhas Finance Ltd.</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.714</td>
+              <td><span class="badge badge-red">VETOED: GATE 3</span></td>
+              <td>VWAP downtrending: 5d slope -3.65% < 0.0% — institutional distribution trap</td>
+              <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
+            </tr>
+            
+            <tr data-search="GILB Global IME Laghubitta Bittiya Sanstha " x-show="matchesChosen($el)">
               <td class="mono"><strong>#13</strong></td>
-              <td><span class="sym-pill">CHCL</span></td>
-              <td>Chilime Hydropower</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.713</td>
-              <td><span class="badge badge-red">VETOED: GATE 1</span></td>
-              <td>Falling knife: 1W change -8.8% < -2.5%</td>
+              <td><span class="sym-pill">GILB</span></td>
+              <td>Global IME Laghubitta Bittiya Sanstha </td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.701</td>
+              <td><span class="badge badge-red">VETOED: GATE 4</span></td>
+              <td>Circuit-lock risk: median turnover রূ 1.74M/session < রূ 2.5M over last 20 sessions — too illiquid to exit reliably</td>
               <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr data-search="CYCL CYC Nepal Laghubitta Bittiya Sanstha Limited" x-show="matchesChosen($el)">
+            <tr data-search="JBBL Jyoti Bikas Bank" x-show="matchesChosen($el)">
               <td class="mono"><strong>#14</strong></td>
-              <td><span class="sym-pill">CYCL</span></td>
-              <td>CYC Nepal Laghubitta Bittiya Sanstha Limited</td>
+              <td><span class="sym-pill">JBBL</span></td>
+              <td>Jyoti Bikas Bank</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.683</td>
-              <td><span class="badge badge-green">PASSED GATES</span></td>
-              <td>DuPont Quality, Basing in Pocket (0.683 Gen-3)</td>
-              <td style="text-align:center;"><span class="badge badge-blue">Clean Flow</span></td>
-              <td>
-                <div class="mono" style="font-size:11px; line-height:1.35;">
-                  <div><strong>Entry:</strong> Rs 1584.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 1509.55</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 1694.25 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 1721.81 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 1859.62 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
-                </div>
-                </td>
+              <td><span class="badge badge-red">VETOED: GATE 3</span></td>
+              <td>VWAP downtrending: 5d slope -0.50% < 0.0% — institutional distribution trap</td>
+              <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr data-search="GBBL Garima Bikas Bank" x-show="matchesChosen($el)">
               <td class="mono"><strong>#15</strong></td>
               <td><span class="sym-pill">GBBL</span></td>
               <td>Garima Bikas Bank</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.678</td>
-              <td><span class="badge badge-red">VETOED: GATE 2</span></td>
-              <td>Volume climactic exhaustion: 401,185 > 3x its 10-session avg (62,709) — operator dump risk</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.682</td>
+              <td><span class="badge badge-green">PASSED GATES</span></td>
+              <td>DuPont Quality, Basing in Pocket (0.682 Gen-3)</td>
+              <td style="text-align:center;"><span class="badge badge-blue">Clean Flow</span></td>
+              <td>
+                <div class="mono" style="font-size:11px; line-height:1.35;">
+                  <div><strong>Entry:</strong> Rs 444.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 423.13</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 474.90 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 482.63 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 521.26 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                </div>
+                </td>
+            </tr>
+            
+            <tr data-search="NBL Nepal Bank" x-show="matchesChosen($el)">
+              <td class="mono"><strong>#16</strong></td>
+              <td><span class="sym-pill">NBL</span></td>
+              <td>Nepal Bank</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.674</td>
+              <td><span class="badge badge-red">VETOED: GATE 3</span></td>
+              <td>VWAP downtrending: 5d slope -0.27% < 0.0% — institutional distribution trap</td>
               <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr data-search="PRIN Prabhu Insurance" x-show="matchesChosen($el)">
-              <td class="mono"><strong>#16</strong></td>
+              <td class="mono"><strong>#17</strong></td>
               <td><span class="sym-pill">PRIN</span></td>
               <td>Prabhu Insurance</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.676</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.671</td>
               <td><span class="badge badge-red">VETOED: GATE 3</span></td>
-              <td>VWAP downtrending: 5d slope -3.97% < 0.0% — institutional distribution trap</td>
+              <td>VWAP downtrending: 5d slope -3.33% < 0.0% — institutional distribution trap</td>
               <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
-            <tr data-search="ILI IME Life Insurance Company Limited" x-show="matchesChosen($el)">
-              <td class="mono"><strong>#17</strong></td>
-              <td><span class="sym-pill">ILI</span></td>
-              <td>IME Life Insurance Company Limited</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.664</td>
-              <td><span class="badge badge-red">VETOED: GATE 3</span></td>
-              <td>VWAP downtrending: 5d slope -1.45% < 0.0% — institutional distribution trap</td>
-              <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
-              <td><span class='mono'>Trade Blocked</span></td>
-            </tr>
-            
-            <tr data-search="SAHAS Sahas Urja Limited" x-show="matchesChosen($el)">
+            <tr data-search="CYCL CYC Nepal Laghubitta Bittiya Sanstha Limited" x-show="matchesChosen($el)">
               <td class="mono"><strong>#18</strong></td>
-              <td><span class="sym-pill">SAHAS</span></td>
-              <td>Sahas Urja Limited</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.663</td>
-              <td><span class="badge badge-red">VETOED: GATE 3</span></td>
-              <td>VWAP downtrending: 5d slope -0.53% < 0.0% — institutional distribution trap</td>
-              <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
-              <td><span class='mono'>Trade Blocked</span></td>
-            </tr>
-            
-            <tr data-search="NMFBS National Microfinance Bittiya Sanstha Ltd." x-show="matchesChosen($el)">
-              <td class="mono"><strong>#19</strong></td>
-              <td><span class="sym-pill">NMFBS</span></td>
-              <td>National Microfinance Bittiya Sanstha Ltd.</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.659</td>
-              <td><span class="badge badge-red">VETOED: GATE 3</span></td>
-              <td>VWAP downtrending: 5d slope -0.81% < 0.0% — institutional distribution trap</td>
-              <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
-              <td><span class='mono'>Trade Blocked</span></td>
-            </tr>
-            
-            <tr data-search="ILBS Infinity Laghubitta Bittiya Sanstha Limited" x-show="matchesChosen($el)">
-              <td class="mono"><strong>#20</strong></td>
-              <td><span class="sym-pill">ILBS</span></td>
-              <td>Infinity Laghubitta Bittiya Sanstha Limited</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.659</td>
-              <td><span class="badge badge-red">VETOED: GATE 3</span></td>
-              <td>VWAP downtrending: 5d slope -2.53% < 0.0% — institutional distribution trap</td>
+              <td><span class="sym-pill">CYCL</span></td>
+              <td>CYC Nepal Laghubitta Bittiya Sanstha Limited</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.667</td>
+              <td><span class="badge badge-red">VETOED: GATE 1</span></td>
+              <td>Falling knife: 1W change -4.0% < -2.5%</td>
               <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr data-search="SWBBL Swabalamban Bikas Bank" x-show="matchesChosen($el)">
-              <td class="mono"><strong>#21</strong></td>
+              <td class="mono"><strong>#19</strong></td>
               <td><span class="sym-pill">SWBBL</span></td>
               <td>Swabalamban Bikas Bank</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.655</td>
-              <td><span class="badge badge-red">VETOED: GATE 3</span></td>
-              <td>VWAP downtrending: 5d slope -0.36% < 0.0% — institutional distribution trap</td>
-              <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
-              <td><span class='mono'>Trade Blocked</span></td>
-            </tr>
-            
-            <tr data-search="PFL Pokhara Finance" x-show="matchesChosen($el)">
-              <td class="mono"><strong>#22</strong></td>
-              <td><span class="sym-pill">PFL</span></td>
-              <td>Pokhara Finance</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.655</td>
-              <td><span class="badge badge-red">VETOED: GATE 4</span></td>
-              <td>Circuit-lock risk: median turnover রূ 1.60M/session < রূ 2.5M over last 20 sessions — too illiquid to exit reliably</td>
-              <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
-              <td><span class='mono'>Trade Blocked</span></td>
-            </tr>
-            
-            <tr data-search="JBBL Jyoti Bikas Bank" x-show="matchesChosen($el)">
-              <td class="mono"><strong>#23</strong></td>
-              <td><span class="sym-pill">JBBL</span></td>
-              <td>Jyoti Bikas Bank</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.653</td>
-              <td><span class="badge badge-red">VETOED: GATE 3</span></td>
-              <td>VWAP downtrending: 5d slope -0.63% < 0.0% — institutional distribution trap</td>
-              <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
-              <td><span class='mono'>Trade Blocked</span></td>
-            </tr>
-            
-            <tr data-search="NBL Nepal Bank" x-show="matchesChosen($el)">
-              <td class="mono"><strong>#24</strong></td>
-              <td><span class="sym-pill">NBL</span></td>
-              <td>Nepal Bank</td>
-              <td class="mono" style="color:var(--profit); font-weight:700;">0.653</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.659</td>
               <td><span class="badge badge-red">VETOED: GATE 3</span></td>
               <td>VWAP downtrending: 5d slope -0.21% < 0.0% — institutional distribution trap</td>
+              <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
+            </tr>
+            
+            <tr data-search="UNL Unilever Nepal" x-show="matchesChosen($el)">
+              <td class="mono"><strong>#20</strong></td>
+              <td><span class="sym-pill">UNL</span></td>
+              <td>Unilever Nepal</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.658</td>
+              <td><span class="badge badge-red">VETOED: GATE 1</span></td>
+              <td>Falling knife: 1W change -2.5% < -2.5%</td>
+              <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
+            </tr>
+            
+            <tr data-search="SAHAS Sahas Urja Limited" x-show="matchesChosen($el)">
+              <td class="mono"><strong>#21</strong></td>
+              <td><span class="sym-pill">SAHAS</span></td>
+              <td>Sahas Urja Limited</td>
+              <td class="mono" style="color:var(--profit); font-weight:700;">0.652</td>
+              <td><span class="badge badge-red">VETOED: GATE 3</span></td>
+              <td>VWAP downtrending: 5d slope -0.63% < 0.0% — institutional distribution trap</td>
               <td style="text-align:center;"><span style="color:var(--text-muted);">—</span></td>
               <td><span class='mono'>Trade Blocked</span></td>
             </tr>
@@ -1557,7 +1512,7 @@
         <div class="panel-header">
           <div class="panel-title">
             <span>Stage 4: Tactical Execution Radar</span>
-            <span class="badge badge-amber">1 Actionable Setups</span>
+            <span class="badge badge-amber">0 Actionable Setups</span>
             <span class="badge badge-blue">Pre-Screened Targets</span>
           </div>
           <div style="font-size:12px; color:var(--text-muted);">
@@ -1579,20 +1534,7 @@
               </tr>
             </thead>
             <tbody>
-
-                <tr data-search="CYCL Cyc Nepal Laghubitta Bittiya Sanstha" x-show="matchesSearch($el)">
-                  <td><span class="sym-pill">CYCL</span></td>
-                  <td><div class="col-two-tier"><span>Cyc Nepal Laghubitta Bittiya Sanstha</span><span class="sub-text">Gen-3 Scored</span></div></td>
-                  <td class="mono" style="font-weight:700;">Rs 1,584.00</td>
-                  <td class="mono" style="color:var(--loss);">Rs 1,509.55 <span style="font-size:10px; color:var(--text-muted);">(-4.7%)</span></td>
-                  <td class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                    <div style="color:var(--profit); font-weight:600;">TP 1 (+2.0σ &middot; 40%): Rs 1,694.25 <span style="font-size:9px; color:var(--text-muted); font-weight:normal;">+7.0% &middot; Ratchet Stop</span></div>
-                    <div style="color:var(--accent); font-weight:600;">TP 2 (+2.5σ &middot; 40%): Rs 1,721.81 <span style="font-size:9px; color:var(--profit); font-weight:normal;">+8.7% &middot; Core Exit</span></div>
-                    <div style="color:#e0e3eb; font-weight:600;">TP 3 (+5.0σ &middot; 20%): Rs 1,859.62 <span style="font-size:9px; color:var(--warning); font-weight:normal;">+17.4% &middot; Moonshot Runner</span></div>
-                  </td>
-                  <td class="mono" style="color:var(--profit); font-weight:700;">1.9 : 1</td>
-                  <td><span class="badge badge-green">ACTION TRIGGERED @ Rs 1,533.5</span></td>
-                </tr>
+<tr><td colspan="7" style="text-align:center; padding: 20px; color: var(--text-muted);">No candidates passed the technical screens today.</td></tr>
             </tbody>
           </table>
         </div>
@@ -1676,7 +1618,7 @@
           <div class="lock-icon"><span class="status-indicator loss"></span></div>
           <div class="lock-details">
             <strong>TMS Order Dispatch Halted · Iron Cash Mandate Active</strong>
-            <span>NEPSE is trading at -0.39σ below the 10-day VWAP (2,560.84 vs 2,573.61). Capital preservation is strictly enforced. Zero buy orders allowed.</span>
+            <span>NEPSE is trading at -0.56σ below the 10-day VWAP (2,545.40 vs 2,559.89). Capital preservation is strictly enforced. Zero buy orders allowed.</span>
           </div>
           <span class="badge badge-red">0 Tickets Dispatched</span>
         </div>
@@ -1854,7 +1796,7 @@
         Aurora v26.09.05
     </div>
     <div style="margin-top: 0.35rem; color: #64748b; font-size: 0.78rem;">
-        Report Generated: <span style="color: #38bdf8; font-family: monospace; font-weight: 600;">2026-09-09 11:44:19 NPT</span>
+        Report Generated: <span style="color: #38bdf8; font-family: monospace; font-weight: 600;">2026-09-09 20:15:14 NPT</span>
     </div>
     <div style="margin-top: 0.4rem; font-size: 0.72rem; color: #475569;">
         Nepalese Stock Exchange (NEPSE) Quantitative Analytics &amp; Execution Engine
