@@ -10,17 +10,27 @@
 </head>
 <body>
 
-  <div class="container" x-data="dashboardTerminal()">
+  <div class="container" x-data="dashboardTerminal()" @keydown.window="focusSearch($event)">
     <!-- Top Header -->
     <header class="top-header">
       <div class="brand-group">
         <span class="brand-title">AURORA 4.0</span>
         <span class="badge-terminal">Aurora 4.0 Quantitative Trading Terminal</span>
       </div>
+      <div class="universal-search-container" @click="$refs.universalSearchInput.focus()">
+        <span class="universal-search-tag">SEARCH</span>
+        <svg class="universal-search-glyph" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" class="universal-search-input" x-ref="universalSearchInput" x-model="searchQuery" placeholder="Search ticker, company..." @keydown.escape="searchQuery = ''; $refs.universalSearchInput.blur()" autocomplete="off" spellcheck="false">
+        <span class="search-kbd-hint" x-show="!searchQuery" title="Press '/' to focus">/</span>
+        <button type="button" class="universal-search-clear" x-show="searchQuery" @click.stop="searchQuery = ''; $refs.universalSearchInput.focus()" title="Clear search (Esc)" style="display:none;">&times;</button>
+      </div>
       <div class="header-pills">
         <span class="pill"><span class="dot-red"></span> REGIME: <strong>BEAR (Index < 10d VWAP)</strong></span>
         <span class="pill"><span class="dot-red"></span> MANDATE: <strong>100% CASH PRESERVED — ALL BUYS HALTED</strong></span>
-        <span class="pill">DATE: <strong>2026-09-07</strong></span>
+        <span class="pill">DATE: <strong>2026-09-09</strong></span>
       </div>
     </header>
 
@@ -131,7 +141,7 @@
           </div>
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px;">
             
-        <div style="background: var(--panel); border: 1px solid var(--profit-border); border-radius: 5px; padding: 10px 12px;">
+        <div x-show="matchesSearch($el.textContent)" style="background: var(--panel); border: 1px solid var(--profit-border); border-radius: 5px; padding: 10px 12px;">
           <div style="display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 4px;">
             <strong style="color: var(--text-heading);">Hotels & Tourism</strong>
             <span class="badge badge-green">Leader</span>
@@ -140,7 +150,7 @@
           <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">Top 2 Focus · Institutional Wave</div>
         </div>
         
-        <div style="background: var(--panel); border: 1px solid var(--profit-border); border-radius: 5px; padding: 10px 12px;">
+        <div x-show="matchesSearch($el.textContent)" style="background: var(--panel); border: 1px solid var(--profit-border); border-radius: 5px; padding: 10px 12px;">
           <div style="display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 4px;">
             <strong style="color: var(--text-heading);">HydroPower</strong>
             <span class="badge badge-green">Leader</span>
@@ -149,7 +159,7 @@
           <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">Top 2 Focus · Steady Accumulation</div>
         </div>
         
-        <div style="background: var(--panel); border: 1px solid var(--border); border-radius: 5px; padding: 10px 12px;">
+        <div x-show="matchesSearch($el.textContent)" style="background: var(--panel); border: 1px solid var(--border); border-radius: 5px; padding: 10px 12px;">
           <div style="display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 4px;">
             <strong style="color: var(--text-heading);">Banking</strong>
             <span class="badge badge-blue">Neutral</span>
@@ -158,7 +168,7 @@
           <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">Low beta anchor · Selective sizing</div>
         </div>
         
-        <div style="background: var(--panel); border: 1px solid var(--loss-border); border-radius: 5px; padding: 10px 12px;">
+        <div x-show="matchesSearch($el.textContent)" style="background: var(--panel); border: 1px solid var(--loss-border); border-radius: 5px; padding: 10px 12px;">
           <div style="display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 4px;">
             <strong style="color: var(--text-heading);">Microfinance</strong>
             <span class="badge badge-red">Vetoed</span>
@@ -167,7 +177,7 @@
           <div style="font-size: 10px; color: var(--text-muted); margin-top: 2px;">Negative RS vs Index VWAP · Setups Rejected</div>
         </div>
         
-        <div style="background: var(--panel); border: 1px solid var(--loss-border); border-radius: 5px; padding: 10px 12px;">
+        <div x-show="matchesSearch($el.textContent)" style="background: var(--panel); border: 1px solid var(--loss-border); border-radius: 5px; padding: 10px 12px;">
           <div style="display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 4px;">
             <strong style="color: var(--text-heading);">Finance</strong>
             <span class="badge badge-red">Vetoed</span>
@@ -207,11 +217,11 @@
         </div>
 
         <div class="filter-strip">
-          <input type="text" class="search-box" x-model="avoidSearch" placeholder="Search avoid ticker or reason...">
           <span class="chip" :class="{ 'active': avoidChip === 'All' }" @click="avoidChip = 'All'">All Avoid (82)</span>
           <span class="chip" :class="{ 'active': avoidChip === 'Negative Earnings' }" @click="avoidChip = 'Negative Earnings'">Negative Earnings</span>
           <span class="chip" :class="{ 'active': avoidChip === 'Extreme PE' }" @click="avoidChip = 'Extreme PE'">Extreme PE</span>
           <span class="chip" :class="{ 'active': avoidChip === 'Excessive Debt' }" @click="avoidChip = 'Excessive Debt'">Excessive Debt</span>
+          <span class="chip chip-active-query" x-show="searchQuery" @click="searchQuery = ''" style="display:none;" title="Click to clear search">Query: "<span x-text="searchQuery"></span>" &times;</span>
         </div>
 
         <div class="table-box">
@@ -1236,12 +1246,12 @@
         </div>
 
         <div class="filter-strip">
-          <input type="text" class="search-box" x-model="chosenSearch" placeholder="Search symbol or keyword...">
           <span class="chip" :class="{ 'active': chosenChip === 'All' }" @click="chosenChip = 'All'">All Candidates (24)</span>
           <span class="chip" :class="{ 'active': chosenChip === 'Passed Timing' }" @click="chosenChip = 'Passed Timing'">Passed Timing</span>
           <span class="chip" :class="{ 'active': chosenChip === 'Lock-in Unlock' }" @click="chosenChip = 'Lock-in Unlock'">Lock-in Unlock</span>
           <span class="chip" :class="{ 'active': chosenChip === 'Knife Veto' }" @click="chosenChip = 'Knife Veto'">Knife Veto</span>
           <span class="chip" :class="{ 'active': chosenChip === 'Smart Money Accumulation' }" @click="chosenChip = 'Smart Money Accumulation'">Smart Money Accumulation</span>
+          <span class="chip chip-active-query" x-show="searchQuery" @click="searchQuery = ''" style="display:none;" title="Click to clear search">Query: "<span x-text="searchQuery"></span>" &times;</span>
         </div>
 
         <div class="table-box">
@@ -1266,19 +1276,12 @@
               <td>Himalayan Everest Insurance Limited</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.889</td>
               <td>
-                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-blue">VETOED: GATE 1</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.889 Gen-3)</td>
-              <td><span class="badge badge-blue">Clean Flow</span></td>
-              <td>
-                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 469.90 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 447.81</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 502.61 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 510.78 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 551.66 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
-                </div>
-                </td>
+              <td>Falling knife: 1W change -4.1% < -2.5%</td>
+              <td><span class="badge badge-red">Falling Knife Veto</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
@@ -1287,19 +1290,12 @@
               <td>Sagarmatha Lumbini Insurance Co. Limited</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.830</td>
               <td>
-                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-blue">VETOED: GATE 1</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.830 Gen-3)</td>
-              <td><span class="badge badge-blue">Clean Flow</span></td>
-              <td>
-                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 527.50 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 502.71</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 564.21 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 573.39 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 619.28 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
-                </div>
-                </td>
+              <td>Falling knife: 1W change -4.6% < -2.5%</td>
+              <td><span class="badge badge-red">Falling Knife Veto</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
@@ -1308,19 +1304,12 @@
               <td>Forward Community Microfinance Bittiya Sanstha Ltd.</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.829</td>
               <td>
-                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-blue">VETOED: GATE 3</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.829 Gen-3)</td>
-              <td><span class="badge badge-blue">Clean Flow</span></td>
-              <td>
-                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 880.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 838.64</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 941.25 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 956.56 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 1033.12 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
-                </div>
-                </td>
+              <td>VWAP downtrending: 5d slope -2.75% < 0.0% — institutional distribution trap</td>
+              <td><span class="badge badge-amber">VWAP Downtrend Veto</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
@@ -1329,19 +1318,12 @@
               <td>Neco Insurance</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.814</td>
               <td>
-                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-blue">VETOED: GATE 1</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.814 Gen-3)</td>
-              <td><span class="badge badge-blue">Clean Flow</span></td>
-              <td>
-                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 525.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 500.32</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 561.54 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 570.67 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 616.35 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
-                </div>
-                </td>
+              <td>Falling knife: 1W change -4.5% < -2.5%</td>
+              <td><span class="badge badge-red">Falling Knife Veto</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
@@ -1350,19 +1332,12 @@
               <td>Api Power</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.776</td>
               <td>
-                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-blue">VETOED: GATE 3</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.776 Gen-3)</td>
-              <td><span class="badge badge-blue">Clean Flow</span></td>
-              <td>
-                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 329.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 313.54</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 351.90 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 357.62 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 386.25 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
-                </div>
-                </td>
+              <td>VWAP downtrending: 5d slope -0.82% < 0.0% — institutional distribution trap</td>
+              <td><span class="badge badge-amber">VWAP Downtrend Veto</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
@@ -1371,19 +1346,12 @@
               <td>Jeevan Bikas Laghubitta Bittya Sanstha Ltd</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.771</td>
               <td>
-                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-blue">VETOED: GATE 3</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.771 Gen-3)</td>
-              <td><span class="badge badge-blue">Clean Flow</span></td>
-              <td>
-                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 1252.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 1193.16</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 1339.14 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 1360.92 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 1469.85 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
-                </div>
-                </td>
+              <td>VWAP downtrending: 5d slope -0.95% < 0.0% — institutional distribution trap</td>
+              <td><span class="badge badge-amber">VWAP Downtrend Veto</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
@@ -1392,19 +1360,12 @@
               <td>Siddhartha Premier Insurance Limited</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.769</td>
               <td>
-                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-blue">VETOED: GATE 1</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.769 Gen-3)</td>
-              <td><span class="badge badge-blue">Clean Flow</span></td>
-              <td>
-                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 599.90 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 571.70</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 641.65 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 652.09 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 704.28 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
-                </div>
-                </td>
+              <td>Falling knife: 1W change -4.0% < -2.5%</td>
+              <td><span class="badge badge-red">Falling Knife Veto</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
@@ -1413,19 +1374,12 @@
               <td>Global IME Laghubitta Bittiya Sanstha </td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.734</td>
               <td>
-                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-blue">VETOED: GATE 3</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.734 Gen-3)</td>
-              <td><span class="badge badge-blue">Clean Flow</span></td>
-              <td>
-                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 1116.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 1063.55</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 1193.67 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 1213.09 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 1310.18 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
-                </div>
-                </td>
+              <td>VWAP downtrending: 5d slope -0.51% < 0.0% — institutional distribution trap</td>
+              <td><span class="badge badge-amber">VWAP Downtrend Veto</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
@@ -1434,19 +1388,12 @@
               <td>Mountain Energy Nepal Limited</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.734</td>
               <td>
-                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-blue">VETOED: GATE 3</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.734 Gen-3)</td>
-              <td><span class="badge badge-green">Smart Money #3</span></td>
-              <td>
-                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 630.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 600.39</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 673.85 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 684.81 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 739.62 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
-                </div>
-                </td>
+              <td>VWAP downtrending: 5d slope -0.17% < 0.0% — institutional distribution trap</td>
+              <td><span class="badge badge-amber">VWAP Downtrend Veto</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
@@ -1455,19 +1402,12 @@
               <td>Deprosc Laghubitta</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.729</td>
               <td>
-                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-blue">VETOED: GATE 3</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.729 Gen-3)</td>
-              <td><span class="badge badge-blue">Clean Flow</span></td>
-              <td>
-                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 841.10 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 801.57</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 899.64 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 914.28 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 987.45 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
-                </div>
-                </td>
+              <td>VWAP downtrending: 5d slope -0.94% < 0.0% — institutional distribution trap</td>
+              <td><span class="badge badge-amber">VWAP Downtrend Veto</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
@@ -1476,19 +1416,12 @@
               <td>Gurkhas Finance Ltd.</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.724</td>
               <td>
-                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-blue">VETOED: GATE 3</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.724 Gen-3)</td>
-              <td><span class="badge badge-blue">Clean Flow</span></td>
-              <td>
-                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 502.70 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 479.07</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 537.69 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 546.43 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 590.17 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
-                </div>
-                </td>
+              <td>VWAP downtrending: 5d slope -3.60% < 0.0% — institutional distribution trap</td>
+              <td><span class="badge badge-amber">VWAP Downtrend Veto</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
@@ -1497,19 +1430,12 @@
               <td>Kumari Bank</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.718</td>
               <td>
-                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-blue">VETOED: GATE 3</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.718 Gen-3)</td>
-              <td><span class="badge badge-blue">Clean Flow</span></td>
-              <td>
-                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 215.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 204.89</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 229.96 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 233.70 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 252.41 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
-                </div>
-                </td>
+              <td>VWAP downtrending: 5d slope -0.60% < 0.0% — institutional distribution trap</td>
+              <td><span class="badge badge-amber">VWAP Downtrend Veto</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
@@ -1518,19 +1444,12 @@
               <td>Chilime Hydropower</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.713</td>
               <td>
-                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-blue">VETOED: GATE 1</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.713 Gen-3)</td>
-              <td><span class="badge badge-green">Smart Money #5</span></td>
-              <td>
-                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 369.20 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 351.85</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 394.90 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 401.32 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 433.44 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
-                </div>
-                </td>
+              <td>Falling knife: 1W change -8.8% < -2.5%</td>
+              <td><span class="badge badge-red">Falling Knife Veto</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
@@ -1560,19 +1479,12 @@
               <td>Garima Bikas Bank</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.678</td>
               <td>
-                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-blue">VETOED: GATE 2</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.678 Gen-3)</td>
-              <td><span class="badge badge-blue">Clean Flow</span></td>
-              <td>
-                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 447.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 425.99</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 478.11 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 485.89 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 524.78 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
-                </div>
-                </td>
+              <td>Volume climactic exhaustion: 401,185 > 3x its 10-session avg (62,709) — operator dump risk</td>
+              <td><span class="badge badge-amber">Volume / VCP Veto</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
@@ -1581,19 +1493,12 @@
               <td>Prabhu Insurance</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.676</td>
               <td>
-                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-blue">VETOED: GATE 3</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.676 Gen-3)</td>
-              <td><span class="badge badge-blue">Clean Flow</span></td>
-              <td>
-                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 600.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 571.80</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 641.76 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 652.20 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 704.40 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
-                </div>
-                </td>
+              <td>VWAP downtrending: 5d slope -3.97% < 0.0% — institutional distribution trap</td>
+              <td><span class="badge badge-amber">VWAP Downtrend Veto</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
@@ -1602,19 +1507,12 @@
               <td>IME Life Insurance Company Limited</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.664</td>
               <td>
-                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-blue">VETOED: GATE 3</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.664 Gen-3)</td>
-              <td><span class="badge badge-blue">Clean Flow</span></td>
-              <td>
-                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 405.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 385.96</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 433.19 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 440.24 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 475.47 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
-                </div>
-                </td>
+              <td>VWAP downtrending: 5d slope -1.45% < 0.0% — institutional distribution trap</td>
+              <td><span class="badge badge-amber">VWAP Downtrend Veto</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
@@ -1623,19 +1521,12 @@
               <td>Sahas Urja Limited</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.663</td>
               <td>
-                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-blue">VETOED: GATE 3</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.663 Gen-3)</td>
-              <td><span class="badge badge-green">Smart Money #10</span></td>
-              <td>
-                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 694.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 661.38</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 742.30 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 754.38 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 814.76 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
-                </div>
-                </td>
+              <td>VWAP downtrending: 5d slope -0.53% < 0.0% — institutional distribution trap</td>
+              <td><span class="badge badge-amber">VWAP Downtrend Veto</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
@@ -1644,19 +1535,12 @@
               <td>National Microfinance Bittiya Sanstha Ltd.</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.659</td>
               <td>
-                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-blue">VETOED: GATE 3</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.659 Gen-3)</td>
-              <td><span class="badge badge-blue">Clean Flow</span></td>
-              <td>
-                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 1135.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 1081.65</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 1214.00 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 1233.74 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 1332.49 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
-                </div>
-                </td>
+              <td>VWAP downtrending: 5d slope -0.81% < 0.0% — institutional distribution trap</td>
+              <td><span class="badge badge-amber">VWAP Downtrend Veto</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
@@ -1665,19 +1549,12 @@
               <td>Infinity Laghubitta Bittiya Sanstha Limited</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.659</td>
               <td>
-                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-blue">VETOED: GATE 3</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.659 Gen-3)</td>
-              <td><span class="badge badge-blue">Clean Flow</span></td>
-              <td>
-                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 836.90 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 797.57</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 895.15 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 909.71 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 982.52 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
-                </div>
-                </td>
+              <td>VWAP downtrending: 5d slope -2.53% < 0.0% — institutional distribution trap</td>
+              <td><span class="badge badge-amber">VWAP Downtrend Veto</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
@@ -1686,19 +1563,12 @@
               <td>Swabalamban Bikas Bank</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.655</td>
               <td>
-                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-blue">VETOED: GATE 3</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.655 Gen-3)</td>
-              <td><span class="badge badge-blue">Clean Flow</span></td>
-              <td>
-                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 677.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 645.18</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 724.12 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 735.90 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 794.80 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
-                </div>
-                </td>
+              <td>VWAP downtrending: 5d slope -0.36% < 0.0% — institutional distribution trap</td>
+              <td><span class="badge badge-amber">VWAP Downtrend Veto</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
@@ -1707,19 +1577,12 @@
               <td>Pokhara Finance</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.655</td>
               <td>
-                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-blue">VETOED: GATE 4</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.655 Gen-3)</td>
-              <td><span class="badge badge-blue">Clean Flow</span></td>
-              <td>
-                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 364.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 346.89</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 389.33 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 395.67 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 427.34 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
-                </div>
-                </td>
+              <td>Circuit-lock risk: median turnover রূ 1.60M/session < রূ 2.5M over last 20 sessions — too illiquid to exit reliably</td>
+              <td><span class="badge badge-red">Turnover / Liquidity Veto</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
@@ -1728,19 +1591,12 @@
               <td>Jyoti Bikas Bank</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.653</td>
               <td>
-                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-blue">VETOED: GATE 3</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.653 Gen-3)</td>
-              <td><span class="badge badge-blue">Clean Flow</span></td>
-              <td>
-                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 334.90 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 319.16</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 358.21 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 364.04 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 393.17 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
-                </div>
-                </td>
+              <td>VWAP downtrending: 5d slope -0.63% < 0.0% — institutional distribution trap</td>
+              <td><span class="badge badge-amber">VWAP Downtrend Veto</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             <tr x-show="matchesChosen($el.textContent)">
@@ -1749,19 +1605,12 @@
               <td>Nepal Bank</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.653</td>
               <td>
-                <span class="badge badge-green">PASSED GATES</span>
+                <span class="badge badge-blue">VETOED: GATE 3</span>
                 <span class="badge badge-red" style="margin-left:4px;">LOCKED (Bear Mandate)</span>
               </td>
-              <td>DuPont Quality, Basing in Pocket (0.653 Gen-3)</td>
-              <td><span class="badge badge-blue">Clean Flow</span></td>
-              <td>
-                <div class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                  <div><strong>Entry:</strong> Rs 279.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 265.89</span></div>
-                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 298.42 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
-                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 303.27 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
-                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 327.55 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
-                </div>
-                </td>
+              <td>VWAP downtrending: 5d slope -0.21% < 0.0% — institutional distribution trap</td>
+              <td><span class="badge badge-amber">VWAP Downtrend Veto</span></td>
+              <td><span class='mono'>Trade Blocked</span></td>
             </tr>
             
             </tbody>
@@ -1787,7 +1636,8 @@
         <!-- Dual-Book Navigation Structure -->
         <div style="margin-bottom: 16px; display: flex; flex-direction: column; gap: 8px;">
           <div class="chip-row" style="margin-bottom: 0; display: flex; gap: 6px; flex-wrap: wrap; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: none;">
-            <div class="chip" :class="portfolioView === 'radar' ? 'active' : ''" @click="portfolioView = 'radar'" style="border-color: var(--accent);">Intraday Watchlist (12)</div>
+            <div class="chip" :class="portfolioView === 'radar' ? 'active' : ''" @click="portfolioView = 'radar'" style="border-color: var(--accent);">Intraday Watchlist (1)</div>
+            <span class="chip chip-active-query" x-show="searchQuery" @click="searchQuery = ''" style="display:none;" title="Click to clear search">Query: "<span x-text="searchQuery"></span>" &times;</span>
           </div>
           <div style="font-size: 11px; font-weight: 700; color: var(--text-muted); letter-spacing: 1px; margin-top: 4px; padding-left: 2px;">——— AUTO TRADE SIMULATOR ———</div>
           <div class="chip-row" style="margin-bottom: 4px; display: flex; gap: 6px; flex-wrap: wrap; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: none;">
@@ -1861,160 +1711,17 @@
               </thead>
               <tbody>
 
-                <tr>
-                  <td><span class="sym-pill">API</span></td>
-                  <td><div class="col-two-tier"><span>Api Power</span><span class="sub-text">Gen-3 Scored</span></div></td>
-                  <td class="mono" style="font-weight:700;">Rs 329.00</td>
-                  <td class="mono" style="color:var(--loss);">Rs 312.55 <span style="font-size:10px; color:var(--text-muted);">(-5.0%)</span></td>
+                <tr x-show="matchesSearch($el.textContent)">
+                  <td><span class="sym-pill">CYCL</span></td>
+                  <td><div class="col-two-tier"><span>Cyc Nepal Laghubitta Bittiya Sanstha</span><span class="sub-text">Gen-3 Scored</span></div></td>
+                  <td class="mono" style="font-weight:700;">Rs 1,584.00</td>
+                  <td class="mono" style="color:var(--loss);">Rs 1,509.55 <span style="font-size:10px; color:var(--text-muted);">(-4.7%)</span></td>
                   <td class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                    <div style="color:var(--profit); font-weight:600;">TP 1 (+2.0σ &middot; 40%): Rs 351.90 <span style="font-size:9px; color:var(--text-muted); font-weight:normal;">+7.0% &middot; Ratchet Stop</span></div>
-                    <div style="color:var(--accent); font-weight:600;">TP 2 (+2.5σ &middot; 40%): Rs 357.62 <span style="font-size:9px; color:var(--profit); font-weight:normal;">+8.7% &middot; Core Exit</span></div>
-                    <div style="color:#e0e3eb; font-weight:600;">TP 3 (+5.0σ &middot; 20%): Rs 386.25 <span style="font-size:9px; color:var(--warning); font-weight:normal;">+17.4% &middot; Moonshot Runner</span></div>
+                    <div style="color:var(--profit); font-weight:600;">TP 1 (+2.0σ &middot; 40%): Rs 1,694.25 <span style="font-size:9px; color:var(--text-muted); font-weight:normal;">+7.0% &middot; Ratchet Stop</span></div>
+                    <div style="color:var(--accent); font-weight:600;">TP 2 (+2.5σ &middot; 40%): Rs 1,721.81 <span style="font-size:9px; color:var(--profit); font-weight:normal;">+8.7% &middot; Core Exit</span></div>
+                    <div style="color:#e0e3eb; font-weight:600;">TP 3 (+5.0σ &middot; 20%): Rs 1,859.62 <span style="font-size:9px; color:var(--warning); font-weight:normal;">+17.4% &middot; Moonshot Runner</span></div>
                   </td>
-                  <td class="mono" style="color:var(--profit); font-weight:700;">1.7 : 1</td>
-                  <td><span class="badge badge-blue">RADAR: INTRADAY WATCH</span></td>
-                </tr>
-                <tr>
-                  <td><span class="sym-pill">CHDC</span></td>
-                  <td><div class="col-two-tier"><span>Cedb Holdings</span><span class="sub-text">Gen-3 Scored</span></div></td>
-                  <td class="mono" style="font-weight:700;">Rs 2,215.00</td>
-                  <td class="mono" style="color:var(--loss);">Rs 2,104.25 <span style="font-size:10px; color:var(--text-muted);">(-5.0%)</span></td>
-                  <td class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                    <div style="color:var(--profit); font-weight:600;">TP 1 (+2.0σ &middot; 40%): Rs 2,369.16 <span style="font-size:9px; color:var(--text-muted); font-weight:normal;">+7.0% &middot; Ratchet Stop</span></div>
-                    <div style="color:var(--accent); font-weight:600;">TP 2 (+2.5σ &middot; 40%): Rs 2,407.70 <span style="font-size:9px; color:var(--profit); font-weight:normal;">+8.7% &middot; Core Exit</span></div>
-                    <div style="color:#e0e3eb; font-weight:600;">TP 3 (+5.0σ &middot; 20%): Rs 2,600.41 <span style="font-size:9px; color:var(--warning); font-weight:normal;">+17.4% &middot; Moonshot Runner</span></div>
-                  </td>
-                  <td class="mono" style="color:var(--profit); font-weight:700;">1.7 : 1</td>
-                  <td><span class="badge badge-blue">RADAR: INTRADAY WATCH</span></td>
-                </tr>
-                <tr>
-                  <td><span class="sym-pill">DDBL</span></td>
-                  <td><div class="col-two-tier"><span>Deprosc Laghubitta</span><span class="sub-text">Gen-3 Scored</span></div></td>
-                  <td class="mono" style="font-weight:700;">Rs 841.10</td>
-                  <td class="mono" style="color:var(--loss);">Rs 799.04 <span style="font-size:10px; color:var(--text-muted);">(-5.0%)</span></td>
-                  <td class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                    <div style="color:var(--profit); font-weight:600;">TP 1 (+2.0σ &middot; 40%): Rs 899.64 <span style="font-size:9px; color:var(--text-muted); font-weight:normal;">+7.0% &middot; Ratchet Stop</span></div>
-                    <div style="color:var(--accent); font-weight:600;">TP 2 (+2.5σ &middot; 40%): Rs 914.28 <span style="font-size:9px; color:var(--profit); font-weight:normal;">+8.7% &middot; Core Exit</span></div>
-                    <div style="color:#e0e3eb; font-weight:600;">TP 3 (+5.0σ &middot; 20%): Rs 987.45 <span style="font-size:9px; color:var(--warning); font-weight:normal;">+17.4% &middot; Moonshot Runner</span></div>
-                  </td>
-                  <td class="mono" style="color:var(--profit); font-weight:700;">1.7 : 1</td>
-                  <td><span class="badge badge-blue">RADAR: INTRADAY WATCH</span></td>
-                </tr>
-                <tr>
-                  <td><span class="sym-pill">EBL</span></td>
-                  <td><div class="col-two-tier"><span>Everest Bank</span><span class="sub-text">Gen-3 Scored</span></div></td>
-                  <td class="mono" style="font-weight:700;">Rs 716.00</td>
-                  <td class="mono" style="color:var(--loss);">Rs 680.20 <span style="font-size:10px; color:var(--text-muted);">(-5.0%)</span></td>
-                  <td class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                    <div style="color:var(--profit); font-weight:600;">TP 1 (+2.0σ &middot; 40%): Rs 765.83 <span style="font-size:9px; color:var(--text-muted); font-weight:normal;">+7.0% &middot; Ratchet Stop</span></div>
-                    <div style="color:var(--accent); font-weight:600;">TP 2 (+2.5σ &middot; 40%): Rs 778.29 <span style="font-size:9px; color:var(--profit); font-weight:normal;">+8.7% &middot; Core Exit</span></div>
-                    <div style="color:#e0e3eb; font-weight:600;">TP 3 (+5.0σ &middot; 20%): Rs 840.58 <span style="font-size:9px; color:var(--warning); font-weight:normal;">+17.4% &middot; Moonshot Runner</span></div>
-                  </td>
-                  <td class="mono" style="color:var(--profit); font-weight:700;">1.7 : 1</td>
-                  <td><span class="badge badge-blue">RADAR: INTRADAY WATCH</span></td>
-                </tr>
-                <tr>
-                  <td><span class="sym-pill">HDL</span></td>
-                  <td><div class="col-two-tier"><span>Himalayan Distillery</span><span class="sub-text">Gen-3 Scored</span></div></td>
-                  <td class="mono" style="font-weight:700;">Rs 1,187.00</td>
-                  <td class="mono" style="color:var(--loss);">Rs 1,127.65 <span style="font-size:10px; color:var(--text-muted);">(-5.0%)</span></td>
-                  <td class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                    <div style="color:var(--profit); font-weight:600;">TP 1 (+2.0σ &middot; 40%): Rs 1,269.62 <span style="font-size:9px; color:var(--text-muted); font-weight:normal;">+7.0% &middot; Ratchet Stop</span></div>
-                    <div style="color:var(--accent); font-weight:600;">TP 2 (+2.5σ &middot; 40%): Rs 1,290.27 <span style="font-size:9px; color:var(--profit); font-weight:normal;">+8.7% &middot; Core Exit</span></div>
-                    <div style="color:#e0e3eb; font-weight:600;">TP 3 (+5.0σ &middot; 20%): Rs 1,393.54 <span style="font-size:9px; color:var(--warning); font-weight:normal;">+17.4% &middot; Moonshot Runner</span></div>
-                  </td>
-                  <td class="mono" style="color:var(--profit); font-weight:700;">1.7 : 1</td>
-                  <td><span class="badge badge-blue">RADAR: INTRADAY WATCH</span></td>
-                </tr>
-                <tr>
-                  <td><span class="sym-pill">JBLB</span></td>
-                  <td><div class="col-two-tier"><span>Jeevan Bikas Laghubitta Bittya Sanstha</span><span class="sub-text">Gen-3 Scored</span></div></td>
-                  <td class="mono" style="font-weight:700;">Rs 1,252.00</td>
-                  <td class="mono" style="color:var(--loss);">Rs 1,189.40 <span style="font-size:10px; color:var(--text-muted);">(-5.0%)</span></td>
-                  <td class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                    <div style="color:var(--profit); font-weight:600;">TP 1 (+2.0σ &middot; 40%): Rs 1,339.14 <span style="font-size:9px; color:var(--text-muted); font-weight:normal;">+7.0% &middot; Ratchet Stop</span></div>
-                    <div style="color:var(--accent); font-weight:600;">TP 2 (+2.5σ &middot; 40%): Rs 1,360.92 <span style="font-size:9px; color:var(--profit); font-weight:normal;">+8.7% &middot; Core Exit</span></div>
-                    <div style="color:#e0e3eb; font-weight:600;">TP 3 (+5.0σ &middot; 20%): Rs 1,469.85 <span style="font-size:9px; color:var(--warning); font-weight:normal;">+17.4% &middot; Moonshot Runner</span></div>
-                  </td>
-                  <td class="mono" style="color:var(--profit); font-weight:700;">1.7 : 1</td>
-                  <td><span class="badge badge-blue">RADAR: INTRADAY WATCH</span></td>
-                </tr>
-                <tr>
-                  <td><span class="sym-pill">MEN</span></td>
-                  <td><div class="col-two-tier"><span>Mountain Energy Nepal</span><span class="sub-text">Gen-3 Scored</span></div></td>
-                  <td class="mono" style="font-weight:700;">Rs 630.00</td>
-                  <td class="mono" style="color:var(--loss);">Rs 598.50 <span style="font-size:10px; color:var(--text-muted);">(-5.0%)</span></td>
-                  <td class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                    <div style="color:var(--profit); font-weight:600;">TP 1 (+2.0σ &middot; 40%): Rs 673.85 <span style="font-size:9px; color:var(--text-muted); font-weight:normal;">+7.0% &middot; Ratchet Stop</span></div>
-                    <div style="color:var(--accent); font-weight:600;">TP 2 (+2.5σ &middot; 40%): Rs 684.81 <span style="font-size:9px; color:var(--profit); font-weight:normal;">+8.7% &middot; Core Exit</span></div>
-                    <div style="color:#e0e3eb; font-weight:600;">TP 3 (+5.0σ &middot; 20%): Rs 739.62 <span style="font-size:9px; color:var(--warning); font-weight:normal;">+17.4% &middot; Moonshot Runner</span></div>
-                  </td>
-                  <td class="mono" style="color:var(--profit); font-weight:700;">1.7 : 1</td>
-                  <td><span class="badge badge-blue">RADAR: INTRADAY WATCH</span></td>
-                </tr>
-                <tr>
-                  <td><span class="sym-pill">NMFBS</span></td>
-                  <td><div class="col-two-tier"><span>National Microfinance Bittiya Sanstha</span><span class="sub-text">Gen-3 Scored</span></div></td>
-                  <td class="mono" style="font-weight:700;">Rs 1,135.00</td>
-                  <td class="mono" style="color:var(--loss);">Rs 1,078.25 <span style="font-size:10px; color:var(--text-muted);">(-5.0%)</span></td>
-                  <td class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                    <div style="color:var(--profit); font-weight:600;">TP 1 (+2.0σ &middot; 40%): Rs 1,214.00 <span style="font-size:9px; color:var(--text-muted); font-weight:normal;">+7.0% &middot; Ratchet Stop</span></div>
-                    <div style="color:var(--accent); font-weight:600;">TP 2 (+2.5σ &middot; 40%): Rs 1,233.74 <span style="font-size:9px; color:var(--profit); font-weight:normal;">+8.7% &middot; Core Exit</span></div>
-                    <div style="color:#e0e3eb; font-weight:600;">TP 3 (+5.0σ &middot; 20%): Rs 1,332.49 <span style="font-size:9px; color:var(--warning); font-weight:normal;">+17.4% &middot; Moonshot Runner</span></div>
-                  </td>
-                  <td class="mono" style="color:var(--profit); font-weight:700;">1.7 : 1</td>
-                  <td><span class="badge badge-blue">RADAR: INTRADAY WATCH</span></td>
-                </tr>
-                <tr>
-                  <td><span class="sym-pill">SAMAJ</span></td>
-                  <td><div class="col-two-tier"><span>Samaj Laghubittya Bittiya Sanstha</span><span class="sub-text">Gen-3 Scored</span></div></td>
-                  <td class="mono" style="font-weight:700;">Rs 1,875.80</td>
-                  <td class="mono" style="color:var(--loss);">Rs 1,782.01 <span style="font-size:10px; color:var(--text-muted);">(-5.0%)</span></td>
-                  <td class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                    <div style="color:var(--profit); font-weight:600;">TP 1 (+2.0σ &middot; 40%): Rs 2,006.36 <span style="font-size:9px; color:var(--text-muted); font-weight:normal;">+7.0% &middot; Ratchet Stop</span></div>
-                    <div style="color:var(--accent); font-weight:600;">TP 2 (+2.5σ &middot; 40%): Rs 2,038.99 <span style="font-size:9px; color:var(--profit); font-weight:normal;">+8.7% &middot; Core Exit</span></div>
-                    <div style="color:#e0e3eb; font-weight:600;">TP 3 (+5.0σ &middot; 20%): Rs 2,202.19 <span style="font-size:9px; color:var(--warning); font-weight:normal;">+17.4% &middot; Moonshot Runner</span></div>
-                  </td>
-                  <td class="mono" style="color:var(--profit); font-weight:700;">1.7 : 1</td>
-                  <td><span class="badge badge-blue">RADAR: INTRADAY WATCH</span></td>
-                </tr>
-                <tr>
-                  <td><span class="sym-pill">SHL</span></td>
-                  <td><div class="col-two-tier"><span>Soaltee Hotel</span><span class="sub-text">Gen-3 Scored</span></div></td>
-                  <td class="mono" style="font-weight:700;">Rs 502.50</td>
-                  <td class="mono" style="color:var(--loss);">Rs 477.38 <span style="font-size:10px; color:var(--text-muted);">(-5.0%)</span></td>
-                  <td class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                    <div style="color:var(--profit); font-weight:600;">TP 1 (+2.0σ &middot; 40%): Rs 537.47 <span style="font-size:9px; color:var(--text-muted); font-weight:normal;">+7.0% &middot; Ratchet Stop</span></div>
-                    <div style="color:var(--accent); font-weight:600;">TP 2 (+2.5σ &middot; 40%): Rs 546.22 <span style="font-size:9px; color:var(--profit); font-weight:normal;">+8.7% &middot; Core Exit</span></div>
-                    <div style="color:#e0e3eb; font-weight:600;">TP 3 (+5.0σ &middot; 20%): Rs 589.93 <span style="font-size:9px; color:var(--warning); font-weight:normal;">+17.4% &middot; Moonshot Runner</span></div>
-                  </td>
-                  <td class="mono" style="color:var(--profit); font-weight:700;">1.7 : 1</td>
-                  <td><span class="badge badge-blue">RADAR: INTRADAY WATCH</span></td>
-                </tr>
-                <tr>
-                  <td><span class="sym-pill">SWBBL</span></td>
-                  <td><div class="col-two-tier"><span>Swabalamban Bikas Bank</span><span class="sub-text">Gen-3 Scored</span></div></td>
-                  <td class="mono" style="font-weight:700;">Rs 677.00</td>
-                  <td class="mono" style="color:var(--loss);">Rs 643.15 <span style="font-size:10px; color:var(--text-muted);">(-5.0%)</span></td>
-                  <td class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                    <div style="color:var(--profit); font-weight:600;">TP 1 (+2.0σ &middot; 40%): Rs 724.12 <span style="font-size:9px; color:var(--text-muted); font-weight:normal;">+7.0% &middot; Ratchet Stop</span></div>
-                    <div style="color:var(--accent); font-weight:600;">TP 2 (+2.5σ &middot; 40%): Rs 735.90 <span style="font-size:9px; color:var(--profit); font-weight:normal;">+8.7% &middot; Core Exit</span></div>
-                    <div style="color:#e0e3eb; font-weight:600;">TP 3 (+5.0σ &middot; 20%): Rs 794.80 <span style="font-size:9px; color:var(--warning); font-weight:normal;">+17.4% &middot; Moonshot Runner</span></div>
-                  </td>
-                  <td class="mono" style="color:var(--profit); font-weight:700;">1.7 : 1</td>
-                  <td><span class="badge badge-blue">RADAR: INTRADAY WATCH</span></td>
-                </tr>
-                <tr>
-                  <td><span class="sym-pill">TPC</span></td>
-                  <td><div class="col-two-tier"><span>Terhathum Power</span><span class="sub-text">Gen-3 Scored</span></div></td>
-                  <td class="mono" style="font-weight:700;">Rs 346.00</td>
-                  <td class="mono" style="color:var(--loss);">Rs 328.70 <span style="font-size:10px; color:var(--text-muted);">(-5.0%)</span></td>
-                  <td class="mono" style="font-size:11px; white-space:nowrap; line-height:1.4;">
-                    <div style="color:var(--profit); font-weight:600;">TP 1 (+2.0σ &middot; 40%): Rs 370.08 <span style="font-size:9px; color:var(--text-muted); font-weight:normal;">+7.0% &middot; Ratchet Stop</span></div>
-                    <div style="color:var(--accent); font-weight:600;">TP 2 (+2.5σ &middot; 40%): Rs 376.10 <span style="font-size:9px; color:var(--profit); font-weight:normal;">+8.7% &middot; Core Exit</span></div>
-                    <div style="color:#e0e3eb; font-weight:600;">TP 3 (+5.0σ &middot; 20%): Rs 406.20 <span style="font-size:9px; color:var(--warning); font-weight:normal;">+17.4% &middot; Moonshot Runner</span></div>
-                  </td>
-                  <td class="mono" style="color:var(--profit); font-weight:700;">1.7 : 1</td>
+                  <td class="mono" style="color:var(--profit); font-weight:700;">1.9 : 1</td>
                   <td><span class="badge badge-blue">RADAR: INTRADAY WATCH</span></td>
                 </tr>
               </tbody>
@@ -2220,7 +1927,7 @@
         Aurora v26.09.05
     </div>
     <div style="margin-top: 0.35rem; color: #64748b; font-size: 0.78rem;">
-        Report Generated: <span style="color: #38bdf8; font-family: monospace; font-weight: 600;">2026-09-09 02:54:37 NPT</span>
+        Report Generated: <span style="color: #38bdf8; font-family: monospace; font-weight: 600;">2026-09-09 08:43:45 NPT</span>
     </div>
     <div style="margin-top: 0.4rem; font-size: 0.72rem; color: #475569;">
         Nepalese Stock Exchange (NEPSE) Quantitative Analytics &amp; Execution Engine
@@ -2232,30 +1939,42 @@
     function dashboardTerminal() {
       return {
         activeTab: 'tab-regime',
-        avoidSearch: '',
+        searchQuery: '',
+        get avoidSearch() { return this.searchQuery; },
+        set avoidSearch(val) { this.searchQuery = val; },
+        get chosenSearch() { return this.searchQuery; },
+        set chosenSearch(val) { this.searchQuery = val; },
         avoidChip: 'All',
-        chosenSearch: '',
         chosenChip: 'All',
         switchTab(tabId) {
           this.activeTab = tabId;
         },
+        focusSearch(e) {
+          if (e && e.key === '/' && document.activeElement !== this.$refs.universalSearchInput) {
+            e.preventDefault();
+            this.$refs.universalSearchInput.focus();
+          }
+        },
+        matchesSearch(text) {
+          const q = this.searchQuery.toLowerCase().trim();
+          if (!q) return true;
+          return (text || '').toLowerCase().includes(q);
+        },
         matchesAvoid(text) {
-          const q = this.avoidSearch.toLowerCase().trim();
-          if (q && !text.toLowerCase().includes(q)) return false;
+          if (!this.matchesSearch(text)) return false;
           const c = this.avoidChip;
           if (c === 'All') return true;
-          const t = text.toLowerCase();
+          const t = (text || '').toLowerCase();
           if (c === 'Negative Earnings') return t.includes('negative earnings') || t.includes('margin collapse');
           if (c === 'Extreme PE') return t.includes('extreme pe') || t.includes('bubble');
           if (c === 'Excessive Debt') return t.includes('debt') || t.includes('overhang') || t.includes('insolvent');
           return true;
         },
         matchesChosen(text) {
-          const q = this.chosenSearch.toLowerCase().trim();
-          if (q && !text.toLowerCase().includes(q)) return false;
+          if (!this.matchesSearch(text)) return false;
           const c = this.chosenChip;
           if (c === 'All') return true;
-          const t = text.toLowerCase();
+          const t = (text || '').toLowerCase();
           if (c === 'Passed Timing') return t.includes('passed gates');
           if (c === 'Lock-in Unlock') return t.includes('gate 0') || t.includes('lock-in');
           if (c === 'Knife Veto') return t.includes('gate 1') || t.includes('knife');
