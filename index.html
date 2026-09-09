@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aurora 4.0 Quantitative Trading Terminal</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="index.css">
   <!-- Alpine.js via CDN -->
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
@@ -25,7 +26,7 @@
         </svg>
         <input type="text" class="universal-search-input" x-ref="universalSearchInput" x-model="searchQuery" placeholder="Search ticker, company..." @keydown.escape="searchQuery = ''; $refs.universalSearchInput.blur()" autocomplete="off" spellcheck="false">
         <span class="search-kbd-hint" x-show="!searchQuery" title="Press '/' to focus">/</span>
-        <button type="button" class="universal-search-clear" x-show="searchQuery" @click.stop="searchQuery = ''; $refs.universalSearchInput.focus()" title="Clear search (Esc)" style="display:none;">&times;</button>
+        <button type="button" class="universal-search-clear" x-show="searchQuery" @click.stop="searchQuery = ''; $refs.universalSearchInput.focus()" title="Clear search (Esc)" x-cloak>&times;</button>
       </div>
       <div class="header-pills">
         <span class="pill"><span class="dot-red"></span> REGIME: <strong>BEAR (Index < 10d VWAP)</strong></span>
@@ -1927,7 +1928,7 @@
         Aurora v26.09.05
     </div>
     <div style="margin-top: 0.35rem; color: #64748b; font-size: 0.78rem;">
-        Report Generated: <span style="color: #38bdf8; font-family: monospace; font-weight: 600;">2026-09-09 08:43:45 NPT</span>
+        Report Generated: <span style="color: #38bdf8; font-family: monospace; font-weight: 600;">2026-09-09 08:52:23 NPT</span>
     </div>
     <div style="margin-top: 0.4rem; font-size: 0.72rem; color: #475569;">
         Nepalese Stock Exchange (NEPSE) Quantitative Analytics &amp; Execution Engine
