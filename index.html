@@ -30,7 +30,7 @@
       <div class="header-pills">
         <span class="pill"><span class="dot-green"></span> REGIME: <strong>CHOP (Index >= 10d VWAP)</strong></span>
         <span class="pill">DATE: <strong>2026-09-12</strong></span>
-        <span class="pill">UPDATED: <strong>10:16:46 NPT</strong></span>
+        <span class="pill">UPDATED: <strong>01:04:07 NPT</strong></span>
       </div>
     </header>
 
@@ -1797,10 +1797,17 @@
               <td><span class="sym-pill">GBBL</span></td>
               <td>Garima Bikas Bank</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.677</td>
-              <td><span class="badge badge-amber">PASSED GATES · REGIME LOCKED</span></td>
+              <td><span class="badge badge-green">PASSED GATES</span></td>
               <td>DuPont Quality, Basing in Pocket (0.677 Gen-3)</td>
               <td style="text-align:center;"><span class="badge badge-blue">Clean Flow</span></td>
-              <td><span class='mono'>Locked: CHOP Conviction Floor (0.68 < 0.75)</span></td>
+              <td>
+                <div class="mono" style="font-size:11px; line-height:1.35;">
+                  <div><strong>Entry:</strong> Rs 443.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 422.18</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 473.83 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 481.54 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 520.08 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                </div>
+                </td>
             </tr>
             
             <tr data-search="SAHAS Sahas Urja Limited" x-show="matchesChosen($el)">
@@ -1819,10 +1826,17 @@
               <td><span class="sym-pill">NBL</span></td>
               <td>Nepal Bank</td>
               <td class="mono" style="color:var(--profit); font-weight:700;">0.665</td>
-              <td><span class="badge badge-amber">PASSED GATES · REGIME LOCKED</span></td>
+              <td><span class="badge badge-green">PASSED GATES</span></td>
               <td>DuPont Quality, Basing in Pocket (0.665 Gen-3)</td>
               <td style="text-align:center;"><span class="badge badge-blue">Clean Flow</span></td>
-              <td><span class='mono'>Locked: CHOP Conviction Floor (0.67 < 0.75)</span></td>
+              <td>
+                <div class="mono" style="font-size:11px; line-height:1.35;">
+                  <div><strong>Entry:</strong> Rs 278.00 &middot; <span style="color:var(--loss);"><strong>SL:</strong> Rs 264.93</span></div>
+                  <div style="color:var(--profit); font-size:10px;">T1 (+2.0σ &middot; 40%): Rs 297.35 <span style="font-size:9px; color:var(--text-muted);">(Lock &amp; BE +0.8%)</span></div>
+                  <div style="color:var(--accent); font-size:10px;">T2 (+2.5σ &middot; 40%): Rs 302.19 <span style="font-size:9px; color:var(--profit);">(Core Exit +8.7%)</span></div>
+                  <div style="color:#cbd5e1; font-size:10px;">T3 (+5.0σ &middot; 20%): Rs 326.37 <span style="font-size:9px; color:var(--warning);">(Moonshot Runner)</span></div>
+                </div>
+                </td>
             </tr>
             
             <tr data-search="ILI IME Life Insurance Company Limited" x-show="matchesChosen($el)">
@@ -1911,7 +1925,7 @@
         <div class="panel-header">
           <div class="panel-title">
             <span>Stage 5: Tactical Execution Desk &middot; Live Risk Allocation</span>
-            <span class="badge badge-green">Active Deployment Desk</span>
+            <span class="badge badge-purple">Unlimited Liquidity Desk</span>
             <span class="badge badge-blue">CDSC Demat T+2 Compliant</span>
           </div>
           <div style="font-size:12px; color:var(--text-muted);">
@@ -1932,8 +1946,8 @@
         <div class="stat-row">
           <div class="stat-card">
             <div class="stat-label">Portfolio Net Equity</div>
-            <div class="stat-num" style="color:var(--text-heading);">रू 500,000.00</div>
-            <div class="stat-sub" style="color:var(--text-muted);">Seed Capital: रू 500,000.00</div>
+            <div class="stat-num" style="color:var(--text-heading);">रू ∞ (UNLIMITED)</div>
+            <div class="stat-sub" style="color:var(--text-muted);">Unconstrained Liquidity</div>
           </div>
           <div class="stat-card">
             <div class="stat-label">Total Realized PnL</div>
@@ -1947,8 +1961,8 @@
           </div>
           <div class="stat-card">
             <div class="stat-label">Liquid Cash Reserve</div>
-            <div class="stat-num" style="color:var(--accent);">रू 500,000.00</div>
-            <div class="stat-sub" style="color:var(--accent);">100.0% liquid buffer</div>
+            <div class="stat-num" style="color:var(--accent);">रू ∞ (UNLIMITED)</div>
+            <div class="stat-sub" style="color:var(--accent);">Zero Capital Throttling</div>
           </div>
           <div class="stat-card">
             <div class="stat-label">Tactical Active Risk</div>
@@ -1971,7 +1985,7 @@
               <span class="badge badge-green">Fill Model: Min(LTP, TWAP) * (1 + Slippage)</span>
             </div>
             <div style="font-size: 11px; color: var(--text-muted);">
-              Risk Budget Mandate: Max 1.0% NAV at Stop Loss &middot; 3-Tranche Moonshot Ladder (40% @ +2.0σ / 40% @ +2.5σ / 20% @ +5.0σ) &middot; Earliest TMS Sell: T+3
+              Fixed Order Sizing: 100 Shares per Setup &middot; 3-Tranche Moonshot Ladder (40% @ +2.0σ / 40% @ +2.5σ / 20% @ +5.0σ) &middot; Earliest TMS Sell: T+3
             </div>
           </div>
 
@@ -2056,9 +2070,9 @@
             <div style="display:flex; align-items:center; gap:8px;">
               <span style="font-size: 14px; font-weight: 700; color: var(--text-heading);">Active Swing Positions &amp; Live Risk Ladder</span>
               <span class="badge badge-green">0 Active Positions</span>
-              <span class="badge badge-blue">Max 10 Concurrent</span>
-              <span class="badge badge-amber">Sector Exposure: 25% Max</span>
-              <span class="badge badge-green">Tactical 100% Capital</span>
+              <span class="badge badge-blue">Unlimited Concurrent (100 Shares)</span>
+              <span class="badge badge-amber">Unconstrained Capital</span>
+              <span class="badge badge-purple">Unlimited Capital Mode</span>
             </div>
             <div style="font-size: 11px; color: var(--text-muted);">
               Dynamic -1.0R ATR Stop &middot; 3-Tranche Moonshot Ladder (T1: +2.0σ 40% Lock / T2: +2.5σ 40% Core / T3: +5.0σ 20% Runner) &middot; T+3 Demat &amp; T-2 Pre-Closure Exit Guard
@@ -2084,7 +2098,7 @@
                 </tr>
               </thead>
               <tbody>
-                <tr><td colspan='13' style='text-align:center; padding: 32px; color: var(--text-muted); font-size: 13px; font-weight:600;'>No active swing positions. 100% Cash Preserved under Iron Cash Mandate.</td></tr>
+                <tr><td colspan='13' style='text-align:center; padding: 32px; color: var(--text-muted); font-size: 13px; font-weight:600;'>No active swing positions. Unlimited Capital Desk Active (100 shares / setup).</td></tr>
               </tbody>
             </table>
           </div>
@@ -2140,7 +2154,7 @@
         Aurora v26.09.05
     </div>
     <div style="margin-top: 0.35rem; color: #64748b; font-size: 0.78rem;">
-        Report Generated: <span style="color: #38bdf8; font-family: monospace; font-weight: 600;">2026-09-12 10:16:46 NPT</span>
+        Report Generated: <span style="color: #38bdf8; font-family: monospace; font-weight: 600;">2026-09-13 01:04:07 NPT</span>
     </div>
     <div style="margin-top: 0.4rem; font-size: 0.72rem; color: #475569;">
         Nepalese Stock Exchange (NEPSE) Quantitative Analytics &amp; Execution Engine
